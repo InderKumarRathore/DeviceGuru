@@ -67,7 +67,7 @@ class DeviceGuru {
   /** This method retruns the hardware type */
   class func hardwareString() -> String {
     var name: [Int32] = [CTL_HW, HW_MACHINE]
-    var size: UInt = 2
+    var size: Int = 2
     sysctl(&name, 2, nil, &size, &name, 0)
     var hw_machine = [CChar](count: Int(size), repeatedValue: 0)
     sysctl(&name, 2, &hw_machine, &size, &name, 0)
@@ -75,7 +75,7 @@ class DeviceGuru {
     let hardware: String = String.fromCString(hw_machine)!
     return hardware
   }
-  
+
   /** This method returns the Hardware enum depending upon harware string */
   class func hardware() -> Hardware {
     let hardware = self.hardwareString()
