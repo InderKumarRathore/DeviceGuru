@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name = 'DeviceGuru'
-  s.version = '1.1.0'
+  s.version = '1.2.0'
   s.license = 'MIT'
   s.summary = 'DeviceGuru is a simple lib (Swift) to know the exact type of the device instead of just iPhone or iPad'
   s.homepage = 'https://github.com/InderKumarRathore/DeviceGuru'
