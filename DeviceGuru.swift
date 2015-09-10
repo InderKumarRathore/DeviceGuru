@@ -259,7 +259,6 @@ public func hardwareNumber(hardware: Hardware) -> CGFloat {
     
   case Hardware.SIMULATOR:                         return 100.0
   case Hardware.NOT_AVAILABLE:                     return 200.0
-  default:                                         return 200.0
   }
 }
 
@@ -297,8 +296,8 @@ public func backCameraStillImageResolutionInPixels(hardware: Hardware) -> CGSize
     return CGSizeMake (1536, 2048)
     
   default:
-    println("We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/UIDeviceUtil) on GitHub.com in format Device = Hpx x Wpx.") }
-  println("Your device is: \(hardwareDescription())")
+    print("We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/UIDeviceUtil) on GitHub.com in format Device = Hpx x Wpx.") }
+  print("Your device is: \(hardwareDescription())")
   
   return CGSizeZero
 }
@@ -307,8 +306,8 @@ public func backCameraStillImageResolutionInPixels(hardware: Hardware) -> CGSize
 Internal method for loggin, you don't need this method
 */
 public func logMessage(hardware: String) {
-  println("This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/UIDeviceUtil and add a comment there.");
-  println("Your device hardware string is: %@", hardware);
+  print("This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/UIDeviceUtil and add a comment there.");
+  print("Your device hardware string is: %@", hardware);
 }
 
 
