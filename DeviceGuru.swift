@@ -165,6 +165,8 @@ public func hardwareDescription() -> String? {
   
   if (hardware == "iPhone7,1")            { return "iPhone 6 Plus" }
   if (hardware == "iPhone7,2")            { return "iPhone 6" }
+  if (hardware == "iPhone8,2")            { return "iPhone 6S Plus" }
+  if (hardware == "iPhone8,1")            { return "iPhone 6S" }
   
   if (hardware == "iPod1,1")              { return "iPod Touch (1 Gen)" }
   if (hardware == "iPod2,1")              { return "iPod Touch (2 Gen)" }
@@ -230,6 +232,10 @@ public func hardwareNumber(hardware: Hardware) -> CGFloat {
   case Hardware.IPHONE_5S_CDMA_GSM:                return 6.2
   case Hardware.IPHONE_6_PLUS:                     return 7.1
   case Hardware.IPHONE_6:                          return 7.2
+    
+  case Hardware.IPHONE_6S_PLUS:                    return 8.2
+  case Hardware.IPHONE_6S:                         return 8.1
+    
     
   case Hardware.IPOD_TOUCH_1G:                     return 1.1
   case Hardware.IPOD_TOUCH_2G:                     return 2.1
