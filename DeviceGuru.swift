@@ -266,6 +266,8 @@ public func hardwareNumber(hardware: Hardware) -> CGFloat {
     
   case Hardware.SIMULATOR:                         return 100.0
   case Hardware.NOT_AVAILABLE:                     return 200.0
+  
+  default:                                         return -1.0
   }
 }
 
