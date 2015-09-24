@@ -25,6 +25,9 @@ public enum Hardware: NSInteger {
   case IPHONE_5S_CDMA_GSM
   case IPHONE_6_PLUS
   case IPHONE_6
+  case IPHONE_6S
+  case IPHONE_6S_PLUS
+
   
   case IPOD_TOUCH_1G
   case IPOD_TOUCH_2G
@@ -94,7 +97,11 @@ public func hardware() -> Hardware {
   
   if (hardware == "iPhone7,1")         { return Hardware.IPHONE_6_PLUS }
   if (hardware == "iPhone7,2")         { return Hardware.IPHONE_6 }
-  
+    
+  if (hardware == "iPhone8,2")         { return Hardware.IPHONE_6S_PLUS }
+  if (hardware == "iPhone8,1")         { return Hardware.IPHONE_6S }
+    
+    
   if (hardware == "iPod1,1")           { return Hardware.IPOD_TOUCH_1G }
   if (hardware == "iPod2,1")           { return Hardware.IPOD_TOUCH_2G }
   if (hardware == "iPod3,1")           { return Hardware.IPOD_TOUCH_3G }
