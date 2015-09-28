@@ -2,11 +2,11 @@
 
 Pod::Spec.new do |s|
   s.name = 'DeviceGuru'
-  s.version = '1.2.1'
+  s.version = '1.2.2'
   s.license = 'MIT'
   s.summary = 'DeviceGuru is a simple lib (Swift) to know the exact type of the device instead of just iPhone or iPad'
   s.homepage = 'https://github.com/InderKumarRathore/DeviceGuru'
-  s.social_media_url = 'http://facebook.com/InderKumarRathore'
+  s.social_media_url    = "https://twitter.com/InderKRathore"
   s.authors = { 'Inder Kumar Rathore' => 'contact.mr.rathore@gmail.com' }
   s.source = { :git => 'https://github.com/InderKumarRathore/DeviceGuru.git', :tag => s.version }
 
