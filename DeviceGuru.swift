@@ -25,6 +25,9 @@ public enum Hardware: NSInteger {
   case IPHONE_5S_CDMA_GSM
   case IPHONE_6_PLUS
   case IPHONE_6
+  case IPHONE_6S
+  case IPHONE_6S_PLUS
+
   
   case IPOD_TOUCH_1G
   case IPOD_TOUCH_2G
@@ -94,7 +97,11 @@ public func hardware() -> Hardware {
   
   if (hardware == "iPhone7,1")         { return Hardware.IPHONE_6_PLUS }
   if (hardware == "iPhone7,2")         { return Hardware.IPHONE_6 }
-  
+    
+  if (hardware == "iPhone8,2")         { return Hardware.IPHONE_6S_PLUS }
+  if (hardware == "iPhone8,1")         { return Hardware.IPHONE_6S }
+    
+    
   if (hardware == "iPod1,1")           { return Hardware.IPOD_TOUCH_1G }
   if (hardware == "iPod2,1")           { return Hardware.IPOD_TOUCH_2G }
   if (hardware == "iPod3,1")           { return Hardware.IPOD_TOUCH_3G }
@@ -158,6 +165,8 @@ public func hardwareDescription() -> String? {
   
   if (hardware == "iPhone7,1")            { return "iPhone 6 Plus" }
   if (hardware == "iPhone7,2")            { return "iPhone 6" }
+  if (hardware == "iPhone8,2")            { return "iPhone 6S Plus" }
+  if (hardware == "iPhone8,1")            { return "iPhone 6S" }
   
   if (hardware == "iPod1,1")              { return "iPod Touch (1 Gen)" }
   if (hardware == "iPod2,1")              { return "iPod Touch (2 Gen)" }
@@ -224,6 +233,10 @@ public func hardwareNumber(hardware: Hardware) -> CGFloat {
   case Hardware.IPHONE_6_PLUS:                     return 7.1
   case Hardware.IPHONE_6:                          return 7.2
     
+  case Hardware.IPHONE_6S_PLUS:                    return 8.2
+  case Hardware.IPHONE_6S:                         return 8.1
+    
+    
   case Hardware.IPOD_TOUCH_1G:                     return 1.1
   case Hardware.IPOD_TOUCH_2G:                     return 2.1
   case Hardware.IPOD_TOUCH_3G:                     return 3.1
@@ -259,6 +272,8 @@ public func hardwareNumber(hardware: Hardware) -> CGFloat {
     
   case Hardware.SIMULATOR:                         return 100.0
   case Hardware.NOT_AVAILABLE:                     return 200.0
+  
+  default:                                         return -1.0
   }
 }
 
