@@ -8,23 +8,27 @@
 import Foundation
 import UIKit
 
+/// Enum for different iPhone/iPad devices
 public enum Hardware: NSInteger {
   case NOT_AVAILABLE
   
   case IPHONE_2G
   case IPHONE_3G
   case IPHONE_3GS
+  
   case IPHONE_4
   case IPHONE_4_CDMA
   case IPHONE_4S
+  
   case IPHONE_5
   case IPHONE_5_CDMA_GSM
   case IPHONE_5C
   case IPHONE_5C_CDMA_GSM
   case IPHONE_5S
   case IPHONE_5S_CDMA_GSM
-  case IPHONE_6_PLUS
+  
   case IPHONE_6
+  case IPHONE_6_PLUS
   case IPHONE_6S
   case IPHONE_6S_PLUS
 
@@ -65,7 +69,11 @@ public enum Hardware: NSInteger {
   case SIMULATOR
 }
 
-/** This method retruns the hardware type */
+/// This method retruns the hardware type
+///
+///
+/// - returns: raw `String` of device type
+///
 public func hardwareString() -> String {
   var name: [Int32] = [CTL_HW, HW_MACHINE]
   var size: Int = 2
@@ -77,17 +85,23 @@ public func hardwareString() -> String {
   return hardware
 }
 
-/** This method returns the Hardware enum depending upon harware string */
+/// This method returns the Hardware enum depending upon harware string
+///
+///
+/// - returns: `Hardware` type of the device
+///
 public func hardware() -> Hardware {
   let hardware = hardwareString()
   
   if (hardware == "iPhone1,1")         { return Hardware.IPHONE_2G }
   if (hardware == "iPhone1,2")         { return Hardware.IPHONE_3G }
   if (hardware == "iPhone2,1")         { return Hardware.IPHONE_3GS }
+  
   if (hardware == "iPhone3,1")         { return Hardware.IPHONE_4 }
   if (hardware == "iPhone3,2")         { return Hardware.IPHONE_4 }
   if (hardware == "iPhone3,3")         { return Hardware.IPHONE_4_CDMA }
   if (hardware == "iPhone4,1")         { return Hardware.IPHONE_4S }
+  
   if (hardware == "iPhone5,1")         { return Hardware.IPHONE_5 }
   if (hardware == "iPhone5,2")         { return Hardware.IPHONE_5_CDMA_GSM }
   if (hardware == "iPhone5,3")         { return Hardware.IPHONE_5C }
@@ -97,7 +111,6 @@ public func hardware() -> Hardware {
   
   if (hardware == "iPhone7,1")         { return Hardware.IPHONE_6_PLUS }
   if (hardware == "iPhone7,2")         { return Hardware.IPHONE_6 }
-    
   if (hardware == "iPhone8,2")         { return Hardware.IPHONE_6S_PLUS }
   if (hardware == "iPhone8,1")         { return Hardware.IPHONE_6S }
     
@@ -146,7 +159,11 @@ public func hardware() -> Hardware {
   return Hardware.NOT_AVAILABLE
 }
 
-/** This method returns the readable description of hardware string */
+
+/// This method returns the readable description of hardware string
+///
+/// - returns: readable description `String` of the device
+///
 public func hardwareDescription() -> String? {
   let hardware = hardwareString()
   if (hardware == "iPhone1,1")            { return "iPhone 2G" }
@@ -212,27 +229,29 @@ public func hardwareDescription() -> String? {
   return nil
 }
 
-/**
-This method returns the hardware number not actual but logically.
-e.g. if the hardware string is 5,1 then hardware number would be 5.1
-*/
+///
+/// This method returns the hardware number not actual but logically.
+/// e.g. if the hardware string is 5,1 then hardware number would be 5.1
+///
 public func hardwareNumber(hardware: Hardware) -> CGFloat {
   switch (hardware) {
   case Hardware.IPHONE_2G:                         return 1.1
   case Hardware.IPHONE_3G:                         return 1.2
   case Hardware.IPHONE_3GS:                        return 2.1
+    
   case Hardware.IPHONE_4:                          return 3.1
   case Hardware.IPHONE_4_CDMA:                     return 3.3
   case Hardware.IPHONE_4S:                         return 4.1
+    
   case Hardware.IPHONE_5:                          return 5.1
   case Hardware.IPHONE_5_CDMA_GSM:                 return 5.2
   case Hardware.IPHONE_5C:                         return 5.3
   case Hardware.IPHONE_5C_CDMA_GSM:                return 5.4
   case Hardware.IPHONE_5S:                         return 6.1
   case Hardware.IPHONE_5S_CDMA_GSM:                return 6.2
+    
   case Hardware.IPHONE_6_PLUS:                     return 7.1
   case Hardware.IPHONE_6:                          return 7.2
-    
   case Hardware.IPHONE_6S_PLUS:                    return 8.2
   case Hardware.IPHONE_6S:                         return 8.1
     
@@ -272,15 +291,18 @@ public func hardwareNumber(hardware: Hardware) -> CGFloat {
     
   case Hardware.SIMULATOR:                         return 100.0
   case Hardware.NOT_AVAILABLE:                     return 200.0
-  
-  default:                                         return -1.0
   }
 }
 
-/**
-This method returns the resolution for still image that can be received
-from back camera of the current device. Resolution returned for image oriented landscape right.
-**/
+
+/// This method returns the resolution for still image that can be received
+/// from back camera of the current device. Resolution returned for image oriented landscape right.
+///
+/// - parameters:
+///     - hardware: `Hardware` type of the device
+///
+/// - returns: `CGSize` of the image captured by the device
+///
 public func backCameraStillImageResolutionInPixels(hardware: Hardware) -> CGSize {
   switch (hardware) {
   case Hardware.IPHONE_2G, Hardware.IPHONE_3G:
@@ -317,9 +339,11 @@ public func backCameraStillImageResolutionInPixels(hardware: Hardware) -> CGSize
   return CGSizeZero
 }
 
-/**
-Internal method for loggin, you don't need this method
-*/
+/// Internal method for loggin, you don't need this method
+///
+/// - parameters:
+///     - hardware: `String` hardware type of the device
+///
 public func logMessage(hardware: String) {
   print("This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/UIDeviceUtil and add a comment there.");
   print("Your device hardware string is: %@", hardware);
