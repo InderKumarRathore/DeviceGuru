@@ -175,15 +175,15 @@ public func hardwareDescription() -> String? {
   if (hardware == "iPhone4,1")            { return "iPhone 4S" }
   if (hardware == "iPhone5,1")            { return "iPhone 5 (GSM)" }
   if (hardware == "iPhone5,2")            { return "iPhone 5 (Global)" }
-  if (hardware == "iPhone5,3")            { return "iPhone 5C (GSM)" }
-  if (hardware == "iPhone5,4")            { return "iPhone 5C (Global)" }
-  if (hardware == "iPhone6,1")            { return "iPhone 5S (GSM)" }
-  if (hardware == "iPhone6,2")            { return "iPhone 5S (Global)" }
+  if (hardware == "iPhone5,3")            { return "iPhone 5c (GSM)" }
+  if (hardware == "iPhone5,4")            { return "iPhone 5c (Global)" }
+  if (hardware == "iPhone6,1")            { return "iPhone 5s (GSM)" }
+  if (hardware == "iPhone6,2")            { return "iPhone 5s (Global)" }
   
   if (hardware == "iPhone7,1")            { return "iPhone 6 Plus" }
   if (hardware == "iPhone7,2")            { return "iPhone 6" }
-  if (hardware == "iPhone8,2")            { return "iPhone 6S Plus" }
-  if (hardware == "iPhone8,1")            { return "iPhone 6S" }
+  if (hardware == "iPhone8,2")            { return "iPhone 6s Plus" }
+  if (hardware == "iPhone8,1")            { return "iPhone 6s" }
   
   if (hardware == "iPod1,1")              { return "iPod Touch (1 Gen)" }
   if (hardware == "iPod2,1")              { return "iPod Touch (2 Gen)" }
