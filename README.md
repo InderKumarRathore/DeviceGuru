@@ -1,7 +1,6 @@
 # DeviceGuru
 
-***DeviceGuru*** is a simple lib (Swift) to know the exact type of the device instead of just iPhone or iPad.
-For Objective-C lib please visit [UIDeviceUtil](https://github.com/InderKumarRathore/UIDeviceUtil)
+***DeviceGuru*** is a simple lib (Swift) to know the exact type of the device, e.g. iPhone 6 or iPhone 6s. For Objective-C please visit [UIDeviceUtil](https://github.com/InderKumarRathore/UIDeviceUtil)
   - Easy to use
   - Light weight
 
@@ -13,7 +12,7 @@ Search for `DeviceGuru` lib <br>
 Copy the pod dependency and add that to your pod file. e.g.
 
 ```sh
-pod 'DeviceGuru', '~> 1.2'
+pod 'DeviceGuru', '~> x.y'
 ```
 
 ### Usage
