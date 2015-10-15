@@ -1,5 +1,3 @@
-
-
 Pod::Spec.new do |s|
   s.name = 'DeviceGuru'
   s.version = '1.2.3'
@@ -11,6 +9,6 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/InderKumarRathore/DeviceGuru.git', :tag => s.version }
 
   s.ios.deployment_target = '8.0'
-  s.source_files = '*.swift'
+  s.source_files = 'DeviceGuru/*.swift'
   s.requires_arc = true
 end

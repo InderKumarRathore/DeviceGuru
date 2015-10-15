@@ -348,5 +348,3 @@ private func logMessage(hardware: String) {
   print("This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/UIDeviceUtil and add a comment there.");
   print("Your device hardware string is: %@", hardware);
 }
-
-
