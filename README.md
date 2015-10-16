@@ -17,7 +17,9 @@ pod 'DeviceGuru', '~> x.y'
 
 ### Usage
 ```sh
-DeviceGuru.hardwareString()
+import DeviceGuru
+
+hardwareString()
 ```
 
 ### Non-Pod users
