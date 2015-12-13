@@ -190,9 +190,9 @@ public class DeviceGuru {
   class public func hardwareDescription() -> String? {
     let hardware = hardwareString()
     if let deviceList = getDeviceList() {
-      let hardwareDetail = deviceList[hardware] as? [String: String]
+      let hardwareDetail = deviceList[hardware] as? [String: AnyObject]
       if let hardwareDescription = hardwareDetail?["name"] {
-        return hardwareDescription
+        return hardwareDescription as? String
       }
     }
     
