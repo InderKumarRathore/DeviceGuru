@@ -25,7 +25,7 @@ hardwareString()
 ### Non-Pod users
 Just drag and drop the `DeviceGuru.swift` file and use below code
 ```sh
-hardwareString()
+DeviceGuru.hardwareString()
 ```
 
 ### Development
