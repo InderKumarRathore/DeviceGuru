@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.source_files = '*.swift'
-  s.resource_bundles = {'DeviceUtil' => ['DeviceList.plist']}
+  s.resource_bundles = {s.name => ['DeviceList.plist']}
   s.requires_arc = true
 end
