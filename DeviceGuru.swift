@@ -99,12 +99,13 @@ public class DeviceGuru {
     // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
     // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
     let deviceUtilTopBundle = NSBundle(forClass:DeviceGuru.self)
-    if let path = deviceUtilTopBundle.pathForResource("DeviceList", ofType: "plist") {
-      return NSDictionary(contentsOfFile: path) as? [String: AnyObject]
+    if let url = deviceUtilTopBundle.URLForResource("DeviceGuru", withExtension: "bundle") {
+      let deviceUtilBundle = NSBundle(URL: url)
+      if let path = deviceUtilBundle?.pathForResource("DeviceList", ofType: "plist") {
+        return NSDictionary(contentsOfFile: path) as? [String: AnyObject]
+      }
     }
-    else {
-      assertionFailure("DevicePlist.plist not found in the bundle.")
-    }
+    assertionFailure("DevicePlist.plist not found in the bundle.")
     return nil
   }
   
