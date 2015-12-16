@@ -105,6 +105,10 @@ public class DeviceGuru {
         return NSDictionary(contentsOfFile: path) as? [String: AnyObject]
       }
     }
+    else if let path = deviceUtilTopBundle.pathForResource("DeviceList", ofType: "plist") {
+        // falling back to main bundle
+        return NSDictionary(contentsOfFile: path) as? [String: AnyObject]
+    }
     assertionFailure("DevicePlist.plist not found in the bundle.")
     return nil
   }
