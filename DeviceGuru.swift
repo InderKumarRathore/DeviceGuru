@@ -261,8 +261,14 @@ public class DeviceGuru {
       return CGSizeMake(1820, 1304)
       
     case Hardware.IPAD_AIR_2_WIFI, Hardware.IPAD_AIR_2_WIFI_CELLULAR:
-      return CGSizeMake (1536, 2048)
-      
+      return CGSizeMake(1536, 2048)
+    
+    case Hardware.IPHONE_6S, Hardware.IPHONE_6S_PLUS:
+      return CGSizeMake(3024, 4032)
+        
+    case Hardware.IPAD_PRO_WIFI, Hardware.IPAD_PRO_WIFI_CELLULAR:
+      return CGSizeMake(2448, 3264)
+ 
     default:
       print("We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/DeviceGuru) on GitHub.com in format Device = Hpx x Wpx.") }
     print("Your device is: \(hardwareDescription())")
