@@ -172,8 +172,12 @@ public class DeviceGuru {
     if (hardware == "iPad4,6")           { return Hardware.IPAD_MINI_RETINA_WIFI_CELLULAR_CN }
     if (hardware == "iPad4,7")           { return Hardware.IPAD_MINI_3_WIFI }
     if (hardware == "iPad4,8")           { return Hardware.IPAD_MINI_3_WIFI_CELLULAR }
+    if (hardware == "iPad5,1")           { return Hardware.IPAD_MINI_4_WIFI }
+    if (hardware == "iPad5,2")           { return Hardware.IPAD_MINI_4_WIFI_CELLULAR }
     if (hardware == "iPad5,3")           { return Hardware.IPAD_AIR_2_WIFI }
     if (hardware == "iPad5,4")           { return Hardware.IPAD_AIR_2_WIFI_CELLULAR }
+    if (hardware == "iPad6,7")           { return Hardware.IPAD_PRO_WIFI }
+    if (hardware == "iPad6,8")           { return Hardware.IPAD_PRO_WIFI_CELLULAR }
     
     if (hardware == "i386")              { return Hardware.SIMULATOR }
     if (hardware == "x86_64")            { return Hardware.SIMULATOR }
@@ -262,7 +266,10 @@ public class DeviceGuru {
       
     case Hardware.IPAD_MINI_WIFI, Hardware.IPAD_MINI, Hardware.IPAD_MINI_WIFI_CDMA:
       return CGSizeMake(1820, 1304)
-      
+
+    case Hardware.IPAD_MINI_4_WIFI, Hardware.IPAD_MINI_4_WIFI_CELLULAR: 
+      return CGSizeMake(2448, 3264)
+
     case Hardware.IPAD_AIR_2_WIFI, Hardware.IPAD_AIR_2_WIFI_CELLULAR:
       return CGSizeMake(1536, 2048)
     
