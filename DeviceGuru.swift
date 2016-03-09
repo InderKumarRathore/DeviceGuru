@@ -251,9 +251,6 @@ public class DeviceGuru {
       
     case Hardware.IPHONE_4S, Hardware.IPHONE_5, Hardware.IPHONE_5_CDMA_GSM, Hardware.IPHONE_5C, Hardware.IPHONE_5C_CDMA_GSM, Hardware.IPHONE_6, Hardware.IPHONE_6_PLUS:
       return CGSizeMake(3264, 2448)
-        
-    case Hardware.IPHONE_6S, Hardware.IPHONE_6S_PLUS:
-      return CGSizeMake(4032, 3024)
       
     case Hardware.IPOD_TOUCH_4G:
       return CGSizeMake(960, 720)
