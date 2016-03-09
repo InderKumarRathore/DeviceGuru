@@ -213,8 +213,8 @@ public class DeviceGuru {
   class public func hardwareNumber() -> Float {
     let hardware = hardwareString()
     if let deviceList = getDeviceList() {
-      let hardwareDetail = deviceList[hardware] as? [String: Float]
-      if let hardwareNumber = hardwareDetail?["version"] {
+      let hardwareDetail = deviceList[hardware] as? [String: AnyObject]
+      if let hardwareNumber = hardwareDetail?["version"] as? Float {
         return hardwareNumber
       }
     }
