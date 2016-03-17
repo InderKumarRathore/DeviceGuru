@@ -7,12 +7,10 @@
 
 ### Installation
 
-Go to [http://cocoapods.org](http://cocoapods.org) <br>
-Search for `DeviceGuru` lib <br>
 Copy the pod dependency and add that to your pod file. e.g.
 
 ```sh
-pod 'DeviceGuru', '~> x.y'
+pod 'DeviceGuru'
 ```
 
 ### Usage
