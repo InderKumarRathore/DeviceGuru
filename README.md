@@ -16,16 +16,15 @@ pod 'DeviceGuru', '~> x.y'
 ```
 
 ### Usage
-```sh
-import DeviceGuru
-
-hardwareString()
+If you install from *CocoaPods*, you have to write 
+``` swift
+import DeviceGuru 
 ```
-
-### Non-Pod users
-Just drag and drop the `DeviceGuru.swift` file and use below code
-```sh
-DeviceGuru.hardwareString()
+In your code:
+``` swift
+let deviceCode = DeviceGuru.hardwareString()
+let deviceName = DeviceGuru.hardware()
+print("\(deviceName) - \(deviceCode)") //Ex: IPHONE_6S_PLUS - iPhone8,2
 ```
 
 ### Development
