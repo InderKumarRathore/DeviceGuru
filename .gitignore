@@ -16,7 +16,6 @@ DerivedData
 *.hmap
 *.ipa
 .DS_Store
-UIDeviceTest
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
