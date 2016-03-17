@@ -1,0 +1,10 @@
+PODS:
+  - DeviceGuru (1.3.4)
+
+DEPENDENCIES:
+  - DeviceGuru
+
+SPEC CHECKSUMS:
+  DeviceGuru: 9659f3d7c3903eca2084f4801dcbbc6ebde19709
+
+COCOAPODS: 0.39.0

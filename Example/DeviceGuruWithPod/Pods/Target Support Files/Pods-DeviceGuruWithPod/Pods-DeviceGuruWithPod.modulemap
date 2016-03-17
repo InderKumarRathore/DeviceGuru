@@ -1,0 +1,6 @@
+framework module Pods_DeviceGuruWithPod {
+  umbrella header "Pods-DeviceGuruWithPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
