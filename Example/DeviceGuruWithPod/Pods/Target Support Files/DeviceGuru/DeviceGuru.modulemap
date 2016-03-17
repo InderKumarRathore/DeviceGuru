@@ -1,0 +1,6 @@
+framework module DeviceGuru {
+  umbrella header "DeviceGuru-umbrella.h"
+
+  export *
+  module * { export * }
+}
