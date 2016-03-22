@@ -7,14 +7,28 @@
 
 ### Installation
 
+##### Using pods
 Copy the pod dependency and add that to your pod file. e.g.
 
 ```sh
 pod 'DeviceGuru'
 ```
+then run the below command in terminal
+```sh
+pod install
+```
+
+##### Using without pods
+Drag and drop
+``` swift
+DeviceGuru.swift
+DeviceList.plist
+```
+
+files in your project
 
 ### Usage
-If you install from *CocoaPods*, you have to write 
+If you install from *CocoaPods*, you have to import the module. If you used drag and drop then there is no need of import
 ``` swift
 import DeviceGuru 
 ```
