@@ -7,11 +7,15 @@
 
 ### Installation
 
+#### CocoaPods
 Copy the pod dependency and add that to your pod file. e.g.
 
 ```sh
 pod 'DeviceGuru'
 ```
+
+#### Swift File
+Just drag and drop the ```DeviceGuru.swift``` file
 
 ### Usage
 If you install from *CocoaPods*, you have to write 
