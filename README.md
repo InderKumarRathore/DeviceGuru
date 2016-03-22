@@ -60,6 +60,7 @@ iPhone 6 Plus | ```IPHONE_6_PLUS``` | ```iPhone7,1```
 iPhone 6 | ```IPHONE_6``` | ```iPhone7,2```
 iPhone 6s Plus | ```IPHONE_6S_PLUS``` | ```iPhone8,2```
 iPhone 6s | ```IPHONE_6S``` | ```iPhone8,2```
+iPhone SE | ```IPHONE_SE``` | ```iPhone8,4```
 
 ##### iPod
 Device | hardware() | hardwareString()

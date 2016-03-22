@@ -33,6 +33,7 @@ public enum Hardware: NSInteger {
   case IPHONE_6_PLUS
   case IPHONE_6S
   case IPHONE_6S_PLUS
+  case IPHONE_SE
   
   case IPOD_TOUCH_1G
   case IPOD_TOUCH_2G
@@ -141,7 +142,8 @@ public class DeviceGuru {
     if (hardware == "iPhone7,2")         { return Hardware.IPHONE_6 }
     if (hardware == "iPhone8,2")         { return Hardware.IPHONE_6S_PLUS }
     if (hardware == "iPhone8,1")         { return Hardware.IPHONE_6S }
-    
+    if (hardware == "iPhone8,4")         { return Hardware.IPHONE_SE }
+
     
     if (hardware == "iPod1,1")           { return Hardware.IPOD_TOUCH_1G }
     if (hardware == "iPod2,1")           { return Hardware.IPOD_TOUCH_2G }
@@ -270,7 +272,7 @@ public class DeviceGuru {
     case Hardware.IPAD_AIR_2_WIFI, Hardware.IPAD_AIR_2_WIFI_CELLULAR:
       return CGSizeMake(1536, 2048)
     
-    case Hardware.IPHONE_6S, Hardware.IPHONE_6S_PLUS:
+    case Hardware.IPHONE_6S, Hardware.IPHONE_6S_PLUS, Hardware.IPHONE_SE:
       return CGSizeMake(3024, 4032)
         
     case Hardware.IPAD_PRO_WIFI, Hardware.IPAD_PRO_WIFI_CELLULAR:
