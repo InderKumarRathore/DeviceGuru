@@ -22,6 +22,7 @@ pod install
 Drag and drop
 ``` swift
 DeviceGuru.swift
+Hardware.swift
 DeviceList.plist
 ```
 
