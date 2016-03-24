@@ -7,69 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030E0CCB4072BB91FC185AFF5D8EC691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		2132DBE282D6E3D00073AEAFB143239E /* DeviceGuru-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C79D492B45E75620B39EC8E569231F39 /* DeviceGuru-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D381C9439D8226AACFD62CE207EFAB5 /* DeviceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1DFDBD43CA524FDB53AD2693614D8E0 /* DeviceList.plist */; };
-		663998925C35C1902E3DEEB33C07E357 /* DeviceGuru-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A746C34647707B7B50E0A08B4496B9 /* DeviceGuru-dummy.m */; };
+		02B33451959FC6E81C521645273C4226 /* DeviceGuru.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97784C02D0431766DD62C5868FE30957 /* DeviceGuru.bundle */; };
+		03796C4151E88E3D255B39E4D89538CE /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFECABE922D4EB3FAE300C9DC43F1035 /* Hardware.swift */; };
+		2EDE6630548887CA9B854F269C53F61D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		3D71094C72613636F7410A1ABBFBF311 /* DeviceGuru.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D984772F387E54DEF5CE63E2FC481C6 /* DeviceGuru.swift */; };
 		89A52ADD802621AF07B764A4EE03EEE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		90856032D7F9F8C73A1EBD7E98A5736F /* Pods-DeviceGuruWithPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1940489068EBD79681EECC3C783A77F5 /* Pods-DeviceGuruWithPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE8C05ED044023042227703DE787AA98 /* DeviceGuru.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8EB044BF7EAFCEC13D8EDF67CC158 /* DeviceGuru.swift */; };
+		92810B1DB44A4A52A9366FE518234341 /* DeviceGuru-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C17DAAB39E7980A60DBC2861125C7 /* DeviceGuru-dummy.m */; };
+		A3F5C09D43FC2152B4C874CC66BD518C /* DeviceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9794EFCB0A2DA247B63144CA6E24D92 /* DeviceList.plist */; };
+		C09E5685BA012DA68D4CB94F8F867C7F /* DeviceGuru-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA3F4561DB8EA95FF7CAC90864E01FC /* DeviceGuru-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE47B0620BE2B1475AE3E99E823E34AD /* Pods-DeviceGuruWithPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC1759C0EA6368542821DD32CA77C80 /* Pods-DeviceGuruWithPod-dummy.m */; };
-		EB1B2B2623048D21A328D7924F1FC525 /* DeviceGuru.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97784C02D0431766DD62C5868FE30957 /* DeviceGuru.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		144EAD4D72750835858146A638E8B596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8BE0AD446F8A48DB1B9C574D840F012;
+			remoteInfo = "DeviceGuru-DeviceGuru";
+		};
 		2CCC48ED8807D5F6B48888A67904AFE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5EEB24C2031F6EA52CB6DED8827CCC91;
+			remoteGlobalIDString = 93FD525501A9FDFEA0725F3D81FBB9B6;
 			remoteInfo = DeviceGuru;
-		};
-		41BAC4E43BEAED82A8BF7A92F2955637 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 40401684B0E657AE65FCF85C74A14C1B;
-			remoteInfo = "DeviceGuru-DeviceGuru";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D984772F387E54DEF5CE63E2FC481C6 /* DeviceGuru.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceGuru.swift; sourceTree = "<group>"; };
 		0E1F108267FAB838C62D9F7146D41470 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10939D66B2EE0338F4231821A28BB27F /* Pods-DeviceGuruWithPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeviceGuruWithPod.debug.xcconfig"; sourceTree = "<group>"; };
 		1184AA1FB607DC045DB2A6D72AA5C125 /* Pods-DeviceGuruWithPod-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DeviceGuruWithPod-resources.sh"; sourceTree = "<group>"; };
 		1940489068EBD79681EECC3C783A77F5 /* Pods-DeviceGuruWithPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeviceGuruWithPod-umbrella.h"; sourceTree = "<group>"; };
 		2FC1759C0EA6368542821DD32CA77C80 /* Pods-DeviceGuruWithPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeviceGuruWithPod-dummy.m"; sourceTree = "<group>"; };
-		3C235D618ADF9D50F09CD6EF74D974BB /* DeviceGuru.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DeviceGuru.modulemap; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4CFD8489F8B449BAEFEC43D98BE6E568 /* Pods-DeviceGuruWithPod-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeviceGuruWithPod-acknowledgements.markdown"; sourceTree = "<group>"; };
 		50C86E980E1A8E4DB3158785F71E8610 /* Pods-DeviceGuruWithPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DeviceGuruWithPod.modulemap"; sourceTree = "<group>"; };
 		57B62D74BC9C5DE910EB1AF35404BE03 /* Pods-DeviceGuruWithPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeviceGuruWithPod.release.xcconfig"; sourceTree = "<group>"; };
-		60FC429E8277267044FC9F22B6EE1C5B /* DeviceGuru.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceGuru.xcconfig; sourceTree = "<group>"; };
-		7966EF02FD72F93F3C49CE8E6C25A8BB /* DeviceGuru-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceGuru-prefix.pch"; sourceTree = "<group>"; };
 		7B34E331C8A7954D79237A3D89344F29 /* Pods-DeviceGuruWithPod-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeviceGuruWithPod-acknowledgements.plist"; sourceTree = "<group>"; };
-		92A746C34647707B7B50E0A08B4496B9 /* DeviceGuru-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceGuru-dummy.m"; sourceTree = "<group>"; };
+		85B87CBA70EF7B4E562F560396E3E87D /* DeviceGuru.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DeviceGuru.modulemap; sourceTree = "<group>"; };
+		8DE5BF0F1A1F2A1E0FC0177F2AA73108 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97784C02D0431766DD62C5868FE30957 /* DeviceGuru.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceGuru.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E4CE7EAC58C007151A2ED3D1DE1B25 /* Pods_DeviceGuruWithPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceGuruWithPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAD967F0ADB1217B30FB80901C36B5F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A74C17DAAB39E7980A60DBC2861125C7 /* DeviceGuru-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceGuru-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C79D492B45E75620B39EC8E569231F39 /* DeviceGuru-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceGuru-umbrella.h"; sourceTree = "<group>"; };
-		CDC8EB044BF7EAFCEC13D8EDF67CC158 /* DeviceGuru.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceGuru.swift; sourceTree = "<group>"; };
+		CAA3F4561DB8EA95FF7CAC90864E01FC /* DeviceGuru-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceGuru-umbrella.h"; sourceTree = "<group>"; };
+		CFECABE922D4EB3FAE300C9DC43F1035 /* Hardware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Hardware.swift; sourceTree = "<group>"; };
 		D0337C78E67C2071CBDFB2BA0E152C92 /* DeviceGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1DFDBD43CA524FDB53AD2693614D8E0 /* DeviceList.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = DeviceList.plist; sourceTree = "<group>"; };
+		DFC55051587C1A2912170B192E030140 /* DeviceGuru-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceGuru-prefix.pch"; sourceTree = "<group>"; };
+		E9794EFCB0A2DA247B63144CA6E24D92 /* DeviceList.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = DeviceList.plist; sourceTree = "<group>"; };
 		F57F7B3FE5DF6030A171E9ADB84011BD /* Pods-DeviceGuruWithPod-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DeviceGuruWithPod-frameworks.sh"; sourceTree = "<group>"; };
+		FF5DC57F1275BE7F627C33ACBE233486 /* DeviceGuru.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceGuru.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		223D6C2A8E2A140238CAAABBA18D1C99 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				030E0CCB4072BB91FC185AFF5D8EC691 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		23C305030BF539CD8FEB3B38961A7874 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,36 +72,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74DA3260C3B6757A83EBDBC20FCDCE73 /* Frameworks */ = {
+		860880C01BFD3364E86D178738B026D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEB21DC1991CB2478ABA634D23E5C9CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EDE6630548887CA9B854F269C53F61D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21D1FCFFCE6E53B3796008A506A2A6C4 /* Resources */ = {
+		02532723C4C98D12DAA19FC925653F06 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E1DFDBD43CA524FDB53AD2693614D8E0 /* DeviceList.plist */,
+				E9794EFCB0A2DA247B63144CA6E24D92 /* DeviceList.plist */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		4EBB9A428B04DAAADA20C09B12D7F897 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3C235D618ADF9D50F09CD6EF74D974BB /* DeviceGuru.modulemap */,
-				60FC429E8277267044FC9F22B6EE1C5B /* DeviceGuru.xcconfig */,
-				92A746C34647707B7B50E0A08B4496B9 /* DeviceGuru-dummy.m */,
-				7966EF02FD72F93F3C49CE8E6C25A8BB /* DeviceGuru-prefix.pch */,
-				C79D492B45E75620B39EC8E569231F39 /* DeviceGuru-umbrella.h */,
-				AAD967F0ADB1217B30FB80901C36B5F7 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DeviceGuru";
 			sourceTree = "<group>";
 		};
 		67EE223619793FB80ECA6960944CD86B /* Targets Support Files */ = {
@@ -141,28 +129,32 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A3C8F968FAD6A28C83A80E4CEB2291E6 /* Pods */,
+				89809F823572F93D68E981B3CB378F48 /* Pods */,
 				C502043BF942C5FE7EBC4E58A959376B /* Products */,
 				67EE223619793FB80ECA6960944CD86B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82401FADB78F0115CE73FAECCF041EF1 /* DeviceGuru */ = {
+		89809F823572F93D68E981B3CB378F48 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CDC8EB044BF7EAFCEC13D8EDF67CC158 /* DeviceGuru.swift */,
-				21D1FCFFCE6E53B3796008A506A2A6C4 /* Resources */,
-				4EBB9A428B04DAAADA20C09B12D7F897 /* Support Files */,
-			);
-			path = DeviceGuru;
-			sourceTree = "<group>";
-		};
-		A3C8F968FAD6A28C83A80E4CEB2291E6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				82401FADB78F0115CE73FAECCF041EF1 /* DeviceGuru */,
+				D6CFA8B60F6356308B0A4EF0B880F830 /* DeviceGuru */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A0B41EF6BC797A21E176E48FEC1D9D8B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				85B87CBA70EF7B4E562F560396E3E87D /* DeviceGuru.modulemap */,
+				FF5DC57F1275BE7F627C33ACBE233486 /* DeviceGuru.xcconfig */,
+				A74C17DAAB39E7980A60DBC2861125C7 /* DeviceGuru-dummy.m */,
+				DFC55051587C1A2912170B192E030140 /* DeviceGuru-prefix.pch */,
+				CAA3F4561DB8EA95FF7CAC90864E01FC /* DeviceGuru-umbrella.h */,
+				8DE5BF0F1A1F2A1E0FC0177F2AA73108 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DeviceGuru";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -191,14 +183,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D6CFA8B60F6356308B0A4EF0B880F830 /* DeviceGuru */ = {
+			isa = PBXGroup;
+			children = (
+				0D984772F387E54DEF5CE63E2FC481C6 /* DeviceGuru.swift */,
+				CFECABE922D4EB3FAE300C9DC43F1035 /* Hardware.swift */,
+				02532723C4C98D12DAA19FC925653F06 /* Resources */,
+				A0B41EF6BC797A21E176E48FEC1D9D8B /* Support Files */,
+			);
+			path = DeviceGuru;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4EF9FE4F46AA55374E9CCC648DB9D4AB /* Headers */ = {
+		55B367D1766405A63C5628EA731134D9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2132DBE282D6E3D00073AEAFB143239E /* DeviceGuru-umbrella.h in Headers */,
+				C09E5685BA012DA68D4CB94F8F867C7F /* DeviceGuru-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,36 +216,19 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		40401684B0E657AE65FCF85C74A14C1B /* DeviceGuru-DeviceGuru */ = {
+		93FD525501A9FDFEA0725F3D81FBB9B6 /* DeviceGuru */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2B3EC149ADDE464BCDD1006ACE77714 /* Build configuration list for PBXNativeTarget "DeviceGuru-DeviceGuru" */;
+			buildConfigurationList = AE1EDE447E75621D956F50BB7FE394B0 /* Build configuration list for PBXNativeTarget "DeviceGuru" */;
 			buildPhases = (
-				D0457A997278A70F475062706952AEA1 /* Sources */,
-				74DA3260C3B6757A83EBDBC20FCDCE73 /* Frameworks */,
-				A82F1DFFAD971944A41D0E0632D9CB4F /* Resources */,
+				3C9D4916D76C1987805238FD4682EEE8 /* Sources */,
+				BEB21DC1991CB2478ABA634D23E5C9CD /* Frameworks */,
+				78525A8989B7A28D374868079BC3F444 /* Resources */,
+				55B367D1766405A63C5628EA731134D9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "DeviceGuru-DeviceGuru";
-			productName = "DeviceGuru-DeviceGuru";
-			productReference = 97784C02D0431766DD62C5868FE30957 /* DeviceGuru.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		5EEB24C2031F6EA52CB6DED8827CCC91 /* DeviceGuru */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2232F46F12600759DE316E3F050E130D /* Build configuration list for PBXNativeTarget "DeviceGuru" */;
-			buildPhases = (
-				BD537153AA5A374BD382D7DB74C88CD0 /* Sources */,
-				223D6C2A8E2A140238CAAABBA18D1C99 /* Frameworks */,
-				A601F0877418B9D989ADA16889E1886D /* Resources */,
-				4EF9FE4F46AA55374E9CCC648DB9D4AB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A9F3A4A06F30ED1751F22D4BA2B9C0CE /* PBXTargetDependency */,
+				EF07F58E00CE8AAA7B302D0DC51E6106 /* PBXTargetDependency */,
 			);
 			name = DeviceGuru;
 			productName = DeviceGuru;
@@ -267,6 +253,23 @@
 			productReference = A5E4CE7EAC58C007151A2ED3D1DE1B25 /* Pods_DeviceGuruWithPod.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D8BE0AD446F8A48DB1B9C574D840F012 /* DeviceGuru-DeviceGuru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EF75C5B70FC48C3C6AFDCB643FA8EED /* Build configuration list for PBXNativeTarget "DeviceGuru-DeviceGuru" */;
+			buildPhases = (
+				D701E9E5AC660D19FD32180E07BFA88A /* Sources */,
+				860880C01BFD3364E86D178738B026D3 /* Frameworks */,
+				AC383F5076C6571111B56E384A0A907D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DeviceGuru-DeviceGuru";
+			productName = "DeviceGuru-DeviceGuru";
+			productReference = 97784C02D0431766DD62C5868FE30957 /* DeviceGuru.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -288,33 +291,43 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5EEB24C2031F6EA52CB6DED8827CCC91 /* DeviceGuru */,
-				40401684B0E657AE65FCF85C74A14C1B /* DeviceGuru-DeviceGuru */,
+				93FD525501A9FDFEA0725F3D81FBB9B6 /* DeviceGuru */,
+				D8BE0AD446F8A48DB1B9C574D840F012 /* DeviceGuru-DeviceGuru */,
 				9520E5BA6E032EDA2AC181635594E917 /* Pods-DeviceGuruWithPod */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A601F0877418B9D989ADA16889E1886D /* Resources */ = {
+		78525A8989B7A28D374868079BC3F444 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1B2B2623048D21A328D7924F1FC525 /* DeviceGuru.bundle in Resources */,
+				02B33451959FC6E81C521645273C4226 /* DeviceGuru.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A82F1DFFAD971944A41D0E0632D9CB4F /* Resources */ = {
+		AC383F5076C6571111B56E384A0A907D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D381C9439D8226AACFD62CE207EFAB5 /* DeviceList.plist in Resources */,
+				A3F5C09D43FC2152B4C874CC66BD518C /* DeviceList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C9D4916D76C1987805238FD4682EEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92810B1DB44A4A52A9366FE518234341 /* DeviceGuru-dummy.m in Sources */,
+				3D71094C72613636F7410A1ABBFBF311 /* DeviceGuru.swift in Sources */,
+				03796C4151E88E3D255B39E4D89538CE /* Hardware.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43CC87CCE093E5847D6022E1F9690E08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,16 +336,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD537153AA5A374BD382D7DB74C88CD0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				663998925C35C1902E3DEEB33C07E357 /* DeviceGuru-dummy.m in Sources */,
-				AE8C05ED044023042227703DE787AA98 /* DeviceGuru.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0457A997278A70F475062706952AEA1 /* Sources */ = {
+		D701E9E5AC660D19FD32180E07BFA88A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -345,21 +349,21 @@
 		395999A439F1569CAA6723664435939E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DeviceGuru;
-			target = 5EEB24C2031F6EA52CB6DED8827CCC91 /* DeviceGuru */;
+			target = 93FD525501A9FDFEA0725F3D81FBB9B6 /* DeviceGuru */;
 			targetProxy = 2CCC48ED8807D5F6B48888A67904AFE6 /* PBXContainerItemProxy */;
 		};
-		A9F3A4A06F30ED1751F22D4BA2B9C0CE /* PBXTargetDependency */ = {
+		EF07F58E00CE8AAA7B302D0DC51E6106 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "DeviceGuru-DeviceGuru";
-			target = 40401684B0E657AE65FCF85C74A14C1B /* DeviceGuru-DeviceGuru */;
-			targetProxy = 41BAC4E43BEAED82A8BF7A92F2955637 /* PBXContainerItemProxy */;
+			target = D8BE0AD446F8A48DB1B9C574D840F012 /* DeviceGuru-DeviceGuru */;
+			targetProxy = 144EAD4D72750835858146A638E8B596 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		24169839FCA8A9689CEB460FEADD7299 /* Debug */ = {
+		078CD02D18DAE53D34FA2C063962DCAE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60FC429E8277267044FC9F22B6EE1C5B /* DeviceGuru.xcconfig */;
+			baseConfigurationReference = FF5DC57F1275BE7F627C33ACBE233486 /* DeviceGuru.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -384,6 +388,33 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		16BEDA10E40767498B3470653F5C141F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5DC57F1275BE7F627C33ACBE233486 /* DeviceGuru.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DeviceGuru/DeviceGuru-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DeviceGuru/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DeviceGuru/DeviceGuru.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DeviceGuru;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		400E8888BC9F49702F49DEB170637CA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -416,48 +447,9 @@
 			};
 			name = Debug;
 		};
-		80BEF47CAF132A6EF886D9211E23D917 /* Release */ = {
+		55796FF46F7525F43EDA52207EED24F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60FC429E8277267044FC9F22B6EE1C5B /* DeviceGuru.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DeviceGuru;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		90F843E7584B3BDC80E55C7C1FF6AF3F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60FC429E8277267044FC9F22B6EE1C5B /* DeviceGuru.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DeviceGuru/DeviceGuru-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DeviceGuru/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DeviceGuru/DeviceGuru.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DeviceGuru;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9A871D4172E25A84126E729A1EF02CA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60FC429E8277267044FC9F22B6EE1C5B /* DeviceGuru.xcconfig */;
+			baseConfigurationReference = FF5DC57F1275BE7F627C33ACBE233486 /* DeviceGuru.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = DeviceGuru;
@@ -466,6 +458,18 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
+		};
+		7C8ACA6AB9AF4B116886C480B7BC9100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5DC57F1275BE7F627C33ACBE233486 /* DeviceGuru.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DeviceGuru;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -573,20 +577,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2232F46F12600759DE316E3F050E130D /* Build configuration list for PBXNativeTarget "DeviceGuru" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24169839FCA8A9689CEB460FEADD7299 /* Debug */,
-				90F843E7584B3BDC80E55C7C1FF6AF3F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
 				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EF75C5B70FC48C3C6AFDCB643FA8EED /* Build configuration list for PBXNativeTarget "DeviceGuru-DeviceGuru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55796FF46F7525F43EDA52207EED24F0 /* Debug */,
+				7C8ACA6AB9AF4B116886C480B7BC9100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -600,11 +604,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2B3EC149ADDE464BCDD1006ACE77714 /* Build configuration list for PBXNativeTarget "DeviceGuru-DeviceGuru" */ = {
+		AE1EDE447E75621D956F50BB7FE394B0 /* Build configuration list for PBXNativeTarget "DeviceGuru" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A871D4172E25A84126E729A1EF02CA1 /* Debug */,
-				80BEF47CAF132A6EF886D9211E23D917 /* Release */,
+				078CD02D18DAE53D34FA2C063962DCAE /* Debug */,
+				16BEDA10E40767498B3470653F5C141F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
