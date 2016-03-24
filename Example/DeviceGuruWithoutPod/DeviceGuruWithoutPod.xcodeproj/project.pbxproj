@@ -14,6 +14,7 @@
 		911ABF7B1CA126040046C145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911ABF791CA126040046C145 /* LaunchScreen.storyboard */; };
 		911ABF841CA126690046C145 /* DeviceGuru.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911ABF821CA126690046C145 /* DeviceGuru.swift */; };
 		911ABF851CA126690046C145 /* DeviceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 911ABF831CA126690046C145 /* DeviceList.plist */; };
+		91B221861CA40C49003AA17B /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B221851CA40C49003AA17B /* Hardware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		911ABF7C1CA126040046C145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		911ABF821CA126690046C145 /* DeviceGuru.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceGuru.swift; path = ../../../DeviceGuru.swift; sourceTree = "<group>"; };
 		911ABF831CA126690046C145 /* DeviceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DeviceList.plist; path = ../../../DeviceList.plist; sourceTree = "<group>"; };
+		91B221851CA40C49003AA17B /* Hardware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hardware.swift; path = ../../../Hardware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		911ABF6F1CA126040046C145 /* DeviceGuruWithoutPod */ = {
 			isa = PBXGroup;
 			children = (
+				91B221851CA40C49003AA17B /* Hardware.swift */,
 				911ABF821CA126690046C145 /* DeviceGuru.swift */,
 				911ABF831CA126690046C145 /* DeviceList.plist */,
 				911ABF701CA126040046C145 /* AppDelegate.swift */,
@@ -146,6 +149,7 @@
 				911ABF841CA126690046C145 /* DeviceGuru.swift in Sources */,
 				911ABF731CA126040046C145 /* ViewController.swift in Sources */,
 				911ABF711CA126040046C145 /* AppDelegate.swift in Sources */,
+				91B221861CA40C49003AA17B /* Hardware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
