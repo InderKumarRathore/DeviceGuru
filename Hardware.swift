@@ -69,6 +69,8 @@ public enum Hardware {
   case IPAD_AIR_2_WIFI
   case IPAD_AIR_2_WIFI_CELLULAR
   
+  case IPAD_PRO_97_WIFI
+  case IPAD_PRO_97_WIFI_CELLULAR
   case IPAD_PRO_WIFI
   case IPAD_PRO_WIFI_CELLULAR
   
