@@ -21,19 +21,19 @@ public class DeviceGuru {
     var name: [Int32] = [CTL_HW, HW_MACHINE]
     var size: Int = 2
     sysctl(&name, 2, nil, &size, &name, 0)
-    var hw_machine = [CChar](count: Int(size), repeatedValue: 0)
+    var hw_machine = [CChar](repeating: 0, count: Int(size))
     sysctl(&name, 2, &hw_machine, &size, &name, 0)
     
-    let hardware: String = String.fromCString(hw_machine)!
+    let hardware: String = String(cString: hw_machine)
     return hardware
   }
   
   private static func getDeviceList() -> [String: AnyObject]? {
     // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
     // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
-    let deviceUtilTopBundle = NSBundle(forClass:DeviceGuru.self)
-    if let url = deviceUtilTopBundle.URLForResource("DeviceGuru", withExtension: "bundle") {
-      let deviceUtilBundle = NSBundle(URL: url)
+    let deviceUtilTopBundle = Bundle(for:DeviceGuru.self)
+    if let url = deviceUtilTopBundle.urlForResource("DeviceGuru", withExtension: "bundle") {
+      let deviceUtilBundle = Bundle(url: url)
       if let path = deviceUtilBundle?.pathForResource("DeviceList", ofType: "plist") {
         return NSDictionary(contentsOfFile: path) as? [String: AnyObject]
       }
@@ -110,6 +110,9 @@ public class DeviceGuru {
     if (hardware == "iPad5,2")           { return Hardware.IPAD_MINI_4_WIFI_CELLULAR }
     if (hardware == "iPad5,3")           { return Hardware.IPAD_AIR_2_WIFI }
     if (hardware == "iPad5,4")           { return Hardware.IPAD_AIR_2_WIFI_CELLULAR }
+    
+    if (hardware == "iPad6,3")           { return Hardware.IPAD_PRO_97_WIFI }
+    if (hardware == "iPad6,4")           { return Hardware.IPAD_PRO_97_WIFI_CELLULAR }
     if (hardware == "iPad6,7")           { return Hardware.IPAD_PRO_WIFI }
     if (hardware == "iPad6,8")           { return Hardware.IPAD_PRO_WIFI_CELLULAR }
     
@@ -172,49 +175,52 @@ public class DeviceGuru {
   ///
   /// - returns: `CGSize` of the image captured by the device
   ///
-  class public func backCameraStillImageResolutionInPixels(hardware: Hardware) -> CGSize {
+  class public func backCameraStillImageResolutionInPixels(_ hardware: Hardware) -> CGSize {
     switch (hardware) {
-    case Hardware.IPHONE_2G, Hardware.IPHONE_3G:
-      return CGSizeMake(1600, 1200)
+    case .IPHONE_2G, .IPHONE_3G:
+      return CGSize(width: 1600, height: 1200)
       
-    case Hardware.IPHONE_3GS:
-      return CGSizeMake(2048, 1536)
+    case .IPHONE_3GS:
+      return CGSize(width: 2048, height: 1536)
       
-    case Hardware.IPHONE_4, Hardware.IPHONE_4_CDMA, Hardware.IPAD_3_WIFI, Hardware.IPAD_3_WIFI_CDMA, Hardware.IPAD_3, Hardware.IPAD_4_WIFI, Hardware.IPAD_4, Hardware.IPAD_4_GSM_CDMA:
-      return CGSizeMake(2592, 1936)
+    case .IPHONE_4, .IPHONE_4_CDMA, .IPAD_3_WIFI, .IPAD_3_WIFI_CDMA, .IPAD_3, .IPAD_4_WIFI, .IPAD_4, .IPAD_4_GSM_CDMA:
+      return CGSize(width: 2592, height: 1936)
       
-    case Hardware.IPHONE_4S, Hardware.IPHONE_5, Hardware.IPHONE_5_CDMA_GSM, Hardware.IPHONE_5C, Hardware.IPHONE_5C_CDMA_GSM, Hardware.IPHONE_6, Hardware.IPHONE_6_PLUS:
-      return CGSizeMake(3264, 2448)
+    case .IPHONE_4S, .IPHONE_5, .IPHONE_5_CDMA_GSM, .IPHONE_5C, .IPHONE_5C_CDMA_GSM, .IPHONE_6, .IPHONE_6_PLUS:
+      return CGSize(width: 3264, height: 2448)
       
-    case Hardware.IPOD_TOUCH_4G:
-      return CGSizeMake(960, 720)
+    case .IPOD_TOUCH_4G:
+      return CGSize(width: 960, height: 720)
       
-    case Hardware.IPOD_TOUCH_5G:
-      return CGSizeMake(2440, 1605)
+    case .IPOD_TOUCH_5G:
+      return CGSize(width: 2440, height: 1605)
       
-    case Hardware.IPAD_2_WIFI, Hardware.IPAD_2, Hardware.IPAD_2_CDMA:
-      return CGSizeMake(872, 720)
+    case .IPAD_2_WIFI, .IPAD_2, .IPAD_2_CDMA:
+      return CGSize(width: 872, height: 720)
       
-    case Hardware.IPAD_MINI_WIFI, Hardware.IPAD_MINI, Hardware.IPAD_MINI_WIFI_CDMA:
-      return CGSizeMake(1820, 1304)
+    case .IPAD_MINI_WIFI, .IPAD_MINI, .IPAD_MINI_WIFI_CDMA:
+      return CGSize(width: 1820, height: 1304)
 
-    case Hardware.IPAD_MINI_4_WIFI, Hardware.IPAD_MINI_4_WIFI_CELLULAR: 
-      return CGSizeMake(2448, 3264)
+    case .IPAD_MINI_4_WIFI, .IPAD_MINI_4_WIFI_CELLULAR:
+      return CGSize(width: 3264, height: 2448)
 
-    case Hardware.IPAD_AIR_2_WIFI, Hardware.IPAD_AIR_2_WIFI_CELLULAR:
-      return CGSizeMake(1536, 2048)
+    case .IPAD_AIR_2_WIFI, .IPAD_AIR_2_WIFI_CELLULAR:
+      return CGSize(width: 2048, height: 1536)
     
-    case Hardware.IPHONE_6S, Hardware.IPHONE_6S_PLUS, Hardware.IPHONE_SE:
-      return CGSizeMake(3024, 4032)
-        
-    case Hardware.IPAD_PRO_WIFI, Hardware.IPAD_PRO_WIFI_CELLULAR:
-      return CGSizeMake(2448, 3264)
+    case .IPHONE_6S, .IPHONE_6S_PLUS, Hardware.IPHONE_SE:
+      return CGSize(width: 4032, height: 3024)
+      
+    case .IPAD_PRO_97_WIFI, .IPAD_PRO_97_WIFI_CELLULAR:
+        return CGSize(width: 4032, height: 3024)
+    case .IPAD_PRO_WIFI, .IPAD_PRO_WIFI_CELLULAR:
+      return CGSize(width: 3264, height: 2448)
  
     default:
-      print("We have no resolution for your device's camera listed in this category. Please, make photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/DeviceGuru) on GitHub.com in format Device = Hpx x Wpx.") }
+      print("We have no resolution for your device's camera listed in this category. Please, take photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/DeviceGuru) on GitHub.com in format Device = Wpx x Hpx.")
+    }
     print("Your device is: \(hardwareDescription())")
     
-    return CGSizeZero
+    return CGSize.zero
   }
   
   /// Internal method for loggin, you don't need this method
@@ -222,7 +228,7 @@ public class DeviceGuru {
   /// - parameters:
   ///     - hardware: `String` hardware type of the device
   ///
-  private static func logMessage(hardware: String) {
+  private static func logMessage(_ hardware: String) {
     print("This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/DeviceGuru and add a comment there.")
     print("Your device hardware string is: %@", hardware)
   }
