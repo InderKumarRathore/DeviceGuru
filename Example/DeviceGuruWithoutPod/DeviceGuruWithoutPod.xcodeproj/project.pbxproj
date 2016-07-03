@@ -100,12 +100,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Inder Kumar Rathore";
 				TargetAttributes = {
 					911ABF6C1CA126040046C145 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = UZ588YPX8M;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -269,6 +270,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rathore.DeviceGuruWithoutPod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -283,6 +285,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rathore.DeviceGuruWithoutPod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
