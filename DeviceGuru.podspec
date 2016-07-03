@@ -6,7 +6,9 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/InderKumarRathore/DeviceGuru'
   s.social_media_url    = "https://twitter.com/InderKRathore"
   s.authors = { 'Inder Kumar Rathore' => 'contact.mr.rathore@gmail.com' }
-  s.source = { :git => 'https://github.com/InderKumarRathore/DeviceGuru.git', :branch => 'develop',  s.ios.deployment_target = '8.0'
+  s.source = { :git => 'https://github.com/InderKumarRathore/DeviceGuru.git', :branch => 'develop', :tag => s.version }
+
+  s.ios.deployment_target = '8.0'
   s.source_files = '*.swift'
   s.resource_bundles = {s.name => ['DeviceList.plist']}
   s.requires_arc = true
