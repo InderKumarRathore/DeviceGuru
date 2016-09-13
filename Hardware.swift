@@ -9,70 +9,70 @@
 
 /// Enum for different iPhone/iPad devices
 public enum Hardware {
-  case NOT_AVAILABLE
+  case not_AVAILABLE
   
-  case IPHONE_2G
-  case IPHONE_3G
-  case IPHONE_3GS
+  case iphone_2G
+  case iphone_3G
+  case iphone_3GS
   
-  case IPHONE_4
-  case IPHONE_4_CDMA
-  case IPHONE_4S
+  case iphone_4
+  case iphone_4_CDMA
+  case iphone_4S
   
-  case IPHONE_5
-  case IPHONE_5_CDMA_GSM
-  case IPHONE_5C
-  case IPHONE_5C_CDMA_GSM
-  case IPHONE_5S
-  case IPHONE_5S_CDMA_GSM
+  case iphone_5
+  case iphone_5_CDMA_GSM
+  case iphone_5C
+  case iphone_5C_CDMA_GSM
+  case iphone_5S
+  case iphone_5S_CDMA_GSM
   
-  case IPHONE_6
-  case IPHONE_6_PLUS
-  case IPHONE_6S
-  case IPHONE_6S_PLUS
-  case IPHONE_SE
+  case iphone_6
+  case iphone_6_PLUS
+  case iphone_6S
+  case iphone_6S_PLUS
+  case iphone_SE
   
-  case IPOD_TOUCH_1G
-  case IPOD_TOUCH_2G
-  case IPOD_TOUCH_3G
-  case IPOD_TOUCH_4G
-  case IPOD_TOUCH_5G
-  case IPOD_TOUCH_6G
+  case ipod_TOUCH_1G
+  case ipod_TOUCH_2G
+  case ipod_TOUCH_3G
+  case ipod_TOUCH_4G
+  case ipod_TOUCH_5G
+  case ipod_TOUCH_6G
   
-  case IPAD
-  case IPAD_2
-  case IPAD_2_WIFI
-  case IPAD_2_CDMA
-  case IPAD_3
-  case IPAD_3G
-  case IPAD_3_WIFI
-  case IPAD_3_WIFI_CDMA
-  case IPAD_4
-  case IPAD_4_WIFI
-  case IPAD_4_GSM_CDMA
+  case ipad
+  case ipad_2
+  case ipad_2_WIFI
+  case ipad_2_CDMA
+  case ipad_3
+  case ipad_3G
+  case ipad_3_WIFI
+  case ipad_3_WIFI_CDMA
+  case ipad_4
+  case ipad_4_WIFI
+  case ipad_4_GSM_CDMA
   
-  case IPAD_MINI
-  case IPAD_MINI_WIFI
-  case IPAD_MINI_WIFI_CDMA
-  case IPAD_MINI_RETINA_WIFI
-  case IPAD_MINI_RETINA_WIFI_CDMA
-  case IPAD_MINI_3_WIFI
-  case IPAD_MINI_3_WIFI_CELLULAR
-  case IPAD_MINI_3_WIFI_CELLULAR_CN
-  case IPAD_MINI_4_WIFI
-  case IPAD_MINI_4_WIFI_CELLULAR
-  case IPAD_MINI_RETINA_WIFI_CELLULAR_CN
+  case ipad_MINI
+  case ipad_MINI_WIFI
+  case ipad_MINI_WIFI_CDMA
+  case ipad_MINI_RETINA_WIFI
+  case ipad_MINI_RETINA_WIFI_CDMA
+  case ipad_MINI_3_WIFI
+  case ipad_MINI_3_WIFI_CELLULAR
+  case ipad_MINI_3_WIFI_CELLULAR_CN
+  case ipad_MINI_4_WIFI
+  case ipad_MINI_4_WIFI_CELLULAR
+  case ipad_MINI_RETINA_WIFI_CELLULAR_CN
   
-  case IPAD_AIR_WIFI
-  case IPAD_AIR_WIFI_GSM
-  case IPAD_AIR_WIFI_CDMA
-  case IPAD_AIR_2_WIFI
-  case IPAD_AIR_2_WIFI_CELLULAR
+  case ipad_AIR_WIFI
+  case ipad_AIR_WIFI_GSM
+  case ipad_AIR_WIFI_CDMA
+  case ipad_AIR_2_WIFI
+  case ipad_AIR_2_WIFI_CELLULAR
   
-  case IPAD_PRO_97_WIFI
-  case IPAD_PRO_97_WIFI_CELLULAR
-  case IPAD_PRO_WIFI
-  case IPAD_PRO_WIFI_CELLULAR
+  case ipad_PRO_97_WIFI
+  case ipad_PRO_97_WIFI_CELLULAR
+  case ipad_PRO_WIFI
+  case ipad_PRO_WIFI_CELLULAR
   
-  case SIMULATOR
+  case simulator
 }

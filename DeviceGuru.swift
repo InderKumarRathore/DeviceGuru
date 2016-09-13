@@ -10,35 +10,35 @@
 import Foundation
 import UIKit
 
-public class DeviceGuru {
+open class DeviceGuru {
   
   /// This method retruns the hardware type
   ///
   ///
   /// - returns: raw `String` of device type
   ///
-  class public func hardwareString() -> String {
+  class open func hardwareString() -> String {
     var name: [Int32] = [CTL_HW, HW_MACHINE]
     var size: Int = 2
     sysctl(&name, 2, nil, &size, &name, 0)
-    var hw_machine = [CChar](count: Int(size), repeatedValue: 0)
+    var hw_machine = [CChar](repeating: 0, count: Int(size))
     sysctl(&name, 2, &hw_machine, &size, &name, 0)
     
-    let hardware: String = String.fromCString(hw_machine)!
+    let hardware: String = String(cString: hw_machine)
     return hardware
   }
   
-  private static func getDeviceList() -> [String: AnyObject]? {
+  fileprivate static func getDeviceList() -> [String: AnyObject]? {
     // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
     // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
-    let deviceUtilTopBundle = NSBundle(forClass:DeviceGuru.self)
-    if let url = deviceUtilTopBundle.URLForResource("DeviceGuru", withExtension: "bundle") {
-      let deviceUtilBundle = NSBundle(URL: url)
-      if let path = deviceUtilBundle?.pathForResource("DeviceList", ofType: "plist") {
+    let deviceUtilTopBundle = Bundle(for:DeviceGuru.self)
+    if let url = deviceUtilTopBundle.url(forResource: "DeviceGuru", withExtension: "bundle") {
+      let deviceUtilBundle = Bundle(url: url)
+      if let path = deviceUtilBundle?.path(forResource: "DeviceList", ofType: "plist") {
         return NSDictionary(contentsOfFile: path) as? [String: AnyObject]
       }
     }
-    else if let path = deviceUtilTopBundle.pathForResource("DeviceList", ofType: "plist") {
+    else if let path = deviceUtilTopBundle.path(forResource: "DeviceList", ofType: "plist") {
         // falling back to main bundle
         return NSDictionary(contentsOfFile: path) as? [String: AnyObject]
     }
@@ -51,81 +51,81 @@ public class DeviceGuru {
   ///
   /// - returns: `Hardware` type of the device
   ///
-  class public func hardware() -> Hardware {
+  class open func hardware() -> Hardware {
     let hardware = hardwareString()
     
-    if (hardware == "iPhone1,1")         { return Hardware.IPHONE_2G }
-    if (hardware == "iPhone1,2")         { return Hardware.IPHONE_3G }
-    if (hardware == "iPhone2,1")         { return Hardware.IPHONE_3GS }
+    if (hardware == "iPhone1,1")         { return Hardware.iphone_2G }
+    if (hardware == "iPhone1,2")         { return Hardware.iphone_3G }
+    if (hardware == "iPhone2,1")         { return Hardware.iphone_3GS }
     
-    if (hardware == "iPhone3,1")         { return Hardware.IPHONE_4 }
-    if (hardware == "iPhone3,2")         { return Hardware.IPHONE_4 }
-    if (hardware == "iPhone3,3")         { return Hardware.IPHONE_4_CDMA }
-    if (hardware == "iPhone4,1")         { return Hardware.IPHONE_4S }
+    if (hardware == "iPhone3,1")         { return Hardware.iphone_4 }
+    if (hardware == "iPhone3,2")         { return Hardware.iphone_4 }
+    if (hardware == "iPhone3,3")         { return Hardware.iphone_4_CDMA }
+    if (hardware == "iPhone4,1")         { return Hardware.iphone_4S }
     
-    if (hardware == "iPhone5,1")         { return Hardware.IPHONE_5 }
-    if (hardware == "iPhone5,2")         { return Hardware.IPHONE_5_CDMA_GSM }
-    if (hardware == "iPhone5,3")         { return Hardware.IPHONE_5C }
-    if (hardware == "iPhone5,4")         { return Hardware.IPHONE_5C_CDMA_GSM }
-    if (hardware == "iPhone6,1")         { return Hardware.IPHONE_5S }
-    if (hardware == "iPhone6,2")         { return Hardware.IPHONE_5S_CDMA_GSM }
+    if (hardware == "iPhone5,1")         { return Hardware.iphone_5 }
+    if (hardware == "iPhone5,2")         { return Hardware.iphone_5_CDMA_GSM }
+    if (hardware == "iPhone5,3")         { return Hardware.iphone_5C }
+    if (hardware == "iPhone5,4")         { return Hardware.iphone_5C_CDMA_GSM }
+    if (hardware == "iPhone6,1")         { return Hardware.iphone_5S }
+    if (hardware == "iPhone6,2")         { return Hardware.iphone_5S_CDMA_GSM }
     
-    if (hardware == "iPhone7,1")         { return Hardware.IPHONE_6_PLUS }
-    if (hardware == "iPhone7,2")         { return Hardware.IPHONE_6 }
-    if (hardware == "iPhone8,2")         { return Hardware.IPHONE_6S_PLUS }
-    if (hardware == "iPhone8,1")         { return Hardware.IPHONE_6S }
-    if (hardware == "iPhone8,4")         { return Hardware.IPHONE_SE }
+    if (hardware == "iPhone7,1")         { return Hardware.iphone_6_PLUS }
+    if (hardware == "iPhone7,2")         { return Hardware.iphone_6 }
+    if (hardware == "iPhone8,2")         { return Hardware.iphone_6S_PLUS }
+    if (hardware == "iPhone8,1")         { return Hardware.iphone_6S }
+    if (hardware == "iPhone8,4")         { return Hardware.iphone_SE }
 
     
-    if (hardware == "iPod1,1")           { return Hardware.IPOD_TOUCH_1G }
-    if (hardware == "iPod2,1")           { return Hardware.IPOD_TOUCH_2G }
-    if (hardware == "iPod3,1")           { return Hardware.IPOD_TOUCH_3G }
-    if (hardware == "iPod4,1")           { return Hardware.IPOD_TOUCH_4G }
-    if (hardware == "iPod5,1")           { return Hardware.IPOD_TOUCH_5G }
+    if (hardware == "iPod1,1")           { return Hardware.ipod_TOUCH_1G }
+    if (hardware == "iPod2,1")           { return Hardware.ipod_TOUCH_2G }
+    if (hardware == "iPod3,1")           { return Hardware.ipod_TOUCH_3G }
+    if (hardware == "iPod4,1")           { return Hardware.ipod_TOUCH_4G }
+    if (hardware == "iPod5,1")           { return Hardware.ipod_TOUCH_5G }
     
-    if (hardware == "iPad1,1")           { return Hardware.IPAD }
-    if (hardware == "iPad1,2")           { return Hardware.IPAD_3G }
-    if (hardware == "iPad2,1")           { return Hardware.IPAD_2_WIFI }
-    if (hardware == "iPad2,2")           { return Hardware.IPAD_2 }
-    if (hardware == "iPad2,3")           { return Hardware.IPAD_2_CDMA }
-    if (hardware == "iPad2,4")           { return Hardware.IPAD_2 }
-    if (hardware == "iPad2,5")           { return Hardware.IPAD_MINI_WIFI }
-    if (hardware == "iPad2,6")           { return Hardware.IPAD_MINI }
-    if (hardware == "iPad2,7")           { return Hardware.IPAD_MINI_WIFI_CDMA }
-    if (hardware == "iPad3,1")           { return Hardware.IPAD_3_WIFI }
-    if (hardware == "iPad3,2")           { return Hardware.IPAD_3_WIFI_CDMA }
-    if (hardware == "iPad3,3")           { return Hardware.IPAD_3 }
-    if (hardware == "iPad3,4")           { return Hardware.IPAD_4_WIFI }
-    if (hardware == "iPad3,5")           { return Hardware.IPAD_4 }
-    if (hardware == "iPad3,6")           { return Hardware.IPAD_4_GSM_CDMA }
-    if (hardware == "iPad4,1")           { return Hardware.IPAD_AIR_WIFI }
-    if (hardware == "iPad4,2")           { return Hardware.IPAD_AIR_WIFI_GSM }
-    if (hardware == "iPad4,3")           { return Hardware.IPAD_AIR_WIFI_CDMA }
-    if (hardware == "iPad4,4")           { return Hardware.IPAD_MINI_RETINA_WIFI }
-    if (hardware == "iPad4,5")           { return Hardware.IPAD_MINI_RETINA_WIFI_CDMA }
-    if (hardware == "iPad4,6")           { return Hardware.IPAD_MINI_RETINA_WIFI_CELLULAR_CN }
-    if (hardware == "iPad4,7")           { return Hardware.IPAD_MINI_3_WIFI }
-    if (hardware == "iPad4,8")           { return Hardware.IPAD_MINI_3_WIFI_CELLULAR }
-    if (hardware == "iPad5,1")           { return Hardware.IPAD_MINI_4_WIFI }
-    if (hardware == "iPad5,2")           { return Hardware.IPAD_MINI_4_WIFI_CELLULAR }
-    if (hardware == "iPad5,3")           { return Hardware.IPAD_AIR_2_WIFI }
-    if (hardware == "iPad5,4")           { return Hardware.IPAD_AIR_2_WIFI_CELLULAR }
+    if (hardware == "iPad1,1")           { return Hardware.ipad }
+    if (hardware == "iPad1,2")           { return Hardware.ipad_3G }
+    if (hardware == "iPad2,1")           { return Hardware.ipad_2_WIFI }
+    if (hardware == "iPad2,2")           { return Hardware.ipad_2 }
+    if (hardware == "iPad2,3")           { return Hardware.ipad_2_CDMA }
+    if (hardware == "iPad2,4")           { return Hardware.ipad_2 }
+    if (hardware == "iPad2,5")           { return Hardware.ipad_MINI_WIFI }
+    if (hardware == "iPad2,6")           { return Hardware.ipad_MINI }
+    if (hardware == "iPad2,7")           { return Hardware.ipad_MINI_WIFI_CDMA }
+    if (hardware == "iPad3,1")           { return Hardware.ipad_3_WIFI }
+    if (hardware == "iPad3,2")           { return Hardware.ipad_3_WIFI_CDMA }
+    if (hardware == "iPad3,3")           { return Hardware.ipad_3 }
+    if (hardware == "iPad3,4")           { return Hardware.ipad_4_WIFI }
+    if (hardware == "iPad3,5")           { return Hardware.ipad_4 }
+    if (hardware == "iPad3,6")           { return Hardware.ipad_4_GSM_CDMA }
+    if (hardware == "iPad4,1")           { return Hardware.ipad_AIR_WIFI }
+    if (hardware == "iPad4,2")           { return Hardware.ipad_AIR_WIFI_GSM }
+    if (hardware == "iPad4,3")           { return Hardware.ipad_AIR_WIFI_CDMA }
+    if (hardware == "iPad4,4")           { return Hardware.ipad_MINI_RETINA_WIFI }
+    if (hardware == "iPad4,5")           { return Hardware.ipad_MINI_RETINA_WIFI_CDMA }
+    if (hardware == "iPad4,6")           { return Hardware.ipad_MINI_RETINA_WIFI_CELLULAR_CN }
+    if (hardware == "iPad4,7")           { return Hardware.ipad_MINI_3_WIFI }
+    if (hardware == "iPad4,8")           { return Hardware.ipad_MINI_3_WIFI_CELLULAR }
+    if (hardware == "iPad5,1")           { return Hardware.ipad_MINI_4_WIFI }
+    if (hardware == "iPad5,2")           { return Hardware.ipad_MINI_4_WIFI_CELLULAR }
+    if (hardware == "iPad5,3")           { return Hardware.ipad_AIR_2_WIFI }
+    if (hardware == "iPad5,4")           { return Hardware.ipad_AIR_2_WIFI_CELLULAR }
     
-    if (hardware == "iPad6,3")           { return Hardware.IPAD_PRO_97_WIFI }
-    if (hardware == "iPad6,4")           { return Hardware.IPAD_PRO_97_WIFI_CELLULAR }
-    if (hardware == "iPad6,7")           { return Hardware.IPAD_PRO_WIFI }
-    if (hardware == "iPad6,8")           { return Hardware.IPAD_PRO_WIFI_CELLULAR }
+    if (hardware == "iPad6,3")           { return Hardware.ipad_PRO_97_WIFI }
+    if (hardware == "iPad6,4")           { return Hardware.ipad_PRO_97_WIFI_CELLULAR }
+    if (hardware == "iPad6,7")           { return Hardware.ipad_PRO_WIFI }
+    if (hardware == "iPad6,8")           { return Hardware.ipad_PRO_WIFI_CELLULAR }
     
-    if (hardware == "i386")              { return Hardware.SIMULATOR }
-    if (hardware == "x86_64")            { return Hardware.SIMULATOR }
-    if (hardware.hasPrefix("iPhone"))    { return Hardware.SIMULATOR }
-    if (hardware.hasPrefix("iPod"))      { return Hardware.SIMULATOR }
-    if (hardware.hasPrefix("iPad"))      { return Hardware.SIMULATOR }
+    if (hardware == "i386")              { return Hardware.simulator }
+    if (hardware == "x86_64")            { return Hardware.simulator }
+    if (hardware.hasPrefix("iPhone"))    { return Hardware.simulator }
+    if (hardware.hasPrefix("iPod"))      { return Hardware.simulator }
+    if (hardware.hasPrefix("iPad"))      { return Hardware.simulator }
     
     //log message that your device is not present in the list
     logMessage(hardware)
     
-    return Hardware.NOT_AVAILABLE
+    return Hardware.not_AVAILABLE
   }
   
   
@@ -133,7 +133,7 @@ public class DeviceGuru {
   ///
   /// - returns: readable description `String` of the device
   ///
-  class public func hardwareDescription() -> String? {
+  class open func hardwareDescription() -> String? {
     let hardware = hardwareString()
     if let deviceList = getDeviceList() {
       let hardwareDetail = deviceList[hardware] as? [String: AnyObject]
@@ -151,7 +151,7 @@ public class DeviceGuru {
   /// This method returns the hardware number not actual but logically.
   /// e.g. if the hardware string is 5,1 then hardware number would be 5.1
   ///
-  class public func hardwareNumber() -> Float {
+  class open func hardwareNumber() -> Float {
     let hardware = hardwareString()
     if let deviceList = getDeviceList() {
       let hardwareDetail = deviceList[hardware] as? [String: AnyObject]
@@ -175,52 +175,52 @@ public class DeviceGuru {
   ///
   /// - returns: `CGSize` of the image captured by the device
   ///
-  class public func backCameraStillImageResolutionInPixels(hardware: Hardware) -> CGSize {
+  class open func backCameraStillImageResolutionInPixels(_ hardware: Hardware) -> CGSize {
     switch (hardware) {
-    case .IPHONE_2G, .IPHONE_3G:
-      return CGSizeMake(1600, 1200)
+    case .iphone_2G, .iphone_3G:
+      return CGSize(width: 1600, height: 1200)
       
-    case .IPHONE_3GS:
-      return CGSizeMake(2048, 1536)
+    case .iphone_3GS:
+      return CGSize(width: 2048, height: 1536)
       
-    case .IPHONE_4, .IPHONE_4_CDMA, .IPAD_3_WIFI, .IPAD_3_WIFI_CDMA, .IPAD_3, .IPAD_4_WIFI, .IPAD_4, .IPAD_4_GSM_CDMA:
-      return CGSizeMake(2592, 1936)
+    case .iphone_4, .iphone_4_CDMA, .ipad_3_WIFI, .ipad_3_WIFI_CDMA, .ipad_3, .ipad_4_WIFI, .ipad_4, .ipad_4_GSM_CDMA:
+      return CGSize(width: 2592, height: 1936)
       
-    case .IPHONE_4S, .IPHONE_5, .IPHONE_5_CDMA_GSM, .IPHONE_5C, .IPHONE_5C_CDMA_GSM, .IPHONE_6, .IPHONE_6_PLUS:
-      return CGSizeMake(3264, 2448)
+    case .iphone_4S, .iphone_5, .iphone_5_CDMA_GSM, .iphone_5C, .iphone_5C_CDMA_GSM, .iphone_6, .iphone_6_PLUS:
+      return CGSize(width: 3264, height: 2448)
       
-    case .IPOD_TOUCH_4G:
-      return CGSizeMake(960, 720)
+    case .ipod_TOUCH_4G:
+      return CGSize(width: 960, height: 720)
       
-    case .IPOD_TOUCH_5G:
-      return CGSizeMake(2440, 1605)
+    case .ipod_TOUCH_5G:
+      return CGSize(width: 2440, height: 1605)
       
-    case .IPAD_2_WIFI, .IPAD_2, .IPAD_2_CDMA:
-      return CGSizeMake(872, 720)
+    case .ipad_2_WIFI, .ipad_2, .ipad_2_CDMA:
+      return CGSize(width: 872, height: 720)
       
-    case .IPAD_MINI_WIFI, .IPAD_MINI, .IPAD_MINI_WIFI_CDMA:
-      return CGSizeMake(1820, 1304)
+    case .ipad_MINI_WIFI, .ipad_MINI, .ipad_MINI_WIFI_CDMA:
+      return CGSize(width: 1820, height: 1304)
 
-    case .IPAD_MINI_4_WIFI, .IPAD_MINI_4_WIFI_CELLULAR:
-      return CGSizeMake(3264, 2448)
+    case .ipad_MINI_4_WIFI, .ipad_MINI_4_WIFI_CELLULAR:
+      return CGSize(width: 3264, height: 2448)
 
-    case .IPAD_AIR_2_WIFI, .IPAD_AIR_2_WIFI_CELLULAR:
-      return CGSizeMake(2048, 1536)
+    case .ipad_AIR_2_WIFI, .ipad_AIR_2_WIFI_CELLULAR:
+      return CGSize(width: 2048, height: 1536)
     
-    case .IPHONE_6S, .IPHONE_6S_PLUS, Hardware.IPHONE_SE:
-      return CGSizeMake(4032, 3024)
+    case .iphone_6S, .iphone_6S_PLUS, Hardware.iphone_SE:
+      return CGSize(width: 4032, height: 3024)
       
-    case .IPAD_PRO_97_WIFI, .IPAD_PRO_97_WIFI_CELLULAR:
-        return CGSizeMake(4032, 3024)
-    case .IPAD_PRO_WIFI, .IPAD_PRO_WIFI_CELLULAR:
-      return CGSizeMake(3264, 2448)
+    case .ipad_PRO_97_WIFI, .ipad_PRO_97_WIFI_CELLULAR:
+        return CGSize(width: 4032, height: 3024)
+    case .ipad_PRO_WIFI, .ipad_PRO_WIFI_CELLULAR:
+      return CGSize(width: 3264, height: 2448)
  
     default:
       print("We have no resolution for your device's camera listed in this category. Please, take photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/DeviceGuru) on GitHub.com in format Device = Wpx x Hpx.")
     }
     print("Your device is: \(hardwareDescription())")
     
-    return CGSizeZero
+    return CGSize.zero
   }
   
   /// Internal method for loggin, you don't need this method
@@ -228,7 +228,7 @@ public class DeviceGuru {
   /// - parameters:
   ///     - hardware: `String` hardware type of the device
   ///
-  private static func logMessage(hardware: String) {
+  fileprivate static func logMessage(_ hardware: String) {
     print("This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/DeviceGuru and add a comment there.")
     print("Your device hardware string is: %@", hardware)
   }
