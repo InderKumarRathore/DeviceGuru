@@ -75,7 +75,11 @@ open class DeviceGuru {
     if (hardware == "iPhone8,2")         { return Hardware.iphone_6S_PLUS }
     if (hardware == "iPhone8,1")         { return Hardware.iphone_6S }
     if (hardware == "iPhone8,4")         { return Hardware.iphone_SE }
-
+    
+    if (hardware == "iPhone9,1")         { return Hardware.iphone_7 }
+    if (hardware == "iPhone9,2")         { return Hardware.iphone_7_PLUS }
+    if (hardware == "iPhone9,3")         { return Hardware.iphone_7 }
+    if (hardware == "iPhone9,4")         { return Hardware.iphone_7_PLUS }
     
     if (hardware == "iPod1,1")           { return Hardware.ipod_TOUCH_1G }
     if (hardware == "iPod2,1")           { return Hardware.ipod_TOUCH_2G }
@@ -207,7 +211,7 @@ open class DeviceGuru {
     case .ipad_AIR_2_WIFI, .ipad_AIR_2_WIFI_CELLULAR:
       return CGSize(width: 2048, height: 1536)
     
-    case .iphone_6S, .iphone_6S_PLUS, Hardware.iphone_SE:
+    case .iphone_6S, .iphone_6S_PLUS, .iphone_SE, .iphone_7, .iphone_7_PLUS:
       return CGSize(width: 4032, height: 3024)
       
     case .ipad_PRO_97_WIFI, .ipad_PRO_97_WIFI_CELLULAR:
