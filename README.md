@@ -46,17 +46,17 @@ Device | hardware() | hardwareString()
 --- | --- | ---
 iPhone 2G | ```iphone_2G``` | ```iPhone1,1```
 iPhone 3G | ```iphone_3G``` | ```iPhone1,2```
-iPhone 3GS| ```iphone_3GS``` | ```iPhone2,1```
-iPhone 4| ```iphone_4``` | ```iPhone3,1```
-iPhone 4| ```iphone_4``` | ```iPhone3,2```
+iPhone 3GS | ```iphone_3GS``` | ```iPhone2,1```
+iPhone 4 | ```iphone_4``` | ```iPhone3,1```
+iPhone 4 | ```iphone_4``` | ```iPhone3,2```
 iPhone 4 CDMA| ```iphone_4_CDMA``` | ```iPhone3,3```
-iPhone 4S| ```iphone_4S``` | ```iPhone4,1```
-iPhone 5| ```iphone_5``` | ```iPhone5,1```
+iPhone 4s | ```iphone_4S``` | ```iPhone4,1```
+iPhone 5 | ```iphone_5``` | ```iPhone5,1```
 iPhone 5 CDMA GSM | ```iphone_5_CDMA_GSM``` | ```iPhone5,2```
-iPhone 5C | ```iphone_5C``` | ```iPhone5,3```
-iPhone 5C CDMA GSM | ```iphone_5C_CDMA_GSM``` | ```iPhone5,4```
-iPhone 5S | ```iphone_5S``` | ```iPhone6,1```
-iPhone 5S CDMA GSM | ```iphone_5S_CDMA_GSM``` | ```iPhone6,2```
+iPhone 5c | ```iphone_5C``` | ```iPhone5,3```
+iPhone 5c CDMA GSM | ```iphone_5C_CDMA_GSM``` | ```iPhone5,4```
+iPhone 5s | ```iphone_5S``` | ```iPhone6,1```
+iPhone 5s CDMA GSM | ```iphone_5S_CDMA_GSM``` | ```iPhone6,2```
 iPhone 6 Plus | ```iphone_6_PLUS``` | ```iPhone7,1```
 iPhone 6 | ```iphone_6``` | ```iPhone7,2```
 iPhone 6s Plus | ```iphone_6S_PLUS``` | ```iPhone8,2```
@@ -70,11 +70,11 @@ iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,4```
 ##### iPod
 Device | hardware() | hardwareString()
 --- | ---- | ---
-iPod Touch 1G| ```ipod_TOUCH_1G``` | ```iPod1,1```
-iPod Touch 2G| ```ipod_TOUCH_2G``` | ```iPod2,1```
-iPod Touch 3G| ```ipod_TOUCH_3G``` | ```iPod3,1```
-iPod Touch 4G| ```ipod_TOUCH_4G``` | ```iPod4,1```
-iPod Touch 5G| ```ipod_TOUCH_5G``` | ```iPod5,1```
+iPod Touch 1G | ```ipod_TOUCH_1G``` | ```iPod1,1```
+iPod Touch 2G | ```ipod_TOUCH_2G``` | ```iPod2,1```
+iPod Touch 3G | ```ipod_TOUCH_3G``` | ```iPod3,1```
+iPod Touch 4G | ```ipod_TOUCH_4G``` | ```iPod4,1```
+iPod Touch 5G | ```ipod_TOUCH_5G``` | ```iPod5,1```
 
 ##### iPad
 Device | hardware() | hardwareString()
