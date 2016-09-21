@@ -2,15 +2,15 @@ PODS:
   - DeviceGuru (1.3.7)
 
 DEPENDENCIES:
-  - DeviceGuru (from `../../`)
+  - DeviceGuru (from `../`)
 
 EXTERNAL SOURCES:
   DeviceGuru:
-    :path: ../../
+    :path: ../
 
 SPEC CHECKSUMS:
   DeviceGuru: f847629dc0da0145ba48a9fc314e613ca4aa9caf
 
-PODFILE CHECKSUM: 2180dec55b9e320ffb6b34d988714e0286b6d781
+PODFILE CHECKSUM: 93a2eb46f0927699b1a53d7a6e0874d4fcf24450
 
 COCOAPODS: 1.0.1
