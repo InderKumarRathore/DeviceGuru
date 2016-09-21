@@ -35,83 +35,87 @@ import DeviceGuru
 ```
 In your code:
 ``` swift
-let deviceCode = DeviceGuru.hardwareString()
 let deviceName = DeviceGuru.hardware()
-print("\(deviceName) - \(deviceCode)") //Ex: IPHONE_6S_PLUS - iPhone8,2
+let deviceCode = DeviceGuru.hardwareString()
+print("\(deviceName) - \(deviceCode)") //Ex: iphone_7_PLUS - iPhone9,2
 ```
 
 ### Device codes
 ##### iPhone
 Device | hardware() | hardwareString()
 --- | --- | ---
-iPhone 2G | ```IPHONE_2G``` | ```iPhone1,1```
-iPhone 3G | ```IPHONE_3G``` | ```iPhone1,2```
-iPhone 3GS| ```IPHONE_3GS``` | ```iPhone2,1```
-iPhone 4| ```IPHONE_4``` | ```iPhone3,1```
-iPhone 4| ```IPHONE_4``` | ```iPhone3,2```
-iPhone 4 CDMA| ```IPHONE_4_CDMA``` | ```iPhone3,3```
-iPhone 4S| ```IPHONE_4S``` | ```iPhone4,1```
-iPhone 5| ```IPHONE_5``` | ```iPhone5,1```
-iPhone 5 CDMA GSM | ```IPHONE_5_CDMA_GSM``` | ```iPhone5,2```
-iPhone 5C | ```IPHONE_5C``` | ```iPhone5,3```
-iPhone 5C CDMA GSM | ```IPHONE_5C_CDMA_GSM``` | ```iPhone5,4```
-iPhone 5S | ```IPHONE_5S``` | ```iPhone6,1```
-iPhone 5S CDMA GSM | ```IPHONE_5S_CDMA_GSM``` | ```iPhone6,2```
-iPhone 6 Plus | ```IPHONE_6_PLUS``` | ```iPhone7,1```
-iPhone 6 | ```IPHONE_6``` | ```iPhone7,2```
-iPhone 6s Plus | ```IPHONE_6S_PLUS``` | ```iPhone8,2```
-iPhone 6s | ```IPHONE_6S``` | ```iPhone8,2```
-iPhone SE | ```IPHONE_SE``` | ```iPhone8,4```
+iPhone 2G | ```iphone_2G``` | ```iPhone1,1```
+iPhone 3G | ```iphone_3G``` | ```iPhone1,2```
+iPhone 3GS | ```iphone_3GS``` | ```iPhone2,1```
+iPhone 4 | ```iphone_4``` | ```iPhone3,1```
+iPhone 4 | ```iphone_4``` | ```iPhone3,2```
+iPhone 4 CDMA| ```iphone_4_CDMA``` | ```iPhone3,3```
+iPhone 4s | ```iphone_4S``` | ```iPhone4,1```
+iPhone 5 | ```iphone_5``` | ```iPhone5,1```
+iPhone 5 CDMA GSM | ```iphone_5_CDMA_GSM``` | ```iPhone5,2```
+iPhone 5c | ```iphone_5C``` | ```iPhone5,3```
+iPhone 5c CDMA GSM | ```iphone_5C_CDMA_GSM``` | ```iPhone5,4```
+iPhone 5s | ```iphone_5S``` | ```iPhone6,1```
+iPhone 5s CDMA GSM | ```iphone_5S_CDMA_GSM``` | ```iPhone6,2```
+iPhone 6 Plus | ```iphone_6_PLUS``` | ```iPhone7,1```
+iPhone 6 | ```iphone_6``` | ```iPhone7,2```
+iPhone 6s Plus | ```iphone_6S_PLUS``` | ```iPhone8,2```
+iPhone 6s | ```iphone_6S``` | ```iPhone8,2```
+iPhone SE | ```iphone_SE``` | ```iPhone8,4```
+iPhone 7 | ```iphone_7``` | ```iPhone9,1```
+iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,2```
+iPhone 7 | ```iphone_7``` | ```iPhone9,3```
+iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,4```
 
 ##### iPod
 Device | hardware() | hardwareString()
 --- | ---- | ---
-iPod Touch 1G| ```IPOD_TOUCH_1G``` | ```iPod1,1```
-iPod Touch 2G| ```IPOD_TOUCH_2G``` | ```iPod2,1```
-iPod Touch 3G| ```IPOD_TOUCH_3G``` | ```iPod3,1```
-iPod Touch 4G| ```IPOD_TOUCH_4G``` | ```iPod4,1```
-iPod Touch 5G| ```IPOD_TOUCH_5G``` | ```iPod5,1```
+iPod Touch 1G | ```ipod_TOUCH_1G``` | ```iPod1,1```
+iPod Touch 2G | ```ipod_TOUCH_2G``` | ```iPod2,1```
+iPod Touch 3G | ```ipod_TOUCH_3G``` | ```iPod3,1```
+iPod Touch 4G | ```ipod_TOUCH_4G``` | ```iPod4,1```
+iPod Touch 5G | ```ipod_TOUCH_5G``` | ```iPod5,1```
 
 ##### iPad
 Device | hardware() | hardwareString()
 --- | --- | ---
-iPad | ```IPAD``` | ```iPad1,1```
-iPad 3G | ```IPAD_3G``` | ```iPad1,2```
-iPad 2 Wifi | ```IPAD_2_WIFI``` | ```iPad2,1```
-iPad 2 | ```IPAD_2 ``` | ```iPad2,2```
-iPad 2 CDMA | ```IPAD_2_CDMA``` | ```iPad2,3```
-iPad 2 | ```IPAD_2``` | ```iPad2,4```
-iPad Mini WIFI | ```IPAD_MINI_WIFI``` | ```iPad2,5```
-iPad 3 WIFI | ```IPAD_3_WIFI``` | ```iPad3,1```
-iPad 3 CDMA | ```IPAD_3_WIFI_CDMA``` | ```iPad3,2```
-iPad 3 | ```IPAD_3``` | ```iPad3,3```
-iPad 4 WIFI | ```IPAD_4_WIFI``` | ```iPad3,4```
-iPad 4 | ```IPAD_4``` | ```iPad3,5```
-iPad 4 GSM CDMA | ```IPAD_4_GSM_CDMA``` | ```iPad3,6```
-iPad Air | ```IPAD_AIR_WIFI``` | ```iPad4,1```
-iPad Air GSM  | ```IPAD_AIR_WIFI_GSM``` | ```iPad4,2```
-iPad Air CDMA  | ```IPAD_AIR_WIFI_CDMA``` | ```iPad4,3```
-iPad Mini Retina  | ```IPAD_MINI_RETINA_WIFI``` | ```iPad4,4```
-iPad Mini Retina CDMA  | ```IPAD_MINI_RETINA_WIFI_CDMA``` | ```iPad4,5```
-iPad Mini Retina Cellular CN  | ```IPAD_MINI_RETINA_WIFI_CELLULAR_CN``` | ```iPad4,6```
-iPad Mini 3  | ```IPAD_MINI_3_WIFI``` | ```iPad4,7```
-iPad Mini 3 Cellular  | ```IPAD_MINI_3_WIFI_CELLULAR``` | ```iPad4,8```
-iPad Mini 4  | ```IPAD_MINI_4_WIFI``` | ```iPad5.1```
-iPad Mini 4 Cellular  | ```IPAD_MINI_4_WIFI_CELLULAR``` | ```iPad5.2```
-iPad Air 2  | ```IPAD_AIR_2_WIFI``` | ```iPad5.3```
-iPad Pro 9.7 Wifi Only  | ```IPAD_PRO_97_WIFI``` | ```iPad6,3```
-iPad Pro 9.7 Wifi + Cellular  | ```IPAD_PRO_97_WIFI_CELLULAR``` | ```iPad6,4```
-iPad Pro  | ```IPAD_PRO_WIFI``` | ```iPad6,7```
-iPad Pro Cellular  | ```IPAD_PRO_WIFI_CELLULAR``` | ```iPad6,8```
+iPad | ```ipad``` | ```iPad1,1```
+iPad 3G | ```ipad_3G``` | ```iPad1,2```
+iPad 2 Wifi | ```ipad_2_WIFI``` | ```iPad2,1```
+iPad 2 | ```ipad_2 ``` | ```iPad2,2```
+iPad 2 CDMA | ```ipad_2_CDMA``` | ```iPad2,3```
+iPad 2 | ```ipad_2``` | ```iPad2,4```
+iPad Mini WIFI | ```ipad_MINI_WIFI``` | ```iPad2,5```
+iPad 3 WIFI | ```ipad_3_WIFI``` | ```iPad3,1```
+iPad 3 CDMA | ```ipad_3_WIFI_CDMA``` | ```iPad3,2```
+iPad 3 | ```ipad_3``` | ```iPad3,3```
+iPad 4 WIFI | ```ipad_4_WIFI``` | ```iPad3,4```
+iPad 4 | ```ipad_4``` | ```iPad3,5```
+iPad 4 GSM CDMA | ```ipad_4_GSM_CDMA``` | ```iPad3,6```
+iPad Air | ```ipad_AIR_WIFI``` | ```iPad4,1```
+iPad Air GSM  | ```ipad_AIR_WIFI_GSM``` | ```iPad4,2```
+iPad Air CDMA  | ```ipad_AIR_WIFI_CDMA``` | ```iPad4,3```
+iPad Mini Retina  | ```ipad_MINI_RETINA_WIFI``` | ```iPad4,4```
+iPad Mini Retina CDMA  | ```ipad_MINI_RETINA_WIFI_CDMA``` | ```iPad4,5```
+iPad Mini Retina Cellular CN  | ```ipad_MINI_RETINA_WIFI_CELLULAR_CN``` | ```iPad4,6```
+iPad Mini 3  | ```ipad_MINI_3_WIFI``` | ```iPad4,7```
+iPad Mini 3 Cellular  | ```ipad_MINI_3_WIFI_CELLULAR``` | ```iPad4,8```
+iPad Mini 4  | ```ipad_MINI_4_WIFI``` | ```iPad5.1```
+iPad Mini 4 Cellular  | ```ipad_MINI_4_WIFI_CELLULAR``` | ```iPad5.2```
+iPad Air 2  | ```ipad_AIR_2_WIFI``` | ```iPad5.3```
+iPad Pro 9.7 Wifi Only  | ```ipad_PRO_97_WIFI``` | ```iPad6,3```
+iPad Pro 9.7 Wifi + Cellular  | ```ipad_PRO_97_WIFI_CELLULAR``` | ```iPad6,4```
+iPad Pro  | ```ipad_PRO_WIFI``` | ```iPad6,7```
+iPad Pro Cellular  | ```ipad_PRO_WIFI_CELLULAR``` | ```iPad6,8```
 
 ##### Simulator
 Device | hardware() | hardwareString()
 --- | --- | ---
-Simulator  | ```SIMULATOR``` | ```i386```
-Simulator  | ```SIMULATOR``` | ```x86_64```
-Simulator  | ```SIMULATOR``` | ```hasPrefix("iPhone")```
-Simulator  | ```SIMULATOR``` | ```hasPrefix("iPod")```
-Simulator  | ```SIMULATOR``` | ```hasPrefix("iPad)```
+Simulator  | ```simulator``` | ```i386```
+Simulator  | ```simulator``` | ```x86_64```
+Simulator  | ```simulator``` | ```hasPrefix("iPhone")```
+Simulator  | ```simulator``` | ```hasPrefix("iPod")```
+Simulator  | ```simulator``` | ```hasPrefix("iPad)```
 
 
 
@@ -124,5 +128,3 @@ Send the pull request :)
 
 ### License
 DeviceGuru is available under the MIT license. See the LICENSE file for more info.
-
-
