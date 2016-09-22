@@ -17,6 +17,7 @@ DerivedData
 *.ipa
 .DS_Store
 # CocoaPods
+.swift-version
 #
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
