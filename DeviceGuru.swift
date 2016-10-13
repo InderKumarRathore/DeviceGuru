@@ -12,7 +12,7 @@ import UIKit
 
 open class DeviceGuru {
   
-  /// This method retruns the hardware type
+  /// This method returns the hardware type
   ///
   ///
   /// - returns: raw `String` of device type
