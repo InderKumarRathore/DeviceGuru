@@ -222,7 +222,7 @@ open class DeviceGuru {
     default:
       print("We have no resolution for your device's camera listed in this category. Please, take photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/DeviceGuru) on GitHub.com in format Device = Wpx x Hpx.")
     }
-    print("Your device is: \(hardwareDescription())")
+    print("Your device is: \(hardwareDescription() ?? "unknown")")
     
     return CGSize.zero
   }
