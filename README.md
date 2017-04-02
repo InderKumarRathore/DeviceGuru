@@ -107,6 +107,27 @@ iPad Pro 9.7 Wifi Only  | ```ipad_PRO_97_WIFI``` | ```iPad6,3```
 iPad Pro 9.7 Wifi + Cellular  | ```ipad_PRO_97_WIFI_CELLULAR``` | ```iPad6,4```
 iPad Pro  | ```ipad_PRO_WIFI``` | ```iPad6,7```
 iPad Pro Cellular  | ```ipad_PRO_WIFI_CELLULAR``` | ```iPad6,8```
+9.7-inch iPad Wifi  | ```ipad_2017_WIFI``` | ```iPad6,11```
+9.7-inch iPad Wifi + Cellular | ```ipad_2017_WIFI_CELLULAR``` | ```iPad6,12```
+
+##### Apple TV
+Device | hardware() | hardwareString()
+--- | --- | ---
+Apple TV 1G | ```appleTV_1G``` | ```appleTV1,1```
+Apple TV 2G | ```appleTV_2G``` | ```appleTV2,1```
+Apple TV 3G | ```appleTV_3G``` | ```appleTV3,1```
+Apple TV 3G rev A | ```appleTV_3_2G``` | ```appleTV3,2```
+Apple TV 4G | ```appleTV_4G``` | ```appleTV5,3```
+
+##### Apple Watch
+Device | hardware() | hardwareString()
+--- | --- | ---
+Apple Watch (38 mm) | ```appleWatch_38``` | ```Watch1,1```
+Apple Watch (42 mm) | ```appleWatch_42``` | ```Watch1,2```
+Apple Watch Series 2 (38 mm) | ```appleWatch_SERIES_2_38``` | ```Watch2,3```
+Apple Watch Series 2 (42 mm) | ```appleWatch_SERIES_2_42``` | ```Watch2,4```
+Apple Watch Series 1 (38 mm) | ```appleWatch_SERIES_1_38``` | ```Watch2,6```
+Apple Watch Series 1 (42 mm) | ```appleWatch_SERIES_1_42``` | ```Watch2,7```
 
 ##### Simulator
 Device | hardware() | hardwareString()
