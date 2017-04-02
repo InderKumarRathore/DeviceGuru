@@ -120,6 +120,22 @@ open class DeviceGuru {
     if (hardware == "iPad6,7")           { return Hardware.ipad_PRO_WIFI }
     if (hardware == "iPad6,8")           { return Hardware.ipad_PRO_WIFI_CELLULAR }
     
+    if (hardware == "iPad6,11")          { return Hardware.ipad_2017_WIFI }
+    if (hardware == "iPad6,12")          { return Hardware.ipad_2017_WIFI_CELLULAR }
+    
+    if (hardware == "AppleTV1,1")        { return Hardware.appleTV_1G }
+    if (hardware == "AppleTV2,1")        { return Hardware.appleTV_2G }
+    if (hardware == "AppleTV3,1")        { return Hardware.appleTV_3G }
+    if (hardware == "AppleTV3,2")        { return Hardware.appleTV_3_2G }
+    if (hardware == "AppleTV5,3")        { return Hardware.appleTV_4G }
+    
+    if (hardware == "Watch1,1")          { return Hardware.appleWatch_38 }
+    if (hardware == "Watch1,2")          { return Hardware.appleWatch_42 }
+    if (hardware == "Watch2,3")          { return Hardware.appleWatch_SERIES_2_38 }
+    if (hardware == "Watch2,4")          { return Hardware.appleWatch_SERIES_2_42 }
+    if (hardware == "Watch2,6")          { return Hardware.appleWatch_SERIES_1_38 }
+    if (hardware == "Watch2,7")          { return Hardware.appleWatch_SERIES_1_42 }
+    
     if (hardware == "i386")              { return Hardware.simulator }
     if (hardware == "x86_64")            { return Hardware.simulator }
     if (hardware.hasPrefix("iPhone"))    { return Hardware.simulator }
@@ -151,7 +167,6 @@ open class DeviceGuru {
     return nil
   }
   
-  ///
   /// This method returns the hardware number not actual but logically.
   /// e.g. if the hardware string is 5,1 then hardware number would be 5.1
   ///
