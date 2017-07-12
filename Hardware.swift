@@ -96,3 +96,19 @@ public enum Hardware {
   
   case simulator
 }
+
+/// Enum of the different Apple's device platforms
+public enum Platform: String {
+    
+    case iPhone = "iphone"
+    
+    case iPodTouch = "ipod"
+    
+    case iPad = "ipad"
+    
+    case appleTV = "appletv"
+    
+    case appleWatch = "watch"
+    
+    case unknown = "unknown"
+}
