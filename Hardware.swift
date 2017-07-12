@@ -76,6 +76,10 @@ public enum Hardware {
     case ipad_PRO_97_WIFI_CELLULAR
     case ipad_PRO_WIFI
     case ipad_PRO_WIFI_CELLULAR
+    case ipad_PRO_2G_WIFI
+    case ipad_PRO_2G_WIFI_CELLULAR
+    case ipad_PRO_105_WIFI
+    case ipad_PRO_105_WIFI_CELLULAR
     
     case ipad_2017_WIFI
     case ipad_2017_WIFI_CELLULAR
@@ -94,4 +98,20 @@ public enum Hardware {
     case appleWatch_SERIES_1_42
 
     case simulator
+}
+
+/// Enum of the different Apple's device platforms
+public enum Platform: String {
+    
+    case iPhone = "iphone"
+    
+    case iPodTouch = "ipod"
+    
+    case iPad = "ipad"
+    
+    case appleTV = "appletv"
+    
+    case appleWatch = "watch"
+    
+    case unknown = "unknown"
 }
