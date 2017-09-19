@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double DeviceGuruVersionNumber;
-FOUNDATION_EXPORT const unsigned char DeviceGuruVersionString[];
+FOUNDATION_EXPORT double Pods_TestDeviceGuruTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_TestDeviceGuruTestsVersionString[];
 

@@ -81,6 +81,11 @@ public enum Hardware {
   case ipad5_wifi
   case ipad5_wifi_cellular
   
+  case ipadPro2g_wifi
+  case ipadPro2g_wifi_cellular
+  case ipadPro_105_wifi
+  case ipadPro_105_wifi_cellular
+  
   case appleTv1g
   case appleTv2g
   case appleTv3g_2012
@@ -99,16 +104,10 @@ public enum Hardware {
 
 /// Enum of the different Apple's device platforms
 public enum Platform: String {
-    
     case iPhone = "iphone"
-    
     case iPodTouch = "ipod"
-    
     case iPad = "ipad"
-    
     case appleTV = "appletv"
-    
     case appleWatch = "watch"
-    
     case unknown = "unknown"
 }
