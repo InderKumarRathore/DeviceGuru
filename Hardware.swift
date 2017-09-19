@@ -5,93 +5,94 @@
 //  Created by Inder Kumar Rathore on 24/03/16.
 //  Copyright © 2016 Inder Kumar Rathore. All rights reserved.
 //
+//  Hardware string can be found @http://www.everymac.com
 
 
 /// Enum for different iPhone/iPad devices
 public enum Hardware {
-    case not_AVAILABLE
-
-    case iphone_2G
-    case iphone_3G
-    case iphone_3GS
-
-    case iphone_4
-    case iphone_4_CDMA
-    case iphone_4S
-
-    case iphone_5
-    case iphone_5_CDMA_GSM
-    case iphone_5C
-    case iphone_5C_CDMA_GSM
-    case iphone_5S
-    case iphone_5S_CDMA_GSM
-
-    case iphone_6
-    case iphone_6_PLUS
-    case iphone_6S
-    case iphone_6S_PLUS
-    case iphone_SE
-
-    case iphone_7
-    case iphone_7_PLUS
-
-    case ipod_TOUCH_1G
-    case ipod_TOUCH_2G
-    case ipod_TOUCH_3G
-    case ipod_TOUCH_4G
-    case ipod_TOUCH_5G
-    case ipod_TOUCH_6G
-
-    case ipad
-    case ipad_2
-    case ipad_2_WIFI
-    case ipad_2_CDMA
-    case ipad_3
-    case ipad_3G
-    case ipad_3_WIFI
-    case ipad_3_WIFI_CDMA
-    case ipad_4
-    case ipad_4_WIFI
-    case ipad_4_GSM_CDMA
-
-    case ipad_MINI
-    case ipad_MINI_WIFI
-    case ipad_MINI_WIFI_CDMA
-    case ipad_MINI_RETINA_WIFI
-    case ipad_MINI_RETINA_WIFI_CDMA
-    case ipad_MINI_3_WIFI
-    case ipad_MINI_3_WIFI_CELLULAR
-    case ipad_MINI_3_WIFI_CELLULAR_CN
-    case ipad_MINI_4_WIFI
-    case ipad_MINI_4_WIFI_CELLULAR
-    case ipad_MINI_RETINA_WIFI_CELLULAR_CN
-
-    case ipad_AIR_WIFI
-    case ipad_AIR_WIFI_GSM
-    case ipad_AIR_WIFI_CDMA
-    case ipad_AIR_2_WIFI
-    case ipad_AIR_2_WIFI_CELLULAR
-
-    case ipad_PRO_97_WIFI
-    case ipad_PRO_97_WIFI_CELLULAR
-    case ipad_PRO_WIFI
-    case ipad_PRO_WIFI_CELLULAR
-    
-    case ipad_2017_WIFI
-    case ipad_2017_WIFI_CELLULAR
-
-    case appleTV_1G
-    case appleTV_2G
-    case appleTV_3G
-    case appleTV_3_2G
-    case appleTV_4G
-    
-    case appleWatch_38
-    case appleWatch_42
-    case appleWatch_SERIES_2_38
-    case appleWatch_SERIES_2_42
-    case appleWatch_SERIES_1_38
-    case appleWatch_SERIES_1_42
-
-    case simulator
+  case notAvailable
+  
+  case iphone2g
+  case iphone3g
+  case iphone3gs
+  
+  case iphone4
+  case iphone4_cdma
+  case iphone4s
+  
+  case iphone5
+  case iphone5_cdma_gsm
+  case iphone5c
+  case iphone5c_cdma_gsm
+  case iphone5s
+  case iphone5s_cdma_gsm
+  
+  case iphone6
+  case iphone6Plus
+  case iphone6s
+  case iphone6sPlus
+  case iphoneSE
+  
+  case iphone7
+  case iphone7Plus
+  
+  case ipodTouch1g
+  case ipodTouch2g
+  case ipodTouch3g
+  case ipodTouch4g
+  case ipodTouch5g
+  case ipodTouch6g
+  
+  case ipad
+  case ipad2
+  case ipad2_wifi
+  case ipad2_cdma
+  case ipad3
+  case ipad3g
+  case ipad3_wifi
+  case ipad3_wifi_cdma
+  case ipad4
+  case ipad4_wifi
+  case ipad4_gsm_cdma
+  
+  case ipadMini
+  case ipadMini_wifi
+  case ipadMini_wifi_cdma
+  case ipadMiniRetina_wifi
+  case ipadMiniRetina_wifi_cdma
+  case ipadMini3_wifi
+  case ipadMini3_wifi_cellular
+  case ipadMini3_wifi_cellular_cn
+  case ipadMini4_wifi
+  case ipadMini4_wifi_cellular
+  case ipadMiniRetina_wifi_cellular_cn
+  
+  case ipadAir_wifi
+  case ipadAir_wifi_gsm
+  case ipadAir_wifi_cdma
+  case ipadAir2_wifi
+  case ipadAir2_wifi_cellular
+  
+  case ipadPro_97_wifi
+  case ipadPro_97_wifi_cellular
+  case ipadPro_wifi
+  case ipadPro_wifi_cellular
+  
+  case ipad5_wifi
+  case ipad5_wifi_cellular
+  
+  case appleTv1g
+  case appleTv2g
+  case appleTv3g_2012
+  case appleTv3g_2013
+  case appleTv4g
+  
+  case appleWatch_38
+  case appleWatch_42
+  case appleWatch_series_2_38
+  case appleWatch_series_2_42
+  case appleWatch_series_1_38
+  case appleWatch_series_1_42
+  
+  case simulator
 }
