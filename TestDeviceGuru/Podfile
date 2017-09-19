@@ -8,3 +8,8 @@ target 'TestDeviceGuru' do
     pod 'DeviceGuru', :path => '../'
 end
 
+target 'TestDeviceGuruTests' do
+#  pod 'DeviceGuru'
+    pod 'DeviceGuru', :path => '../'
+end
+
