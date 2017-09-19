@@ -119,6 +119,10 @@ open class DeviceGuru {
     if (hardware == "iPad6,4")           { return Hardware.ipad_PRO_97_WIFI_CELLULAR }
     if (hardware == "iPad6,7")           { return Hardware.ipad_PRO_WIFI }
     if (hardware == "iPad6,8")           { return Hardware.ipad_PRO_WIFI_CELLULAR }
+    if (hardware == "iPad7,1")           { return Hardware.ipad_PRO_2G_WIFI }
+    if (hardware == "iPad7,2")           { return Hardware.ipad_PRO_2G_WIFI_CELLULAR }
+    if (hardware == "iPad7,3")           { return Hardware.ipad_PRO_105_WIFI }
+    if (hardware == "iPad7,4")           { return Hardware.ipad_PRO_105_WIFI_CELLULAR }
     
     if (hardware == "iPad6,11")          { return Hardware.ipad_2017_WIFI }
     if (hardware == "iPad6,12")          { return Hardware.ipad_2017_WIFI_CELLULAR }
@@ -147,6 +151,24 @@ open class DeviceGuru {
     
     return Hardware.not_AVAILABLE
   }
+    
+    /// This method returns the Platform enum depending upon harware string
+    ///
+    ///
+    /// - returns: `Platform` type of the device
+    ///
+    class open func platform() -> Platform {
+        
+        let hardware = hardwareString().lowercased()
+        
+        if hardware.hasPrefix(Platform.iPhone.rawValue) { return Platform.iPhone }
+        if hardware.hasPrefix(Platform.iPodTouch.rawValue) { return Platform.iPodTouch }
+        if hardware.hasPrefix(Platform.iPad.rawValue) { return Platform.iPad }
+        if hardware.hasPrefix(Platform.appleTV.rawValue) { return Platform.appleTV }
+        if hardware.hasPrefix(Platform.appleWatch.rawValue) { return Platform.appleWatch }
+        
+        return Platform.unknown
+    }
   
   
   /// This method returns the readable description of hardware string
@@ -231,8 +253,12 @@ open class DeviceGuru {
       
     case .ipad_PRO_97_WIFI, .ipad_PRO_97_WIFI_CELLULAR:
         return CGSize(width: 4032, height: 3024)
+        
     case .ipad_PRO_WIFI, .ipad_PRO_WIFI_CELLULAR:
       return CGSize(width: 3264, height: 2448)
+        
+    case .ipad_PRO_2G_WIFI, .ipad_PRO_2G_WIFI_CELLULAR, .ipad_PRO_105_WIFI, .ipad_PRO_105_WIFI_CELLULAR:
+        return CGSize(width: 4032, height: 3024)
  
     default:
       print("We have no resolution for your device's camera listed in this category. Please, take photo with back camera of your device, get its resolution in pixels (via Preview Cmd+I for example) and add a comment to this repository (https://github.com/InderKumarRathore/DeviceGuru) on GitHub.com in format Device = Wpx x Hpx.")
