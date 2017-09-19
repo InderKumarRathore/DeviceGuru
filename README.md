@@ -37,7 +37,8 @@ In your code:
 ``` swift
 let deviceName = DeviceGuru.hardware()
 let deviceCode = DeviceGuru.hardwareString()
-print("\(deviceName) - \(deviceCode)") //Ex: iphone_7_PLUS - iPhone9,2
+let platform = DeviceGuru.platform()
+print("\(deviceName) - \(deviceCode) - \(platform.rawValue)") //Ex: iphone_7_PLUS - iPhone9,2 - iphone
 ```
 
 ### Device codes
@@ -109,6 +110,10 @@ iPad Pro  | ```ipad_PRO_WIFI``` | ```iPad6,7```
 iPad Pro Cellular  | ```ipad_PRO_WIFI_CELLULAR``` | ```iPad6,8```
 9.7-inch iPad Wifi  | ```ipad_2017_WIFI``` | ```iPad6,11```
 9.7-inch iPad Wifi + Cellular | ```ipad_2017_WIFI_CELLULAR``` | ```iPad6,12```
+iPad Pro 12.9-Inch (Wi-Fi Only - 2nd Gen) | ```ipad_PRO_2G_WIFI``` | ```iPad7,1```
+iPad Pro 12.9-Inch (Wi-Fi/Cell - 2nd Gen) | ```ipad_PRO_2G_WIFI_CELLULAR``` | ```iPad7,2```
+iPad Pro 10.5-Inch (Wi-Fi Only) | ```ipad_PRO_105_WIFI``` | ```iPad7,3```
+iPad Pro 10.5-Inch (Wi-Fi/Cellular) | ```ipad_PRO_105_WIFI_CELLULAR``` | ```iPad7,4```
 
 ##### Apple TV
 Device | hardware() | hardwareString()
