@@ -35,9 +35,10 @@ import DeviceGuru
 ```
 In your code:
 ``` swift
-let deviceName = DeviceGuru.hardware()
-let deviceCode = DeviceGuru.hardwareString()
-let platform = DeviceGuru.platform()
+let deviceGuru = DeviceGuru()
+let deviceName = deviceGuru.hardware()
+let deviceCode = deviceGuru.hardwareString()
+let platform = deviceGuru.platform()
 print("\(deviceName) - \(deviceCode) - \(platform.rawValue)") //Ex: iphone_7_PLUS - iPhone9,2 - iphone
 ```
 
