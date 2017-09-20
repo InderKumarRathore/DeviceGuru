@@ -18,7 +18,14 @@ then run the below command in terminal
 pod install
 ```
 
-##### Using without pods
+##### Using Carthage
+Specify DeviceGuru into your project's `Cartfile`:
+
+```ogdl
+github "InderKumarRathore/DeviceGuru" ~> 3.0
+```
+
+##### Manually
 Drag and drop
 ``` swift
 DeviceGuru.swift
