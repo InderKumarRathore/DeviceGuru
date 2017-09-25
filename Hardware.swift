@@ -36,6 +36,13 @@ public enum Hardware {
   case iphone7
   case iphone7Plus
   
+  case iphone8
+  case iphone8_cn
+  case iphone8Plus
+  case iphone8Plus_cn
+  case iphoneX
+  case iphoneX_cn
+  
   case ipodTouch1g
   case ipodTouch2g
   case ipodTouch3g

@@ -92,6 +92,15 @@ open class DeviceGuru {
     if (hardware == "iPhone9,2")         { return Hardware.iphone7Plus }
     if (hardware == "iPhone9,3")         { return Hardware.iphone7 }
     if (hardware == "iPhone9,4")         { return Hardware.iphone7Plus }
+
+    if (hardware == "iPhone10,1")         { return Hardware.iphone8_cn }
+    if (hardware == "iPhone10,2")         { return Hardware.iphone8Plus_cn }
+    if (hardware == "iPhone10,3")         { return Hardware.iphoneX_cn }
+    if (hardware == "iPhone10,4")         { return Hardware.iphone8 }
+    if (hardware == "iPhone10,5")         { return Hardware.iphone8Plus }
+    if (hardware == "iPhone10,6")         { return Hardware.iphoneX }
+    
+    
     
     if (hardware == "iPod1,1")           { return Hardware.ipodTouch1g }
     if (hardware == "iPod2,1")           { return Hardware.ipodTouch2g }
