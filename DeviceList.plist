@@ -25,6 +25,8 @@
 	</dict>
 	<key>iPhone3,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 4</string>
 		<key>version</key>
 		<real>3.1</real>
 		<key>name</key>
@@ -32,6 +34,8 @@
 	</dict>
 	<key>iPhone3,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 4</string>
 		<key>version</key>
 		<real>3.2</real>
 		<key>name</key>
@@ -39,6 +43,8 @@
 	</dict>
 	<key>iPhone3,3</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 4</string>
 		<key>version</key>
 		<real>3.3</real>
 		<key>name</key>
@@ -53,6 +59,8 @@
 	</dict>
 	<key>iPhone5,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 5</string>
 		<key>version</key>
 		<real>5.1</real>
 		<key>name</key>
@@ -60,6 +68,8 @@
 	</dict>
 	<key>iPhone5,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 5</string>
 		<key>version</key>
 		<real>5.2</real>
 		<key>name</key>
@@ -67,6 +77,8 @@
 	</dict>
 	<key>iPhone5,3</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 5c</string>
 		<key>version</key>
 		<real>5.3</real>
 		<key>name</key>
@@ -74,6 +86,8 @@
 	</dict>
 	<key>iPhone5,4</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 5c</string>
 		<key>version</key>
 		<real>5.4</real>
 		<key>name</key>
@@ -81,6 +95,8 @@
 	</dict>
 	<key>iPhone6,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 5s</string>
 		<key>version</key>
 		<real>6.1</real>
 		<key>name</key>
@@ -88,6 +104,8 @@
 	</dict>
 	<key>iPhone6,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 5s</string>
 		<key>version</key>
 		<real>6.2</real>
 		<key>name</key>
@@ -130,6 +148,8 @@
 	</dict>
 	<key>iPhone9,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 7</string>
 		<key>version</key>
 		<real>9.1</real>
 		<key>name</key>
@@ -158,6 +178,8 @@
 	</dict>
 	<key>iPhone10,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 8</string>
 		<key>version</key>
 		<real>10.1</real>
 		<key>name</key>
@@ -165,6 +187,8 @@
 	</dict>
 	<key>iPhone10,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 8</string>
 		<key>version</key>
 		<real>10.2</real>
 		<key>name</key>
@@ -186,6 +210,8 @@
 	</dict>
 	<key>iPhone10,5</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone 8 Plus</string>
 		<key>version</key>
 		<real>10.5</real>
 		<key>name</key>
@@ -193,6 +219,8 @@
 	</dict>
 	<key>iPhone10,6</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPhone X</string>
 		<key>version</key>
 		<real>10.6</real>
 		<key>name</key>
@@ -200,6 +228,8 @@
 	</dict>
 	<key>iPod1,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPod Touch 1</string>
 		<key>version</key>
 		<real>1.1</real>
 		<key>name</key>
@@ -207,6 +237,8 @@
 	</dict>
 	<key>iPod2,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPod Touch 2</string>
 		<key>version</key>
 		<real>2.1</real>
 		<key>name</key>
@@ -214,6 +246,8 @@
 	</dict>
 	<key>iPod3,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPod Touch 3</string>
 		<key>version</key>
 		<real>3.1</real>
 		<key>name</key>
@@ -221,6 +255,8 @@
 	</dict>
 	<key>iPod4,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPod Touch 4</string>
 		<key>version</key>
 		<real>4.1</real>
 		<key>name</key>
@@ -228,6 +264,8 @@
 	</dict>
 	<key>iPod5,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPod Touch 5</string>
 		<key>version</key>
 		<real>5.1</real>
 		<key>name</key>
@@ -235,6 +273,8 @@
 	</dict>
 	<key>iPod7,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPod Touch 6</string>
 		<key>version</key>
 		<real>7.1</real>
 		<key>name</key>
@@ -242,6 +282,8 @@
 	</dict>
 	<key>iPad1,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad</string>
 		<key>version</key>
 		<real>1.1</real>
 		<key>name</key>
@@ -249,6 +291,8 @@
 	</dict>
 	<key>iPad1,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad</string>
 		<key>version</key>
 		<real>1.2</real>
 		<key>name</key>
@@ -256,6 +300,8 @@
 	</dict>
 	<key>iPad2,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad 2</string>
 		<key>version</key>
 		<real>2.1</real>
 		<key>name</key>
@@ -263,6 +309,8 @@
 	</dict>
 	<key>iPad2,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad 2</string>
 		<key>version</key>
 		<real>2.2</real>
 		<key>name</key>
@@ -270,6 +318,8 @@
 	</dict>
 	<key>iPad2,3</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad 2</string>
 		<key>version</key>
 		<real>2.3</real>
 		<key>name</key>
@@ -277,6 +327,8 @@
 	</dict>
 	<key>iPad2,4</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad 2</string>
 		<key>version</key>
 		<real>2.4</real>
 		<key>name</key>
@@ -284,6 +336,8 @@
 	</dict>
 	<key>iPad2,5</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini</string>
 		<key>version</key>
 		<real>2.5</real>
 		<key>name</key>
@@ -291,6 +345,8 @@
 	</dict>
 	<key>iPad2,6</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini</string>
 		<key>version</key>
 		<real>2.6</real>
 		<key>name</key>
@@ -298,6 +354,8 @@
 	</dict>
 	<key>iPad2,7</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini</string>
 		<key>version</key>
 		<real>2.7</real>
 		<key>name</key>
@@ -305,6 +363,8 @@
 	</dict>
 	<key>iPad3,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad 3</string>
 		<key>version</key>
 		<real>3.1</real>
 		<key>name</key>
@@ -312,6 +372,8 @@
 	</dict>
 	<key>iPad3,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad 3</string>
 		<key>version</key>
 		<real>3.2</real>
 		<key>name</key>
@@ -319,6 +381,8 @@
 	</dict>
 	<key>iPad3,3</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad 3</string>
 		<key>version</key>
 		<real>3.3</real>
 		<key>name</key>
@@ -326,6 +390,8 @@
 	</dict>
 	<key>iPad3,4</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad 4</string>
 		<key>version</key>
 		<real>3.4</real>
 		<key>name</key>
@@ -333,6 +399,8 @@
 	</dict>
 	<key>iPad3,5</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad 4</string>
 		<key>version</key>
 		<real>3.5</real>
 		<key>name</key>
@@ -340,6 +408,8 @@
 	</dict>
 	<key>iPad3,6</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad 4</string>
 		<key>version</key>
 		<real>3.6</real>
 		<key>name</key>
@@ -347,6 +417,8 @@
 	</dict>
 	<key>iPad4,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Air</string>
 		<key>version</key>
 		<real>4.1</real>
 		<key>name</key>
@@ -354,6 +426,8 @@
 	</dict>
 	<key>iPad4,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Air</string>
 		<key>version</key>
 		<real>4.2</real>
 		<key>name</key>
@@ -361,6 +435,8 @@
 	</dict>
 	<key>iPad4,3</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Air</string>
 		<key>version</key>
 		<real>4.3</real>
 		<key>name</key>
@@ -368,6 +444,8 @@
 	</dict>
 	<key>iPad4,4</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini 2</string>
 		<key>version</key>
 		<real>4.4</real>
 		<key>name</key>
@@ -375,6 +453,8 @@
 	</dict>
 	<key>iPad4,5</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini 2</string>
 		<key>version</key>
 		<real>4.5</real>
 		<key>name</key>
@@ -382,6 +462,8 @@
 	</dict>
 	<key>iPad4,6</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini 2</string>
 		<key>version</key>
 		<real>4.6</real>
 		<key>name</key>
@@ -389,20 +471,26 @@
 	</dict>
 	<key>iPad4,7</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini 3</string>
 		<key>version</key>
 		<real>4.7</real>
 		<key>name</key>
-		<string>iPad Mini 3 (Wi-Fi)</string>
+		<string>iPad mini 3 (Wi-Fi)</string>
 	</dict>
 	<key>iPad4,8</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini 3</string>
 		<key>version</key>
 		<real>4.8</real>
 		<key>name</key>
-		<string>iPad Mini 3 (Wi-Fi + Cellular)</string>
+		<string>iPad mini 3 (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad4,9</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini 3</string>
 		<key>version</key>
 		<real>4.9</real>
 		<key>name</key>
@@ -410,6 +498,8 @@
 	</dict>
 	<key>iPad5,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini 4</string>
 		<key>version</key>
 		<real>5.1</real>
 		<key>name</key>
@@ -417,6 +507,8 @@
 	</dict>
 	<key>iPad5,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad mini 4</string>
 		<key>version</key>
 		<real>5.2</real>
 		<key>name</key>
@@ -424,6 +516,8 @@
 	</dict>
 	<key>iPad5,3</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Air 2</string>
 		<key>version</key>
 		<real>5.3</real>
 		<key>name</key>
@@ -431,6 +525,8 @@
 	</dict>
 	<key>iPad5,4</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Air 2</string>
 		<key>version</key>
 		<real>5.4</real>
 		<key>name</key>
@@ -438,6 +534,8 @@
 	</dict>
 	<key>iPad6,3</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Pro</string>
 		<key>version</key>
 		<real>6.3</real>
 		<key>name</key>
@@ -445,6 +543,8 @@
 	</dict>
 	<key>iPad6,4</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Pro</string>
 		<key>version</key>
 		<real>6.4</real>
 		<key>name</key>
@@ -452,6 +552,8 @@
 	</dict>
 	<key>iPad6,7</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Pro</string>
 		<key>version</key>
 		<real>6.7</real>
 		<key>name</key>
@@ -459,6 +561,8 @@
 	</dict>
 	<key>iPad6,8</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Pro</string>
 		<key>version</key>
 		<real>6.8</real>
 		<key>name</key>
@@ -466,6 +570,8 @@
 	</dict>
 	<key>iPad6,11</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad (2017)</string>
 		<key>version</key>
 		<real>6.11</real>
 		<key>name</key>
@@ -473,6 +579,8 @@
 	</dict>
 	<key>iPad6,12</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad (2017)</string>
 		<key>version</key>
 		<real>6.12</real>
 		<key>name</key>
@@ -480,6 +588,8 @@
 	</dict>
 	<key>iPad7,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Pro</string>
 		<key>version</key>
 		<real>7.1</real>
 		<key>name</key>
@@ -487,6 +597,8 @@
 	</dict>
 	<key>iPad7,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Pro</string>
 		<key>version</key>
 		<real>7.2</real>
 		<key>name</key>
@@ -494,6 +606,8 @@
 	</dict>
 	<key>iPad7,3</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Pro</string>
 		<key>version</key>
 		<real>7.3</real>
 		<key>name</key>
@@ -501,6 +615,8 @@
 	</dict>
 	<key>iPad7,4</key>
 	<dict>
+		<key>shortname</key>
+		<string>iPad Pro</string>
 		<key>version</key>
 		<real>7.4</real>
 		<key>name</key>
@@ -508,6 +624,8 @@
 	</dict>
 	<key>appleTV1,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple TV</string>
 		<key>version</key>
 		<real>1.1</real>
 		<key>name</key>
@@ -515,6 +633,8 @@
 	</dict>
 	<key>appleTV2,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple TV</string>
 		<key>version</key>
 		<real>2.1</real>
 		<key>name</key>
@@ -522,6 +642,8 @@
 	</dict>
 	<key>appleTV3,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple TV</string>
 		<key>version</key>
 		<real>3.1</real>
 		<key>name</key>
@@ -529,6 +651,8 @@
 	</dict>
 	<key>appleTV3,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple TV</string>
 		<key>version</key>
 		<real>3.2</real>
 		<key>name</key>
@@ -536,6 +660,8 @@
 	</dict>
 	<key>appleTV5,3</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple TV</string>
 		<key>version</key>
 		<string>5,3</string>
 		<key>name</key>
@@ -543,6 +669,8 @@
 	</dict>
 	<key>Watch1,1</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple Watch</string>
 		<key>version</key>
 		<real>1.1</real>
 		<key>name</key>
@@ -550,6 +678,8 @@
 	</dict>
 	<key>Watch1,2</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple Watch</string>
 		<key>version</key>
 		<real>1.2</real>
 		<key>name</key>
@@ -557,6 +687,8 @@
 	</dict>
 	<key>Watch2,3</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple Watch Series 2</string>
 		<key>version</key>
 		<real>2.3</real>
 		<key>name</key>
@@ -564,6 +696,8 @@
 	</dict>
 	<key>Watch2,4</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple Watch Series 2</string>
 		<key>version</key>
 		<real>2.4</real>
 		<key>name</key>
@@ -571,6 +705,8 @@
 	</dict>
 	<key>Watch2,6</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple Watch Series 1</string>
 		<key>version</key>
 		<real>2.6</real>
 		<key>name</key>
@@ -578,6 +714,8 @@
 	</dict>
 	<key>Watch2,7</key>
 	<dict>
+		<key>shortname</key>
+		<string>Apple Watch Series 1</string>
 		<key>version</key>
 		<real>2.7</real>
 		<key>name</key>

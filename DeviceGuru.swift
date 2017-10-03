@@ -58,7 +58,7 @@ open class DeviceGuru {
     return hardware
   }
   
-  /// This method returns the Hardware enum depending upon harware string
+  /// This method returns the Hardware enum depending upon hardware string
   ///
   ///
   /// - returns: `Hardware` type of the device
@@ -179,7 +179,7 @@ open class DeviceGuru {
     return Hardware.notAvailable
   }
   
-  /// This method returns the Platform enum depending upon harware string
+  /// This method returns the Platform enum depending upon hardware string
   ///
   ///
   /// - returns: `Platform` type of the device
@@ -197,6 +197,23 @@ open class DeviceGuru {
     return Platform.unknown
   }
   
+    /// This method returns a short, readable description of the hardware string
+    /// Where `hardwareDescription` includes extra information like cell network, this does not.
+    /// i.e. "iPad mini 4" instead of "iPad mini 4 (Wi-Fi/Cellular)"
+    ///
+    /// - returns: readable description `String` of the device
+    ///
+    public func hardwareShortDescription() -> String? {
+        let hardware = hardwareString()
+        
+        let hardwareDetail = self.deviceListDict[hardware] as? [String: AnyObject]
+        if let hardwareDescription = hardwareDetail?["shortname"] {
+            return hardwareDescription as? String
+        }
+        
+        // Fall back to the main description
+        return hardwareDescription()
+    }
   
   /// This method returns the readable description of hardware string
   ///
@@ -293,7 +310,7 @@ open class DeviceGuru {
     return CGSize.zero
   }
   
-  /// Internal method for loggin, you don't need this method
+  /// Internal method for logging, you don't need this method
   ///
   /// - parameters:
   ///     - hardware: `String` hardware type of the device
