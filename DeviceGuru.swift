@@ -19,7 +19,7 @@ open class DeviceGuru {
   public init() {
     // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
     // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
-    let deviceUtilTopBundle = Bundle(for:DeviceGuru.self)
+    let deviceUtilTopBundle = Bundle(for: DeviceGuru.self)
     if let url = deviceUtilTopBundle.url(forResource: "DeviceGuru", withExtension: "bundle") {
       let deviceUtilBundle = Bundle(url: url)
       if let path = deviceUtilBundle?.path(forResource: "DeviceList", ofType: "plist") {
