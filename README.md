@@ -38,7 +38,7 @@ files in your project
 ### Usage
 If you install from *CocoaPods*, you have to import the module. If you used drag and drop then there is no need of import
 ``` swift
-import DeviceGuru 
+import DeviceGuru
 ```
 In your code:
 ``` swift
@@ -71,10 +71,13 @@ iPhone 6 | ```iphone_6``` | ```iPhone7,2```
 iPhone 6s Plus | ```iphone_6S_PLUS``` | ```iPhone8,2```
 iPhone 6s | ```iphone_6S``` | ```iPhone8,2```
 iPhone SE | ```iphone_SE``` | ```iPhone8,4```
-iPhone 7 | ```iphone_7``` | ```iPhone9,1```
-iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,2```
+iPhone 7 | ```iphone_7``` | ```iPhone9,1``` & ```iPhone9,3```
+iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,2``` & ```iPhone9,4```
 iPhone 7 | ```iphone_7``` | ```iPhone9,3```
 iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,4```
+iPhone 8 | ```iphone_8``` | ```iPhone10,1``` & ```iPhone10,4```
+iPhone 8 Plus | ```iphone_8_PLUS``` | ```iPhone10,2``` & ```iPhone10,5```
+iPhone X | ```iphone_X``` | ```iPhone10,3``` & ```iPhone10,6```
 
 ##### iPod
 Device | hardware() | hardwareString()
