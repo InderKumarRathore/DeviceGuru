@@ -150,9 +150,7 @@ Device | hardware() | hardwareString()
 --- | --- | ---
 Simulator  | ```simulator``` | ```i386```
 Simulator  | ```simulator``` | ```x86_64```
-Simulator  | ```simulator``` | ```hasPrefix("iPhone")```
-Simulator  | ```simulator``` | ```hasPrefix("iPod")```
-Simulator  | ```simulator``` | ```hasPrefix("iPad)```
+
 
 
 
