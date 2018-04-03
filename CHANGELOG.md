@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 `DeviceGuru` adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.0.0](https://github.com/InderKumarRathore/DeviceGuru/releases/tag/3.0.0)
+Released on 2018-04-03
+#### Added
+- Support for swift 4.1
+- Now iPhone CN or Global points to iPhone rather than iPhone_CN and iPhone_Global
+
 ## [3.0.0](https://github.com/InderKumarRathore/DeviceGuru/releases/tag/3.0.0)
 Released on 2017-19-09
 #### Added
