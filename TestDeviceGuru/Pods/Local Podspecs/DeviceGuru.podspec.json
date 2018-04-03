@@ -1,6 +1,6 @@
 {
   "name": "DeviceGuru",
-  "version": "2.2.0",
+  "version": "3.0.1",
   "license": "MIT",
   "summary": "DeviceGuru helps identifying the exact harware type of the device. e.g. iPhone 6 or iPhone 6s.",
   "homepage": "https://github.com/InderKumarRathore/DeviceGuru",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/InderKumarRathore/DeviceGuru.git",
-    "tag": "2.2.0"
+    "tag": "3.0.1"
   },
   "platforms": {
     "ios": "8.0",
