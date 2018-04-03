@@ -169,14 +169,16 @@ open class DeviceGuru {
 
     if (hardware == "i386")              { return Hardware.simulator }
     if (hardware == "x86_64")            { return Hardware.simulator }
-    if (hardware.hasPrefix("iPhone"))    { return Hardware.simulator }
-    if (hardware.hasPrefix("iPod"))      { return Hardware.simulator }
-    if (hardware.hasPrefix("iPad"))      { return Hardware.simulator }
 
     //log message that your device is not present in the list
     logMessage(hardware)
+    if (hardware.hasPrefix("iPhone"))    { return Hardware.unknownIphone }
+    if (hardware.hasPrefix("iPod"))      { return Hardware.unknownIpod }
+    if (hardware.hasPrefix("iPad"))      { return Hardware.unknownIpad }
+    if (hardware.hasPrefix("Watch"))      { return Hardware.unknownAppleWatch }
+    if (hardware.hasPrefix("AppleTV"))      { return Hardware.unknownAppleTV }
 
-    return Hardware.notAvailable
+    return Hardware.unknownDevice
   }
 
   /// This method returns the Platform enum depending upon harware string
@@ -186,13 +188,13 @@ open class DeviceGuru {
   ///
   public func platform() -> Platform {
 
-    let hardware = hardwareString().lowercased()
+    let hardware = hardwareString()
 
-    if hardware.hasPrefix(Platform.iPhone.rawValue) { return Platform.iPhone }
-    if hardware.hasPrefix(Platform.iPodTouch.rawValue) { return Platform.iPodTouch }
-    if hardware.hasPrefix(Platform.iPad.rawValue) { return Platform.iPad }
-    if hardware.hasPrefix(Platform.appleTV.rawValue) { return Platform.appleTV }
-    if hardware.hasPrefix(Platform.appleWatch.rawValue) { return Platform.appleWatch }
+    if (hardware.hasPrefix("iPhone"))    { return Platform.iPhone }
+    if (hardware.hasPrefix("iPod"))      { return Platform.iPodTouch }
+    if (hardware.hasPrefix("iPad"))      { return Platform.iPad }
+    if (hardware.hasPrefix("Watch"))      { return Platform.appleWatch }
+    if (hardware.hasPrefix("AppleTV"))      { return Platform.appleTV }
 
     return Platform.unknown
   }
@@ -218,7 +220,7 @@ open class DeviceGuru {
   /// This method returns the hardware number not actual but logically.
   /// e.g. if the hardware string is 5,1 then hardware number would be 5.1
   ///
- public func hardwareNumber() -> Float {
+ public func hardwareNumber() -> Float? {
     let hardware = hardwareString()
 
     let hardwareDetail = self.deviceListDict[hardware] as? [String: AnyObject]
@@ -229,7 +231,7 @@ open class DeviceGuru {
     //log message that your device is not present in the list
     logMessage(hardware)
 
-    return 200.0 //device might be new one of missing one so returning 200.0f
+    return nil //device might be new or one of missing device so returning nil
   }
 
 

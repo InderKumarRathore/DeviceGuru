@@ -10,7 +10,14 @@
 
 /// Enum for different iPhone/iPad devices
 public enum Hardware {
-  case notAvailable
+  // These are for the new or the devices that are not listed in this lib
+  // if you get one of these then please submit an issue here : https://github.com/InderKumarRathore/DeviceGuru
+  case unknownIphone
+  case unknownIpad
+  case unknownIpod
+  case unknownAppleWatch
+  case unknownAppleTV
+  case unknownDevice
 
   case iphone2g
   case iphone3g
@@ -107,11 +114,11 @@ public enum Hardware {
 }
 
 /// Enum of the different Apple's device platforms
-public enum Platform: String {
-    case iPhone = "iphone"
-    case iPodTouch = "ipod"
-    case iPad = "ipad"
-    case appleTV = "appletv"
-    case appleWatch = "watch"
-    case unknown = "unknown"
+public enum Platform {
+    case iPhone
+    case iPodTouch
+    case iPad
+    case appleTV
+    case appleWatch
+    case unknown
 }
