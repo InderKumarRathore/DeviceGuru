@@ -153,6 +153,8 @@ open class DeviceGuru {
     if (hardware == "iPad7,2")           { return Hardware.ipadPro2g_wifi_cellular }
     if (hardware == "iPad7,3")           { return Hardware.ipadPro_105_wifi }
     if (hardware == "iPad7,4")           { return Hardware.ipadPro_105_wifi_cellular }
+    if (hardware == "iPad7,5")           { return Hardware.ipad6_wifi }
+    if (hardware == "iPad7,6")           { return Hardware.ipad6_wifi_cellular }
 
     if (hardware == "AppleTV1,1")        { return Hardware.appleTv1g }
     if (hardware == "AppleTV2,1")        { return Hardware.appleTv2g }
