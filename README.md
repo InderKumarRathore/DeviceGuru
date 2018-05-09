@@ -125,6 +125,8 @@ iPad Pro 12.9-Inch (Wi-Fi Only - 2nd Gen) | ```ipad_PRO_2G_WIFI``` | ```iPad7,1`
 iPad Pro 12.9-Inch (Wi-Fi/Cell - 2nd Gen) | ```ipad_PRO_2G_WIFI_CELLULAR``` | ```iPad7,2```
 iPad Pro 10.5-Inch (Wi-Fi Only) | ```ipad_PRO_105_WIFI``` | ```iPad7,3```
 iPad Pro 10.5-Inch (Wi-Fi/Cellular) | ```ipad_PRO_105_WIFI_CELLULAR``` | ```iPad7,4```
+iPad 9.7-Inch 2018 Wifi  | ```ipad_6_WIFI``` | ```iPad7,5```
+iPad 9.7-Inch 2018 Wifi + Cellular | ```ipad_6_WIFI_CELLULAR``` | ```iPad7,6```
 
 ##### Apple TV
 Device | hardware() | hardwareString()

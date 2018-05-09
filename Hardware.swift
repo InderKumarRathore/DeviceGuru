@@ -97,6 +97,9 @@ public enum Hardware {
   case ipadPro_105_wifi
   case ipadPro_105_wifi_cellular
 
+  case ipad6_wifi
+  case ipad6_wifi_cellular
+
   case appleTv1g
   case appleTv2g
   case appleTv3g_2012
