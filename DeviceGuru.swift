@@ -303,7 +303,7 @@ open class DeviceGuru {
   ///     - hardware: `String` hardware type of the device
   ///
   private func logMessage(_ hardware: String) {
-    print("This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/DeviceGuru and add a comment there.")
-    print("Your device hardware string is: %@", hardware)
+    print("This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/DeviceGuru and raise an issue there.")
+    print("Your device hardware string is|" + hardware + "|")
   }
 }
