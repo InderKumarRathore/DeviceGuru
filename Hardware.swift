@@ -51,6 +51,10 @@ public enum Hardware {
   case iphoneXSMaxChina
   case iphoneXR
 
+  case iphoneXS
+  case iphoneXSMax
+  case iphoneXR
+
   case ipodTouch1g
   case ipodTouch2g
   case ipodTouch3g
