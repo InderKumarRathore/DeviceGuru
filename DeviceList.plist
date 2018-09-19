@@ -198,6 +198,34 @@
 		<key>name</key>
 		<string>iPhone X</string>
 	</dict>
+	<key>iPhone11,2</key>
+	<dict>
+		<key>version</key>
+		<string>11,2</string>
+		<key>name</key>
+		<string>iPhone XS</string>
+	</dict>
+	<key>iPhone11,4</key>
+	<dict>
+		<key>version</key>
+		<string>11,4</string>
+		<key>name</key>
+		<string>iPhone XS Max</string>
+	</dict>
+	<key>iPhone11,6</key>
+	<dict>
+		<key>version</key>
+		<string>11,6</string>
+		<key>name</key>
+		<string>iPhone XS Max China</string>
+	</dict>
+	<key>iPhone11,8</key>
+	<dict>
+		<key>version</key>
+		<string>11,8</string>
+		<key>name</key>
+		<string>iPhone XR</string>
+	</dict>
 	<key>iPod1,1</key>
 	<dict>
 		<key>version</key>
