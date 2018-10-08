@@ -17,6 +17,8 @@
 		826C8DC61EB1F49A00BC4EC5 /* DeviceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceList.plist; sourceTree = SOURCE_ROOT; };
 		826C8DC71EB1F49A00BC4EC5 /* Hardware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hardware.swift; sourceTree = SOURCE_ROOT; };
 		827BF6B41EB1F41D0023179D /* DeviceGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		913672E3216BA6120022E15C /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		913672E4216BA61C0022E15C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		913D0D8C2073532B001F7564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,6 +36,8 @@
 		827BF6AA1EB1F41D0023179D = {
 			isa = PBXGroup;
 			children = (
+				913672E3216BA6120022E15C /* CHANGELOG.md */,
+				913672E4216BA61C0022E15C /* README.md */,
 				913D0D8C2073532B001F7564 /* Info.plist */,
 				826C8DC51EB1F49A00BC4EC5 /* DeviceGuru.swift */,
 				826C8DC71EB1F49A00BC4EC5 /* Hardware.swift */,
