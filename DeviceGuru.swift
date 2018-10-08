@@ -202,8 +202,8 @@ open class DeviceGuru {
     if (hardware.hasPrefix("iPhone"))    { return Platform.iPhone }
     if (hardware.hasPrefix("iPod"))      { return Platform.iPodTouch }
     if (hardware.hasPrefix("iPad"))      { return Platform.iPad }
-    if (hardware.hasPrefix("Watch"))      { return Platform.appleWatch }
-    if (hardware.hasPrefix("AppleTV"))      { return Platform.appleTV }
+    if (hardware.hasPrefix("Watch"))     { return Platform.appleWatch }
+    if (hardware.hasPrefix("AppleTV"))   { return Platform.appleTV }
 
     return Platform.unknown
   }
