@@ -46,6 +46,10 @@ public enum Hardware {
   case iphone8
   case iphone8Plus
   case iphoneX
+  case iphoneXS
+  case iphoneXSMax
+  case iphoneXSMaxChina
+  case iphoneXR
 
   case iphoneXS
   case iphoneXSMax

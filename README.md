@@ -79,7 +79,7 @@ iPhone 8 | ```iphone_8``` | ```iPhone10,1``` & ```iPhone10,4```
 iPhone 8 Plus | ```iphone_8_PLUS``` | ```iPhone10,2``` & ```iPhone10,5```
 iPhone X | ```iphone_X``` | ```iPhone10,3``` & ```iPhone10,6```
 iPhone XS | ```iphone_XS``` | ```iPhone11,2```
-iPhone XS Max | ```iphone_XS_MAX``` | ```iPhone11,4```
+iPhone XS Max | ```iphone_XS_MAX``` | ```iPhone11,4``` & ```iPhone11,6```
 iPhone XR | ```iphone_XR``` | ```iPhone11,8```
 
 ##### iPod

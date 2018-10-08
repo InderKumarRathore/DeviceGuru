@@ -102,8 +102,8 @@ open class DeviceGuru {
 
     if (hardware == "iPhone11,2")         { return Hardware.iphoneXS }
     if (hardware == "iPhone11,4")         { return Hardware.iphoneXSMax }
+    if (hardware == "iPhone11,6")         { return Hardware.iphoneXSMaxChina }
     if (hardware == "iPhone11,8")         { return Hardware.iphoneXR }
-
 
     if (hardware == "iPod1,1")           { return Hardware.ipodTouch1g }
     if (hardware == "iPod2,1")           { return Hardware.ipodTouch2g }
