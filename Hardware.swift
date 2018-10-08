@@ -51,6 +51,10 @@ public enum Hardware {
   case iphoneXSMaxChina
   case iphoneXR
 
+  case iphoneXS
+  case iphoneXSMax
+  case iphoneXR
+
   case ipodTouch1g
   case ipodTouch2g
   case ipodTouch3g
@@ -116,6 +120,10 @@ public enum Hardware {
   case appleWatch_series_2_42
   case appleWatch_series_1_38
   case appleWatch_series_1_42
+  case appleWatch_series_3_38
+  case appleWatch_series_3_42
+  case appleWatch_series_3_38_cellular
+  case appleWatch_series_3_42_cellular
 
   case simulator
 }
