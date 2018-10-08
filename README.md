@@ -78,6 +78,9 @@ iPhone 7 Plus | ```iphone_7_PLUS``` | ```iPhone9,4```
 iPhone 8 | ```iphone_8``` | ```iPhone10,1``` & ```iPhone10,4```
 iPhone 8 Plus | ```iphone_8_PLUS``` | ```iPhone10,2``` & ```iPhone10,5```
 iPhone X | ```iphone_X``` | ```iPhone10,3``` & ```iPhone10,6```
+iPhone XS | ```iphone_XS``` | ```iPhone11,2```
+iPhone XS Max | ```iphone_XS_MAX``` | ```iPhone11,4``` & ```iPhone11,6```
+iPhone XR | ```iphone_XR``` | ```iPhone11,8```
 
 ##### iPod
 Device | hardware() | hardwareString()
@@ -146,6 +149,10 @@ Apple Watch Series 2 (38 mm) | ```appleWatch_SERIES_2_38``` | ```Watch2,3```
 Apple Watch Series 2 (42 mm) | ```appleWatch_SERIES_2_42``` | ```Watch2,4```
 Apple Watch Series 1 (38 mm) | ```appleWatch_SERIES_1_38``` | ```Watch2,6```
 Apple Watch Series 1 (42 mm) | ```appleWatch_SERIES_1_42``` | ```Watch2,7```
+Apple Watch Series 3 Cellular (38 mm) | ```appleWatch_SERIES_3_38_CELLULAR``` | ```Watch3,1```
+Apple Watch Series 3 Cellular (42 mm) | ```appleWatch_SERIES_3_42_CELLULAR``` | ```Watch3,2```
+Apple Watch Series 3 (38 mm) | ```appleWatch_SERIES_3_38``` | ```Watch3,3```
+Apple Watch Series 3 (42 mm) | ```appleWatch_SERIES_3_42``` | ```Watch3,4```
 
 ##### Simulator
 Device | hardware() | hardwareString()
