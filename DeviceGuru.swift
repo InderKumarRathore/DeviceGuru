@@ -171,6 +171,10 @@ open class DeviceGuru {
     if (hardware == "Watch2,4")          { return Hardware.appleWatch_series_2_42 }
     if (hardware == "Watch2,6")          { return Hardware.appleWatch_series_1_38 }
     if (hardware == "Watch2,7")          { return Hardware.appleWatch_series_1_42 }
+    if (hardware == "Watch3,1")          { return Hardware.appleWatch_series_3_38_cellular }
+    if (hardware == "Watch3,2")          { return Hardware.appleWatch_series_3_42_cellular }
+    if (hardware == "Watch3,3")          { return Hardware.appleWatch_series_3_38 }
+    if (hardware == "Watch3,4")          { return Hardware.appleWatch_series_3_42 }
 
     if (hardware == "i386")              { return Hardware.simulator }
     if (hardware == "x86_64")            { return Hardware.simulator }
