@@ -229,11 +229,11 @@ open class DeviceGuru {
   /// This method returns the hardware number not actual but logically.
   /// e.g. if the hardware string is 5,1 then hardware number would be 5.1
   ///
- public func hardwareNumber() -> Float? {
+ public func hardwareNumber() -> Double? {
     let hardware = hardwareString()
 
     let hardwareDetail = self.deviceListDict[hardware] as? [String: AnyObject]
-      if let hardwareNumber = hardwareDetail?["version"] as? Float {
+      if let hardwareNumber = hardwareDetail?["version"] as? Double {
         return hardwareNumber
       }
 
