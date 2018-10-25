@@ -121,6 +121,12 @@ public enum Hardware {
   case appleWatch_series_3_42
   case appleWatch_series_3_38_cellular
   case appleWatch_series_3_42_cellular
+  case appleWatch_series_4_40
+  case appleWatch_series_4_44
+  case appleWatch_series_4_40_cellular
+  case appleWatch_series_4_44_cellular
+  
+  
 
   case simulator
 }
