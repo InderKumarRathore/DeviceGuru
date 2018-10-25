@@ -20,6 +20,7 @@
 		913672E3216BA6120022E15C /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		913672E4216BA61C0022E15C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		913D0D8C2073532B001F7564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91B019C72181E58700FE8C67 /* DeviceGuru.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeviceGuru.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +37,7 @@
 		827BF6AA1EB1F41D0023179D = {
 			isa = PBXGroup;
 			children = (
+				91B019C72181E58700FE8C67 /* DeviceGuru.podspec */,
 				913672E3216BA6120022E15C /* CHANGELOG.md */,
 				913672E4216BA61C0022E15C /* README.md */,
 				913D0D8C2073532B001F7564 /* Info.plist */,
