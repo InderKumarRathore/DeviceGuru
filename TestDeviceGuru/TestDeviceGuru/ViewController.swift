@@ -13,7 +13,12 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    print("\(String(describing: DeviceGuru().hardware()))")
+    let dg = DeviceGuru()
+    print("\(String(describing: dg.hardware()))")
+    print("\(String(describing: dg.platform()))")
+    print("\(String(describing: dg.hardwareNumber()))")
+    print("\(String(describing: dg.hardwareDescription()))")
+    print("\(String(describing: dg.hardwareString()))")
   }
 }
 
