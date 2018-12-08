@@ -166,6 +166,16 @@ open class DeviceGuru {
     if (hardware == "iPad7,4")    { return .ipadPro_105_wifi_cellular }
     if (hardware == "iPad7,5")    { return .ipad6_wifi }
     if (hardware == "iPad7,6")    { return .ipad6_wifi_cellular }
+    
+    if (hardware == "iPad8,1")    { return .ipad_pro_11_wifi }
+    if (hardware == "iPad8,2")    { return .ipad_pro_11_1tb_wifi }
+    if (hardware == "iPad8,3")    { return .ipad_pro_11_wifi_cellular }
+    if (hardware == "iPad8,4")    { return .ipad_pro_11_1tb_wifi_cellular }
+    
+    if (hardware == "iPad8,5")    { return .ipad_pro_3g_wifi }
+    if (hardware == "iPad8,6")    { return .ipad_pro_3g_1tb_wifi }
+    if (hardware == "iPad8,7")    { return .ipad_pro_3g_wifi_cellular }
+    if (hardware == "iPad8,8")    { return .ipad_pro_3g_1tb_wifi_cellular }
 
     if (hardware == "AppleTV1,1")  { return .appleTv1g }
     if (hardware == "AppleTV2,1")  { return .appleTv2g }
