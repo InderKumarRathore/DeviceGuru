@@ -19,6 +19,7 @@ public enum Hardware {
   case unknownAppleTV
   case unknownDevice
 
+  // iPhone
   case iphone2g
   case iphone3g
   case iphone3gs
@@ -52,6 +53,7 @@ public enum Hardware {
   case iphoneXSMaxChina
   case iphoneXR
 
+  // iPod
   case ipodTouch1g
   case ipodTouch2g
   case ipodTouch3g
@@ -59,6 +61,8 @@ public enum Hardware {
   case ipodTouch5g
   case ipodTouch6g
 
+  
+  // iPad
   case ipad
   case ipad2
   case ipad2_wifi
@@ -104,7 +108,19 @@ public enum Hardware {
 
   case ipad6_wifi
   case ipad6_wifi_cellular
+  
+  case ipad_pro_11_wifi
+  case ipad_pro_11_1tb_wifi
+  case ipad_pro_11_wifi_cellular
+  case ipad_pro_11_1tb_wifi_cellular
+  
+  case ipad_pro_3g_wifi
+  case ipad_pro_3g_1tb_wifi
+  case ipad_pro_3g_wifi_cellular
+  case ipad_pro_3g_1tb_wifi_cellular
+  
 
+  // Apple TV
   case appleTv1g
   case appleTv2g
   case appleTv3g_2012
