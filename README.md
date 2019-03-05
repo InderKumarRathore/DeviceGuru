@@ -135,7 +135,6 @@ iPad Pro 11-Inch (Wi-Fi Only) | ```IPAD_PRO_11_WIFI``` | ```iPad8,1```
 iPad Pro 11-Inch 1TB (Wi-Fi Only) | ```IPAD_PRO_11_1TB_WIFI``` | ```iPad8,2```
 iPad Pro 11-Inch (Wi-Fi/Cellular) | ```IPAD_PRO_11_WIFI_CELLULAR``` | ```iPad8,3```
 iPad Pro 11-Inch 1TB (Wi-Fi/Cellular) | ```IPAD_PRO_11_1TB_WIFI_CELLULAR``` | ```iPad8,4```
-
 iPad Pro 12.9-Inch (Wi-Fi Only - 3rd Gen) | ```IPAD_PRO_3G_WIFI``` | ```iPad8,5```
 iPad Pro 12.9-Inch 1TB (Wi-Fi Only - 3rd Gen) | ```IPAD_PRO_3G_1TB_WIFI``` | ```iPad8,6```
 iPad Pro 12.9-Inch (Wi-Fi/Cell - 3rd Gen) | ```IPAD_PRO_3G_WIFI_CELLULAR``` | ```iPad8,7```
