@@ -66,7 +66,7 @@ open class DeviceGuru {
     return hardware
   }
 
-  /// This method returns the Hardware enum depending upon harware string
+  /// This method returns the Hardware enum depending upon hardware string
   ///
   ///
   /// - returns: `Hardware` type of the device
