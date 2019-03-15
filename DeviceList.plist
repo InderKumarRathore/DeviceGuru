@@ -6,6 +6,8 @@
 	<dict>
 		<key>version</key>
 		<real>1.1</real>
+		<key>baseName</key>
+		<string>iPhone 2G</string>
 		<key>name</key>
 		<string>iPhone 2G</string>
 	</dict>
@@ -13,6 +15,8 @@
 	<dict>
 		<key>version</key>
 		<real>1.2</real>
+		<key>baseName</key>
+		<string>iPhone 3G</string>
 		<key>name</key>
 		<string>iPhone 3G</string>
 	</dict>
@@ -20,6 +24,8 @@
 	<dict>
 		<key>version</key>
 		<real>2.1</real>
+		<key>baseName</key>
+		<string>iPhone 3GS</string>
 		<key>name</key>
 		<string>iPhone 3GS</string>
 	</dict>
@@ -27,6 +33,8 @@
 	<dict>
 		<key>version</key>
 		<real>3.1</real>
+		<key>baseName</key>
+		<string>iPhone 4</string>
 		<key>name</key>
 		<string>iPhone 4 (GSM)</string>
 	</dict>
@@ -34,6 +42,8 @@
 	<dict>
 		<key>version</key>
 		<real>3.2</real>
+		<key>baseName</key>
+		<string>iPhone 4</string>
 		<key>name</key>
 		<string>iPhone 4 (GSM Rev. A)</string>
 	</dict>
@@ -41,6 +51,8 @@
 	<dict>
 		<key>version</key>
 		<real>3.3</real>
+		<key>baseName</key>
+		<string>iPhone 4</string>
 		<key>name</key>
 		<string>iPhone 4 (CDMA)</string>
 	</dict>
@@ -48,6 +60,8 @@
 	<dict>
 		<key>version</key>
 		<real>4.1</real>
+		<key>baseName</key>
+		<string>iPhone 4S</string>
 		<key>name</key>
 		<string>iPhone 4S</string>
 	</dict>
@@ -55,6 +69,8 @@
 	<dict>
 		<key>version</key>
 		<real>5.1</real>
+		<key>baseName</key>
+		<string>iPhone 5</string>
 		<key>name</key>
 		<string>iPhone 5 (GSM)</string>
 	</dict>
@@ -62,6 +78,8 @@
 	<dict>
 		<key>version</key>
 		<real>5.2</real>
+		<key>baseName</key>
+		<string>iPhone 5</string>
 		<key>name</key>
 		<string>iPhone 5 (Global)</string>
 	</dict>
@@ -69,6 +87,8 @@
 	<dict>
 		<key>version</key>
 		<real>5.3</real>
+		<key>baseName</key>
+		<string>iPhone 5c</string>
 		<key>name</key>
 		<string>iPhone 5c (GSM)</string>
 	</dict>
@@ -76,6 +96,8 @@
 	<dict>
 		<key>version</key>
 		<real>5.4</real>
+		<key>baseName</key>
+		<string>iPhone 5c</string>
 		<key>name</key>
 		<string>iPhone 5c (Global)</string>
 	</dict>
@@ -83,6 +105,8 @@
 	<dict>
 		<key>version</key>
 		<real>6.1</real>
+		<key>baseName</key>
+		<string>iPhone 5s</string>
 		<key>name</key>
 		<string>iPhone 5s (GSM)</string>
 	</dict>
@@ -90,6 +114,8 @@
 	<dict>
 		<key>version</key>
 		<real>6.2</real>
+		<key>baseName</key>
+		<string>iPhone 5s</string>
 		<key>name</key>
 		<string>iPhone 5s (Global)</string>
 	</dict>
@@ -97,6 +123,8 @@
 	<dict>
 		<key>version</key>
 		<real>7.1</real>
+		<key>baseName</key>
+		<string>iPhone 6 Plus</string>
 		<key>name</key>
 		<string>iPhone 6 Plus</string>
 	</dict>
@@ -104,6 +132,8 @@
 	<dict>
 		<key>version</key>
 		<real>7.2</real>
+		<key>baseName</key>
+		<string>iPhone 6</string>
 		<key>name</key>
 		<string>iPhone 6</string>
 	</dict>
@@ -111,6 +141,8 @@
 	<dict>
 		<key>version</key>
 		<real>8.1</real>
+		<key>baseName</key>
+		<string>iPhone 6s</string>
 		<key>name</key>
 		<string>iPhone 6s</string>
 	</dict>
@@ -118,6 +150,8 @@
 	<dict>
 		<key>version</key>
 		<real>8.199999999999999</real>
+		<key>baseName</key>
+		<string>iPhone 6s Plus</string>
 		<key>name</key>
 		<string>iPhone 6s Plus</string>
 	</dict>
@@ -125,6 +159,8 @@
 	<dict>
 		<key>version</key>
 		<real>8.4</real>
+		<key>baseName</key>
+		<string>iPhone SE</string>
 		<key>name</key>
 		<string>iPhone SE</string>
 	</dict>
@@ -132,6 +168,8 @@
 	<dict>
 		<key>version</key>
 		<real>9.1</real>
+		<key>baseName</key>
+		<string>iPhone 7</string>
 		<key>name</key>
 		<string>iPhone 7</string>
 	</dict>
@@ -139,6 +177,8 @@
 	<dict>
 		<key>version</key>
 		<real>9.199999999999999</real>
+		<key>baseName</key>
+		<string>iPhone 7 Plus</string>
 		<key>name</key>
 		<string>iPhone 7 Plus</string>
 	</dict>
@@ -146,6 +186,8 @@
 	<dict>
 		<key>version</key>
 		<real>9.300000000000001</real>
+		<key>baseName</key>
+		<string>iPhone 7</string>
 		<key>name</key>
 		<string>iPhone 7</string>
 	</dict>
@@ -153,6 +195,8 @@
 	<dict>
 		<key>version</key>
 		<real>9.4</real>
+		<key>baseName</key>
+		<string>iPhone 7 Plus</string>
 		<key>name</key>
 		<string>iPhone 7 Plus</string>
 	</dict>
@@ -160,6 +204,8 @@
 	<dict>
 		<key>version</key>
 		<real>10.1</real>
+		<key>baseName</key>
+		<string>iPhone 8</string>
 		<key>name</key>
 		<string>iPhone 8</string>
 	</dict>
@@ -167,6 +213,8 @@
 	<dict>
 		<key>version</key>
 		<real>10.2</real>
+		<key>baseName</key>
+		<string>iPhone 8 Plus</string>
 		<key>name</key>
 		<string>iPhone 8 Plus</string>
 	</dict>
@@ -174,6 +222,8 @@
 	<dict>
 		<key>version</key>
 		<real>10.3</real>
+		<key>baseName</key>
+		<string>iPhone X</string>
 		<key>name</key>
 		<string>iPhone X</string>
 	</dict>
@@ -181,6 +231,8 @@
 	<dict>
 		<key>version</key>
 		<real>10.4</real>
+		<key>baseName</key>
+		<string>iPhone 8</string>
 		<key>name</key>
 		<string>iPhone 8</string>
 	</dict>
@@ -188,6 +240,8 @@
 	<dict>
 		<key>version</key>
 		<real>10.5</real>
+		<key>baseName</key>
+		<string>iPhone 8 Plus</string>
 		<key>name</key>
 		<string>iPhone 8 Plus</string>
 	</dict>
@@ -195,6 +249,8 @@
 	<dict>
 		<key>version</key>
 		<real>10.6</real>
+		<key>baseName</key>
+		<string>iPhone X</string>
 		<key>name</key>
 		<string>iPhone X</string>
 	</dict>
@@ -202,6 +258,8 @@
 	<dict>
 		<key>version</key>
 		<real>11.2</real>
+		<key>baseName</key>
+		<string>iPhone XS</string>
 		<key>name</key>
 		<string>iPhone XS</string>
 	</dict>
@@ -209,6 +267,8 @@
 	<dict>
 		<key>version</key>
 		<real>11.4</real>
+		<key>baseName</key>
+		<string>iPhone XS Max</string>
 		<key>name</key>
 		<string>iPhone XS Max</string>
 	</dict>
@@ -216,6 +276,8 @@
 	<dict>
 		<key>version</key>
 		<real>11.6</real>
+		<key>baseName</key>
+		<string>iPhone XS Max</string>
 		<key>name</key>
 		<string>iPhone XS Max China</string>
 	</dict>
@@ -223,6 +285,8 @@
 	<dict>
 		<key>version</key>
 		<real>11.8</real>
+		<key>baseName</key>
+		<string>iPhone XR</string>
 		<key>name</key>
 		<string>iPhone XR</string>
 	</dict>
@@ -230,50 +294,64 @@
 	<dict>
 		<key>version</key>
 		<real>1.1</real>
+		<key>baseName</key>
+		<string>iPod Touch 1st Gen</string>
 		<key>name</key>
-		<string>iPod Touch (1 Gen)</string>
+		<string>iPod Touch 1st Gen</string>
 	</dict>
 	<key>iPod2,1</key>
 	<dict>
 		<key>version</key>
 		<real>2.1</real>
+		<key>baseName</key>
+		<string>iPod Touch 2nd Gen</string>
 		<key>name</key>
-		<string>iPod Touch (2 Gen)</string>
+		<string>iPod Touch 2nd Gen</string>
 	</dict>
 	<key>iPod3,1</key>
 	<dict>
 		<key>version</key>
 		<real>3.1</real>
+		<key>baseName</key>
+		<string>iPod Touch 3rd Gen</string>
 		<key>name</key>
-		<string>iPod Touch (3 Gen)</string>
+		<string>iPod Touch 3rd Gen</string>
 	</dict>
 	<key>iPod4,1</key>
 	<dict>
 		<key>version</key>
 		<real>4.1</real>
+		<key>baseName</key>
+		<string>iPod Touch 4th Gen</string>
 		<key>name</key>
-		<string>iPod Touch (4 Gen)</string>
+		<string>iPod Touch 4th Gen</string>
 	</dict>
 	<key>iPod5,1</key>
 	<dict>
 		<key>version</key>
 		<real>5.1</real>
+		<key>baseName</key>
+		<string>iPod Touch 5th Gen</string>
 		<key>name</key>
-		<string>iPod Touch (5 Gen)</string>
+		<string>iPod Touch 5th Gen</string>
 	</dict>
 	<key>iPod7,1</key>
 	<dict>
 		<key>version</key>
 		<real>7.1</real>
+		<key>baseName</key>
+		<string>iPod Touch 6th Gen</string>
 		<key>name</key>
-		<string>iPod Touch (6 Gen)</string>
+		<string>iPod Touch 6th Gen</string>
 	</dict>
 	<key>iPad1,1</key>
 	<dict>
 		<key>version</key>
 		<real>1.1</real>
+		<key>baseName</key>
+		<string>iPad</string>
 		<key>name</key>
-		<string>iPad (WiFi)</string>
+		<string>iPad (Wi-Fi)</string>
 	</dict>
 	<key>iPad1,2</key>
 	<dict>
@@ -286,13 +364,17 @@
 	<dict>
 		<key>version</key>
 		<real>2.1</real>
+		<key>baseName</key>
+		<string>iPad 2</string>
 		<key>name</key>
-		<string>iPad 2 (WiFi)</string>
+		<string>iPad 2 (Wi-Fi)</string>
 	</dict>
 	<key>iPad2,2</key>
 	<dict>
 		<key>version</key>
 		<real>2.2</real>
+		<key>baseName</key>
+		<string>iPad 2</string>
 		<key>name</key>
 		<string>iPad 2 (GSM)</string>
 	</dict>
@@ -300,6 +382,8 @@
 	<dict>
 		<key>version</key>
 		<real>2.3</real>
+		<key>baseName</key>
+		<string>iPad 2</string>
 		<key>name</key>
 		<string>iPad 2 (CDMA)</string>
 	</dict>
@@ -307,20 +391,26 @@
 	<dict>
 		<key>version</key>
 		<real>2.4</real>
+		<key>baseName</key>
+		<string>iPad 2</string>
 		<key>name</key>
-		<string>iPad 2 (WiFi Rev. A)</string>
+		<string>iPad 2 (Wi-Fi Rev. A)</string>
 	</dict>
 	<key>iPad2,5</key>
 	<dict>
 		<key>version</key>
 		<real>2.5</real>
+		<key>baseName</key>
+		<string>iPad Mini</string>
 		<key>name</key>
-		<string>iPad Mini (WiFi)</string>
+		<string>iPad Mini (Wi-Fi)</string>
 	</dict>
 	<key>iPad2,6</key>
 	<dict>
 		<key>version</key>
 		<real>2.6</real>
+		<key>baseName</key>
+		<string>iPad Mini</string>
 		<key>name</key>
 		<string>iPad Mini (GSM)</string>
 	</dict>
@@ -328,6 +418,8 @@
 	<dict>
 		<key>version</key>
 		<real>2.7</real>
+		<key>baseName</key>
+		<string>iPad Mini</string>
 		<key>name</key>
 		<string>iPad Mini (CDMA)</string>
 	</dict>
@@ -335,13 +427,17 @@
 	<dict>
 		<key>version</key>
 		<real>3.1</real>
+		<key>baseName</key>
+		<string>iPad 3</string>
 		<key>name</key>
-		<string>iPad 3 (WiFi)</string>
+		<string>iPad 3 (Wi-Fi)</string>
 	</dict>
 	<key>iPad3,2</key>
 	<dict>
 		<key>version</key>
 		<real>3.2</real>
+		<key>baseName</key>
+		<string>iPad 3</string>
 		<key>name</key>
 		<string>iPad 3 (CDMA)</string>
 	</dict>
@@ -349,6 +445,8 @@
 	<dict>
 		<key>version</key>
 		<real>3.3</real>
+		<key>baseName</key>
+		<string>iPad 3</string>
 		<key>name</key>
 		<string>iPad 3 (Global)</string>
 	</dict>
@@ -356,13 +454,17 @@
 	<dict>
 		<key>version</key>
 		<real>3.4</real>
+		<key>baseName</key>
+		<string>iPad 4</string>
 		<key>name</key>
-		<string>iPad 4 (WiFi)</string>
+		<string>iPad 4 (Wi-Fi)</string>
 	</dict>
 	<key>iPad3,5</key>
 	<dict>
 		<key>version</key>
 		<real>3.5</real>
+		<key>baseName</key>
+		<string>iPad 4</string>
 		<key>name</key>
 		<string>iPad 4 (CDMA)</string>
 	</dict>
@@ -370,6 +472,8 @@
 	<dict>
 		<key>version</key>
 		<real>3.6</real>
+		<key>baseName</key>
+		<string>iPad 4</string>
 		<key>name</key>
 		<string>iPad 4 (Global)</string>
 	</dict>
@@ -377,48 +481,62 @@
 	<dict>
 		<key>version</key>
 		<real>4.1</real>
+		<key>baseName</key>
+		<string>iPad Air</string>
 		<key>name</key>
-		<string>iPad Air (WiFi)</string>
+		<string>iPad Air (Wi-Fi)</string>
 	</dict>
 	<key>iPad4,2</key>
 	<dict>
 		<key>version</key>
 		<real>4.2</real>
+		<key>baseName</key>
+		<string>iPad Air</string>
 		<key>name</key>
-		<string>iPad Air (WiFi+GSM)</string>
+		<string>iPad Air (Wi-Fi + GSM)</string>
 	</dict>
 	<key>iPad4,3</key>
 	<dict>
 		<key>version</key>
 		<real>4.3</real>
+		<key>baseName</key>
+		<string>iPad Air</string>
 		<key>name</key>
-		<string>iPad Air (WiFi+CDMA)</string>
+		<string>iPad Air (Wi-Fi + CDMA)</string>
 	</dict>
 	<key>iPad4,4</key>
 	<dict>
 		<key>version</key>
 		<real>4.4</real>
+		<key>baseName</key>
+		<string>iPad Mini Retina</string>
 		<key>name</key>
-		<string>iPad Mini Retina (WiFi)</string>
+		<string>iPad Mini Retina (Wi-Fi)</string>
 	</dict>
 	<key>iPad4,5</key>
 	<dict>
 		<key>version</key>
 		<real>4.5</real>
+		<key>baseName</key>
+		<string>iPad Mini Retina</string>
 		<key>name</key>
-		<string>iPad Mini Retina (WiFi+CDMA)</string>
+		<string>iPad Mini Retina (Wi-Fi + CDMA)</string>
 	</dict>
 	<key>iPad4,6</key>
 	<dict>
 		<key>version</key>
 		<real>4.6</real>
+		<key>baseName</key>
+		<string>iPad Mini Retina</string>
 		<key>name</key>
-		<string>iPad Mini Retina (Wi-Fi + Cellular CN)</string>
+		<string>iPad Mini Retina (Wi-Fi + Cellular, China)</string>
 	</dict>
 	<key>iPad4,7</key>
 	<dict>
 		<key>version</key>
 		<real>4.7</real>
+		<key>baseName</key>
+		<string>iPad Mini 3</string>
 		<key>name</key>
 		<string>iPad Mini 3 (Wi-Fi)</string>
 	</dict>
@@ -426,6 +544,8 @@
 	<dict>
 		<key>version</key>
 		<real>4.8</real>
+		<key>baseName</key>
+		<string>iPad Mini 3</string>
 		<key>name</key>
 		<string>iPad Mini 3 (Wi-Fi + Cellular)</string>
 	</dict>
@@ -433,27 +553,35 @@
 	<dict>
 		<key>version</key>
 		<real>4.9</real>
+		<key>baseName</key>
+		<string>iPad Mini 3</string>
 		<key>name</key>
-		<string>iPad mini 3 (Wi-Fi/Cellular, China)</string>
+		<string>iPad Mini 3 (Wi-Fi + Cellular, China)</string>
 	</dict>
 	<key>iPad5,1</key>
 	<dict>
 		<key>version</key>
 		<real>5.1</real>
+		<key>baseName</key>
+		<string>iPad Mini 4</string>
 		<key>name</key>
-		<string>iPad mini 4 (Wi-Fi Only)</string>
+		<string>iPad Mini 4 (Wi-Fi)</string>
 	</dict>
 	<key>iPad5,2</key>
 	<dict>
 		<key>version</key>
 		<real>5.2</real>
+		<key>baseName</key>
+		<string>iPad Mini 4</string>
 		<key>name</key>
-		<string>iPad mini 4 (Wi-Fi/Cellular)</string>
+		<string>iPad Mini 4 (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad5,3</key>
 	<dict>
 		<key>version</key>
 		<real>5.3</real>
+		<key>baseName</key>
+		<string>iPad Air 2</string>
 		<key>name</key>
 		<string>iPad Air 2 (Wi-Fi)</string>
 	</dict>
@@ -461,6 +589,8 @@
 	<dict>
 		<key>version</key>
 		<real>5.4</real>
+		<key>baseName</key>
+		<string>iPad Air 2</string>
 		<key>name</key>
 		<string>iPad Air 2 (Wi-Fi + Cellular)</string>
 	</dict>
@@ -468,141 +598,181 @@
 	<dict>
 		<key>version</key>
 		<real>6.3</real>
+		<key>baseName</key>
+        <string>iPad Pro 9.7 inch</string>
 		<key>name</key>
-		<string>iPad Pro 9.7-inch (Wi-Fi Only)</string>
+		<string>iPad Pro 9.7 inch (Wi-Fi)</string>
 	</dict>
 	<key>iPad6,4</key>
 	<dict>
 		<key>version</key>
 		<real>6.4</real>
+		<key>baseName</key>
+		<string>iPad Pro 9.7 inch</string>
 		<key>name</key>
-		<string>iPad Pro 9.7-inch (Wi-Fi + Cellular)</string>
+		<string>iPad Pro 9.7 inch (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad6,7</key>
 	<dict>
 		<key>version</key>
 		<real>6.7</real>
+		<key>baseName</key>
+		<string>iPad Pro</string>
 		<key>name</key>
-		<string>iPad Pro (Wi-Fi Only)</string>
+		<string>iPad Pro (Wi-Fi)</string>
 	</dict>
 	<key>iPad6,8</key>
 	<dict>
 		<key>version</key>
 		<real>6.8</real>
+		<key>baseName</key>
+		<string>iPad Pro</string>
 		<key>name</key>
-		<string>iPad Pro (Wi-Fi/Cellular)</string>
+		<string>iPad Pro (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad6,11</key>
 	<dict>
 		<key>version</key>
 		<real>6.11</real>
+		<key>baseName</key>
+		<string>9.7 inch iPad</string>
 		<key>name</key>
-		<string>9.7-inch iPad (Wi-Fi)</string>
+		<string>9.7 inch iPad (Wi-Fi)</string>
 	</dict>
 	<key>iPad6,12</key>
 	<dict>
 		<key>version</key>
 		<real>6.12</real>
+		<key>baseName</key>
+		<string>9.7 inch iPad</string>
 		<key>name</key>
-		<string>9.7-inch iPad (Wi-Fi + Cellular)</string>
+		<string>9.7 inch iPad (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad7,1</key>
 	<dict>
 		<key>version</key>
 		<real>7.1</real>
+		<key>baseName</key>
+		<string>iPad Pro 12.9 inch</string>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi Only - 2nd Gen)</string>
+		<string>iPad Pro 12.9 inch (Wi-Fi) 2nd Gen</string>
 	</dict>
 	<key>iPad7,2</key>
 	<dict>
 		<key>version</key>
 		<real>7.2</real>
+		<key>baseName</key>
+		<string>iPad Pro 12.9 inch 2nd Gen</string>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 2nd Gen)</string>
+		<string>iPad Pro 12.9 inch (Wi-Fi + Cellular) 2nd Gen</string>
 	</dict>
 	<key>iPad7,3</key>
 	<dict>
 		<key>version</key>
 		<real>7.3</real>
+		<key>baseName</key>
+		<string>iPad Pro 10.5 inch</string>
 		<key>name</key>
-		<string>iPad Pro 10.5-Inch (Wi-Fi Only)</string>
+		<string>iPad Pro 10.5 inch (Wi-Fi)</string>
 	</dict>
 	<key>iPad7,4</key>
 	<dict>
 		<key>version</key>
 		<real>7.4</real>
+		<key>baseName</key>
+		<string>iPad Pro 10.5 inch</string>
 		<key>name</key>
-		<string>iPad Pro 10.5-Inch (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 10.5 inch (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad7,5</key>
 	<dict>
 		<key>version</key>
 		<real>7.5</real>
+		<key>baseName</key>
+		<string>iPad 9.7 inch 6th Gen</string>
 		<key>name</key>
-		<string>iPad 9.7-Inch 6th Gen (Wi-Fi Only)</string>
+		<string>iPad 9.7 inch (Wi-Fi) 6th Gen</string>
 	</dict>
 	<key>iPad7,6</key>
 	<dict>
 		<key>version</key>
 		<real>7.6</real>
+		<key>baseName</key>
+		<string>iPad 9.7 inch 6th Gen</string>
 		<key>name</key>
-		<string>iPad 9.7-Inch 6th Gen (Wi-Fi/Cellular)</string>
+		<string>iPad 9.7 inch (Wi-Fi + Cellular) 6th Gen</string>
 	</dict>
 	<key>iPad8,1</key>
 	<dict>
 		<key>version</key>
 		<real>8.1</real>
+		<key>baseName</key>
+		<string>iPad Pro 11 inch</string>
 		<key>name</key>
-		<string>iPad Pro 11-Inch (Wi-Fi Only)</string>
+		<string>iPad Pro 11 inch (Wi-Fi)</string>
 	</dict>
 	<key>iPad8,2</key>
 	<dict>
 		<key>version</key>
 		<real>8.2</real>
+		<key>baseName</key>
+		<string>iPad Pro 11 inch</string>
 		<key>name</key>
-		<string>iPad Pro 11-Inch 1TB (Wi-Fi Only)</string>
+		<string>iPad Pro 11 inch 1TB (Wi-Fi)</string>
 	</dict>
 	<key>iPad8,3</key>
 	<dict>
 		<key>version</key>
 		<real>8.3</real>
+		<key>baseName</key>
+		<string>iPad Pro 11 inch</string>
 		<key>name</key>
-		<string>iPad Pro 11-Inch (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 11 inch (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad8,4</key>
 	<dict>
 		<key>version</key>
 		<real>8.4</real>
+		<key>baseName</key>
+		<string>iPad Pro 11 inch</string>
 		<key>name</key>
-		<string>iPad Pro 11-Inch 1TB (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 11 inch 1TB (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad8,5</key>
 	<dict>
 		<key>version</key>
 		<real>8.5</real>
+		<key>baseName</key>
+		<string>iPad Pro 12.9 inch 3rd Gen</string>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi Only - 3rd Gen)</string>
+		<string>iPad Pro 12.9 inch (Wi-Fi) 3rd Gen</string>
 	</dict>
 	<key>iPad8,6</key>
 	<dict>
 		<key>version</key>
 		<real>8.6</real>
+		<key>baseName</key>
+		<string>iPad Pro 12.9 inch 3rd Gen</string>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi Only - 3rd Gen)</string>
+		<string>iPad Pro 12.9 inch 1TB (Wi-Fi) 3rd Gen</string>
 	</dict>
 	<key>iPad8,7</key>
 	<dict>
 		<key>version</key>
 		<real>8.7</real>
+		<key>baseName</key>
+		<string>iPad Pro 12.9 inch 3rd Gen</string>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 3rd Gen)</string>
+		<string>iPad Pro 12.9 inch (Wi-Fi + Cellular) 3rd Gen</string>
 	</dict>
 	<key>iPad8,8</key>
 	<dict>
 		<key>version</key>
 		<real>8.8</real>
+		<key>baseName</key>
+		<string>iPad Pro 12.9 inch 3rd Gen</string>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi/Cell - 3rd Gen)</string>
+		<string>iPad Pro 12.9 inch 1TB (Wi-Fi + Cellular) 3rd Gen</string>
 	</dict>
 	<key>appleTV1,1</key>
 	<dict>
@@ -643,6 +813,8 @@
 	<dict>
 		<key>version</key>
 		<real>1.1</real>
+		<key>baseName</key>
+		<string>Apple Watch</string>
 		<key>name</key>
 		<string>Apple Watch (38 mm)</string>
 	</dict>
@@ -650,6 +822,8 @@
 	<dict>
 		<key>version</key>
 		<real>1.2</real>
+		<key>baseName</key>
+		<string>Apple Watch</string>
 		<key>name</key>
 		<string>Apple Watch (42 mm)</string>
 	</dict>
@@ -657,6 +831,8 @@
 	<dict>
 		<key>version</key>
 		<real>2.3</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 2</string>
 		<key>name</key>
 		<string>Apple Watch Series 2 (38 mm)</string>
 	</dict>
@@ -664,6 +840,8 @@
 	<dict>
 		<key>version</key>
 		<real>2.4</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 2</string>
 		<key>name</key>
 		<string>Apple Watch Series 2 (42 mm)</string>
 	</dict>
@@ -671,6 +849,8 @@
 	<dict>
 		<key>version</key>
 		<real>2.6</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 1</string>
 		<key>name</key>
 		<string>Apple Watch Series 1 (38 mm)</string>
 	</dict>
@@ -678,6 +858,8 @@
 	<dict>
 		<key>version</key>
 		<real>2.7</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 1</string>
 		<key>name</key>
 		<string>Apple Watch Series 1 (42 mm)</string>
 	</dict>
@@ -685,6 +867,8 @@
 	<dict>
 		<key>version</key>
 		<real>3.1</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 3</string>
 		<key>name</key>
 		<string>Apple Watch Series 3 (38 mm/Cellular)</string>
 	</dict>
@@ -692,6 +876,8 @@
 	<dict>
 		<key>version</key>
 		<real>3.2</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 3</string>
 		<key>name</key>
 		<string>Apple Watch Series 3 (42 mm/Cellular)</string>
 	</dict>
@@ -699,6 +885,8 @@
 	<dict>
 		<key>version</key>
 		<real>3.3</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 3</string>
 		<key>name</key>
 		<string>Apple Watch Series 3 (38 mm)</string>
 	</dict>
@@ -706,6 +894,8 @@
 	<dict>
 		<key>version</key>
 		<real>3.4</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 3</string>
 		<key>name</key>
 		<string>Apple Watch Series 3 (42 mm)</string>
 	</dict>
@@ -713,6 +903,8 @@
 	<dict>
 		<key>version</key>
 		<real>4.1</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 4</string>
 		<key>name</key>
 		<string>Apple Watch Series 4 (40 mm)</string>
 	</dict>
@@ -720,6 +912,8 @@
 	<dict>
 		<key>version</key>
 		<real>4.1</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 4</string>
 		<key>name</key>
 		<string>Apple Watch Series 4 (44 mm)</string>
 	</dict>
@@ -727,6 +921,8 @@
 	<dict>
 		<key>version</key>
 		<real>4.1</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 4</string>
 		<key>name</key>
 		<string>Apple Watch Series 4 (40 mm/Cellular)</string>
 	</dict>
@@ -734,6 +930,8 @@
 	<dict>
 		<key>version</key>
 		<real>4.1</real>
+		<key>baseName</key>
+		<string>Apple Watch Series 4</string>
 		<key>name</key>
 		<string>Apple Watch Series 4 (42 mm/Cellular)</string>
 	</dict>
