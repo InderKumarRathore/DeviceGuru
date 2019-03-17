@@ -635,18 +635,18 @@
 		<key>version</key>
 		<real>6.11</real>
 		<key>baseName</key>
-		<string>9.7 inch iPad</string>
+		<string>iPad 9.7 inch 5th Gen</string>
 		<key>name</key>
-		<string>9.7 inch iPad (Wi-Fi)</string>
+		<string>iPad 9.7 inch (Wi-Fi) 5th Gen</string>
 	</dict>
 	<key>iPad6,12</key>
 	<dict>
 		<key>version</key>
 		<real>6.12</real>
 		<key>baseName</key>
-		<string>9.7 inch iPad</string>
+		<string>iPad 9.7 inch 5th Gen</string>
 		<key>name</key>
-		<string>9.7 inch iPad (Wi-Fi + Cellular)</string>
+		<string>iPad 9.7 inch (Wi-Fi + Cellular) 5th Gen</string>
 	</dict>
 	<key>iPad7,1</key>
 	<dict>
