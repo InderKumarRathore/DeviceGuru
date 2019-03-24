@@ -328,7 +328,7 @@ private extension DeviceGuru {
   /// - parameters:
   ///     - hardware: `String` hardware type of the device
   ///
-  func logMessage(_ hardware: String) {
+  private func logMessage(_ hardware: String) {
     print("""
   This is a device which is not listed in this library. Please visit https://github.com/InderKumarRathore/DeviceGuru/issues/new and submit the issue there.\n
     Your device hardware string is|\(hardware)|"
