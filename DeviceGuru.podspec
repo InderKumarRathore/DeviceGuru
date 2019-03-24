@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name = 'DeviceGuru'
-  s.version = '5.1.0'
+  s.version = '5.1.1'
   s.license = 'MIT'
   s.summary = 'DeviceGuru helps identifying the exact harware type of the device. e.g. iPhone 6 or iPhone 6s.'
   s.homepage = 'https://github.com/InderKumarRathore/DeviceGuru'
   s.social_media_url    = "https://twitter.com/ikr_303"
-  s.authors = { 'Inder Kumar Rathore' => 'contact.mr.rathore@gmail.com' }
+  s.authors = { 'Inder Kumar Rathore' => '' }
   s.source = { :git => 'https://github.com/InderKumarRathore/DeviceGuru.git', :tag => s.version }
 
   s.ios.deployment_target = '8.0'

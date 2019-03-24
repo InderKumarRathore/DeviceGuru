@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 `DeviceGuru` adheres to [Semantic Versioning](http://semver.org/).
 
-## [5.1.0](https://github.com/InderKumarRathore/DeviceGuru/releases/tag/5.1.0)
+## [5.1.1](https://github.com/InderKumarRathore/DeviceGuru/releases/tag/5.1.1)
 Released on 2019-03-24
 #### Added
 - Added `baseHardwareDescription` method
