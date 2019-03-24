@@ -320,22 +320,28 @@ open class DeviceGuru {
 
     return CGSize.zero
   }
-}
 
-private extension DeviceGuru {
+  // MARK: - Private
+  
   /// Internal method for loggin, you don't need this method
   ///
   /// - parameters:
   ///     - hardware: `String` hardware type of the device
   ///
-  func logMessage(_ hardware: String) {
+  private func logMessage(_ hardware: String) {
     print("""
   This is a device which is not listed in this library. Please visit https://github.com/InderKumarRathore/DeviceGuru/issues/new and submit the issue there.\n
     Your device hardware string is|\(hardware)|"
 """)
   }
 
-  func hardwareDescription(for key: String) -> String? {
+  
+  /// Internal method to get the hardware description based on key
+  /// Current there are full and base hardware description
+  ///
+  /// - Parameter key: key present in the plist
+  /// - Returns: hardware description based on the key
+  private func hardwareDescription(for key: String) -> String? {
     let hardware = hardwareString()
 
     let hardwareDetail = self.deviceListDict[hardware] as? [String: AnyObject]
