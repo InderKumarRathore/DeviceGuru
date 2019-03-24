@@ -2,7 +2,12 @@
 All notable changes to this project will be documented in this file.
 `DeviceGuru` adheres to [Semantic Versioning](http://semver.org/).
 
-## [4.0.0](https://github.com/InderKumarRathore/DeviceGuru/releases/tag/3.0.0)
+## [5.1.0](https://github.com/InderKumarRathore/DeviceGuru/releases/tag/5.1.0)
+Released on 2019-03-24
+#### Added
+- Added `baseHardwareDescription` method
+
+## [4.0.0](https://github.com/InderKumarRathore/DeviceGuru/releases/tag/4.0.0)
 Released on 2018-04-03
 #### Added
 - Support for swift 4.1
