@@ -66,7 +66,7 @@ open class DeviceGuru {
     return hardware
   }
 
-  /// This method returns the Hardware enum depending upon harware string
+  /// This method returns the Hardware enum depending upon hardware string
   ///
   ///
   /// - returns: `Hardware` type of the device
@@ -230,22 +230,17 @@ open class DeviceGuru {
     return .unknown
   }
 
+  /// - Returns: a readable description of the hardware string without including device variants related to wireless or cellular networking.
+  public func baseHardwareDescription() -> String? {
+    return hardwareDescription(for: "baseName")
+  }
 
   /// This method returns the readable description of hardware string
   ///
   /// - returns: readable description `String` of the device
   ///
   public func hardwareDescription() -> String? {
-    let hardware = hardwareString()
-
-    let hardwareDetail = self.deviceListDict[hardware] as? [String: AnyObject]
-    if let hardwareDescription = hardwareDetail?["name"] {
-      return hardwareDescription as? String
-    }
-
-    //log message that your device is not present in the list
-    logMessage(hardware)
-    return nil
+    return hardwareDescription(for: "name")
   }
 
   /// This method returns the hardware number not actual but logically.
@@ -325,16 +320,31 @@ open class DeviceGuru {
 
     return CGSize.zero
   }
+}
 
+private extension DeviceGuru {
   /// Internal method for loggin, you don't need this method
   ///
   /// - parameters:
   ///     - hardware: `String` hardware type of the device
   ///
-  private func logMessage(_ hardware: String) {
+  func logMessage(_ hardware: String) {
     print("""
   This is a device which is not listed in this library. Please visit https://github.com/InderKumarRathore/DeviceGuru/issues/new and submit the issue there.\n
     Your device hardware string is|\(hardware)|"
 """)
+  }
+
+  func hardwareDescription(for key: String) -> String? {
+    let hardware = hardwareString()
+
+    let hardwareDetail = self.deviceListDict[hardware] as? [String: AnyObject]
+    if let hardwareDescription = hardwareDetail?[key] {
+      return hardwareDescription as? String
+    }
+
+    //log message that your device is not present in the list
+    logMessage(hardware)
+    return nil
   }
 }
