@@ -176,12 +176,17 @@ open class DeviceGuru {
     if (hardware == "iPad8,6")    { return .ipad_pro_3g_1tb_wifi }
     if (hardware == "iPad8,7")    { return .ipad_pro_3g_wifi_cellular }
     if (hardware == "iPad8,8")    { return .ipad_pro_3g_1tb_wifi_cellular }
+    if (hardware == "iPad11,1")   { return .ipadMini5_wifi }
+    if (hardware == "iPad11,2")   { return .ipadMini5_wifi_cellular }
+    if (hardware == "iPad11,3")   { return .ipadAir3_wifi }
+    if (hardware == "iPad11,4")   { return .ipadAir3_wifi_cellular }
 
     if (hardware == "AppleTV1,1")  { return .appleTv1g }
     if (hardware == "AppleTV2,1")  { return .appleTv2g }
     if (hardware == "AppleTV3,1")  { return .appleTv3g_2012 }
     if (hardware == "AppleTV3,2")  { return .appleTv3g_2013 }
     if (hardware == "AppleTV5,3")  { return .appleTv4g }
+    if (hardware == "AppleTV6_2")  { return .appleTv4k }
 
     if (hardware == "Watch1,1")   { return .appleWatch_38 }
     if (hardware == "Watch1,2")   { return .appleWatch_42 }

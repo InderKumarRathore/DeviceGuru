@@ -86,12 +86,16 @@ public enum Hardware {
   case ipadMini4_wifi
   case ipadMini4_wifi_cellular
   case ipadMiniRetina_wifi_cellular_cn
+  case ipadMini5_wifi
+  case ipadMini5_wifi_cellular
 
   case ipadAir_wifi
   case ipadAir_wifi_gsm
   case ipadAir_wifi_cdma
   case ipadAir2_wifi
   case ipadAir2_wifi_cellular
+  case ipadAir3_wifi
+  case ipadAir3_wifi_cellular
 
   case ipadPro_97_wifi
   case ipadPro_97_wifi_cellular
@@ -126,6 +130,7 @@ public enum Hardware {
   case appleTv3g_2012
   case appleTv3g_2013
   case appleTv4g
+  case appleTv4k
 
   case appleWatch_38
   case appleWatch_42
@@ -141,8 +146,6 @@ public enum Hardware {
   case appleWatch_series_4_44
   case appleWatch_series_4_40_cellular
   case appleWatch_series_4_44_cellular
-  
-  
 
   case simulator
 }
