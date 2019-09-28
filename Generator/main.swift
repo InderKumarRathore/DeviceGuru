@@ -23,43 +23,38 @@ func readPropertyList() -> [String: [String: AnyObject]]? {
     }
 }
 
+
+func normalizedEnum(_ enumCase: String) -> String {
+    let lowerCasedEnum = enumCase.lowercased()
+    if lowerCasedEnum == "iphone" || lowerCasedEnum == "ipad" || lowerCasedEnum == "ipod" {
+        return "iP" + lowerCasedEnum.dropFirst(2)
+    } else if lowerCasedEnum == "x86_64" || lowerCasedEnum == "i386" {
+        return lowerCasedEnum + "_simulator"
+    } else {
+        return lowerCasedEnum
+    }
+}
+
 func main() {
 
     guard let generatorDeviceList = readPropertyList() else { return }
     let tabSpacing = "    "
-    let unknownCase = "UNKNOWN"
-    var deviceList: [String: [String: AnyObject]] = [:]
-    var externString = ""
-    var externDefString = ""
-    var hardwareFuncContent = ""
+    let unknownCase = "unknownDevice"
+    let unknownIphoneCase = "unknownIphone"
+    let unknownIpodCase = "unknownIpod"
+    let unknownIpadCase = "unknownIpad"
+    let unknownAppleWatchCase = "unknownAppleWatch"
+    let unknownAppleTVCase = "unknownAppleTV"
 
+
+    var deviceList: [String: [String: AnyObject]] = [:]
+
+    // DeviceList.plist generation
     generatorDeviceList.keys.sorted().forEach { hardwareKey in
         var valueDict = generatorDeviceList[hardwareKey]
-        guard let enumCase = valueDict?["enum"] as? String else {
-            print("Unable to get the enum case.")
-            return
-        }
-        var externConstant = hardwareKey.replacingOccurrences(of: ",", with: "_")
-        if externConstant == "x86_64" || externConstant == "i386" {
-            externConstant += "_Simulator"
-        }
-        externString += "extern NSString* const \(externConstant);\n"
-        externDefString += "NSString* const \(externConstant) = @\"\(hardwareKey)\";\n"
-        hardwareFuncContent +=  "\(tabSpacing)if ([hardware isEqualToString:\(externConstant)]) return \(enumCase);\n"
-
         valueDict?.removeValue(forKey: "enum")
         deviceList[hardwareKey] = valueDict
     }
-
-
-    var enumString = "typedef NS_ENUM(NSUInteger, Hardware) {\n\(tabSpacing)\(unknownCase)"
-    let allEunumCases = generatorDeviceList.keys.compactMap { generatorDeviceList[$0]?["enum"] as? String }
-    let enumSet = Set(allEunumCases)
-    enumSet.map { $0 }.sorted().forEach { enumCase in
-        enumString += ",\n\(tabSpacing)\(enumCase)"
-    }
-    enumString += "\n};"
-
     let dirPath = "../Source/"
 
     print("Writing plist.")
@@ -70,43 +65,76 @@ func main() {
     print("Plist created.")
 
 
-    let constantHeaderFile = "DeviceUtil+Constant.h"
-    print("Creating \(constantHeaderFile)")
+    // Enum file generatoin
+    let enumFile = "Hardware.swift"
+
+    var enumString = "\npublic enum Hardware {\n"
+        + "\n\(tabSpacing)case \(unknownCase)"
+        + "\n\(tabSpacing)case \(unknownIphoneCase)"
+        + "\n\(tabSpacing)case \(unknownIpodCase)"
+        + "\n\(tabSpacing)case \(unknownIpadCase)"
+        + "\n\(tabSpacing)case \(unknownAppleWatchCase)"
+        + "\n\(tabSpacing)case \(unknownAppleTVCase)\n"
+
+
+    let allEunumCases = generatorDeviceList.keys.compactMap { generatorDeviceList[$0]?["enum"] as? String }
+
+    let enumSet = Set(allEunumCases)
+    enumSet.map { $0 }.sorted().forEach { enumCase in
+        let swiftEnumCase = normalizedEnum(enumCase)
+        enumString += "\n\(tabSpacing)case \(swiftEnumCase)"
+    }
+    print("Creating \(enumFile)")
     do {
-        let constantHeaderFileConent = "\n#import \"DeviceUtil.h\"\n\n"
-            + enumString
-            + "\n\n"
-            + externString
-            + "\n@interface DeviceUtil (Constant)"
-            + "\n\n/// This method returns the Hardware enum depending upon hardware string"
-            + "\n- (Hardware)hardware;"
-            + "\n@end"
-        try constantHeaderFileConent.write(toFile: dirPath + constantHeaderFile, atomically: true, encoding: .utf8)
-        print("Created \(constantHeaderFile)")
+        let enumFileConent = enumString + "\n}"
+        try enumFileConent.write(toFile: dirPath + enumFile, atomically: true, encoding: .utf8)
+        print("Created \(enumFile)")
     } catch {
-        print("Unable to create \(constantHeaderFile)")
+        print("Unable to create \(enumFile)")
         return
     }
 
+    // Extension file generation
+    var hardwareFuncContent = ""
+    let extensionFile = "DeviceGuru+Extension.swift"
+    generatorDeviceList.keys.sorted().forEach { hardwareKey in
+        let valueDict = generatorDeviceList[hardwareKey]
+        guard let enumCase = valueDict?["enum"] as? String else {
+            print("case not present of key \(hardwareKey)")
+            return
+        }
 
-    let constantImplFile = "DeviceUtil+Constant.m"
-    print("Creating \(constantImplFile)")
+        let enumCaseString = normalizedEnum(enumCase)
+        hardwareFuncContent += "\n\(tabSpacing)\(tabSpacing)if (hardware == \"\(hardwareKey)\") { return .\(enumCaseString) }"
+    }
+
+
+    print("Creating \(extensionFile)")
     do {
-        let constantImplFileConent = "\n#import \"\(constantHeaderFile)\"\n\n"
-            + externDefString
-            + "\n\n @implementation DeviceUtil (Constant)"
-            + "\n\n- (Hardware)hardware {"
-            + "\n\(tabSpacing)NSString *hardware = [self hardwareString];\n"
+        let extensionFileConent = "\npublic extension DeviceGuru {"
+            + "\n\(tabSpacing)/// This method returns the Hardware enum depending upon hardware string\n"
+            + "\(tabSpacing)///\n"
+            + "\(tabSpacing)///\n"
+            + "\(tabSpacing)/// - returns: `Hardware` type of the device\n"
+            + "\(tabSpacing)///\n"
+            + "\(tabSpacing)func hardware() -> Hardware {"
+            + "\n\(tabSpacing)\(tabSpacing)let hardware = hardwareString()\n"
             + hardwareFuncContent
-            + "\n\(tabSpacing)NSLog(@\"This is a device which is not listed in this category. Please visit https://github.com/InderKumarRathore/DeviceUtil and add a comment there.\");"
-            + "\n\(tabSpacing)NSLog(@\"Your device hardware string is: %@\", hardware);"
-            + "\n\(tabSpacing)return \(unknownCase);"
-            + "\n}"
-            + "\n@end"
-        try constantImplFileConent.write(toFile: dirPath + constantImplFile, atomically: true, encoding: .utf8)
-        print("Created \(constantImplFile)")
+            + "\n\n"
+            + "\(tabSpacing)\(tabSpacing)//log message that your device is not present in the list\n"
+            + "\(tabSpacing)\(tabSpacing)logMessage(hardware)\n"
+            + "\(tabSpacing)\(tabSpacing)if (hardware.hasPrefix(\"iPhone\")) { return .\(unknownIphoneCase) }\n"
+            + "\(tabSpacing)\(tabSpacing)if (hardware.hasPrefix(\"iPod\")) { return .\(unknownIpodCase) }\n"
+            + "\(tabSpacing)\(tabSpacing)if (hardware.hasPrefix(\"iPad\")) { return .\(unknownIpadCase) }\n"
+            + "\(tabSpacing)\(tabSpacing)if (hardware.hasPrefix(\"Watch\")) { return .\(unknownAppleWatchCase) }\n"
+            + "\(tabSpacing)\(tabSpacing)if (hardware.hasPrefix(\"AppleTV\")) { return .\(unknownAppleTVCase) }\n\n"
+            + "\(tabSpacing)\(tabSpacing)return .unknownDevice\n"
+            + "\(tabSpacing)}\n"
+            + "}\n"
+        try extensionFileConent.write(toFile: dirPath + extensionFile, atomically: true, encoding: .utf8)
+        print("Created \(extensionFile)")
     } catch {
-        print("Unable to create \(constantImplFile)")
+        print("Unable to create \(extensionFile)")
         return
     }
 
