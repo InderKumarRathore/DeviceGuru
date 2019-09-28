@@ -1,161 +1,128 @@
-//
-//  Hardware.swift
-//  DeviceGuru
-//
-//  Created by Inder Kumar Rathore on 24/03/16.
-//  Copyright © 2016 Inder Kumar Rathore. All rights reserved.
-//
-//  Hardware string can be found @http://www.everymac.com
 
-
-/// Enum for different iPhone/iPad devices
 public enum Hardware {
-    // These are for the new or the devices that are not listed in this lib
-    // if you get one of these then please submit an issue here : https://github.com/InderKumarRathore/DeviceGuru
+
+    case unknownDevice
     case unknownIphone
-    case unknownIpad
     case unknownIpod
+    case unknownIpad
     case unknownAppleWatch
     case unknownAppleTV
-    case unknownDevice
-    
-    // iPhone
-    case iphone2g
-    case iphone3g
-    case iphone3gs
-    
-    case iphone4
-    case iphone4_cdma
-    case iphone4s
-    
-    case iphone5
-    case iphone5_cdma_gsm
-    case iphone5c
-    case iphone5c_cdma_gsm
-    case iphone5s
-    case iphone5s_cdma_gsm
-    
-    case iphone6
-    case iphone6Plus
-    case iphone6s
-    case iphone6sPlus
-    case iphoneSE
-    
-    case iphone7
-    case iphone7Plus
-    
-    case iphone8
-    case iphone8Plus
-    case iphoneX
-    
-    case iphoneXS
-    case iphoneXSMax
-    case iphoneXSMaxChina
-    case iphoneXR
-    
-    // iPod
-    case ipodTouch1g
-    case ipodTouch2g
-    case ipodTouch3g
-    case ipodTouch4g
-    case ipodTouch5g
-    case ipodTouch6g
-    
-    
-    // iPad
-    case ipad
-    case ipad2
-    case ipad2_wifi
-    case ipad2_cdma
-    case ipad3
-    case ipad3g
-    case ipad3_wifi
-    case ipad3_wifi_cdma
-    case ipad4
-    case ipad4_wifi
-    case ipad4_gsm_cdma
-    
-    case ipadMini
-    case ipadMini_wifi
-    case ipadMini_wifi_cdma
-    case ipadMiniRetina_wifi
-    case ipadMiniRetina_wifi_cdma
-    case ipadMini3_wifi
-    case ipadMini3_wifi_cellular
-    case ipadMini3_wifi_cellular_cn
-    case ipadMini4_wifi
-    case ipadMini4_wifi_cellular
-    case ipadMiniRetina_wifi_cellular_cn
-    case ipadMini5_wifi
-    case ipadMini5_wifi_cellular
-    
-    case ipadAir_wifi
-    case ipadAir_wifi_gsm
-    case ipadAir_wifi_cdma
-    case ipadAir2_wifi
-    case ipadAir2_wifi_cellular
-    case ipadAir3_wifi
-    case ipadAir3_wifi_cellular
-    
-    case ipadPro_97_wifi
-    case ipadPro_97_wifi_cellular
-    case ipadPro_wifi
-    case ipadPro_wifi_cellular
-    
-    case ipad5_wifi
-    case ipad5_wifi_cellular
-    
-    case ipadPro2g_wifi
-    case ipadPro2g_wifi_cellular
-    case ipadPro_105_wifi
-    case ipadPro_105_wifi_cellular
-    
-    case ipad6_wifi
-    case ipad6_wifi_cellular
-    
-    case ipad_pro_11_wifi
-    case ipad_pro_11_1tb_wifi
-    case ipad_pro_11_wifi_cellular
-    case ipad_pro_11_1tb_wifi_cellular
-    
-    case ipad_pro_3g_wifi
-    case ipad_pro_3g_1tb_wifi
-    case ipad_pro_3g_wifi_cellular
-    case ipad_pro_3g_1tb_wifi_cellular
-    
-    
-    // Apple TV
-    case appleTv1g
-    case appleTv2g
-    case appleTv3g_2012
-    case appleTv3g_2013
-    case appleTv4g
-    case appleTv4k
-    
-    case appleWatch_38
-    case appleWatch_42
-    case appleWatch_series_2_38
-    case appleWatch_series_2_42
-    case appleWatch_series_1_38
-    case appleWatch_series_1_42
-    case appleWatch_series_3_38
-    case appleWatch_series_3_42
-    case appleWatch_series_3_38_cellular
-    case appleWatch_series_3_42_cellular
-    case appleWatch_series_4_40
-    case appleWatch_series_4_44
-    case appleWatch_series_4_40_cellular
-    case appleWatch_series_4_44_cellular
-    
-    case simulator
-}
 
-/// Enum of the different Apple's device platforms
-public enum Platform {
-    case iPhone
-    case iPodTouch
+    case apple_tv_1g
+    case apple_tv_2g
+    case apple_tv_3g
+    case apple_tv_3_2g
+    case apple_tv_4g
+    case apple_tv_4k
+    case apple_watch_38
+    case apple_watch_42
+    case apple_watch_series_1_38
+    case apple_watch_series_1_42
+    case apple_watch_series_2_38
+    case apple_watch_series_2_42
+    case apple_watch_series_3_38
+    case apple_watch_series_3_38_cellular
+    case apple_watch_series_3_42
+    case apple_watch_series_3_42_cellular
+    case apple_watch_series_4_40
+    case apple_watch_series_4_40_cellular
+    case apple_watch_series_4_44
+    case apple_watch_series_4_44_cellular
+    case apple_watch_series_5_40
+    case apple_watch_series_5_40_cellular
+    case apple_watch_series_5_44
+    case apple_watch_series_5_44_cellular
     case iPad
-    case appleTV
-    case appleWatch
-    case unknown
+    case ipad_2
+    case ipad_2_cdma
+    case ipad_2_wifi
+    case ipad_3
+    case ipad_3g
+    case ipad_3_wifi
+    case ipad_3_wifi_cdma
+    case ipad_4
+    case ipad_4_gsm_cdma
+    case ipad_4_wifi
+    case ipad_5_wifi
+    case ipad_5_wifi_cellular
+    case ipad_6_wifi
+    case ipad_6_wifi_cellular
+    case ipad_air_2_wifi
+    case ipad_air_2_wifi_cellular
+    case ipad_air_3_wifi
+    case ipad_air_3_wifi_cellular
+    case ipad_air_wifi
+    case ipad_air_wifi_cdma
+    case ipad_air_wifi_gsm
+    case ipad_mini
+    case ipad_mini_3_wifi
+    case ipad_mini_3_wifi_cellular
+    case ipad_mini_3_wifi_cellular_cn
+    case ipad_mini_4_wifi
+    case ipad_mini_4_wifi_cellular
+    case ipad_mini_5_wifi
+    case ipad_mini_5_wifi_cellular
+    case ipad_mini_retina_wifi
+    case ipad_mini_retina_wifi_cdma
+    case ipad_mini_retina_wifi_cellular_cn
+    case ipad_mini_wifi
+    case ipad_mini_wifi_cdma
+    case ipad_pro_105_wifi
+    case ipad_pro_105_wifi_cellular
+    case ipad_pro_11_1tb_wifi
+    case ipad_pro_11_1tb_wifi_cellular
+    case ipad_pro_11_wifi
+    case ipad_pro_11_wifi_cellular
+    case ipad_pro_2g_wifi
+    case ipad_pro_2g_wifi_cellular
+    case ipad_pro_3g_1tb_wifi
+    case ipad_pro_3g_1tb_wifi_cellular
+    case ipad_pro_3g_wifi
+    case ipad_pro_3g_wifi_cellular
+    case ipad_pro_97_wifi
+    case ipad_pro_97_wifi_cellular
+    case ipad_pro_wifi
+    case ipad_pro_wifi_cellular
+    case iphone_11
+    case iphone_11_pro
+    case iphone_11_pro_max
+    case iphone_2g
+    case iphone_3g
+    case iphone_3gs
+    case iphone_4
+    case iphone_4s
+    case iphone_4_cdma
+    case iphone_5
+    case iphone_5c
+    case iphone_5c_cdma_gsm
+    case iphone_5s
+    case iphone_5s_cdma_gsm
+    case iphone_5_cdma_gsm
+    case iphone_6
+    case iphone_6s
+    case iphone_6s_plus
+    case iphone_6_plus
+    case iphone_7
+    case iphone_7_gsm
+    case iphone_7_plus
+    case iphone_7_plus_gsm
+    case iphone_8
+    case iphone_8_cn
+    case iphone_8_plus
+    case iphone_8_plus_cn
+    case iphone_se
+    case iphone_x
+    case iphone_xr
+    case iphone_xs
+    case iphone_xs_max
+    case iphone_xs_max_cn
+    case iphone_x_cn
+    case ipod_touch_1g
+    case ipod_touch_2g
+    case ipod_touch_3g
+    case ipod_touch_4g
+    case ipod_touch_5g
+    case ipod_touch_6g
+    case ipod_touch_7g
+    case simulator
 }
