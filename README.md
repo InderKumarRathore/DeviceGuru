@@ -23,7 +23,7 @@ pod install
 Specify DeviceGuru into your project's `Cartfile`:
 
 ```ogdl
-github "InderKumarRathore/DeviceGuru" ~> 3.0
+github "InderKumarRathore/DeviceGuru"
 ```
 
 ##### Manually
