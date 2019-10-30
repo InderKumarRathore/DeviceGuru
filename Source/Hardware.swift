@@ -47,6 +47,7 @@ public enum Hardware {
     case ipad_5_wifi_cellular
     case ipad_6_wifi
     case ipad_6_wifi_cellular
+    case ipad_7_wifi
     case ipad_air_2_wifi
     case ipad_air_2_wifi_cellular
     case ipad_air_3_wifi
