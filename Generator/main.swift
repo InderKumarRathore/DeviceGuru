@@ -110,6 +110,8 @@ func main() {
         + "\n\(tabSpacing)case \(unknownAppleWatchCase)"
         + "\n\(tabSpacing)case \(unknownAppleTVCase)\n"
 
+        + "\n\(tabSpacing)case simulator\n"
+
     // Get devices by device type
     let iPhoneModels = getUniqueSortedModels(havingPrefix: "iPhone", from: generatorDeviceList)
     iPhoneModels.forEach {
