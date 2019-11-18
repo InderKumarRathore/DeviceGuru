@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'DeviceGuru'
-  spec.version = '6.0.1'
+  spec.version = '6.0.2'
   spec.license = 'MIT'
   spec.summary = 'DeviceGuru helps identifying the exact harware type of the device. e.g. iPhone 6 or iPhone 6s.'
   spec.homepage = 'https://github.com/InderKumarRathore/DeviceGuru'
