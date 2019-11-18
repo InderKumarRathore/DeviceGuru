@@ -4,6 +4,40 @@ import Foundation
 
 // MARK: - Functions
 
+struct Model: Hashable {
+
+    let version: Double
+    let enumCase: String
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(enumCase)
+    }
+
+    static func ==(lhs: Model, rhs: Model) -> Bool {
+        return lhs.enumCase == rhs.enumCase
+    }
+}
+
+func getUniqueSortedModels(havingPrefix: String, from deviceList: [String: [String: AnyObject]]) -> [Model] {
+
+    let filteredDict = deviceList.filter { $0.key.hasPrefix(havingPrefix) }
+    let models: [Model] = filteredDict.values.compactMap {
+
+        guard let version = $0["version"] as? NSNumber, let enumCase = $0["enum"] as? String else {
+            print("Can't create model from this: \($0)")
+            return nil
+        }
+        return Model(version: version.doubleValue, enumCase: enumCase)
+    }
+
+    // Get the unique models i.e. ignore models which has same enum, we don't want same enum twice in case that
+    // will cause compiler error
+    let sortedModels = models.sorted { $0.version < $1.version }
+    var modelSet = Set<Model>()
+    sortedModels.forEach { modelSet.insert($0) }
+    return modelSet.sorted { $0.version < $1.version }
+}
+
 func readPropertyList() -> [String: [String: AnyObject]]? {
     var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
     let plistPath: String = "GeneratorDeviceList.plist"
@@ -76,14 +110,41 @@ func main() {
         + "\n\(tabSpacing)case \(unknownAppleWatchCase)"
         + "\n\(tabSpacing)case \(unknownAppleTVCase)\n"
 
-
-    let allEunumCases = generatorDeviceList.keys.compactMap { generatorDeviceList[$0]?["enum"] as? String }
-
-    let enumSet = Set(allEunumCases)
-    enumSet.map { $0 }.sorted().forEach { enumCase in
-        let swiftEnumCase = normalizedEnum(enumCase)
+    // Get devices by device type
+    let iPhoneModels = getUniqueSortedModels(havingPrefix: "iPhone", from: generatorDeviceList)
+    iPhoneModels.forEach {
+        let swiftEnumCase = normalizedEnum($0.enumCase)
         enumString += "\n\(tabSpacing)case \(swiftEnumCase)"
     }
+    enumString += "\n"
+
+    let iPodModels = getUniqueSortedModels(havingPrefix: "iPod", from: generatorDeviceList)
+    iPodModels.forEach {
+        let swiftEnumCase = normalizedEnum($0.enumCase)
+        enumString += "\n\(tabSpacing)case \(swiftEnumCase)"
+    }
+    enumString += "\n"
+
+    let iPadModels = getUniqueSortedModels(havingPrefix: "iPad", from: generatorDeviceList)
+    iPadModels.forEach {
+        let swiftEnumCase = normalizedEnum($0.enumCase)
+        enumString += "\n\(tabSpacing)case \(swiftEnumCase)"
+    }
+    enumString += "\n"
+
+    let watchModels = getUniqueSortedModels(havingPrefix: "Watch", from: generatorDeviceList)
+    watchModels.forEach {
+        let swiftEnumCase = normalizedEnum($0.enumCase)
+        enumString += "\n\(tabSpacing)case \(swiftEnumCase)"
+    }
+    enumString += "\n"
+
+    let appleTVModels = getUniqueSortedModels(havingPrefix: "AppleTV", from: generatorDeviceList)
+    appleTVModels.forEach {
+        let swiftEnumCase = normalizedEnum($0.enumCase)
+        enumString += "\n\(tabSpacing)case \(swiftEnumCase)"
+    }
+
     print("Creating \(enumFile)")
     do {
         let enumFileConent = enumString + "\n}"
