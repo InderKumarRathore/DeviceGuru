@@ -8,6 +8,8 @@ public enum Hardware {
     case unknownAppleWatch
     case unknownAppleTV
 
+    case simulator
+
     case iphone_2g
     case iphone_3g
     case iphone_3gs
