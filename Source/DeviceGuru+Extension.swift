@@ -72,6 +72,7 @@ public extension DeviceGuru {
         if (hardware == "iPad6,7") { return .ipad_pro_wifi }
         if (hardware == "iPad6,8") { return .ipad_pro_wifi_cellular }
         if (hardware == "iPad7,1") { return .ipad_pro_2g_wifi }
+        if (hardware == "iPad7,11") { return .ipad_7_wifi }
         if (hardware == "iPad7,2") { return .ipad_pro_2g_wifi_cellular }
         if (hardware == "iPad7,3") { return .ipad_pro_105_wifi }
         if (hardware == "iPad7,4") { return .ipad_pro_105_wifi_cellular }
