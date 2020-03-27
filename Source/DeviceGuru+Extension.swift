@@ -79,6 +79,9 @@ public extension DeviceGuru {
         if (hardware == "iPad7,5") { return .ipad_6_wifi }
         if (hardware == "iPad7,6") { return .ipad_6_wifi_cellular }
         if (hardware == "iPad8,1") { return .ipad_pro_11_wifi }
+        if (hardware == "iPad8,10") { return .ipad_pro_11_2g_wifi_cellular }
+        if (hardware == "iPad8,11") { return .ipad_pro_4g_wifi }
+        if (hardware == "iPad8,12") { return .ipad_pro_4g_wifi_cellular }
         if (hardware == "iPad8,2") { return .ipad_pro_11_1tb_wifi }
         if (hardware == "iPad8,3") { return .ipad_pro_11_wifi_cellular }
         if (hardware == "iPad8,4") { return .ipad_pro_11_1tb_wifi_cellular }
@@ -86,6 +89,7 @@ public extension DeviceGuru {
         if (hardware == "iPad8,6") { return .ipad_pro_3g_1tb_wifi }
         if (hardware == "iPad8,7") { return .ipad_pro_3g_wifi_cellular }
         if (hardware == "iPad8,8") { return .ipad_pro_3g_1tb_wifi_cellular }
+        if (hardware == "iPad8,9") { return .ipad_pro_11_2g_wifi }
         if (hardware == "iPhone1,1") { return .iphone_2g }
         if (hardware == "iPhone1,2") { return .iphone_3g }
         if (hardware == "iPhone10,1") { return .iphone_8_cn }
