@@ -44,6 +44,7 @@ public enum Hardware {
     case iphone_11
     case iphone_11_pro
     case iphone_11_pro_max
+    case iphone_se_2g
 
     case ipod_touch_1g
     case ipod_touch_2g
@@ -94,8 +95,8 @@ public enum Hardware {
     case ipad_pro_105_wifi_cellular
     case ipad_6_wifi
     case ipad_6_wifi_cellular
-    case ipad_pro_11_wifi
     case ipad_pro_11_2g_wifi_cellular
+    case ipad_pro_11_wifi
     case ipad_pro_4g_wifi
     case ipad_pro_11_1tb_wifi
     case ipad_pro_11_wifi_cellular

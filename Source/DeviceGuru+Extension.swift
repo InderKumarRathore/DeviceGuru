@@ -106,6 +106,7 @@ public extension DeviceGuru {
         if (hardware == "iPhone12,1") { return .iphone_11 }
         if (hardware == "iPhone12,3") { return .iphone_11_pro }
         if (hardware == "iPhone12,5") { return .iphone_11_pro_max }
+        if (hardware == "iPhone12,8") { return .iphone_se_2g }
         if (hardware == "iPhone2,1") { return .iphone_3gs }
         if (hardware == "iPhone3,1") { return .iphone_4 }
         if (hardware == "iPhone3,2") { return .iphone_4 }
