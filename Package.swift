@@ -16,6 +16,7 @@ let package = Package(
         .target(
             name: "DeviceGuru", 
             dependencies: [], 
+            path: "Sources",
             resources: [.copy("DeviceList.plist")]
         )
     ]
