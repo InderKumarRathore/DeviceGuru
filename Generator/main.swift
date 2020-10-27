@@ -89,7 +89,7 @@ func main() {
         valueDict?.removeValue(forKey: "enum")
         deviceList[hardwareKey] = valueDict
     }
-    let dirPath = "../Source/"
+    let dirPath = "../Sources/"
 
     print("Writing plist.")
     guard (deviceList as NSDictionary).write(toFile: "\(dirPath)DeviceList.plist", atomically: true) else {
