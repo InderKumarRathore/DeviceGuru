@@ -5,13 +5,17 @@ import PackageDescription
 
 let package = Package(
     name: "DeviceGuru",
+    platforms: [
+        .iOS(.v8),
+        .tvOS(.v9),
+        .watchOS(.v2)
+    ],
     products: [
         .library(
             name: "DeviceGuru", 
             targets: ["DeviceGuru"]
         )
     ],
-    dependencies: [],
     targets: [
         .target(
             name: "DeviceGuru", 
