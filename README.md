@@ -8,7 +8,14 @@
 
 ### Installation
 
-##### Using pods
+##### Using Swift Package Manager
+Add to Package.swift:
+
+```swift
+.Package(url: "https://github.com/InderKumarRathore/DeviceGuru", from: "6.0.7")
+```
+
+##### Using CocoaPods
 Copy the pod dependency and add that to your pod file. e.g.
 
 ```sh
