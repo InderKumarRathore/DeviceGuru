@@ -168,7 +168,7 @@ func main() {
 
     print("Creating \(enumFile)")
     do {
-        let enumFileConent = enumString + "\n}"
+        let enumFileConent = enumString + "\n}\n"
         try enumFileConent.write(toFile: dirPath + enumFile, atomically: true, encoding: .utf8)
         print("Created \(enumFile)")
     } catch {
