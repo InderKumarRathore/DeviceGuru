@@ -15,11 +15,11 @@ Pod::Spec.new do |spec|
 
   spec.subspec "DeviceGuru" do |ss|
     ss.dependency "DeviceGuru/Resources"
-    ss.source_files = "Source/*.swift"
+    ss.source_files = "Sources/*.swift"
   end
 
   spec.subspec "Resources" do |ss|
-    ss.resource_bundle = { spec.name => 'Source/DeviceList.plist' }
+    ss.resource_bundle = { spec.name => 'Sources/DeviceList.plist' }
   end
 
 end
