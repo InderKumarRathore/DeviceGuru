@@ -12,7 +12,7 @@
 Add to Package.swift:
 
 ```swift
-.Package(url: "https://github.com/InderKumarRathore/DeviceGuru", from: "6.0.7")
+.Package(url: "https://github.com/InderKumarRathore/DeviceGuru", branch: "master")
 ```
 
 ##### Using CocoaPods
@@ -54,8 +54,9 @@ let deviceGuru = DeviceGuru()
 let deviceName = deviceGuru.hardware()
 let deviceCode = deviceGuru.hardwareString()
 let platform = deviceGuru.platform()
-print("\(deviceName) - \(deviceCode) - \(platform.rawValue)") //Ex: iphone_7_PLUS - iPhone9,2 - iphone
+print("\(deviceName) - \(deviceCode) - \(platform)") //Ex: iphone_7_PLUS - iPhone9,2 - iphone
 ```
+Checkout [`ExampleProject`](Example/)
 
 
 ### Development
