@@ -25,27 +25,28 @@ open class DeviceGuru {
 
     /// Initialises the DeviceGuru using DeviceList.plist if the plist is not found then it asserts
     public init() {
-        // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
-        // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
-        let deviceUtilTopBundle = Bundle(for: DeviceGuru.self)
-        if let url = deviceUtilTopBundle.url(forResource: "DeviceGuru", withExtension: "bundle") {
-            let deviceUtilBundle = Bundle(url: url)
-            if let path = deviceUtilBundle?.path(forResource: "DeviceList", ofType: "plist") {
+        // get the bundle of the DeviceGuru if it's main bundle then it returns main bundle
+        // if it's DeviceGuru.framework then it returns the DeviceGuru.framework bundle
+        let topBundle = Bundle(for: DeviceGuru.self)
+        let resource = "DeviceList"
+        let type = "plist"
+        if let url = topBundle.url(forResource: "DeviceGuru", withExtension: "bundle") {
+            let bundle = Bundle(url: url)
+            if let path = bundle?.path(forResource: resource, ofType: type) {
                 self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
-            }
-            else {
+            } else {
                 // Assert if the plist is not found
-                assertionFailure("DevicePlist.plist not found in the bundle.")
+                assertionFailure("DeviceList.plist not found in the bundle.")
                 self.deviceListDict = [String: AnyObject]()
             }
-        }
-        else if let path = deviceUtilTopBundle.path(forResource: "DeviceList", ofType: "plist") {
+        } else if let path = topBundle.path(forResource: resource, ofType: type) {
             // falling back to main bundle
             self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
-        }
-        else {
+        } else if let path = Bundle.module.path(forResource: resource, ofType: type) {
+            self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
+        } else {
             // Assert if the plist is not found
-            assertionFailure("DevicePlist.plist not found in the bundle.")
+            assertionFailure("DeviceList.plist not found in the bundle.")
             self.deviceListDict = [String: AnyObject]()
         }
     }
