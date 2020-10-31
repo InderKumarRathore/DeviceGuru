@@ -56,7 +56,7 @@ let deviceCode = deviceGuru.hardwareString()
 let platform = deviceGuru.platform()
 print("\(deviceName) - \(deviceCode) - \(platform)") //Ex: iphone_7_PLUS - iPhone9,2 - iphone
 ```
-Checkout [`ExampleProject`](Example/)
+Checkout [`Example Project`](Example/)!
 
 
 ### Development
