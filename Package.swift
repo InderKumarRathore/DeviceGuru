@@ -21,7 +21,6 @@ let package = Package(
             name: "DeviceGuru", 
             dependencies: [], 
             path: "Sources",
-            exclude: ["Example"],
             resources: [.copy("DeviceList.plist")]
         )
     ]
