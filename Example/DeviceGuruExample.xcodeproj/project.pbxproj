@@ -348,7 +348,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/InderKumarRathore/DeviceGuru";
 			requirement = {
-				branch = master;
+				branch = develop;
 				kind = branch;
 			};
 		};
