@@ -18,6 +18,28 @@ public enum Platform {
     case unknown
 }
 
+public struct DeviceVersion: Comparable {
+    public let major: Int
+    public let minor: Int
+
+    public init(major: Int, minor: Int) {
+        self.major = major
+        self.minor = minor
+    }
+
+    public static func < (lhs: DeviceVersion, rhs: DeviceVersion) -> Bool {
+        if lhs.major == rhs.major {
+            return lhs.minor < rhs.minor
+        } else {
+            return lhs.major < rhs.major
+        }
+    }
+
+    public static func == (lhs: DeviceVersion, rhs: DeviceVersion) -> Bool {
+        lhs.major == rhs.major && lhs.minor == rhs.minor
+    }
+}
+
 open class DeviceGuru {
 
     /// Stores the list of the devices from the DeviceList.plist
@@ -53,7 +75,7 @@ open class DeviceGuru {
     /// This method returns the hardware type
     ///
     ///
-    /// - returns: raw `String` of device type
+    /// - returns: raw `String` of device type, e.g. iPhone5,1
     ///
     public func hardwareString() -> String {
         var name: [Int32] = [CTL_HW, HW_MACHINE]
@@ -129,24 +151,19 @@ open class DeviceGuru {
         return nil
     }
 
-    /// This method returns the hardware number not actual but logically.
-    /// e.g. if the hardware string is 5,1 then hardware number would be 5.1
+    /// This method returns the hardware version not actual but logical.
+    /// e.g. iPhone5,11 will return `DeviceVersion(major: 5, minor: 11)`
     ///
-    public func hardwareNumber() -> Float? {
+    public func hardwareNumber() -> DeviceVersion? {
         let hardware = hardwareString()
-
-        let hardwareDetail = self.deviceListDict[hardware] as? [String: AnyObject]
-        if let hardwareNumber = hardwareDetail?["version"] as? NSNumber {
-            return hardwareNumber.floatValue
+        guard let versionString = findMatch(for: "[\\d]*,[\\d]*", in: hardware),
+              let version =  getVersion(from: versionString) else {
+            print("Can't create Version from: \(hardware)")
+            print("Please repor the above log to: https://github.com/InderKumarRathore/DeviceGuru")
+            return nil
         }
-
-        //log message that your device is not present in the list
-        logMessage(hardware)
-
-        return nil //device might be new or one of missing device so returning nil
+        return version
     }
-
-    // MARK: - Private
 
     /// Internal method for loggin, you don't need this method
     ///
@@ -161,3 +178,41 @@ open class DeviceGuru {
     }
 }
 
+// MARK: - Private
+
+private extension DeviceGuru {
+
+    func findMatch(for regex: String, in text: String) -> String? {
+        do {
+            let regex = try NSRegularExpression(pattern: regex)
+            let results = regex.matches(in: text, range: NSRange(text.startIndex..., in: text))
+            return results.compactMap {
+                guard let range = Range($0.range, in: text) else {
+                    print("Unable to create the range for: \(text)")
+                    return nil
+                }
+                return String(text[range])
+            }.first
+        } catch let error {
+            print("invalid regex: \(error.localizedDescription)")
+            return nil
+        }
+    }
+
+    func getVersion(from string: String) -> DeviceVersion? {
+        let components = string.components(separatedBy: ",")
+        guard components.count == 2 else {
+            print("Can't create components of string: \(string)")
+            return nil
+        }
+        let majorString = components[0].trimmingCharacters(in: .whitespacesAndNewlines)
+        let minorString = components[1].trimmingCharacters(in: .whitespacesAndNewlines)
+
+        guard let major = Int(majorString), let minor = Int(minorString) else {
+            print("Can't create major: \(majorString) and  minor: \(minorString)")
+            return nil
+        }
+        return DeviceVersion(major: major, minor: minor)
+    }
+
+}
