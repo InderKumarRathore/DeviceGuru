@@ -1,6 +1,6 @@
 # DeviceGuru
 
-***DeviceGuru*** is a simple lib (Swift) to know the exact type of the device, e.g. iPhone 6 or iPhone 6s. For Objective-C please visit [DeviceUtil](https://github.com/InderKumarRathore/DeviceUtil)
+***DeviceGuru*** is a simple lib (Swift) to know the exact type of the device, e.g. iPhone 6 or iPhone 6s
   - Easy to use
   - Light weight
 
