@@ -16,6 +16,7 @@ struct ContentView: View {
     private var code: String { guru.hardwareString() }
     private var platform: Platform { guru.platform() }
     private var description: String? { guru.hardwareDescription() }
+    private var deviceVersion: DeviceVersion? { guru.hardwareNumber() }
 
     var body: some View {
         VStack {
@@ -26,11 +27,13 @@ struct ContentView: View {
                     headline("Device Name")
                     headline("Device Code")
                     headline("Platform")
+                    headline("Device Version")
                 }
                 VStack {
                     value(String(describing: name))
                     value(code)
                     value(String(describing: platform))
+                    value("\(String(describing: deviceVersion!.major)),\(deviceVersion!.minor)")
                 }
             }
         }.padding()
