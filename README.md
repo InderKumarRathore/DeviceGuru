@@ -34,11 +34,9 @@ github "InderKumarRathore/DeviceGuru"
 ```
 
 ##### Manually
-Drag and drop
+Drag and drop this folder
 ``` swift
-DeviceGuru.swift
-Hardware.swift
-DeviceList.plist
+Sources
 ```
 
 files in your project
