@@ -9,37 +9,6 @@
 
 import Foundation
 
-public enum Platform {
-    case iPhone
-    case iPodTouch
-    case iPad
-    case appleWatch
-    case appleTV
-    case unknown
-}
-
-public struct DeviceVersion: Comparable {
-    public let major: Int
-    public let minor: Int
-
-    public init(major: Int, minor: Int) {
-        self.major = major
-        self.minor = minor
-    }
-
-    public static func < (lhs: DeviceVersion, rhs: DeviceVersion) -> Bool {
-        if lhs.major == rhs.major {
-            return lhs.minor < rhs.minor
-        } else {
-            return lhs.major < rhs.major
-        }
-    }
-
-    public static func == (lhs: DeviceVersion, rhs: DeviceVersion) -> Bool {
-        lhs.major == rhs.major && lhs.minor == rhs.minor
-    }
-}
-
 open class DeviceGuru {
 
     /// Stores the list of the devices from the DeviceList.plist
@@ -155,7 +124,7 @@ open class DeviceGuru {
     /// This method returns the hardware version not actual but logical.
     /// e.g. iPhone5,11 will return `DeviceVersion(major: 5, minor: 11)`
     ///
-    public func hardwareNumber() -> DeviceVersion? {
+    public func deviceVersion() -> DeviceVersion? {
         let hardware = hardwareString()
         guard let versionString = findMatch(for: "[\\d]*,[\\d]*", in: hardware),
               let version =  getVersion(from: versionString) else {
