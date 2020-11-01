@@ -16,7 +16,7 @@ struct ContentView: View {
     private var code: String { guru.hardwareString() }
     private var platform: Platform { guru.platform() }
     private var description: String? { guru.hardwareDescription() }
-    private var deviceVersion: DeviceVersion? { guru.hardwareNumber() }
+    private var deviceVersion: DeviceVersion? { guru.deviceVersion() }
 
     var body: some View {
         VStack {
