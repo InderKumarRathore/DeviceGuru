@@ -35,9 +35,12 @@ open class DeviceGuru {
             self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
         } else {
             #if SWIFT_PACKAGE
-            let resourceBundle = Bundle.module
             if let path = Bundle.module.path(forResource: resource, ofType: type) {
                 self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
+            } else {
+                // Assert if the plist is not found
+                assertionFailure("DeviceList.plist not found in the bundle.")
+                self.deviceListDict = [String: AnyObject]()
             }
             #else
             // Assert if the plist is not found
