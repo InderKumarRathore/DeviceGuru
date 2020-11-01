@@ -33,12 +33,20 @@ open class DeviceGuru {
         } else if let path = topBundle.path(forResource: resource, ofType: type) {
             // falling back to main bundle
             self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
-        } else if let path = Bundle.module.path(forResource: resource, ofType: type) {
-            self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
         } else {
+            #if SWIFT_PACKAGE
+            if let path = Bundle.module.path(forResource: resource, ofType: type) {
+                self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
+            } else {
+                // Assert if the plist is not found
+                assertionFailure("DeviceList.plist not found in the bundle.")
+                self.deviceListDict = [String: AnyObject]()
+            }
+            #else
             // Assert if the plist is not found
             assertionFailure("DeviceList.plist not found in the bundle.")
             self.deviceListDict = [String: AnyObject]()
+            #endif
         }
     }
 
