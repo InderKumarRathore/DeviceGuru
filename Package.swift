@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "DeviceGuru",
     platforms: [
-        .iOS(.v8),
+        .iOS(.v9),
         .tvOS(.v9),
         .watchOS(.v2)
     ],
