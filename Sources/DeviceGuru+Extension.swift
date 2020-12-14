@@ -32,6 +32,7 @@ public extension DeviceGuru {
         if (hardware == "Watch5,2") { return .apple_watch_series_5_44 }
         if (hardware == "Watch5,3") { return .apple_watch_series_5_40_cellular }
         if (hardware == "Watch5,4") { return .apple_watch_series_5_44_cellular }
+        if (hardware == "arm64") { return .simulator }
         if (hardware == "i386") { return .simulator }
         if (hardware == "iPad1,1") { return .iPad }
         if (hardware == "iPad1,2") { return .ipad_3g }
