@@ -933,5 +933,12 @@
 		<key>enum</key>
 		<string>SIMULATOR</string>
 	</dict>
+	<key>arm64</key>
+	<dict>
+		<key>name</key>
+		<string>Simulator</string>
+		<key>enum</key>
+		<string>SIMULATOR</string>
+	</dict>
 </dict>
 </plist>

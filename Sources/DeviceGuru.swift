@@ -65,7 +65,7 @@ open class DeviceGuru {
         var hardware: String = String(cString: hw_machine)
 
         // Check for simulator
-        if hardware == "x86_64" || hardware == "i386" {
+        if hardware == "x86_64" || hardware == "i386" || hardware == "arm64" {
             if let deviceID = ProcessInfo.processInfo.environment["SIMULATOR_MODEL_IDENTIFIER"] {
                 hardware = deviceID
             }

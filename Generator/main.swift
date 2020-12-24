@@ -81,7 +81,7 @@ func normalizedEnum(_ enumCase: String) -> String {
     let lowerCasedEnum = enumCase.lowercased()
     if lowerCasedEnum == "iphone" || lowerCasedEnum == "ipad" || lowerCasedEnum == "ipod" {
         return "iP" + lowerCasedEnum.dropFirst(2)
-    } else if lowerCasedEnum == "x86_64" || lowerCasedEnum == "i386" {
+    } else if lowerCasedEnum == "x86_64" || lowerCasedEnum == "i386" || lowerCasedEnum == "arm64" {
         return lowerCasedEnum + "_simulator"
     } else {
         return lowerCasedEnum

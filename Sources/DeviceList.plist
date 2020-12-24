@@ -122,6 +122,11 @@
 		<key>name</key>
 		<string>Apple Watch Series 5 (44 mm/Cellular)</string>
 	</dict>
+	<key>arm64</key>
+	<dict>
+		<key>name</key>
+		<string>Simulator</string>
+	</dict>
 	<key>i386</key>
 	<dict>
 		<key>name</key>
