@@ -137,7 +137,7 @@ open class DeviceGuru {
         guard let versionString = findMatch(for: "[\\d]*,[\\d]*", in: hardware),
               let version =  getVersion(from: versionString) else {
             print("Can't create Version from: \(hardware)")
-            print("Please repor the above log to: https://github.com/InderKumarRathore/DeviceGuru")
+            print("Please report the above log to: https://github.com/InderKumarRathore/DeviceGuru")
             return nil
         }
         return version
