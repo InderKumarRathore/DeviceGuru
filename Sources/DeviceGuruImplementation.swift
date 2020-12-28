@@ -9,7 +9,7 @@
 
 import Foundation
 
-open class DeviceGuru {
+public class DeviceGuruImplementation {
 
     /// Stores the list of the devices from the DeviceList.plist
     private let deviceListDict: [String: AnyObject]

@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		1DB59D3A256137E10040B7FE /* DeviceVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59D38256137E10040B7FE /* DeviceVersion.swift */; };
 		1DB59D3B256137E10040B7FE /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59D39256137E10040B7FE /* Platform.swift */; };
-		OBJ_26 /* DeviceGuru+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DeviceGuru+Extension.swift */; };
-		OBJ_27 /* DeviceGuru.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DeviceGuru.swift */; };
+		OBJ_26 /* DeviceGuruImplementation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DeviceGuruImplementation+Extension.swift */; };
+		OBJ_27 /* DeviceGuruImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DeviceGuruImplementation.swift */; };
 		OBJ_28 /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Hardware.swift */; };
 		OBJ_35 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 /* End PBXBuildFile section */
@@ -19,8 +19,8 @@
 		1DB59D38256137E10040B7FE /* DeviceVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceVersion.swift; sourceTree = "<group>"; };
 		1DB59D39256137E10040B7FE /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		"DeviceGuru::DeviceGuru::Product" /* DeviceGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DeviceGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* DeviceGuru+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceGuru+Extension.swift"; sourceTree = "<group>"; };
-		OBJ_11 /* DeviceGuru.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuru.swift; sourceTree = "<group>"; };
+		OBJ_10 /* DeviceGuruImplementation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceGuruImplementation+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_11 /* DeviceGuruImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuruImplementation.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Hardware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hardware.swift; sourceTree = "<group>"; };
 		OBJ_16 /* Generator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generator; sourceTree = SOURCE_ROOT; };
 		OBJ_17 /* DeviceGuru.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeviceGuru.podspec; sourceTree = "<group>"; };
@@ -77,8 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* DeviceGuru.h */,
-				OBJ_11 /* DeviceGuru.swift */,
-				OBJ_10 /* DeviceGuru+Extension.swift */,
+				OBJ_11 /* DeviceGuruImplementation.swift */,
+				OBJ_10 /* DeviceGuruImplementation+Extension.swift */,
 				OBJ_9 /* DeviceList.plist */,
 				1DB59D38256137E10040B7FE /* DeviceVersion.swift */,
 				OBJ_12 /* Hardware.swift */,
@@ -155,8 +155,8 @@
 			files = (
 				1DB59D3B256137E10040B7FE /* Platform.swift in Sources */,
 				1DB59D3A256137E10040B7FE /* DeviceVersion.swift in Sources */,
-				OBJ_26 /* DeviceGuru+Extension.swift in Sources */,
-				OBJ_27 /* DeviceGuru.swift in Sources */,
+				OBJ_26 /* DeviceGuruImplementation+Extension.swift in Sources */,
+				OBJ_27 /* DeviceGuruImplementation.swift in Sources */,
 				OBJ_28 /* Hardware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

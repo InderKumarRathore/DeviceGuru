@@ -1,5 +1,5 @@
 
-public extension DeviceGuru {
+public extension DeviceGuruImplementation {
     /// This method returns the Hardware enum depending upon hardware string
     ///
     ///
