@@ -42,7 +42,6 @@ public final class DeviceGuruImplementation: DeviceGuru {
         return hardware
     }()
 
-    /// Initialises the DeviceGuru using DeviceList.plist if the plist is not found then it asserts
     public init() {
         guard let localHardwareDetail = Self.loadHardareDetailFromUserDefaultsIfLatest() else {
             let allDevices = Self.loadAllDeviceDictionaryFromPlist()
