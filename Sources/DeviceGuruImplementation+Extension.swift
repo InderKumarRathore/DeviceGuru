@@ -1,7 +1,8 @@
 
 public extension DeviceGuruImplementation {
 
-    static var libraryVersion: String { "9.0.0" }
+    /// This should be same as cocoapod version
+    static var libraryVersion: String { "<#Major#>.<#Minor#>.<#Fixes#>" }
 
     var hardware: Hardware {
 
@@ -29,6 +30,7 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "Watch5,2") { return .apple_watch_series_5_44 }
         if (hardwareString == "Watch5,3") { return .apple_watch_series_5_40_cellular }
         if (hardwareString == "Watch5,4") { return .apple_watch_series_5_44_cellular }
+        if (hardwareString == "arm64") { return .simulator }
         if (hardwareString == "i386") { return .simulator }
         if (hardwareString == "iPad1,1") { return .iPad }
         if (hardwareString == "iPad1,2") { return .ipad_3g }
@@ -36,6 +38,8 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPad11,2") { return .ipad_mini_5_wifi_cellular }
         if (hardwareString == "iPad11,3") { return .ipad_air_3_wifi }
         if (hardwareString == "iPad11,4") { return .ipad_air_3_wifi_cellular }
+        if (hardwareString == "iPad13,1") { return .ipad_air_4_wifi }
+        if (hardwareString == "iPad13,2") { return .ipad_air_4_wifi_cellular }
         if (hardwareString == "iPad2,1") { return .ipad_2_wifi }
         if (hardwareString == "iPad2,2") { return .ipad_2 }
         if (hardwareString == "iPad2,3") { return .ipad_2_cdma }
