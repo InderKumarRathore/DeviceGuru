@@ -1,7 +1,7 @@
 
 public extension DeviceGuruImplementation {
 
-    static var version: String { "9.0.0" }
+    static var libraryVersion: String { "9.0.0" }
 
     var hardware: Hardware {
 

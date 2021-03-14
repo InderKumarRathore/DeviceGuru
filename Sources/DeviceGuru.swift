@@ -10,7 +10,7 @@ import Foundation
 public protocol DeviceGuru {
 
     /// Version of the library
-    static var version: String { get }
+    static var libraryVersion: String { get }
 
     /// Returns raw `String` of device type, e.g. iPhone5,1
     var hardwareString: String { get }
