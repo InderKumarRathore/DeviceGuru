@@ -115,6 +115,8 @@ public enum Hardware {
     case ipad_mini_5_wifi_cellular
     case ipad_air_3_wifi
     case ipad_air_3_wifi_cellular
+    case ipad_air_4_wifi
+    case ipad_air_4_wifi_cellular
 
     case apple_watch_38
     case apple_watch_42

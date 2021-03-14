@@ -737,6 +737,20 @@
 		<key>enum</key>
 		<string>IPAD_AIR_3_WIFI_CELLULAR</string>
 	</dict>
+	<key>iPad13,1</key>
+	<dict>
+	    <key>name</key>
+	    <string>iPad Air 4 (Wi-Fi)</string>
+	    <key>enum</key>
+	    <string>IPAD_AIR_4_WIFI</string>
+	</dict>
+	<key>iPad13,2</key>
+	<dict>
+	    <key>name</key>
+	    <string>iPad Air 4 (Wi-Fi + Cellular)</string>
+    	<key>enum</key>
+    	<string>IPAD_AIR_4_WIFI_CELLULAR</string>
+	</dict>
 	<key>AppleTV1,1</key>
 	<dict>
 		<key>name</key>
@@ -913,6 +927,13 @@
 		<string>SIMULATOR</string>
 	</dict>
 	<key>x86_64</key>
+	<dict>
+		<key>name</key>
+		<string>Simulator</string>
+		<key>enum</key>
+		<string>SIMULATOR</string>
+	</dict>
+	<key>arm64</key>
 	<dict>
 		<key>name</key>
 		<string>Simulator</string>
