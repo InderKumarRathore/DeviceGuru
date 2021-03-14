@@ -29,3 +29,8 @@ public protocol DeviceGuru {
     /// Returns readable description `String` of the device
     func hardwareDescription() throws -> String
 }
+
+public protocol LocalStorage {
+    func setValue(_ value: Any?, forKey key: String)
+    func object(forKey defaultName: String) -> Any?
+}

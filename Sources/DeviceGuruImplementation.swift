@@ -16,7 +16,7 @@ public enum DeviceGuruException: Error {
 
 public final class DeviceGuruImplementation: DeviceGuru {
 
-    private enum UserDefaultKeys {
+    private enum LocalStorageKeys {
         static let hardwareDetail = "github.com/InderKumarRathore/DeviceGuru.HardwareDetail.Key"
         static let deviceGuruVersion = "github.com/InderKumarRathore/DeviceGuru.Version.Key"
     }
@@ -42,11 +42,14 @@ public final class DeviceGuruImplementation: DeviceGuru {
         return hardware
     }()
 
-    public init() {
-        guard let localHardwareDetail = Self.loadHardareDetailFromUserDefaultsIfLatest() else {
+    private let localStorage: LocalStorage
+
+    public init(localStorage: LocalStorage = UserDefaults.standard) {
+        self.localStorage = localStorage
+        guard let localHardwareDetail = loadHardareDetailFromUserDefaultsIfLatest() else {
             let allDevices = Self.loadAllDeviceDictionaryFromPlist()
             Self.hardwareDetail = allDevices[Self._hardwareString] as? [String: Any]
-            Self.saveHardwareDetailToUserDefaults()
+            saveHardwareDetailToUserDefaults()
             return
         }
         Self.hardwareDetail = localHardwareDetail
@@ -144,15 +147,15 @@ private extension DeviceGuruImplementation {
         return DeviceVersion(major: major, minor: minor)
     }
 
-    static func loadHardareDetailFromUserDefaultsIfLatest() -> [String: Any]? {
-        let libraryVersion = UserDefaults.standard.string(forKey: UserDefaultKeys.deviceGuruVersion)
+    func loadHardareDetailFromUserDefaultsIfLatest() -> [String: Any]? {
+        let libraryVersion = localStorage.object(forKey: LocalStorageKeys.deviceGuruVersion) as? String
         guard libraryVersion == Self.libraryVersion else { return nil }
-        return UserDefaults.standard.dictionary(forKey: UserDefaultKeys.hardwareDetail)
+        return localStorage.object(forKey: LocalStorageKeys.hardwareDetail) as? [String: Any]
     }
 
-    static func saveHardwareDetailToUserDefaults() {
-        UserDefaults.standard.setValue(libraryVersion, forKey: UserDefaultKeys.deviceGuruVersion)
-        UserDefaults.standard.setValue(hardwareDetail, forKey: UserDefaultKeys.hardwareDetail)
+    func saveHardwareDetailToUserDefaults() {
+        localStorage.setValue(Self.libraryVersion, forKey: LocalStorageKeys.deviceGuruVersion)
+        localStorage.setValue(Self.hardwareDetail, forKey: LocalStorageKeys.hardwareDetail)
     }
 
     static func loadAllDeviceDictionaryFromPlist() -> [String: AnyObject] {
@@ -188,3 +191,7 @@ private extension DeviceGuruImplementation {
         }
     }
 }
+
+// Mark:- Private UserDefaults
+
+extension UserDefaults: LocalStorage {}
