@@ -145,13 +145,13 @@ private extension DeviceGuruImplementation {
     }
 
     static func loadHardareDetailFromUserDefaultsIfLatest() -> [String: Any]? {
-        let version = UserDefaults.standard.string(forKey: UserDefaultKeys.deviceGuruVersion)
-        guard version == Self.version else { return nil }
+        let libraryVersion = UserDefaults.standard.string(forKey: UserDefaultKeys.deviceGuruVersion)
+        guard libraryVersion == Self.libraryVersion else { return nil }
         return UserDefaults.standard.dictionary(forKey: UserDefaultKeys.hardwareDetail)
     }
 
     static func saveHardwareDetailToUserDefaults() {
-        UserDefaults.standard.setValue(version, forKey: UserDefaultKeys.deviceGuruVersion)
+        UserDefaults.standard.setValue(libraryVersion, forKey: UserDefaultKeys.deviceGuruVersion)
         UserDefaults.standard.setValue(hardwareDetail, forKey: UserDefaultKeys.hardwareDetail)
     }
 
