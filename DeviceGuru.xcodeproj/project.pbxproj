@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D89A680259A09200042C47B /* DeviceGuru.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D89A67F259A09200042C47B /* DeviceGuru.swift */; };
 		1DB59D3A256137E10040B7FE /* DeviceVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59D38256137E10040B7FE /* DeviceVersion.swift */; };
 		1DB59D3B256137E10040B7FE /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59D39256137E10040B7FE /* Platform.swift */; };
 		OBJ_26 /* DeviceGuruImplementation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DeviceGuruImplementation+Extension.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D89A67F259A09200042C47B /* DeviceGuru.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuru.swift; sourceTree = "<group>"; };
 		1DB59D38256137E10040B7FE /* DeviceVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceVersion.swift; sourceTree = "<group>"; };
 		1DB59D39256137E10040B7FE /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		"DeviceGuru::DeviceGuru::Product" /* DeviceGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DeviceGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* DeviceGuru.h */,
+				1D89A67F259A09200042C47B /* DeviceGuru.swift */,
 				OBJ_11 /* DeviceGuruImplementation.swift */,
 				OBJ_10 /* DeviceGuruImplementation+Extension.swift */,
 				OBJ_9 /* DeviceList.plist */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				1D89A680259A09200042C47B /* DeviceGuru.swift in Sources */,
 				1DB59D3B256137E10040B7FE /* Platform.swift in Sources */,
 				1DB59D3A256137E10040B7FE /* DeviceVersion.swift in Sources */,
 				OBJ_26 /* DeviceGuruImplementation+Extension.swift in Sources */,

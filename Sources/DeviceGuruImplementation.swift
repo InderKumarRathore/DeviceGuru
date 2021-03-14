@@ -9,53 +9,21 @@
 
 import Foundation
 
-public class DeviceGuruImplementation {
+public enum DeviceGuruException: Error {
+    case deviceNotPresentInThePlist(String)
+    case unableToCreateDeviceVersion(String)
+}
 
-    /// Stores the list of the devices from the DeviceList.plist
-    private let deviceListDict: [String: AnyObject]
+public final class DeviceGuruImplementation: DeviceGuru {
 
-    /// Initialises the DeviceGuru using DeviceList.plist if the plist is not found then it asserts
-    public init() {
-        // get the bundle of the DeviceGuru if it's main bundle then it returns main bundle
-        // if it's DeviceGuru.framework then it returns the DeviceGuru.framework bundle
-        let topBundle = Bundle(for: DeviceGuru.self)
-        let resource = "DeviceList"
-        let type = "plist"
-        if let url = topBundle.url(forResource: "DeviceGuru", withExtension: "bundle") {
-            let bundle = Bundle(url: url)
-            if let path = bundle?.path(forResource: resource, ofType: type) {
-                self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
-            } else {
-                // Assert if the plist is not found
-                assertionFailure("DeviceList.plist not found in the bundle.")
-                self.deviceListDict = [String: AnyObject]()
-            }
-        } else if let path = topBundle.path(forResource: resource, ofType: type) {
-            // falling back to main bundle
-            self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
-        } else {
-            #if SWIFT_PACKAGE
-            if let path = Bundle.module.path(forResource: resource, ofType: type) {
-                self.deviceListDict = NSDictionary(contentsOfFile: path) as! [String: AnyObject]
-            } else {
-                // Assert if the plist is not found
-                assertionFailure("DeviceList.plist not found in the bundle.")
-                self.deviceListDict = [String: AnyObject]()
-            }
-            #else
-            // Assert if the plist is not found
-            assertionFailure("DeviceList.plist not found in the bundle.")
-            self.deviceListDict = [String: AnyObject]()
-            #endif
-        }
+    private enum UserDefaultKeys {
+        static let hardwareDetail = "github.com/InderKumarRathore/DeviceGuru.HardwareDetail.Key"
+        static let deviceGuruVersion = "github.com/InderKumarRathore/DeviceGuru.Version.Key"
     }
 
-    /// This method returns the hardware type
-    ///
-    ///
-    /// - returns: raw `String` of device type, e.g. iPhone5,1
-    ///
-    public func hardwareString() -> String {
+    private static var hardwareDetail: [String: Any]?
+
+    private static let _hardwareString: String = {
         var name: [Int32] = [CTL_HW, HW_MACHINE]
         var size: Int = 2
         sysctl(&name, 2, nil, &size, nil, 0)
@@ -72,73 +40,57 @@ public class DeviceGuruImplementation {
         }
 
         return hardware
+    }()
+
+    /// Initialises the DeviceGuru using DeviceList.plist if the plist is not found then it asserts
+    public init() {
+        guard let localHardwareDetail = Self.loadHardareDetailFromUserDefaultsIfLatest() else {
+            let allDevices = Self.loadAllDeviceDictionaryFromPlist()
+            Self.hardwareDetail = allDevices[Self._hardwareString] as? [String: Any]
+            Self.saveHardwareDetailToUserDefaults()
+            return
+        }
+        Self.hardwareDetail = localHardwareDetail
     }
 
-    /// This method returns the Platform enum depending upon harware string
-    ///
-    ///
-    /// - returns: `Platform` type of the device
-    ///
-    public func platform() -> Platform {
+    public var hardwareString: String { Self._hardwareString }
 
-        let hardware = hardwareString()
-
+    public var platform: Platform {
+        let hardware = hardwareString
         if (hardware.hasPrefix("iPhone"))    { return .iPhone }
         if (hardware.hasPrefix("iPod"))      { return .iPodTouch }
         if (hardware.hasPrefix("iPad"))      { return .iPad }
         if (hardware.hasPrefix("Watch"))     { return .appleWatch }
         if (hardware.hasPrefix("AppleTV"))   { return .appleTV }
-
         return .unknown
     }
 
-    /// - Returns: a readable description of the hardware string without including device variants related to wireless or cellular networking.
-    public func hardwareSimpleDescription() -> String? {
-
-        guard let hardwareDescription = hardwareDescription() else {
-            return nil
-        }
-
+    public func hardwareSimpleDescription() throws -> String {
+        let hardwareDescriptionString = try hardwareDescription()
         // this expression matches all strings between round brackets (e.g (Wifi), (GSM)) except the pattern "[0-9]+ Gen"
-        do {
-            let regEx = try NSRegularExpression(pattern: "\\((?![0-9]+ Gen).*\\)", options: .caseInsensitive)
-            return  regEx.stringByReplacingMatches(in: hardwareDescription,
-                                                   options: .init(rawValue: 0),
-                                                   range: NSRange(location: 0, length: hardwareDescription.count),
-                                                   withTemplate: "")
-        } catch {
-            print("Regex not created")
-            return nil
-        }
+        let regEx = try NSRegularExpression(pattern: "\\((?![0-9]+ Gen).*\\)", options: .caseInsensitive)
+        return  regEx.stringByReplacingMatches(in: hardwareDescriptionString,
+                                               options: .init(rawValue: 0),
+                                               range: NSRange(location: 0, length: hardwareDescriptionString.count),
+                                               withTemplate: "")
     }
 
-    /// This method returns the readable description of hardware string
-    ///
-    /// - returns: readable description `String` of the device
-    ///
-    public func hardwareDescription() -> String? {
-        let hardware = hardwareString()
-
-        let hardwareDetail = self.deviceListDict[hardware] as? [String: AnyObject]
-        if let hardwareDescription = hardwareDetail?["name"] {
-            return hardwareDescription as? String
+    public func hardwareDescription() throws -> String {
+        if let hardwareDescription = Self.hardwareDetail?["name"] as? String {
+            return hardwareDescription
         }
 
         //log message that your device is not present in the list
-        logMessage(hardware)
-        return nil
+        Self.logMessage(hardwareString)
+        throw DeviceGuruException.deviceNotPresentInThePlist(hardwareString)
     }
 
-    /// This method returns the hardware version not actual but logical.
-    /// e.g. iPhone5,11 will return `DeviceVersion(major: 5, minor: 11)`
-    ///
-    public func deviceVersion() -> DeviceVersion? {
-        let hardware = hardwareString()
-        guard let versionString = findMatch(for: "[\\d]*,[\\d]*", in: hardware),
-              let version =  getVersion(from: versionString) else {
-            print("Can't create Version from: \(hardware)")
+    public func deviceVersion() throws -> DeviceVersion {
+        guard let versionString = Self.findMatch(for: "[\\d]*,[\\d]*", in: hardwareString),
+              let version =  Self.getVersion(from: versionString) else {
+            print("Can't create Version from: \(hardwareString)")
             print("Please report the above log to: https://github.com/InderKumarRathore/DeviceGuru")
-            return nil
+            throw DeviceGuruException.unableToCreateDeviceVersion(hardwareString)
         }
         return version
     }
@@ -148,7 +100,7 @@ public class DeviceGuruImplementation {
     /// - parameters:
     ///     - hardware: `String` hardware type of the device
     ///
-    func logMessage(_ hardware: String) {
+    static func logMessage(_ hardware: String) {
         print("""
             This is a device which is not listed in this library. Please visit https://github.com/InderKumarRathore/DeviceGuru and submit the issue there.\n
             Your device hardware string is|\(hardware)|"
@@ -156,11 +108,11 @@ public class DeviceGuruImplementation {
     }
 }
 
-// MARK: - Private
+// MARK: - Private Static methods
 
-private extension DeviceGuru {
+private extension DeviceGuruImplementation {
 
-    func findMatch(for regex: String, in text: String) -> String? {
+    static func findMatch(for regex: String, in text: String) -> String? {
         do {
             let regex = try NSRegularExpression(pattern: regex)
             let results = regex.matches(in: text, range: NSRange(text.startIndex..., in: text))
@@ -177,7 +129,7 @@ private extension DeviceGuru {
         }
     }
 
-    func getVersion(from string: String) -> DeviceVersion? {
+    static func getVersion(from string: String) -> DeviceVersion? {
         let components = string.components(separatedBy: ",")
         guard components.count == 2 else {
             print("Can't create components of string: \(string)")
@@ -193,4 +145,47 @@ private extension DeviceGuru {
         return DeviceVersion(major: major, minor: minor)
     }
 
+    static func loadHardareDetailFromUserDefaultsIfLatest() -> [String: Any]? {
+        let version = UserDefaults.standard.string(forKey: UserDefaultKeys.deviceGuruVersion)
+        guard version == Self.version else { return nil }
+        return UserDefaults.standard.dictionary(forKey: UserDefaultKeys.hardwareDetail)
+    }
+
+    static func saveHardwareDetailToUserDefaults() {
+        UserDefaults.standard.setValue(version, forKey: UserDefaultKeys.deviceGuruVersion)
+        UserDefaults.standard.setValue(hardwareDetail, forKey: UserDefaultKeys.hardwareDetail)
+    }
+
+    static func loadAllDeviceDictionaryFromPlist() -> [String: AnyObject] {
+        let topBundle = Bundle(for: DeviceGuruImplementation.self)
+        let resource = "DeviceList"
+        let type = "plist"
+        if let url = topBundle.url(forResource: "DeviceGuru", withExtension: "bundle") {
+            let bundle = Bundle(url: url)
+            if let path = bundle?.path(forResource: resource, ofType: type) {
+                return NSDictionary(contentsOfFile: path) as! [String: AnyObject]
+            } else {
+                // Assert if the plist is not found
+                assertionFailure("DeviceList.plist not found in the bundle.")
+                return [:]
+            }
+        } else if let path = topBundle.path(forResource: resource, ofType: type) {
+            // falling back to main bundle
+            return NSDictionary(contentsOfFile: path) as! [String: AnyObject]
+        } else {
+            #if SWIFT_PACKAGE
+            if let path = Bundle.module.path(forResource: resource, ofType: type) {
+                return NSDictionary(contentsOfFile: path) as! [String: AnyObject]
+            } else {
+                // Assert if the plist is not found
+                assertionFailure("DeviceList.plist not found in the bundle.")
+                return [:]
+            }
+            #else
+            // Assert if the plist is not found
+            assertionFailure("DeviceList.plist not found in the bundle.")
+            return [:]
+            #endif
+        }
+    }
 }
