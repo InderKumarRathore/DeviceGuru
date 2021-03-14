@@ -194,3 +194,8 @@ private extension DeviceGuru {
     }
 
 }
+
+public protocol LocalStorage {
+    func setValue(_ value: Any?, forKey key: String)
+    func object(forKey defaultName: String) -> Any?
+}
