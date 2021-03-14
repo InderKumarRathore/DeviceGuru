@@ -195,7 +195,7 @@ func main() {
     do {
         let extensionFileConent = "\npublic extension DeviceGuruImplementation {\n\n"
             + "\(tabSpacing)/// This should be same as cocoapod version\n"
-            + "\(tabSpacing)static var libraryVersion: String { \"<#Major#>.<#Minor#>.<#Fixes#>\" }\n\n"
+            + "\(tabSpacing)static var libraryVersion: String { <#Major#>.<#Minor#>.<#Fixes#> }\n\n"
             + "\(tabSpacing)var hardware: Hardware {\n"
             + hardwareFuncContent
             + "\n\n"
