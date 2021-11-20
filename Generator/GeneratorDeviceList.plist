@@ -765,19 +765,33 @@
 		<key>enum</key>
 		<string>IPAD_AIR_3_WIFI_CELLULAR</string>
 	</dict>
+	<key>iPad11,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (8th generation) WiFi</string>
+		<key>enum</key>
+		<string>IPAD_8G_WIFI</string>
+	</dict>
+	<key>iPad11,7</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (8th generation) WiFi+Cellular</string>
+		<key>enum</key>
+		<string>IPAD_8G_WIFI_CELLULAR</string>
+	</dict>
 	<key>iPad13,1</key>
 	<dict>
-	    <key>name</key>
-	    <string>iPad Air 4 (Wi-Fi)</string>
-	    <key>enum</key>
-	    <string>IPAD_AIR_4_WIFI</string>
+		<key>name</key>
+		<string>iPad Air 4 (Wi-Fi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_4_WIFI</string>
 	</dict>
 	<key>iPad13,2</key>
 	<dict>
-	    <key>name</key>
-	    <string>iPad Air 4 (Wi-Fi + Cellular)</string>
-    	<key>enum</key>
-    	<string>IPAD_AIR_4_WIFI_CELLULAR</string>
+		<key>name</key>
+		<string>iPad Air 4 (Wi-Fi + Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_4_WIFI_CELLULAR</string>
 	</dict>
 	<key>AppleTV1,1</key>
 	<dict>
