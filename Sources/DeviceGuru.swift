@@ -1,9 +1,4 @@
-//
-//  DeviceGuru.swift
-//  DeviceGuru
-//
-//  Created by Inder Kumar Rathore on 28/12/20.
-//
+//  Copyright @DeviceGuru
 
 import Foundation
 

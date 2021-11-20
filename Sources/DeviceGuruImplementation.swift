@@ -1,11 +1,6 @@
-//
-//  DeviceGuru.swift
-//
-//  Created by Inder Kumar Rathore on 06/02/15.
-//  Copyright (c) 2015. All rights reserved.
-//
+//  Copyright @DeviceGuru
+
 //  Hardware string can be found @ https://www.everymac.com
-//
 
 import Foundation
 
