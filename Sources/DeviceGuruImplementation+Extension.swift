@@ -1,7 +1,7 @@
 
 public extension DeviceGuruImplementation {
 
-    /// This should be same as cocoapod version
+    /// This should be same as cocoa pod version
     static var libraryVersion: String { "9.0.0" }
 
     var hardware: Hardware {
@@ -38,6 +38,8 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPad11,2") { return .ipad_mini_5_wifi_cellular }
         if (hardwareString == "iPad11,3") { return .ipad_air_3_wifi }
         if (hardwareString == "iPad11,4") { return .ipad_air_3_wifi_cellular }
+        if (hardwareString == "iPad11,6") { return .ipad_8g_wifi }
+        if (hardwareString == "iPad11,7") { return .ipad_8g_wifi_cellular }
         if (hardwareString == "iPad13,1") { return .ipad_air_4_wifi }
         if (hardwareString == "iPad13,2") { return .ipad_air_4_wifi_cellular }
         if (hardwareString == "iPad2,1") { return .ipad_2_wifi }
@@ -112,6 +114,10 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPhone13,2") { return .iphone_12 }
         if (hardwareString == "iPhone13,3") { return .iphone_12_pro }
         if (hardwareString == "iPhone13,4") { return .iphone_12_pro_max }
+        if (hardwareString == "iPhone14,2") { return .iphone_13_pro }
+        if (hardwareString == "iPhone14,3") { return .iphone_13_pro_max }
+        if (hardwareString == "iPhone14,4") { return .iphone_13_mini }
+        if (hardwareString == "iPhone14,5") { return .iphone_13 }
         if (hardwareString == "iPhone2,1") { return .iphone_3gs }
         if (hardwareString == "iPhone3,1") { return .iphone_4 }
         if (hardwareString == "iPhone3,2") { return .iphone_4 }
