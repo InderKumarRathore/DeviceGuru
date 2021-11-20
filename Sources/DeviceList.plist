@@ -162,6 +162,16 @@
 		<key>name</key>
 		<string>iPad Air 3 (Wi-Fi + Cellular)</string>
 	</dict>
+	<key>iPad11,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (8th generation) WiFi</string>
+	</dict>
+	<key>iPad11,7</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (8th generation) WiFi+Cellular</string>
+	</dict>
 	<key>iPad13,1</key>
 	<dict>
 		<key>name</key>

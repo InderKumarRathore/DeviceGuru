@@ -40,6 +40,10 @@ public extension DeviceGuru {
         if (hardware == "iPad11,2") { return .ipad_mini_5_wifi_cellular }
         if (hardware == "iPad11,3") { return .ipad_air_3_wifi }
         if (hardware == "iPad11,4") { return .ipad_air_3_wifi_cellular }
+        if (hardware == "iPad11,6") { return .ipad_8g_wifi }
+        if (hardware == "iPad11,7") { return .ipad_8g_wifi_cellular }
+        if (hardware == "iPad13,1") { return .ipad_air_4_wifi }
+        if (hardware == "iPad13,2") { return .ipad_air_4_wifi_cellular }
         if (hardware == "iPad2,1") { return .ipad_2_wifi }
         if (hardware == "iPad2,2") { return .ipad_2 }
         if (hardware == "iPad2,3") { return .ipad_2_cdma }
