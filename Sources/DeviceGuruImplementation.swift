@@ -41,7 +41,7 @@ public final class DeviceGuruImplementation: DeviceGuru {
 
     public init(localStorage: LocalStorage = UserDefaults.standard) {
         self.localStorage = localStorage
-        guard let localHardwareDetail = loadHardareDetailFromUserDefaultsIfLatest() else {
+        guard let localHardwareDetail = loadHardwareDetailFromUserDefaultsIfLatest() else {
             let allDevices = Self.loadAllDeviceDictionaryFromPlist()
             Self.hardwareDetail = allDevices[Self._hardwareString] as? [String: Any]
             saveHardwareDetailToUserDefaults()
@@ -142,7 +142,7 @@ private extension DeviceGuruImplementation {
         return DeviceVersion(major: major, minor: minor)
     }
 
-    func loadHardareDetailFromUserDefaultsIfLatest() -> [String: Any]? {
+    func loadHardwareDetailFromUserDefaultsIfLatest() -> [String: Any]? {
         let libraryVersion = localStorage.object(forKey: LocalStorageKeys.deviceGuruVersion) as? String
         guard libraryVersion == Self.libraryVersion else { return nil }
         return localStorage.object(forKey: LocalStorageKeys.hardwareDetail) as? [String: Any]
