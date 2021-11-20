@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'DeviceGuru'
-  spec.version = '7.0.1'
+  spec.version = '7.0.3'
   spec.license = 'MIT'
   spec.summary = 'DeviceGuru helps identifying the exact harware type of the device. e.g. iPhone 6 or iPhone 6s.'
   spec.homepage = 'https://github.com/InderKumarRathore/DeviceGuru'
@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.source = { :git => 'https://github.com/InderKumarRathore/DeviceGuru.git', :tag => spec.version }
   spec.requires_arc = true
   spec.swift_versions = ['3.2', '4.0', '4.2', '5.0', "5.1", "5.2", "5.3"] # we should remove this eventually
-  spec.platforms = { :ios => "8.0", :tvos => "9.0", :watchos => "2.0" }
+  spec.platforms = { :ios => "9.0", :tvos => "9.0", :watchos => "2.0" }
 
   spec.default_subspec  = "DeviceGuru"
 

@@ -162,6 +162,16 @@
 		<key>name</key>
 		<string>iPad Air 3 (Wi-Fi + Cellular)</string>
 	</dict>
+	<key>iPad11,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (8th generation) WiFi</string>
+	</dict>
+	<key>iPad11,7</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (8th generation) WiFi+Cellular</string>
+	</dict>
 	<key>iPad13,1</key>
 	<dict>
 		<key>name</key>
@@ -531,6 +541,26 @@
 	<dict>
 		<key>name</key>
 		<string>iPhone 12 Pro Max</string>
+	</dict>
+	<key>iPhone14,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 13 Pro</string>
+	</dict>
+	<key>iPhone14,3</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 13 Pro Max</string>
+	</dict>
+	<key>iPhone14,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 13 mini</string>
+	</dict>
+	<key>iPhone14,5</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 13</string>
 	</dict>
 	<key>iPhone2,1</key>
 	<dict>
