@@ -135,57 +135,57 @@
 	<key>iPad1,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad (WiFi)</string>
+		<string>iPad</string>
 	</dict>
 	<key>iPad1,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 3G</string>
+		<string>iPad (Wi-Fi + 3G)</string>
 	</dict>
 	<key>iPad11,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad mini 5 (Wi-Fi Only)</string>
+		<string>iPad mini (5th generation)</string>
 	</dict>
 	<key>iPad11,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad mini 5 (Wi-Fi/Cellular)</string>
+		<string>iPad mini (Wi-Fi + Cellular, 5th generation)</string>
 	</dict>
 	<key>iPad11,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air 3 (Wi-Fi)</string>
+		<string>iPad Air (3rd generation)</string>
 	</dict>
 	<key>iPad11,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air 3 (Wi-Fi + Cellular)</string>
+		<string>iPad Air (Wi-Fi + Cellular, 3rd generation)</string>
 	</dict>
 	<key>iPad11,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad (8th generation) WiFi</string>
+		<string>iPad (8th generation)</string>
 	</dict>
 	<key>iPad11,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad (8th generation) WiFi+Cellular</string>
+		<string>iPad (Wi-Fi + Cellular, 8th generation)</string>
 	</dict>
 	<key>iPad13,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air 4 (Wi-Fi)</string>
+		<string>iPad Air (4th generation)</string>
 	</dict>
 	<key>iPad13,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air 4 (Wi-Fi + Cellular)</string>
+		<string>iPad Air 4 (Wi-Fi + Cellular, 4th generation)</string>
 	</dict>
 	<key>iPad2,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 2 (WiFi)</string>
+		<string>iPad 2</string>
 	</dict>
 	<key>iPad2,2</key>
 	<dict>
@@ -200,112 +200,112 @@
 	<key>iPad2,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 2 (WiFi Rev. A)</string>
+		<string>iPad 2 (Rev. A)</string>
 	</dict>
 	<key>iPad2,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini (WiFi)</string>
+		<string>iPad mini</string>
 	</dict>
 	<key>iPad2,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini (GSM)</string>
+		<string>iPad mini (GSM)</string>
 	</dict>
 	<key>iPad2,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini (CDMA)</string>
+		<string>iPad mini (CDMA)</string>
 	</dict>
 	<key>iPad3,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 3 (WiFi)</string>
+		<string>iPad (3rd generation)</string>
 	</dict>
 	<key>iPad3,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 3 (CDMA)</string>
+		<string>iPad (CDMA, 3rd generation)</string>
 	</dict>
 	<key>iPad3,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 3 (Global)</string>
+		<string>iPad (Global, 3rd generation)</string>
 	</dict>
 	<key>iPad3,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 4 (WiFi)</string>
+		<string>iPad (4th generation)</string>
 	</dict>
 	<key>iPad3,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 4 (CDMA)</string>
+		<string>iPad (CDMA, 4th generation)</string>
 	</dict>
 	<key>iPad3,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 4 (Global)</string>
+		<string>iPad (Global, 4th generation)</string>
 	</dict>
 	<key>iPad4,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air (WiFi)</string>
+		<string>iPad Air</string>
 	</dict>
 	<key>iPad4,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air (WiFi+GSM)</string>
+		<string>iPad Air (Wi-Fi + GSM)</string>
 	</dict>
 	<key>iPad4,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air (WiFi+CDMA)</string>
+		<string>iPad Air (Wi-Fi + CDMA)</string>
 	</dict>
 	<key>iPad4,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini Retina (WiFi)</string>
+		<string>iPad mini 2</string>
 	</dict>
 	<key>iPad4,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini Retina (WiFi+CDMA)</string>
+		<string>iPad mini 2 (WiFi + CDMA)</string>
 	</dict>
 	<key>iPad4,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini Retina (Wi-Fi + Cellular CN)</string>
+		<string>iPad mini 2 (Wi-Fi + Cellular CN)</string>
 	</dict>
 	<key>iPad4,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini 3 (Wi-Fi)</string>
+		<string>iPad mini 3</string>
 	</dict>
 	<key>iPad4,8</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini 3 (Wi-Fi + Cellular)</string>
+		<string>iPad mini 3 (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad4,9</key>
 	<dict>
 		<key>name</key>
-		<string>iPad mini 3 (Wi-Fi/Cellular, China)</string>
+		<string>iPad mini 3 (Wi-Fi + Cellular, China)</string>
 	</dict>
 	<key>iPad5,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad mini 4 (Wi-Fi Only)</string>
+		<string>iPad mini 4</string>
 	</dict>
 	<key>iPad5,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad mini 4 (Wi-Fi/Cellular)</string>
+		<string>iPad mini 4 (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad5,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air 2 (Wi-Fi)</string>
+		<string>iPad Air 2</string>
 	</dict>
 	<key>iPad5,4</key>
 	<dict>
@@ -315,17 +315,17 @@
 	<key>iPad6,11</key>
 	<dict>
 		<key>name</key>
-		<string>9.7-inch iPad (Wi-Fi)</string>
+		<string>iPad (5th generation)</string>
 	</dict>
 	<key>iPad6,12</key>
 	<dict>
 		<key>name</key>
-		<string>9.7-inch iPad (Wi-Fi + Cellular)</string>
+		<string>iPad (Wi-Fi + Cellular, 5th generation)</string>
 	</dict>
 	<key>iPad6,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 9.7-inch (Wi-Fi Only)</string>
+		<string>iPad Pro 9.7-inch</string>
 	</dict>
 	<key>iPad6,4</key>
 	<dict>
@@ -335,112 +335,112 @@
 	<key>iPad6,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro (Wi-Fi Only)</string>
+		<string>iPad Pro 12.9-inch</string>
 	</dict>
 	<key>iPad6,8</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 12.9-inch (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad7,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi Only - 2nd Gen)</string>
+		<string>iPad Pro 12.9-inch (2nd generation)</string>
 	</dict>
 	<key>iPad7,11</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 10.2-Inch 7th Gen (Wi-Fi Only)</string>
+		<string>iPad (7th generation)</string>
 	</dict>
 	<key>iPad7,12</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 10.2-Inch 7th Gen (Wi-Fi/Cellular Only)</string>
+		<string>iPad (Wi-Fi + Cellular, 7th generation)</string>
 	</dict>
 	<key>iPad7,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 2nd Gen)</string>
+		<string>iPad Pro 12.9-inch (Wi-Fi + Cellular, 2nd generation)</string>
 	</dict>
 	<key>iPad7,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 10.5-Inch (Wi-Fi Only)</string>
+		<string>iPad Pro 10.5-inch</string>
 	</dict>
 	<key>iPad7,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 10.5-Inch (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 10.5-inch (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad7,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 9.7-Inch 6th Gen (Wi-Fi Only)</string>
+		<string>iPad (6th generation)</string>
 	</dict>
 	<key>iPad7,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 9.7-Inch 6th Gen (Wi-Fi/Cellular)</string>
+		<string>iPad (Wi-Fi + Cellular, 6th generation)</string>
 	</dict>
 	<key>iPad8,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch (Wi-Fi Only)</string>
+		<string>iPad Pro 11-inch</string>
 	</dict>
 	<key>iPad8,10</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch (Wi-Fi/Cellular - 2nd Gen)</string>
+		<string>iPad Pro 11-inch (Wi-Fi + Cellular, 2nd generation)</string>
 	</dict>
 	<key>iPad8,11</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi Only - 4th Gen)</string>
+		<string>iPad Pro 12.9-inch (4th generation)</string>
 	</dict>
 	<key>iPad8,12</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 4th Gen)</string>
+		<string>iPad Pro 12.9-inch (Wi-Fi + Cellular, 4th generation)</string>
 	</dict>
 	<key>iPad8,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch 1TB (Wi-Fi Only)</string>
+		<string>iPad Pro 11-inch (1TB)</string>
 	</dict>
 	<key>iPad8,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 11-inch (Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad8,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch 1TB (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 11-inch (1TB, Wi-Fi + Cellular)</string>
 	</dict>
 	<key>iPad8,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi Only - 3rd Gen)</string>
+		<string>iPad Pro 12.9-inch (3rd generation)</string>
 	</dict>
 	<key>iPad8,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi Only - 3rd Gen)</string>
+		<string>iPad Pro 12.9-inch (1TB, 3rd generation)</string>
 	</dict>
 	<key>iPad8,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 3rd Gen)</string>
+		<string>iPad Pro 12.9-inch (Wi-Fi + Cellular, 3rd generation)</string>
 	</dict>
 	<key>iPad8,8</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi/Cell - 3rd Gen)</string>
+		<string>iPad Pro 12.9-inch (1TB, Wi-Fi + Cellular, 3rd generation)</string>
 	</dict>
 	<key>iPad8,9</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch (Wi-Fi Only - 2nd Gen)</string>
+		<string>iPad Pro 11-inch (2nd generation)</string>
 	</dict>
 	<key>iPhone1,1</key>
 	<dict>
@@ -495,7 +495,7 @@
 	<key>iPhone11,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPhone XS Max China</string>
+		<string>iPhone XS Max (China)</string>
 	</dict>
 	<key>iPhone11,8</key>
 	<dict>
@@ -520,7 +520,7 @@
 	<key>iPhone12,8</key>
 	<dict>
 		<key>name</key>
-		<string>iPhone SE (2 Gen)</string>
+		<string>iPhone SE (2nd generation)</string>
 	</dict>
 	<key>iPhone13,1</key>
 	<dict>
@@ -665,37 +665,37 @@
 	<key>iPod1,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (1 Gen)</string>
+		<string>iPod touch (1st generation)</string>
 	</dict>
 	<key>iPod2,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (2 Gen)</string>
+		<string>iPod touch (2nd generation)</string>
 	</dict>
 	<key>iPod3,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (3 Gen)</string>
+		<string>iPod touch (3rd generation)</string>
 	</dict>
 	<key>iPod4,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (4 Gen)</string>
+		<string>iPod touch (4th generation)</string>
 	</dict>
 	<key>iPod5,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (5 Gen)</string>
+		<string>iPod touch (5th generation)</string>
 	</dict>
 	<key>iPod7,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (6 Gen)</string>
+		<string>iPod touch (6th generation)</string>
 	</dict>
 	<key>iPod9,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (7 Gen)</string>
+		<string>iPod touch (7th generation)</string>
 	</dict>
 	<key>x86_64</key>
 	<dict>
