@@ -215,7 +215,7 @@
 	<key>iPhone11,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPhone XS Max China</string>
+		<string>iPhone XS Max (China)</string>
 		<key>enum</key>
 		<string>IPHONE_XS_MAX_CN</string>
 	</dict>
@@ -250,7 +250,7 @@
 	<key>iPhone12,8</key>
 	<dict>
 		<key>name</key>
-		<string>iPhone SE (2 Gen)</string>
+		<string>iPhone SE (2nd generation)</string>
 		<key>enum</key>
 		<string>IPHONE_SE_2G</string>
 	</dict>
@@ -313,70 +313,70 @@
 	<key>iPod1,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (1 Gen)</string>
+		<string>iPod touch (1st generation)</string>
 		<key>enum</key>
 		<string>IPOD_TOUCH_1G</string>
 	</dict>
 	<key>iPod2,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (2 Gen)</string>
+		<string>iPod touch (2nd generation)</string>
 		<key>enum</key>
 		<string>IPOD_TOUCH_2G</string>
 	</dict>
 	<key>iPod3,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (3 Gen)</string>
+		<string>iPod touch (3rd generation)</string>
 		<key>enum</key>
 		<string>IPOD_TOUCH_3G</string>
 	</dict>
 	<key>iPod4,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (4 Gen)</string>
+		<string>iPod touch (4th generation)</string>
 		<key>enum</key>
 		<string>IPOD_TOUCH_4G</string>
 	</dict>
 	<key>iPod5,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (5 Gen)</string>
+		<string>iPod touch (5th generation)</string>
 		<key>enum</key>
 		<string>IPOD_TOUCH_5G</string>
 	</dict>
 	<key>iPod7,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (6 Gen)</string>
+		<string>iPod touch (6th generation)</string>
 		<key>enum</key>
 		<string>IPOD_TOUCH_6G</string>
 	</dict>
 	<key>iPod9,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPod Touch (7 Gen)</string>
+		<string>iPod touch (7th generation)</string>
 		<key>enum</key>
 		<string>IPOD_TOUCH_7G</string>
 	</dict>
 	<key>iPad1,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad (WiFi)</string>
+		<string>iPad</string>
 		<key>enum</key>
 		<string>IPAD</string>
 	</dict>
 	<key>iPad1,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 3G</string>
+		<string>iPad (Wi-Fi + 3G)</string>
 		<key>enum</key>
 		<string>IPAD_3G</string>
 	</dict>
 	<key>iPad2,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 2 (WiFi)</string>
+		<string>iPad 2</string>
 		<key>enum</key>
 		<string>IPAD_2_WIFI</string>
 	</dict>
@@ -397,154 +397,154 @@
 	<key>iPad2,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 2 (WiFi Rev. A)</string>
+		<string>iPad 2 (Rev. A)</string>
 		<key>enum</key>
 		<string>IPAD_2</string>
 	</dict>
 	<key>iPad2,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini (WiFi)</string>
+		<string>iPad mini</string>
 		<key>enum</key>
 		<string>IPAD_MINI_WIFI</string>
 	</dict>
 	<key>iPad2,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini (GSM)</string>
+		<string>iPad mini (GSM)</string>
 		<key>enum</key>
 		<string>IPAD_MINI</string>
 	</dict>
 	<key>iPad2,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini (CDMA)</string>
+		<string>iPad mini (CDMA)</string>
 		<key>enum</key>
 		<string>IPAD_MINI_WIFI_CDMA</string>
 	</dict>
 	<key>iPad3,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 3 (WiFi)</string>
+		<string>iPad (3rd generation)</string>
 		<key>enum</key>
 		<string>IPAD_3_WIFI</string>
 	</dict>
 	<key>iPad3,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 3 (CDMA)</string>
+		<string>iPad (CDMA, 3rd generation)</string>
 		<key>enum</key>
 		<string>IPAD_3_WIFI_CDMA</string>
 	</dict>
 	<key>iPad3,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 3 (Global)</string>
+		<string>iPad (Global, 3rd generation)</string>
 		<key>enum</key>
 		<string>IPAD_3</string>
 	</dict>
 	<key>iPad3,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 4 (WiFi)</string>
+		<string>iPad (4th generation)</string>
 		<key>enum</key>
 		<string>IPAD_4_WIFI</string>
 	</dict>
 	<key>iPad3,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 4 (CDMA)</string>
+		<string>iPad (CDMA, 4th generation)</string>
 		<key>enum</key>
 		<string>IPAD_4</string>
 	</dict>
 	<key>iPad3,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 4 (Global)</string>
+		<string>iPad (Global, 4th generation)</string>
 		<key>enum</key>
 		<string>IPAD_4_GSM_CDMA</string>
 	</dict>
 	<key>iPad4,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air (WiFi)</string>
+		<string>iPad Air</string>
 		<key>enum</key>
 		<string>IPAD_AIR_WIFI</string>
 	</dict>
 	<key>iPad4,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air (WiFi+GSM)</string>
+		<string>iPad Air (Wi-Fi + GSM)</string>
 		<key>enum</key>
 		<string>IPAD_AIR_WIFI_GSM</string>
 	</dict>
 	<key>iPad4,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air (WiFi+CDMA)</string>
+		<string>iPad Air (Wi-Fi + CDMA)</string>
 		<key>enum</key>
 		<string>IPAD_AIR_WIFI_CDMA</string>
 	</dict>
 	<key>iPad4,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini Retina (WiFi)</string>
+		<string>iPad mini 2</string>
 		<key>enum</key>
 		<string>IPAD_MINI_RETINA_WIFI</string>
 	</dict>
 	<key>iPad4,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini Retina (WiFi+CDMA)</string>
+		<string>iPad mini 2 (WiFi + CDMA)</string>
 		<key>enum</key>
 		<string>IPAD_MINI_RETINA_WIFI_CDMA</string>
 	</dict>
 	<key>iPad4,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini Retina (Wi-Fi + Cellular CN)</string>
+		<string>iPad mini 2 (Wi-Fi + Cellular CN)</string>
 		<key>enum</key>
 		<string>IPAD_MINI_RETINA_WIFI_CELLULAR_CN</string>
 	</dict>
 	<key>iPad4,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini 3 (Wi-Fi)</string>
+		<string>iPad mini 3</string>
 		<key>enum</key>
 		<string>IPAD_MINI_3_WIFI</string>
 	</dict>
 	<key>iPad4,8</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Mini 3 (Wi-Fi + Cellular)</string>
+		<string>iPad mini 3 (Wi-Fi + Cellular)</string>
 		<key>enum</key>
 		<string>IPAD_MINI_3_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad4,9</key>
 	<dict>
 		<key>name</key>
-		<string>iPad mini 3 (Wi-Fi/Cellular, China)</string>
+		<string>iPad mini 3 (Wi-Fi + Cellular, China)</string>
 		<key>enum</key>
 		<string>IPAD_MINI_3_WIFI_CELLULAR_CN</string>
 	</dict>
 	<key>iPad5,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad mini 4 (Wi-Fi Only)</string>
+		<string>iPad mini 4</string>
 		<key>enum</key>
 		<string>IPAD_MINI_4_WIFI</string>
 	</dict>
 	<key>iPad5,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad mini 4 (Wi-Fi/Cellular)</string>
+		<string>iPad mini 4 (Wi-Fi + Cellular)</string>
 		<key>enum</key>
 		<string>IPAD_MINI_4_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad5,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air 2 (Wi-Fi)</string>
+		<string>iPad Air 2</string>
 		<key>enum</key>
 		<string>IPAD_AIR_2_WIFI</string>
 	</dict>
@@ -558,7 +558,7 @@
 	<key>iPad6,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 9.7-inch (Wi-Fi Only)</string>
+		<string>iPad Pro 9.7-inch</string>
 		<key>enum</key>
 		<string>IPAD_PRO_97_WIFI</string>
 	</dict>
@@ -572,224 +572,224 @@
 	<key>iPad6,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro (Wi-Fi Only)</string>
+		<string>iPad Pro 12.9-inch</string>
 		<key>enum</key>
 		<string>IPAD_PRO_WIFI</string>
 	</dict>
 	<key>iPad6,8</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 12.9-inch (Wi-Fi + Cellular)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad6,11</key>
 	<dict>
 		<key>name</key>
-		<string>9.7-inch iPad (Wi-Fi)</string>
+		<string>iPad (5th generation)</string>
 		<key>enum</key>
 		<string>IPAD_5_WIFI</string>
 	</dict>
 	<key>iPad6,12</key>
 	<dict>
 		<key>name</key>
-		<string>9.7-inch iPad (Wi-Fi + Cellular)</string>
+		<string>iPad (Wi-Fi + Cellular, 5th generation)</string>
 		<key>enum</key>
 		<string>IPAD_5_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad7,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi Only - 2nd Gen)</string>
+		<string>iPad Pro 12.9-inch (2nd generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_2G_WIFI</string>
 	</dict>
 	<key>iPad7,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 2nd Gen)</string>
+		<string>iPad Pro 12.9-inch (Wi-Fi + Cellular, 2nd generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_2G_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad7,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 10.5-Inch (Wi-Fi Only)</string>
+		<string>iPad Pro 10.5-inch</string>
 		<key>enum</key>
 		<string>IPAD_PRO_105_WIFI</string>
 	</dict>
 	<key>iPad7,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 10.5-Inch (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 10.5-inch (Wi-Fi + Cellular)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_105_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad7,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 9.7-Inch 6th Gen (Wi-Fi Only)</string>
+		<string>iPad (6th generation)</string>
 		<key>enum</key>
 		<string>IPAD_6_WIFI</string>
 	</dict>
 	<key>iPad7,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 9.7-Inch 6th Gen (Wi-Fi/Cellular)</string>
+		<string>iPad (Wi-Fi + Cellular, 6th generation)</string>
 		<key>enum</key>
 		<string>IPAD_6_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad7,11</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 10.2-Inch 7th Gen (Wi-Fi Only)</string>
+		<string>iPad (7th generation)</string>
 		<key>enum</key>
 		<string>IPAD_7_WIFI</string>
 	</dict>
 	<key>iPad7,12</key>
 	<dict>
 		<key>name</key>
-		<string>iPad 10.2-Inch 7th Gen (Wi-Fi/Cellular Only)</string>
+		<string>iPad (Wi-Fi + Cellular, 7th generation)</string>
 		<key>enum</key>
 		<string>IPAD_7_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad8,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch (Wi-Fi Only)</string>
+		<string>iPad Pro 11-inch</string>
 		<key>enum</key>
 		<string>IPAD_PRO_11_WIFI</string>
 	</dict>
 	<key>iPad8,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch 1TB (Wi-Fi Only)</string>
+		<string>iPad Pro 11-inch (1TB)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_11_1TB_WIFI</string>
 	</dict>
 	<key>iPad8,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 11-inch (Wi-Fi + Cellular)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_11_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad8,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch 1TB (Wi-Fi/Cellular)</string>
+		<string>iPad Pro 11-inch (1TB, Wi-Fi + Cellular)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_11_1TB_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad8,5</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi Only - 3rd Gen)</string>
+		<string>iPad Pro 12.9-inch (3rd generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_3G_WIFI</string>
 	</dict>
 	<key>iPad8,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi Only - 3rd Gen)</string>
+		<string>iPad Pro 12.9-inch (1TB, 3rd generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_3G_1TB_WIFI</string>
 	</dict>
 	<key>iPad8,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 3rd Gen)</string>
+		<string>iPad Pro 12.9-inch (Wi-Fi + Cellular, 3rd generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_3G_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad8,8</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi/Cell - 3rd Gen)</string>
+		<string>iPad Pro 12.9-inch (1TB, Wi-Fi + Cellular, 3rd generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_3G_1TB_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad8,9</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch (Wi-Fi Only - 2nd Gen)</string>
+		<string>iPad Pro 11-inch (2nd generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_11_2G_WIFI</string>
 	</dict>
 	<key>iPad8,10</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 11-Inch (Wi-Fi/Cellular - 2nd Gen)</string>
+		<string>iPad Pro 11-inch (Wi-Fi + Cellular, 2nd generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_11_2G_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad8,11</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi Only - 4th Gen)</string>
+		<string>iPad Pro 12.9-inch (4th generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_4G_WIFI</string>
 	</dict>
 	<key>iPad8,12</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-Inch (Wi-Fi/Cell - 4th Gen)</string>
+		<string>iPad Pro 12.9-inch (Wi-Fi + Cellular, 4th generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_4G_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad11,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad mini 5 (Wi-Fi Only)</string>
+		<string>iPad mini (5th generation)</string>
 		<key>enum</key>
 		<string>IPAD_MINI_5_WIFI</string>
 	</dict>
 	<key>iPad11,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad mini 5 (Wi-Fi/Cellular)</string>
+		<string>iPad mini (Wi-Fi + Cellular, 5th generation)</string>
 		<key>enum</key>
 		<string>IPAD_MINI_5_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad11,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air 3 (Wi-Fi)</string>
+		<string>iPad Air (3rd generation)</string>
 		<key>enum</key>
 		<string>IPAD_AIR_3_WIFI</string>
 	</dict>
 	<key>iPad11,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air 3 (Wi-Fi + Cellular)</string>
+		<string>iPad Air (Wi-Fi + Cellular, 3rd generation)</string>
 		<key>enum</key>
 		<string>IPAD_AIR_3_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad11,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPad (8th generation) WiFi</string>
+		<string>iPad (8th generation)</string>
 		<key>enum</key>
 		<string>IPAD_8G_WIFI</string>
 	</dict>
 	<key>iPad11,7</key>
 	<dict>
 		<key>name</key>
-		<string>iPad (8th generation) WiFi+Cellular</string>
+		<string>iPad (Wi-Fi + Cellular, 8th generation)</string>
 		<key>enum</key>
 		<string>IPAD_8G_WIFI_CELLULAR</string>
 	</dict>
 	<key>iPad13,1</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air 4 (Wi-Fi)</string>
+		<string>iPad Air (4th generation)</string>
 		<key>enum</key>
 		<string>IPAD_AIR_4_WIFI</string>
 	</dict>
 	<key>iPad13,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Air 4 (Wi-Fi + Cellular)</string>
+		<string>iPad Air 4 (Wi-Fi + Cellular, 4th generation)</string>
 		<key>enum</key>
 		<string>IPAD_AIR_4_WIFI_CELLULAR</string>
 	</dict>

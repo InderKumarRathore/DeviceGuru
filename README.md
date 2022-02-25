@@ -4,7 +4,8 @@
   - Easy to use
   - Light weight
 
-**From version `5.0.0` it can also identify the simulator type, whether it's iPhone XR or iPhone 6**
+### 8.0.0 Release renamed the devices name to have consistency with apple naming
+
 
 ### Installation
 
