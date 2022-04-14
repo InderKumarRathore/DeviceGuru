@@ -310,6 +310,13 @@
 		<key>enum</key>
 		<string>IPHONE_13</string>
 	</dict>
+	<key>iPhone14,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone SE (3rd generation)</string>
+		<key>enum</key>
+		<string>IPHONE_SE_3G</string>
+	</dict>
 	<key>iPod1,1</key>
 	<dict>
 		<key>name</key>
