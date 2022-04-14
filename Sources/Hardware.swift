@@ -53,6 +53,7 @@ public enum Hardware {
     case iphone_13_pro_max
     case iphone_13_mini
     case iphone_13
+    case iphone_se_3g
 
     case ipod_touch_1g
     case ipod_touch_2g

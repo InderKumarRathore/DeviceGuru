@@ -562,6 +562,11 @@
 		<key>name</key>
 		<string>iPhone 13</string>
 	</dict>
+	<key>iPhone14,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone SE (3rd generation)</string>
+	</dict>
 	<key>iPhone2,1</key>
 	<dict>
 		<key>name</key>
