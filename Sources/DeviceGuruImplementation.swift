@@ -16,9 +16,9 @@ public final class DeviceGuruImplementation: DeviceGuru {
         static let deviceGuruVersion = "github.com/InderKumarRathore/DeviceGuru.Version.Key"
     }
 
-    private static var hardwareDetail: [String: Any]?
+    private var hardwareDetail: [String: Any]?
 
-    private static let _hardwareString: String = {
+    private let _hardwareString: String = {
         var name: [Int32] = [CTL_HW, HW_MACHINE]
         var size: Int = 2
         sysctl(&name, 2, nil, &size, nil, 0)
@@ -50,14 +50,14 @@ public final class DeviceGuruImplementation: DeviceGuru {
         self.plistPath = plistPath
         guard let localHardwareDetail = loadHardwareDetailFromUserDefaultsIfLatest() else {
             let allDevices = loadAllDeviceDictionaryFromPlist()
-            Self.hardwareDetail = allDevices[Self._hardwareString] as? [String: Any]
+            hardwareDetail = allDevices[_hardwareString] as? [String: Any]
             saveHardwareDetailToUserDefaults()
             return
         }
-        Self.hardwareDetail = localHardwareDetail
+        hardwareDetail = localHardwareDetail
     }
 
-    public var hardwareString: String { Self._hardwareString }
+    public var hardwareString: String { _hardwareString }
 
     public var platform: Platform {
         let hardware = hardwareString
@@ -80,7 +80,7 @@ public final class DeviceGuruImplementation: DeviceGuru {
     }
 
     public func hardwareDescription() throws -> String {
-        if let hardwareDescription = Self.hardwareDetail?["name"] as? String {
+        if let hardwareDescription = hardwareDetail?["name"] as? String {
             return hardwareDescription
         }
 
@@ -157,7 +157,7 @@ private extension DeviceGuruImplementation {
 
     func saveHardwareDetailToUserDefaults() {
         localStorage.setValue(Self.libraryVersion, forKey: LocalStorageKeys.deviceGuruVersion)
-        localStorage.setValue(Self.hardwareDetail, forKey: LocalStorageKeys.hardwareDetail)
+        localStorage.setValue(hardwareDetail, forKey: LocalStorageKeys.hardwareDetail)
     }
 
     func loadAllDeviceDictionaryFromPlist() -> [String: AnyObject] {
