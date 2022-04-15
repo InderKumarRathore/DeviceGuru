@@ -149,7 +149,7 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "x86_64") { return .simulator }
 
         //log message that your device is not present in the list
-        Self.logMessage(hardwareString)
+        logMessage(hardwareString)
         if (hardwareString.hasPrefix("iPhone")) { return .unknownIphone }
         if (hardwareString.hasPrefix("iPod")) { return .unknownIpod }
         if (hardwareString.hasPrefix("iPad")) { return .unknownIpad }

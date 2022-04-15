@@ -37,12 +37,19 @@ public final class DeviceGuruImplementation: DeviceGuru {
         return hardware
     }()
 
+    private let plistPath: String?
     private let localStorage: LocalStorage
 
-    public init(localStorage: LocalStorage = UserDefaults.standard) {
+
+    /// Initializes the DeviceGuru
+    /// - Parameters:
+    ///   - localStorage: Provide any local storage where you want to save data related to the device, by default it uses `UserDefaults`
+    ///   - plistPath: Provide plist file path, if passed nil it will search for appropriate bundles and load it for you.
+    public init(localStorage: LocalStorage = UserDefaults.standard, plistPath: String? = nil) {
         self.localStorage = localStorage
+        self.plistPath = plistPath
         guard let localHardwareDetail = loadHardwareDetailFromUserDefaultsIfLatest() else {
-            let allDevices = Self.loadAllDeviceDictionaryFromPlist()
+            let allDevices = loadAllDeviceDictionaryFromPlist()
             Self.hardwareDetail = allDevices[Self._hardwareString] as? [String: Any]
             saveHardwareDetailToUserDefaults()
             return
@@ -78,13 +85,13 @@ public final class DeviceGuruImplementation: DeviceGuru {
         }
 
         //log message that your device is not present in the list
-        Self.logMessage(hardwareString)
+        logMessage(hardwareString)
         throw DeviceGuruException.deviceNotPresentInThePlist(hardwareString)
     }
 
     public func deviceVersion() throws -> DeviceVersion {
-        guard let versionString = Self.findMatch(for: "[\\d]*,[\\d]*", in: hardwareString),
-              let version =  Self.getVersion(from: versionString) else {
+        guard let versionString = findMatch(for: "[\\d]*,[\\d]*", in: hardwareString),
+              let version = getVersion(from: versionString) else {
             print("Can't create Version from: \(hardwareString)")
             print("Please report the above log to: https://github.com/InderKumarRathore/DeviceGuru")
             throw DeviceGuruException.unableToCreateDeviceVersion(hardwareString)
@@ -97,7 +104,7 @@ public final class DeviceGuruImplementation: DeviceGuru {
     /// - parameters:
     ///     - hardware: `String` hardware type of the device
     ///
-    static func logMessage(_ hardware: String) {
+    func logMessage(_ hardware: String) {
         print("""
             This is a device which is not listed in this library. Please visit https://github.com/InderKumarRathore/DeviceGuru and submit the issue there.\n
             Your device hardware string is|\(hardware)|"
@@ -109,7 +116,7 @@ public final class DeviceGuruImplementation: DeviceGuru {
 
 private extension DeviceGuruImplementation {
 
-    static func findMatch(for regex: String, in text: String) -> String? {
+    func findMatch(for regex: String, in text: String) -> String? {
         do {
             let regex = try NSRegularExpression(pattern: regex)
             let results = regex.matches(in: text, range: NSRange(text.startIndex..., in: text))
@@ -126,7 +133,7 @@ private extension DeviceGuruImplementation {
         }
     }
 
-    static func getVersion(from string: String) -> DeviceVersion? {
+    func getVersion(from string: String) -> DeviceVersion? {
         let components = string.components(separatedBy: ",")
         guard components.count == 2 else {
             print("Can't create components of string: \(string)")
@@ -153,40 +160,81 @@ private extension DeviceGuruImplementation {
         localStorage.setValue(Self.hardwareDetail, forKey: LocalStorageKeys.hardwareDetail)
     }
 
-    static func loadAllDeviceDictionaryFromPlist() -> [String: AnyObject] {
-        let topBundle = Bundle(for: DeviceGuruImplementation.self)
-        let resource = "DeviceList"
-        let type = "plist"
-        if let url = topBundle.url(forResource: "DeviceGuru", withExtension: "bundle") {
-            let bundle = Bundle(url: url)
-            if let path = bundle?.path(forResource: resource, ofType: type) {
-                return NSDictionary(contentsOfFile: path) as! [String: AnyObject]
-            } else {
-                // Assert if the plist is not found
-                assertionFailure("DeviceList.plist not found in the bundle.")
-                return [:]
-            }
-        } else if let path = topBundle.path(forResource: resource, ofType: type) {
-            // falling back to main bundle
-            return NSDictionary(contentsOfFile: path) as! [String: AnyObject]
-        } else {
-            #if SWIFT_PACKAGE
-            if let path = Bundle.module.path(forResource: resource, ofType: type) {
-                return NSDictionary(contentsOfFile: path) as! [String: AnyObject]
-            } else {
-                // Assert if the plist is not found
-                assertionFailure("DeviceList.plist not found in the bundle.")
-                return [:]
-            }
-            #else
-            // Assert if the plist is not found
-            assertionFailure("DeviceList.plist not found in the bundle.")
-            return [:]
-            #endif
+    func loadAllDeviceDictionaryFromPlist() -> [String: AnyObject] {
+
+        if let plistPath = plistPath {
+            return loadDeviceDictionary(fromPath: plistPath)
         }
+
+        if let dictionary = loadDeviceDictionaryFromTopBundle() {
+            return dictionary
+        }
+
+        if let dictionary = loadDeviceDictionaryFromMainBundle() {
+            return dictionary
+        }
+
+        if let dictionary = loadDeviceDictionaryFromSwiftPackage() {
+            return dictionary
+        }
+
+        assertionFailure("Unable to find \(Constants.plistFileName).\(Constants.plistFileType)")
+        return [:]
+    }
+
+    func loadDeviceDictionary(fromPath path: String) -> [String: AnyObject] {
+        guard let dictionary = NSDictionary(contentsOfFile: path) as? [String: AnyObject] else {
+            assertionFailure("Plist is malformed")
+            return [:]
+        }
+        return dictionary
+    }
+
+    func loadDeviceDictionaryFromTopBundle() -> [String: AnyObject]? {
+        let topBundle = Bundle(for: type(of: self))
+
+        guard let url = topBundle.url(forResource: "DeviceGuru", withExtension: "bundle"),
+              let bundle = Bundle(url: url) else {
+                  // Bundle not found
+                  return nil
+              }
+
+        guard let path = bundle.path(forResource: Constants.plistFileName, ofType: Constants.plistFileType),
+              let dictionary = NSDictionary(contentsOfFile: path) as? [String: AnyObject] else {
+                  assertionFailure("DeviceList.plist not found in the bundle.")
+                  return nil
+              }
+        return dictionary
+    }
+
+    func loadDeviceDictionaryFromMainBundle() -> [String: AnyObject]? {
+        guard let path = Bundle.main.path(forResource: Constants.plistFileName, ofType: Constants.plistFileType),
+              let dictionary = NSDictionary(contentsOfFile: path) as? [String: AnyObject] else {
+           return nil
+       }
+
+        return dictionary
+    }
+
+    func loadDeviceDictionaryFromSwiftPackage() -> [String: AnyObject]? {
+#if SWIFT_PACKAGE
+        guard let path = Bundle.module.path(forResource: resource, ofType: type),
+              let dictionary = NSDictionary(contentsOfFile: path) as? [String: AnyObject] else {
+                  return nil
+              }
+
+        return dictionary
+#else
+        return nil
+#endif
     }
 }
 
 // Mark:- Private UserDefaults
 
 extension UserDefaults: LocalStorage {}
+
+private enum Constants {
+    static let plistFileName = "DeviceList"
+    static let plistFileType = "plist"
+}
