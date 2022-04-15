@@ -16,7 +16,15 @@ public final class DeviceGuruImplementation: DeviceGuru {
         static let deviceGuruVersion = "github.com/InderKumarRathore/DeviceGuru.Version.Key"
     }
 
-    private var hardwareDetail: [String: Any]?
+    private lazy var hardwareDetail: [String: Any]? = {
+        guard let localHardwareDetail = loadHardwareDetailFromUserDefaultsIfLatest() else {
+            let allDevices = loadAllDeviceDictionaryFromPlist()
+            let hardwareDetail = allDevices[_hardwareString] as? [String: Any]
+            saveHardwareDetailToUserDefaults(hardwareDetail: hardwareDetail)
+            return hardwareDetail
+        }
+        return localHardwareDetail
+    }()
 
     private let _hardwareString: String = {
         var name: [Int32] = [CTL_HW, HW_MACHINE]
@@ -48,13 +56,6 @@ public final class DeviceGuruImplementation: DeviceGuru {
     public init(localStorage: LocalStorage = UserDefaults.standard, plistPath: String? = nil) {
         self.localStorage = localStorage
         self.plistPath = plistPath
-        guard let localHardwareDetail = loadHardwareDetailFromUserDefaultsIfLatest() else {
-            let allDevices = loadAllDeviceDictionaryFromPlist()
-            hardwareDetail = allDevices[_hardwareString] as? [String: Any]
-            saveHardwareDetailToUserDefaults()
-            return
-        }
-        hardwareDetail = localHardwareDetail
     }
 
     public var hardwareString: String { _hardwareString }
@@ -155,7 +156,7 @@ private extension DeviceGuruImplementation {
         return localStorage.object(forKey: LocalStorageKeys.hardwareDetail) as? [String: Any]
     }
 
-    func saveHardwareDetailToUserDefaults() {
+    func saveHardwareDetailToUserDefaults(hardwareDetail: [String: Any]?) {
         localStorage.setValue(Self.libraryVersion, forKey: LocalStorageKeys.deviceGuruVersion)
         localStorage.setValue(hardwareDetail, forKey: LocalStorageKeys.hardwareDetail)
     }
