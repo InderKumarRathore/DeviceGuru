@@ -43,7 +43,19 @@ public extension DeviceGuru {
         if (hardware == "iPad11,6") { return .ipad_8g_wifi }
         if (hardware == "iPad11,7") { return .ipad_8g_wifi_cellular }
         if (hardware == "iPad13,1") { return .ipad_air_4_wifi }
+        if (hardware == "iPad13,10") { return .ipad_pro_5g_wifi_cellular }
+        if (hardware == "iPad13,11") { return .ipad_pro_5g_1tb_wifi_cellular }
+        if (hardware == "iPad13,16") { return .ipad_air_5_wifi }
+        if (hardware == "iPad13,17") { return .ipad_air_5_wifi_cellular }
         if (hardware == "iPad13,2") { return .ipad_air_4_wifi_cellular }
+        if (hardware == "iPad13,4") { return .ipad_pro_11_3g_wifi }
+        if (hardware == "iPad13,5") { return .ipad_pro_11_3g_1tb_wifi }
+        if (hardware == "iPad13,6") { return .ipad_pro_11_3g_wifi_cellular }
+        if (hardware == "iPad13,7") { return .ipad_pro_11_3g_1tb_wifi_cellular }
+        if (hardware == "iPad13,8") { return .ipad_pro_5g_wifi }
+        if (hardware == "iPad13,9") { return .ipad_pro_5g_1tb_wifi }
+        if (hardware == "iPad14,1") { return .ipad_mini_6_wifi }
+        if (hardware == "iPad14,2") { return .ipad_mini_6_wifi_cellular }
         if (hardware == "iPad2,1") { return .ipad_2_wifi }
         if (hardware == "iPad2,2") { return .ipad_2 }
         if (hardware == "iPad2,3") { return .ipad_2_cdma }
