@@ -13,6 +13,9 @@
 		1DB59D3B256137E10040B7FE /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59D39256137E10040B7FE /* Platform.swift */; };
 		1DC67A4F2809375F00791E2E /* DeviceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DeviceList.plist */; };
 		1DC67A512809421F00791E2E /* LocalStorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC67A502809421F00791E2E /* LocalStorageMock.swift */; };
+		1DE950022838E07B0064A28D /* HardwareDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE950012838E07B0064A28D /* HardwareDetailProvider.swift */; };
+		1DE950042838E2250064A28D /* HardwareDetailProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE950032838E2250064A28D /* HardwareDetailProviderMock.swift */; };
+		1DE950062838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE950052838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift */; };
 		OBJ_26 /* DeviceGuruImplementation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DeviceGuruImplementation+Extension.swift */; };
 		OBJ_27 /* DeviceGuruImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DeviceGuruImplementation.swift */; };
 		OBJ_28 /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Hardware.swift */; };
@@ -26,6 +29,9 @@
 		1DB59D38256137E10040B7FE /* DeviceVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceVersion.swift; sourceTree = "<group>"; };
 		1DB59D39256137E10040B7FE /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		1DC67A502809421F00791E2E /* LocalStorageMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageMock.swift; sourceTree = "<group>"; };
+		1DE950012838E07B0064A28D /* HardwareDetailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailProvider.swift; sourceTree = "<group>"; };
+		1DE950032838E2250064A28D /* HardwareDetailProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailProviderMock.swift; sourceTree = "<group>"; };
+		1DE950052838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailProviderImplementationTests.swift; sourceTree = "<group>"; };
 		"DeviceGuru::DeviceGuru::Product" /* DeviceGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DeviceGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* DeviceGuruImplementation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceGuruImplementation+Extension.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* DeviceGuruImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuruImplementation.swift; sourceTree = "<group>"; };
@@ -63,6 +69,7 @@
 			children = (
 				1D8202852807F48D00CB9ECF /* Mocks */,
 				1D8202802807F3DE00CB9ECF /* DeviceGuruTests.swift */,
+				1DE950052838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift */,
 			);
 			path = DeviceGuruTests;
 			sourceTree = "<group>";
@@ -71,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				1DC67A502809421F00791E2E /* LocalStorageMock.swift */,
+				1DE950032838E2250064A28D /* HardwareDetailProviderMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -103,12 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* DeviceGuru.h */,
+				OBJ_9 /* DeviceList.plist */,
 				1D89A67F259A09200042C47B /* DeviceGuru.swift */,
 				OBJ_11 /* DeviceGuruImplementation.swift */,
 				OBJ_10 /* DeviceGuruImplementation+Extension.swift */,
-				OBJ_9 /* DeviceList.plist */,
 				1DB59D38256137E10040B7FE /* DeviceVersion.swift */,
 				OBJ_12 /* Hardware.swift */,
+				1DE950012838E07B0064A28D /* HardwareDetailProvider.swift */,
 				1DB59D39256137E10040B7FE /* Platform.swift */,
 			);
 			path = Sources;
@@ -216,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE950042838E2250064A28D /* HardwareDetailProviderMock.swift in Sources */,
 				1DC67A512809421F00791E2E /* LocalStorageMock.swift in Sources */,
 				1D8202812807F3DE00CB9ECF /* DeviceGuruTests.swift in Sources */,
+				1DE950062838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				1DE950022838E07B0064A28D /* HardwareDetailProvider.swift in Sources */,
 				1D89A680259A09200042C47B /* DeviceGuru.swift in Sources */,
 				1DB59D3B256137E10040B7FE /* Platform.swift in Sources */,
 				1DB59D3A256137E10040B7FE /* DeviceVersion.swift in Sources */,
