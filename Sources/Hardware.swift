@@ -125,6 +125,18 @@ public enum Hardware {
     case ipad_8g_wifi_cellular
     case ipad_air_4_wifi
     case ipad_air_4_wifi_cellular
+    case ipad_pro_11_3g_wifi
+    case ipad_pro_11_3g_1tb_wifi
+    case ipad_pro_11_3g_wifi_cellular
+    case ipad_pro_11_3g_1tb_wifi_cellular
+    case ipad_pro_5g_wifi
+    case ipad_pro_5g_1tb_wifi
+    case ipad_pro_5g_wifi_cellular
+    case ipad_pro_5g_1tb_wifi_cellular
+    case ipad_air_5_wifi
+    case ipad_air_5_wifi_cellular
+    case ipad_mini_6_wifi
+    case ipad_mini_6_wifi_cellular
 
     case apple_watch_38
     case apple_watch_42
