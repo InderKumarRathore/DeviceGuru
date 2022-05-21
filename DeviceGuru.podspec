@@ -8,6 +8,7 @@ Pod::Spec.new do |spec|
   spec.authors = { 'Inder Kumar Rathore' => '' }
   spec.source = { :git => 'https://github.com/InderKumarRathore/DeviceGuru.git', :tag => spec.version }
   spec.requires_arc = true
+  spec.swift_versions = ['4.0']
   spec.platforms = { :ios => "9.0", :tvos => "9.0", :watchos => "2.0" }
 
   spec.default_subspec  = "DeviceGuru"
