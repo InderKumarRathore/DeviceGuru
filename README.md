@@ -4,7 +4,9 @@
   - Easy to use
   - Light weight
 
-### 8.0.0 Release renamed the devices name to have consistency with apple naming
+### 10.0.0 Release
+
+10.0.0 Introduced breaking changes so if you're using older version 8.x.x then you need to make little changes. Check this PR: https://github.com/InderKumarRathore/DeviceGuru/pull/94 for changes. With 10.0.0 The library is 10x faster and you can mock DeviceGuru for testing also.
 
 
 ### Installation
@@ -49,11 +51,11 @@ import DeviceGuru
 ```
 In your code:
 ``` swift
-let deviceGuru = DeviceGuru()
-let deviceName = deviceGuru.hardware()
-let deviceCode = deviceGuru.hardwareString()
-let platform = deviceGuru.platform()
-print("\(deviceName) - \(deviceCode) - \(platform)") //Ex: iphone_7_PLUS - iPhone9,2 - iphone
+let deviceGuru = DeviceGuruImplementation()
+let deviceName = deviceGuru.hardware
+let deviceCode = deviceGuru.hardwareString
+let platform = deviceGuru.platform
+print("\(deviceName) - \(deviceCode) - \(platform)")
 ```
 Checkout [`Example Project`](Example/)!
 
