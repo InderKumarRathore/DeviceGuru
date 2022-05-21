@@ -1,4 +1,4 @@
-//  Copyright @DeviceGuru
+// Copyright @DeviceGuru
 
 import Foundation
 

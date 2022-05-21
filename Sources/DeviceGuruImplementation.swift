@@ -1,6 +1,6 @@
-//  Copyright @DeviceGuru
+// Copyright @DeviceGuru
 
-//  Hardware string can be found @ https://www.everymac.com
+// Hardware string can be found @ https://www.everymac.com
 
 import Foundation
 
@@ -26,35 +26,23 @@ public final class DeviceGuruImplementation: DeviceGuru {
         return hardwareDetail
     }()
 
-    private let _hardwareString: String = {
-        var name: [Int32] = [CTL_HW, HW_MACHINE]
-        var size: Int = 2
-        sysctl(&name, 2, nil, &size, nil, 0)
-        var hw_machine = [CChar](repeating: 0, count: Int(size))
-        sysctl(&name, 2, &hw_machine, &size, nil, 0)
-
-        var hardware: String = String(cString: hw_machine)
-
-        // Check for simulator
-        if hardware == "x86_64" || hardware == "i386" {
-            if let deviceID = ProcessInfo.processInfo.environment["SIMULATOR_MODEL_IDENTIFIER"] {
-                hardware = deviceID
-            }
-        }
-
-        return hardware
+    private lazy var _hardwareString: String = {
+        hardwareDetailProvider.hardwareString
     }()
 
-    private let plistPath: String?
     private let localStorage: LocalStorage
-
+    private let hardwareDetailProvider: HardwareDetailProvider
+    private let plistPath: String?
 
     /// Initializes the DeviceGuru
     /// - Parameters:
     ///   - localStorage: Provide any local storage where you want to save data related to the device, by default it uses `UserDefaults`
     ///   - plistPath: Provide plist file path, if passed nil it will search for appropriate bundles and load it for you.
-    public init(localStorage: LocalStorage = UserDefaults.standard, plistPath: String? = nil) {
+    public init(localStorage: LocalStorage = UserDefaults.standard,
+                hardwareDetailProvider: HardwareDetailProvider = HardwareDetailProviderImplementation(),
+                plistPath: String? = nil) {
         self.localStorage = localStorage
+        self.hardwareDetailProvider = hardwareDetailProvider
         self.plistPath = plistPath
     }
 
@@ -74,10 +62,11 @@ public final class DeviceGuruImplementation: DeviceGuru {
         let hardwareDescriptionString = try hardwareDescription()
         // this expression matches all strings between round brackets (e.g (Wifi), (GSM)) except the pattern "[0-9]+ Gen"
         let regEx = try NSRegularExpression(pattern: "\\((?![0-9]+ Gen).*\\)", options: .caseInsensitive)
-        return  regEx.stringByReplacingMatches(in: hardwareDescriptionString,
-                                               options: .init(rawValue: 0),
-                                               range: NSRange(location: 0, length: hardwareDescriptionString.count),
-                                               withTemplate: "")
+        let simpleName =  regEx.stringByReplacingMatches(in: hardwareDescriptionString,
+                                                         options: .init(rawValue: 0),
+                                                         range: NSRange(location: 0, length: hardwareDescriptionString.count),
+                                                         withTemplate: "")
+        return simpleName.trimmingCharacters(in: .whitespaces)
     }
 
     public func hardwareDescription() throws -> String {
@@ -223,7 +212,6 @@ private extension DeviceGuruImplementation {
               let dictionary = NSDictionary(contentsOfFile: path) as? [String: AnyObject] else {
                   return nil
               }
-
         return dictionary
 #else
         return nil
