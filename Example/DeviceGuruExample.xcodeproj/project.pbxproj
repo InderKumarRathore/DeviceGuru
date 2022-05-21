@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DE950082838ED870064A28D /* ContentViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE950072838ED870064A28D /* ContentViewNew.swift */; };
 		41495636254DFA34000A30D2 /* DeviceGuru in Frameworks */ = {isa = PBXBuildFile; productRef = 41495635254DFA34000A30D2 /* DeviceGuru */; };
 		41513A06254DD985005B6BDB /* DeviceGuruExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41513A05254DD985005B6BDB /* DeviceGuruExampleApp.swift */; };
 		41513A08254DD985005B6BDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41513A07254DD985005B6BDB /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DE950072838ED870064A28D /* ContentViewNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewNew.swift; sourceTree = "<group>"; };
 		41513A02254DD985005B6BDB /* DeviceGuruExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceGuruExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41513A05254DD985005B6BDB /* DeviceGuruExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuruExampleApp.swift; sourceTree = "<group>"; };
 		41513A07254DD985005B6BDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				41513A05254DD985005B6BDB /* DeviceGuruExampleApp.swift */,
 				41513A07254DD985005B6BDB /* ContentView.swift */,
+				1DE950072838ED870064A28D /* ContentViewNew.swift */,
 				41513A09254DD985005B6BDB /* Assets.xcassets */,
 				41513A0E254DD985005B6BDB /* Info.plist */,
 				41513A0B254DD985005B6BDB /* Preview Content */,
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE950082838ED870064A28D /* ContentViewNew.swift in Sources */,
 				41513A08254DD985005B6BDB /* ContentView.swift in Sources */,
 				41513A06254DD985005B6BDB /* DeviceGuruExampleApp.swift in Sources */,
 			);

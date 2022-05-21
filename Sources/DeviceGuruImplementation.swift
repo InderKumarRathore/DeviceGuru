@@ -208,6 +208,8 @@ private extension DeviceGuruImplementation {
 
     func loadDeviceDictionaryFromSwiftPackage() -> [String: AnyObject]? {
 #if SWIFT_PACKAGE
+        let resource = "DeviceList"
+        let type = "plist"
         guard let path = Bundle.module.path(forResource: resource, ofType: type),
               let dictionary = NSDictionary(contentsOfFile: path) as? [String: AnyObject] else {
                   return nil
