@@ -121,7 +121,8 @@ func main() {
     // Enum file generatoin
     let enumFile = "Hardware.swift"
 
-    var enumString = "\npublic enum Hardware {\n"
+    var enumString = "// Copyright @DeviceGuru\n"
+        + "\npublic enum Hardware {\n"
         + "\n\(tabSpacing)case \(unknownCase)"
         + "\n\(tabSpacing)case \(unknownIphoneCase)"
         + "\n\(tabSpacing)case \(unknownIpodCase)"
@@ -200,7 +201,7 @@ func main() {
             + hardwareFuncContent
             + "\n\n"
             + "\(tabSpacing)\(tabSpacing)//log message that your device is not present in the list\n"
-            + "\(tabSpacing)\(tabSpacing)Self.logMessage(hardwareString)\n"
+            + "\(tabSpacing)\(tabSpacing)logMessage(hardwareString)\n"
             + "\(tabSpacing)\(tabSpacing)if (hardwareString.hasPrefix(\"iPhone\")) { return .\(unknownIphoneCase) }\n"
             + "\(tabSpacing)\(tabSpacing)if (hardwareString.hasPrefix(\"iPod\")) { return .\(unknownIpodCase) }\n"
             + "\(tabSpacing)\(tabSpacing)if (hardwareString.hasPrefix(\"iPad\")) { return .\(unknownIpadCase) }\n"
