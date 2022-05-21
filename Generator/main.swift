@@ -121,7 +121,8 @@ func main() {
     // Enum file generatoin
     let enumFile = "Hardware.swift"
 
-    var enumString = "\npublic enum Hardware {\n"
+    var enumString = "// Copyright @DeviceGuru\n"
+        + "\npublic enum Hardware {\n"
         + "\n\(tabSpacing)case \(unknownCase)"
         + "\n\(tabSpacing)case \(unknownIphoneCase)"
         + "\n\(tabSpacing)case \(unknownIpodCase)"
@@ -178,7 +179,7 @@ func main() {
 
     // Extension file generation
     var hardwareFuncContent = ""
-    let extensionFile = "DeviceGuru+Extension.swift"
+    let extensionFile = "DeviceGuruImplementation+Extension.swift"
     generatorDeviceList.keys.sorted().forEach { hardwareKey in
         let valueDict = generatorDeviceList[hardwareKey]
         guard let enumCase = valueDict?["enum"] as? String else {
@@ -187,29 +188,25 @@ func main() {
         }
 
         let enumCaseString = normalizedEnum(enumCase)
-        hardwareFuncContent += "\n\(tabSpacing)\(tabSpacing)if (hardware == \"\(hardwareKey)\") { return .\(enumCaseString) }"
+        hardwareFuncContent += "\n\(tabSpacing)\(tabSpacing)if (hardwareString == \"\(hardwareKey)\") { return .\(enumCaseString) }"
     }
 
 
     print("Creating \(extensionFile)")
     do {
-        let extensionFileConent = "\npublic extension DeviceGuru {"
-            + "\n\(tabSpacing)/// This method returns the Hardware enum depending upon hardware string\n"
-            + "\(tabSpacing)///\n"
-            + "\(tabSpacing)///\n"
-            + "\(tabSpacing)/// - returns: `Hardware` type of the device\n"
-            + "\(tabSpacing)///\n"
-            + "\(tabSpacing)func hardware() -> Hardware {"
-            + "\n\(tabSpacing)\(tabSpacing)let hardware = hardwareString()\n"
+        let extensionFileConent = "\npublic extension DeviceGuruImplementation {\n\n"
+            + "\(tabSpacing)/// This should be same as cocoa pod version\n"
+            + "\(tabSpacing)static var libraryVersion: String { \"<#Major#>.<#Minor#>.<#Fixes#>\" }\n\n"
+            + "\(tabSpacing)var hardware: Hardware {\n"
             + hardwareFuncContent
             + "\n\n"
             + "\(tabSpacing)\(tabSpacing)//log message that your device is not present in the list\n"
-            + "\(tabSpacing)\(tabSpacing)logMessage(hardware)\n"
-            + "\(tabSpacing)\(tabSpacing)if (hardware.hasPrefix(\"iPhone\")) { return .\(unknownIphoneCase) }\n"
-            + "\(tabSpacing)\(tabSpacing)if (hardware.hasPrefix(\"iPod\")) { return .\(unknownIpodCase) }\n"
-            + "\(tabSpacing)\(tabSpacing)if (hardware.hasPrefix(\"iPad\")) { return .\(unknownIpadCase) }\n"
-            + "\(tabSpacing)\(tabSpacing)if (hardware.hasPrefix(\"Watch\")) { return .\(unknownAppleWatchCase) }\n"
-            + "\(tabSpacing)\(tabSpacing)if (hardware.hasPrefix(\"AppleTV\")) { return .\(unknownAppleTVCase) }\n\n"
+            + "\(tabSpacing)\(tabSpacing)logMessage(hardwareString)\n"
+            + "\(tabSpacing)\(tabSpacing)if (hardwareString.hasPrefix(\"iPhone\")) { return .\(unknownIphoneCase) }\n"
+            + "\(tabSpacing)\(tabSpacing)if (hardwareString.hasPrefix(\"iPod\")) { return .\(unknownIpodCase) }\n"
+            + "\(tabSpacing)\(tabSpacing)if (hardwareString.hasPrefix(\"iPad\")) { return .\(unknownIpadCase) }\n"
+            + "\(tabSpacing)\(tabSpacing)if (hardwareString.hasPrefix(\"Watch\")) { return .\(unknownAppleWatchCase) }\n"
+            + "\(tabSpacing)\(tabSpacing)if (hardwareString.hasPrefix(\"AppleTV\")) { return .\(unknownAppleTVCase) }\n\n"
             + "\(tabSpacing)\(tabSpacing)return .unknownDevice\n"
             + "\(tabSpacing)}\n"
             + "}\n"

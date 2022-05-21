@@ -1,9 +1,4 @@
-//
-//  DeviceGuru.h
-//
-//  Created by Inder Kumar Rathore on 06/02/15.
-//  Copyright (c) 2015. All rights reserved.
-//
+//  Copyright @DeviceGuru
 
 #import <Foundation/Foundation.h>
 

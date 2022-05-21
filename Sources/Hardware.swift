@@ -1,3 +1,4 @@
+// Copyright @DeviceGuru
 
 public enum Hardware {
 

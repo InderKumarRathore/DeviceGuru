@@ -1,9 +1,4 @@
-//
-//  DeviceVersion.swift
-//
-//  Created by Inder Kumar Rathore on 01/11/20.
-//  Copyright (c) 2020. All rights reserved.
-//
+// Copyright @DeviceGuru
 
 import Foundation
 

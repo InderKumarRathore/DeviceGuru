@@ -10,13 +10,13 @@ import DeviceGuru
 
 struct ContentView: View {
 
-    private let guru = DeviceGuru()
+    private let guru = DeviceGuruImplementation()
 
-    private var name: Hardware { guru.hardware() }
-    private var code: String { guru.hardwareString() }
-    private var platform: Platform { guru.platform() }
-    private var description: String? { guru.hardwareDescription() }
-    private var deviceVersion: DeviceVersion? { guru.deviceVersion() }
+    private var name: Hardware { guru.hardware }
+    private var code: String { guru.hardwareString }
+    private var platform: Platform { guru.platform }
+    private var description: String? { try? guru.hardwareDescription() }
+    private var deviceVersion: DeviceVersion? { try? guru.deviceVersion() }
 
     var body: some View {
         VStack {
@@ -57,8 +57,8 @@ struct ContentView: View {
 
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

@@ -7,20 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D8202812807F3DE00CB9ECF /* DeviceGuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8202802807F3DE00CB9ECF /* DeviceGuruTests.swift */; };
+		1D89A680259A09200042C47B /* DeviceGuru.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D89A67F259A09200042C47B /* DeviceGuru.swift */; };
 		1DB59D3A256137E10040B7FE /* DeviceVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59D38256137E10040B7FE /* DeviceVersion.swift */; };
 		1DB59D3B256137E10040B7FE /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB59D39256137E10040B7FE /* Platform.swift */; };
-		OBJ_26 /* DeviceGuru+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DeviceGuru+Extension.swift */; };
-		OBJ_27 /* DeviceGuru.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DeviceGuru.swift */; };
+		1DC67A4F2809375F00791E2E /* DeviceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DeviceList.plist */; };
+		1DC67A512809421F00791E2E /* LocalStorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC67A502809421F00791E2E /* LocalStorageMock.swift */; };
+		1DE950022838E07B0064A28D /* HardwareDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE950012838E07B0064A28D /* HardwareDetailProvider.swift */; };
+		1DE950042838E2250064A28D /* HardwareDetailProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE950032838E2250064A28D /* HardwareDetailProviderMock.swift */; };
+		1DE950062838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE950052838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift */; };
+		OBJ_26 /* DeviceGuruImplementation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DeviceGuruImplementation+Extension.swift */; };
+		OBJ_27 /* DeviceGuruImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DeviceGuruImplementation.swift */; };
 		OBJ_28 /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Hardware.swift */; };
 		OBJ_35 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D82027E2807F3DE00CB9ECF /* DeviceGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D8202802807F3DE00CB9ECF /* DeviceGuruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuruTests.swift; sourceTree = "<group>"; };
+		1D89A67F259A09200042C47B /* DeviceGuru.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuru.swift; sourceTree = "<group>"; };
 		1DB59D38256137E10040B7FE /* DeviceVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceVersion.swift; sourceTree = "<group>"; };
 		1DB59D39256137E10040B7FE /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		1DC67A502809421F00791E2E /* LocalStorageMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageMock.swift; sourceTree = "<group>"; };
+		1DE950012838E07B0064A28D /* HardwareDetailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailProvider.swift; sourceTree = "<group>"; };
+		1DE950032838E2250064A28D /* HardwareDetailProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailProviderMock.swift; sourceTree = "<group>"; };
+		1DE950052838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailProviderImplementationTests.swift; sourceTree = "<group>"; };
 		"DeviceGuru::DeviceGuru::Product" /* DeviceGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DeviceGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* DeviceGuru+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceGuru+Extension.swift"; sourceTree = "<group>"; };
-		OBJ_11 /* DeviceGuru.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuru.swift; sourceTree = "<group>"; };
+		OBJ_10 /* DeviceGuruImplementation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceGuruImplementation+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_11 /* DeviceGuruImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuruImplementation.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Hardware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hardware.swift; sourceTree = "<group>"; };
 		OBJ_16 /* Generator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Generator; sourceTree = SOURCE_ROOT; };
 		OBJ_17 /* DeviceGuru.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeviceGuru.podspec; sourceTree = "<group>"; };
@@ -33,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D82027B2807F3DE00CB9ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -43,17 +64,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_13 /* Tests */ = {
+		1D82027F2807F3DE00CB9ECF /* DeviceGuruTests */ = {
 			isa = PBXGroup;
 			children = (
+				1D8202852807F48D00CB9ECF /* Mocks */,
+				1D8202802807F3DE00CB9ECF /* DeviceGuruTests.swift */,
+				1DE950052838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift */,
 			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
+			path = DeviceGuruTests;
+			sourceTree = "<group>";
+		};
+		1D8202852807F48D00CB9ECF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1DC67A502809421F00791E2E /* LocalStorageMock.swift */,
+				1DE950032838E2250064A28D /* HardwareDetailProviderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
 		};
 		OBJ_14 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"DeviceGuru::DeviceGuru::Product" /* DeviceGuru.framework */,
+				1D82027E2807F3DE00CB9ECF /* DeviceGuruTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -63,7 +97,7 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_13 /* Tests */,
+				1D82027F2807F3DE00CB9ECF /* DeviceGuruTests */,
 				OBJ_14 /* Products */,
 				OBJ_16 /* Generator */,
 				OBJ_17 /* DeviceGuru.podspec */,
@@ -77,11 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* DeviceGuru.h */,
-				OBJ_11 /* DeviceGuru.swift */,
-				OBJ_10 /* DeviceGuru+Extension.swift */,
 				OBJ_9 /* DeviceList.plist */,
+				1D89A67F259A09200042C47B /* DeviceGuru.swift */,
+				OBJ_11 /* DeviceGuruImplementation.swift */,
+				OBJ_10 /* DeviceGuruImplementation+Extension.swift */,
 				1DB59D38256137E10040B7FE /* DeviceVersion.swift */,
 				OBJ_12 /* Hardware.swift */,
+				1DE950012838E07B0064A28D /* HardwareDetailProvider.swift */,
 				1DB59D39256137E10040B7FE /* Platform.swift */,
 			);
 			path = Sources;
@@ -90,6 +126,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1D82027D2807F3DE00CB9ECF /* DeviceGuruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D8202822807F3DE00CB9ECF /* Build configuration list for PBXNativeTarget "DeviceGuruTests" */;
+			buildPhases = (
+				1D82027A2807F3DE00CB9ECF /* Sources */,
+				1D82027B2807F3DE00CB9ECF /* Frameworks */,
+				1D82027C2807F3DE00CB9ECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceGuruTests;
+			productName = DeviceGuruTests;
+			productReference = 1D82027E2807F3DE00CB9ECF /* DeviceGuruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		"DeviceGuru::DeviceGuru" /* DeviceGuru */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_22 /* Build configuration list for PBXNativeTarget "DeviceGuru" */;
@@ -127,7 +180,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 9999;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					1D82027D2807F3DE00CB9ECF = {
+						CreatedOnToolsVersion = 13.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "DeviceGuru" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -144,19 +204,44 @@
 			targets = (
 				"DeviceGuru::DeviceGuru" /* DeviceGuru */,
 				"DeviceGuru::SwiftPMPackageDescription" /* DeviceGuruPackageDescription */,
+				1D82027D2807F3DE00CB9ECF /* DeviceGuruTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1D82027C2807F3DE00CB9ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC67A4F2809375F00791E2E /* DeviceList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1D82027A2807F3DE00CB9ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DE950042838E2250064A28D /* HardwareDetailProviderMock.swift in Sources */,
+				1DC67A512809421F00791E2E /* LocalStorageMock.swift in Sources */,
+				1D8202812807F3DE00CB9ECF /* DeviceGuruTests.swift in Sources */,
+				1DE950062838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				1DE950022838E07B0064A28D /* HardwareDetailProvider.swift in Sources */,
+				1D89A680259A09200042C47B /* DeviceGuru.swift in Sources */,
 				1DB59D3B256137E10040B7FE /* Platform.swift in Sources */,
 				1DB59D3A256137E10040B7FE /* DeviceVersion.swift in Sources */,
-				OBJ_26 /* DeviceGuru+Extension.swift in Sources */,
-				OBJ_27 /* DeviceGuru.swift in Sources */,
+				OBJ_26 /* DeviceGuruImplementation+Extension.swift in Sources */,
+				OBJ_27 /* DeviceGuruImplementation.swift in Sources */,
 				OBJ_28 /* Hardware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +257,81 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1D8202832807F3DE00CB9ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inderkumarrathore.DeviceGuruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D8202842807F3DE00CB9ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inderkumarrathore.DeviceGuruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		OBJ_23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -357,6 +517,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D8202822807F3DE00CB9ECF /* Build configuration list for PBXNativeTarget "DeviceGuruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D8202832807F3DE00CB9ECF /* Debug */,
+				1D8202842807F3DE00CB9ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "DeviceGuru" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
