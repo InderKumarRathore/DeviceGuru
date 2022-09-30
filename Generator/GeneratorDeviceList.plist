@@ -317,6 +317,20 @@
 		<key>enum</key>
 		<string>IPHONE_SE_3G</string>
 	</dict>
+	<key>iPhone15,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 14 Pro</string>
+		<key>enum</key>
+		<string>IPHONE_14_PRO</string>
+	</dict>
+	<key>iPhone15,3</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 14 Pro Max</string>
+		<key>enum</key>
+		<string>IPHONE_14_PRO_MAX</string>
+	</dict>
 	<key>iPod1,1</key>
 	<dict>
 		<key>name</key>
