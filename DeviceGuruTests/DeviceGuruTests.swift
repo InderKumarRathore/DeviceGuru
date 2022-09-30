@@ -8,7 +8,7 @@ final class DeviceGuruTests: XCTestCase {
     private var sut: DeviceGuruImplementation!
     private var localStorageMock: LocalStorageMock!
     private var hardwareDetailProviderMock: HardwareDetailProviderMock!
-    private let currentLibraryVersion = "10.0.0"
+    private let currentLibraryVersion = "10.0.1"
 
     override func setUp() {
         super.setUp()
@@ -128,4 +128,3 @@ private enum Constants {
     static let hardwareDetailKey = "github.com/InderKumarRathore/DeviceGuru.HardwareDetail.Key"
     static let deviceGuruVersionKey = "github.com/InderKumarRathore/DeviceGuru.Version.Key"
 }
-
