@@ -55,6 +55,8 @@ public enum Hardware {
     case iphone_13_mini
     case iphone_13
     case iphone_se_3g
+    case iphone_14
+    case iphone_14_plus
     case iphone_14_pro
     case iphone_14_pro_max
 

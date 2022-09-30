@@ -131,6 +131,8 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPhone14,4") { return .iphone_13_mini }
         if (hardwareString == "iPhone14,5") { return .iphone_13 }
         if (hardwareString == "iPhone14,6") { return .iphone_se_3g }
+        if (hardwareString == "iPhone14,7") { return .iphone_14 }
+        if (hardwareString == "iPhone14,8") { return .iphone_14_plus }
         if (hardwareString == "iPhone15,2") { return .iphone_14_pro }
         if (hardwareString == "iPhone15,3") { return .iphone_14_pro_max }
         if (hardwareString == "iPhone2,1") { return .iphone_3gs }
