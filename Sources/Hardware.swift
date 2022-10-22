@@ -127,6 +127,8 @@ public enum Hardware {
     case ipad_air_3_wifi_cellular
     case ipad_8g_wifi
     case ipad_8g_wifi_cellular
+    case ipad_9g_wifi
+    case ipad_9g_wifi_cellular
     case ipad_air_4_wifi
     case ipad_air_4_wifi_cellular
     case ipad_pro_11_3g_wifi
@@ -139,8 +141,17 @@ public enum Hardware {
     case ipad_pro_5g_1tb_wifi_cellular
     case ipad_air_5_wifi
     case ipad_air_5_wifi_cellular
+    case ipad_10g_wifi
+    case ipad_10g_wifi_cellular
     case ipad_mini_6_wifi
     case ipad_mini_6_wifi_cellular
+    case ipad_pro_11_4g_wifi
+    case ipad_pro_11_4g_wifi_cellular
+    case ipad_pro_11_4g_1tb_wifi_cellular
+    case ipad_pro_6g_wifi
+    case ipad_pro_6g_1tb_wifi
+    case ipad_pro_6g_wifi_cellular
+    case ipad_pro_6g_1tb_wifi_cellular
 
     case apple_watch_38
     case apple_watch_42
@@ -160,6 +171,27 @@ public enum Hardware {
     case apple_watch_series_5_44
     case apple_watch_series_5_40_cellular
     case apple_watch_series_5_44_cellular
+    case apple_watch_se_1g_40
+    case apple_watch_se_1g_44
+    case apple_watch_se_1g_40_cellular
+    case apple_watch_se_1g_44_cellular
+    case apple_watch_series_6_40
+    case apple_watch_series_6_44
+    case apple_watch_series_6_40_cellular
+    case apple_watch_series_6_44_cellular
+    case apple_watch_series_7_41
+    case apple_watch_series_7_45
+    case apple_watch_series_7_41_cellular
+    case apple_watch_series_7_45_cellular
+    case apple_watch_se_2g_40
+    case apple_watch_se_2g_44
+    case apple_watch_se_2g_40_cellular
+    case apple_watch_se_2g_44_cellular
+    case apple_watch_series_8_41
+    case apple_watch_series_8_45
+    case apple_watch_series_8_41_cellular
+    case apple_watch_series_8_45_cellular
+    case apple_watch_ultra
 
     case apple_tv_1g
     case apple_tv_2g
@@ -167,4 +199,5 @@ public enum Hardware {
     case apple_tv_3_2g
     case apple_tv_4g
     case apple_tv_4k
+    case apple_tv_4k_2g
 }

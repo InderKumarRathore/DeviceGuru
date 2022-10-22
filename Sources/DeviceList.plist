@@ -7,6 +7,11 @@
 		<key>name</key>
 		<string>Apple TV 1G</string>
 	</dict>
+	<key>AppleTV11,1</key>
+	<dict>
+		<key>name</key>
+		<string>Apple TV 4K (2nd generation)</string>
+	</dict>
 	<key>AppleTV2,1</key>
 	<dict>
 		<key>name</key>
@@ -107,6 +112,21 @@
 		<key>name</key>
 		<string>Apple Watch Series 5 (40 mm)</string>
 	</dict>
+	<key>Watch5,10</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch SE (44 mm, 1st generation)</string>
+	</dict>
+	<key>Watch5,11</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch SE (40 mm/Cellular, 1st generation)</string>
+	</dict>
+	<key>Watch5,12</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch SE (44 mm/Cellular, 1st generation)</string>
+	</dict>
 	<key>Watch5,2</key>
 	<dict>
 		<key>name</key>
@@ -121,6 +141,96 @@
 	<dict>
 		<key>name</key>
 		<string>Apple Watch Series 5 (44 mm/Cellular)</string>
+	</dict>
+	<key>Watch5,9</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch SE (40 mm, 1st generation)</string>
+	</dict>
+	<key>Watch6,1</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 6 (40 mm)</string>
+	</dict>
+	<key>Watch6,10</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch SE (40 mm, 2nd generation)</string>
+	</dict>
+	<key>Watch6,11</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch SE (44 mm, 2nd generation)</string>
+	</dict>
+	<key>Watch6,12</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch SE (40 mm/Cellular, 2nd generation)</string>
+	</dict>
+	<key>Watch6,13</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch SE (44 mm/Cellular, 2nd generation)</string>
+	</dict>
+	<key>Watch6,14</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 8 (41 mm)</string>
+	</dict>
+	<key>Watch6,15</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 8 (45 mm)</string>
+	</dict>
+	<key>Watch6,16</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 8 (41 mm/Cellular)</string>
+	</dict>
+	<key>Watch6,17</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 8 (45 mm/Cellular)</string>
+	</dict>
+	<key>Watch6,18</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Ultra</string>
+	</dict>
+	<key>Watch6,2</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 6 (44 mm)</string>
+	</dict>
+	<key>Watch6,3</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 6 (40 mm/Cellular)</string>
+	</dict>
+	<key>Watch6,4</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 6 (44 mm/Cellular)</string>
+	</dict>
+	<key>Watch6,6</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 7 (41 mm)</string>
+	</dict>
+	<key>Watch6,7</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 7 (45 mm)</string>
+	</dict>
+	<key>Watch6,8</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 7 (41 mm/Cellular)</string>
+	</dict>
+	<key>Watch6,9</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 7 (45 mm/Cellular)</string>
 	</dict>
 	<key>arm64</key>
 	<dict>
@@ -172,6 +282,16 @@
 		<key>name</key>
 		<string>iPad (Wi-Fi + Cellular, 8th generation)</string>
 	</dict>
+	<key>iPad12,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (9th generation)</string>
+	</dict>
+	<key>iPad12,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (Wi-Fi + Cellular, 9th generation)</string>
+	</dict>
 	<key>iPad13,1</key>
 	<dict>
 		<key>name</key>
@@ -196,6 +316,16 @@
 	<dict>
 		<key>name</key>
 		<string>iPad Air (WiFi + Cellular, 5th generation)</string>
+	</dict>
+	<key>iPad13,18</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (10th generation)</string>
+	</dict>
+	<key>iPad13,19</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (Wi-Fi + Cellular, 10th generation)</string>
 	</dict>
 	<key>iPad13,2</key>
 	<dict>
@@ -241,6 +371,46 @@
 	<dict>
 		<key>name</key>
 		<string>iPad mini (Wi-Fi + Cellular, 6th generation)</string>
+	</dict>
+	<key>iPad14,3-A</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (4th generation)</string>
+	</dict>
+	<key>iPad14,3-B</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (1TB, 4th generation)</string>
+	</dict>
+	<key>iPad14,4-A</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (Wi-Fi + Cellular, 4th generation)</string>
+	</dict>
+	<key>iPad14,4-B</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (1TB, Wi-Fi + Cellular, 4th generation)</string>
+	</dict>
+	<key>iPad14,5-A</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9-inch (6th generation)</string>
+	</dict>
+	<key>iPad14,5-B</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9-inch (1TB, 6th generation)</string>
+	</dict>
+	<key>iPad14,6-A</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9-inch (WiFi + Cellular, 6th generation)</string>
+	</dict>
+	<key>iPad14,6-B</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 12.9-inch (1TB, WiFi + Cellular, 6th generation)</string>
 	</dict>
 	<key>iPad2,1</key>
 	<dict>
