@@ -2,11 +2,12 @@
 public extension DeviceGuruImplementation {
 
     /// This should be same as cocoa pod version
-    static var libraryVersion: String { "10.0.1" }
+    static var libraryVersion: String { "<#Major#>.<#Minor#>.<#Fixes#>" }
 
     var hardware: Hardware {
 
         if (hardwareString == "AppleTV1,1") { return .apple_tv_1g }
+        if (hardwareString == "AppleTV11,1") { return .apple_tv_4k_2g }
         if (hardwareString == "AppleTV2,1") { return .apple_tv_2g }
         if (hardwareString == "AppleTV3,1") { return .apple_tv_3g }
         if (hardwareString == "AppleTV3,2") { return .apple_tv_3_2g }
@@ -27,9 +28,30 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "Watch4,3") { return .apple_watch_series_4_40_cellular }
         if (hardwareString == "Watch4,4") { return .apple_watch_series_4_44_cellular }
         if (hardwareString == "Watch5,1") { return .apple_watch_series_5_40 }
+        if (hardwareString == "Watch5,10") { return .apple_watch_se_1g_44 }
+        if (hardwareString == "Watch5,11") { return .apple_watch_se_1g_40_cellular }
+        if (hardwareString == "Watch5,12") { return .apple_watch_se_1g_44_cellular }
         if (hardwareString == "Watch5,2") { return .apple_watch_series_5_44 }
         if (hardwareString == "Watch5,3") { return .apple_watch_series_5_40_cellular }
         if (hardwareString == "Watch5,4") { return .apple_watch_series_5_44_cellular }
+        if (hardwareString == "Watch5,9") { return .apple_watch_se_1g_40 }
+        if (hardwareString == "Watch6,1") { return .apple_watch_series_6_40 }
+        if (hardwareString == "Watch6,10") { return .apple_watch_se_2g_40 }
+        if (hardwareString == "Watch6,11") { return .apple_watch_se_2g_44 }
+        if (hardwareString == "Watch6,12") { return .apple_watch_se_2g_40_cellular }
+        if (hardwareString == "Watch6,13") { return .apple_watch_se_2g_44_cellular }
+        if (hardwareString == "Watch6,14") { return .apple_watch_series_8_41 }
+        if (hardwareString == "Watch6,15") { return .apple_watch_series_8_45 }
+        if (hardwareString == "Watch6,16") { return .apple_watch_series_8_41_cellular }
+        if (hardwareString == "Watch6,17") { return .apple_watch_series_8_45_cellular }
+        if (hardwareString == "Watch6,18") { return .apple_watch_ultra }
+        if (hardwareString == "Watch6,2") { return .apple_watch_series_6_44 }
+        if (hardwareString == "Watch6,3") { return .apple_watch_series_6_40_cellular }
+        if (hardwareString == "Watch6,4") { return .apple_watch_series_6_44_cellular }
+        if (hardwareString == "Watch6,6") { return .apple_watch_series_7_41 }
+        if (hardwareString == "Watch6,7") { return .apple_watch_series_7_45 }
+        if (hardwareString == "Watch6,8") { return .apple_watch_series_7_41_cellular }
+        if (hardwareString == "Watch6,9") { return .apple_watch_series_7_45_cellular }
         if (hardwareString == "arm64") { return .simulator }
         if (hardwareString == "i386") { return .simulator }
         if (hardwareString == "iPad1,1") { return .iPad }
@@ -40,11 +62,15 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPad11,4") { return .ipad_air_3_wifi_cellular }
         if (hardwareString == "iPad11,6") { return .ipad_8g_wifi }
         if (hardwareString == "iPad11,7") { return .ipad_8g_wifi_cellular }
+        if (hardwareString == "iPad12,1") { return .ipad_9g_wifi }
+        if (hardwareString == "iPad12,2") { return .ipad_9g_wifi_cellular }
         if (hardwareString == "iPad13,1") { return .ipad_air_4_wifi }
         if (hardwareString == "iPad13,10") { return .ipad_pro_5g_wifi_cellular }
         if (hardwareString == "iPad13,11") { return .ipad_pro_5g_1tb_wifi_cellular }
         if (hardwareString == "iPad13,16") { return .ipad_air_5_wifi }
         if (hardwareString == "iPad13,17") { return .ipad_air_5_wifi_cellular }
+        if (hardwareString == "iPad13,18") { return .ipad_10g_wifi }
+        if (hardwareString == "iPad13,19") { return .ipad_10g_wifi_cellular }
         if (hardwareString == "iPad13,2") { return .ipad_air_4_wifi_cellular }
         if (hardwareString == "iPad13,4") { return .ipad_pro_11_3g_wifi }
         if (hardwareString == "iPad13,5") { return .ipad_pro_11_3g_1tb_wifi }
@@ -54,6 +80,14 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPad13,9") { return .ipad_pro_5g_1tb_wifi }
         if (hardwareString == "iPad14,1") { return .ipad_mini_6_wifi }
         if (hardwareString == "iPad14,2") { return .ipad_mini_6_wifi_cellular }
+        if (hardwareString == "iPad14,3-A") { return .ipad_pro_11_4g_wifi }
+        if (hardwareString == "iPad14,3-B") { return .ipad_pro_11_3g_1tb_wifi }
+        if (hardwareString == "iPad14,4-A") { return .ipad_pro_11_4g_wifi_cellular }
+        if (hardwareString == "iPad14,4-B") { return .ipad_pro_11_4g_1tb_wifi_cellular }
+        if (hardwareString == "iPad14,5-A") { return .ipad_pro_6g_wifi }
+        if (hardwareString == "iPad14,5-B") { return .ipad_pro_6g_1tb_wifi }
+        if (hardwareString == "iPad14,6-A") { return .ipad_pro_6g_wifi_cellular }
+        if (hardwareString == "iPad14,6-B") { return .ipad_pro_6g_1tb_wifi_cellular }
         if (hardwareString == "iPad2,1") { return .ipad_2_wifi }
         if (hardwareString == "iPad2,2") { return .ipad_2 }
         if (hardwareString == "iPad2,3") { return .ipad_2_cdma }
