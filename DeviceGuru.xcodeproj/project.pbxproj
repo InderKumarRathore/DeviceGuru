@@ -16,6 +16,7 @@
 		1DE950022838E07B0064A28D /* HardwareDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE950012838E07B0064A28D /* HardwareDetailProvider.swift */; };
 		1DE950042838E2250064A28D /* HardwareDetailProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE950032838E2250064A28D /* HardwareDetailProviderMock.swift */; };
 		1DE950062838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE950052838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift */; };
+		6D816ED2292A18D900641F8E /* DeviceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DeviceList.plist */; };
 		OBJ_26 /* DeviceGuruImplementation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DeviceGuruImplementation+Extension.swift */; };
 		OBJ_27 /* DeviceGuruImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DeviceGuruImplementation.swift */; };
 		OBJ_28 /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Hardware.swift */; };
@@ -149,6 +150,7 @@
 			buildPhases = (
 				OBJ_25 /* Sources */,
 				OBJ_29 /* Frameworks */,
+				6D816ED1292A18D500641F8E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +217,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DC67A4F2809375F00791E2E /* DeviceList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D816ED1292A18D500641F8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D816ED2292A18D900641F8E /* DeviceList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

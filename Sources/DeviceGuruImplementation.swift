@@ -164,6 +164,10 @@ private extension DeviceGuruImplementation {
             return dictionary
         }
 
+        if let dictionary = loadDeviceDictionaryFromFrameworkBundle() {
+            return dictionary
+        }
+
         if let dictionary = loadDeviceDictionaryFromSwiftPackage() {
             return dictionary
         }
@@ -194,6 +198,17 @@ private extension DeviceGuruImplementation {
                   assertionFailure("DeviceList.plist not found in the bundle.")
                   return nil
               }
+        return dictionary
+    }
+
+    func loadDeviceDictionaryFromFrameworkBundle() -> [String: AnyObject]? {
+        let bundle = Bundle(for: type(of: self))
+
+        guard let path = bundle.path(forResource: Constants.plistFileName, ofType: Constants.plistFileType),
+              let dictionary = NSDictionary(contentsOfFile: path) as? [String: AnyObject] else {
+           return nil
+        }
+
         return dictionary
     }
 
