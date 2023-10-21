@@ -4,12 +4,12 @@ import XCTest
 
 @testable import DeviceGuru
 
-// Run Test on iPhone 8
+// Run Test on iPhone 15 pro
 
 final class HardwareDetailProviderImplementationTests: XCTestCase {
 
     func testExample() {
         let hardwareProvider = HardwareDetailProviderImplementation()
-        XCTAssertEqual(hardwareProvider.hardwareString, "iPhone10,4")
+        XCTAssertEqual(hardwareProvider.hardwareString, "iPhone16,1")
     }
 }
