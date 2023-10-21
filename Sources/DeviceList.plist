@@ -817,6 +817,26 @@
 		<key>name</key>
 		<string>iPhone 14 Pro Max</string>
 	</dict>
+	<key>iPhone15,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 15</string>
+	</dict>
+	<key>iPhone15,5</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 15 Plus</string>
+	</dict>
+	<key>iPhone16,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 15 Pro</string>
+	</dict>
+	<key>iPhone16,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 15 Pro Max</string>
+	</dict>
 	<key>iPhone2,1</key>
 	<dict>
 		<key>name</key>

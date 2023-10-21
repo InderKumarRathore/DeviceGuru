@@ -2,7 +2,7 @@
 public extension DeviceGuruImplementation {
 
     /// This should be same as cocoa pod version
-    static var libraryVersion: String { "10.0.2" }
+    static var libraryVersion: String { "10.0.3" }
 
     var hardware: Hardware {
 
@@ -169,6 +169,10 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPhone14,8") { return .iphone_14_plus }
         if (hardwareString == "iPhone15,2") { return .iphone_14_pro }
         if (hardwareString == "iPhone15,3") { return .iphone_14_pro_max }
+        if (hardwareString == "iPhone15,4") { return .iphone_15 }
+        if (hardwareString == "iPhone15,5") { return .iphone_15_plus }
+        if (hardwareString == "iPhone16,1") { return .iphone_14_pro }
+        if (hardwareString == "iPhone16,2") { return .iphone_15_pro_max }
         if (hardwareString == "iPhone2,1") { return .iphone_3gs }
         if (hardwareString == "iPhone3,1") { return .iphone_4 }
         if (hardwareString == "iPhone3,2") { return .iphone_4 }
