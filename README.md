@@ -8,6 +8,11 @@
 
 10.0.0 Introduced breaking changes so if you're using older version 8.x.x then you need to make little changes. Check this PR: https://github.com/InderKumarRathore/DeviceGuru/pull/94 for changes. With 10.0.0 The library is 10x faster and you can mock DeviceGuru for testing also.
 
+### Flow
+<details close>
+  <summary>Expand</summary>
+  <img src="./Docs/Assets/flow.png"/>
+</details>
 
 ### Installation
 
