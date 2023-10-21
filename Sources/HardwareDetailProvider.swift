@@ -19,8 +19,12 @@ public struct HardwareDetailProviderImplementation: HardwareDetailProvider {
 
         var hardware: String = String(cString: hw_machine)
 
-        // Check for simulator
-        if hardware == "x86_64" || hardware == "i386" {
+        let simulatorSet: Set<String> = [
+            "arm64",
+            "i386",
+            "x86_64",
+        ]
+        if simulatorSet.contains(hardware) {
             if let deviceID = ProcessInfo.processInfo.environment["SIMULATOR_MODEL_IDENTIFIER"] {
                 hardware = deviceID
             }
