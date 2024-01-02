@@ -33,6 +33,7 @@
 		1DE950012838E07B0064A28D /* HardwareDetailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailProvider.swift; sourceTree = "<group>"; };
 		1DE950032838E2250064A28D /* HardwareDetailProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailProviderMock.swift; sourceTree = "<group>"; };
 		1DE950052838EBAA0064A28D /* HardwareDetailProviderImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareDetailProviderImplementationTests.swift; sourceTree = "<group>"; };
+		B58874C42B43E97A00EDBEAE /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		"DeviceGuru::DeviceGuru::Product" /* DeviceGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DeviceGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* DeviceGuruImplementation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceGuruImplementation+Extension.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* DeviceGuruImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuruImplementation.swift; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 				OBJ_12 /* Hardware.swift */,
 				1DE950012838E07B0064A28D /* HardwareDetailProvider.swift */,
 				1DB59D39256137E10040B7FE /* Platform.swift */,
+				B58874C42B43E97A00EDBEAE /* PrivacyInfo.xcprivacy */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
