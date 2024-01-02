@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'DeviceGuru'
-  spec.version = '10.0.4'
+  spec.version = '10.0.5'
   spec.license = 'MIT'
   spec.summary = 'DeviceGuru helps identifying the exact hardware type of the device. e.g. iPhone 6 or iPhone 6s.'
   spec.homepage = 'https://github.com/InderKumarRathore/DeviceGuru'
@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec "DeviceGuru" do |ss|
     ss.dependency "DeviceGuru/Resources"
-    ss.source_files = "Sources/*.swift"
+    ss.source_files = "Sources/*.swift", "Sources/*.xcprivacy"
   end
 
   spec.subspec "Resources" do |ss|
