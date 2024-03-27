@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec "DeviceGuru" do |ss|
     ss.dependency "DeviceGuru/Resources"
-    ss.source_files = "Sources/*.swift"
+    ss.source_files = "Sources/*.swift", "Sources/*.xcprivacy"
   end
 
   spec.subspec "Resources" do |ss|
