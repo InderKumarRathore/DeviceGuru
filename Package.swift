@@ -21,7 +21,10 @@ let package = Package(
             name: "DeviceGuru", 
             dependencies: [], 
             path: "Sources",
-            resources: [.copy("DeviceList.plist")]
+            resources: [
+                .copy("DeviceList.plist"),
+                .copy("PrivacyInfo.xcprivacy")
+            ]
         )
     ]
 )
