@@ -15,8 +15,14 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Build and Test
     - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+      run: |
+          xcodebuild \
+           -project DeviceGuru.xcodeproj \
+           -scheme DeviceGuru \
+           -sdk iphonesimulator \
+           -destination 'platform=iOS Simulator,name=iPhone 14,OS=17.4' \
+            test || exit 1
