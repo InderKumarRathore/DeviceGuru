@@ -372,45 +372,45 @@
 		<key>name</key>
 		<string>iPad mini (Wi-Fi + Cellular, 6th generation)</string>
 	</dict>
-	<key>iPad14,3-A</key>
+	<key>iPad14,3</key>
 	<dict>
 		<key>name</key>
 		<string>iPad Pro 11-inch (4th generation)</string>
 	</dict>
-	<key>iPad14,3-B</key>
-	<dict>
-		<key>name</key>
-		<string>iPad Pro 11-inch (1TB, 4th generation)</string>
-	</dict>
-	<key>iPad14,4-A</key>
+	<key>iPad14,4</key>
 	<dict>
 		<key>name</key>
 		<string>iPad Pro 11-inch (Wi-Fi + Cellular, 4th generation)</string>
 	</dict>
-	<key>iPad14,4-B</key>
-	<dict>
-		<key>name</key>
-		<string>iPad Pro 11-inch (1TB, Wi-Fi + Cellular, 4th generation)</string>
-	</dict>
-	<key>iPad14,5-A</key>
+	<key>iPad14,5</key>
 	<dict>
 		<key>name</key>
 		<string>iPad Pro 12.9-inch (6th generation)</string>
 	</dict>
-	<key>iPad14,5-B</key>
-	<dict>
-		<key>name</key>
-		<string>iPad Pro 12.9-inch (1TB, 6th generation)</string>
-	</dict>
-	<key>iPad14,6-A</key>
+	<key>iPad14,6</key>
 	<dict>
 		<key>name</key>
 		<string>iPad Pro 12.9-inch (WiFi + Cellular, 6th generation)</string>
 	</dict>
-	<key>iPad14,6-B</key>
+	<key>iPad16,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-inch (1TB, WiFi + Cellular, 6th generation)</string>
+		<string>iPad Pro 11 inch M4</string>
+	</dict>
+	<key>iPad16,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11 inch M4</string>
+	</dict>
+	<key>iPad16,5</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 13 inch M4</string>
+	</dict>
+	<key>iPad16,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 13 inch M4</string>
 	</dict>
 	<key>iPad2,1</key>
 	<dict>

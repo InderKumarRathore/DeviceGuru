@@ -364,7 +364,7 @@
 		<key>name</key>
 		<string>iPhone 15 Pro</string>
 		<key>enum</key>
-		<string>IPHONE_14_PRO</string>
+		<string>IPHONE_15_PRO</string>
 	</dict>
 	<key>iPhone16,2</key>
 	<dict>
@@ -968,61 +968,61 @@
 		<key>enum</key>
 		<string>IPAD_MINI_6_WIFI_CELLULAR</string>
 	</dict>
-	<key>iPad14,3-A</key>
+	<key>iPad14,3</key>
 	<dict>
 		<key>name</key>
 		<string>iPad Pro 11-inch (4th generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_11_4G_WIFI</string>
 	</dict>
-	<key>iPad14,3-B</key>
-	<dict>
-		<key>name</key>
-		<string>iPad Pro 11-inch (1TB, 4th generation)</string>
-		<key>enum</key>
-		<string>IPAD_PRO_11_3G_1TB_WIFI</string>
-	</dict>
-	<key>iPad14,4-A</key>
+	<key>iPad14,4</key>
 	<dict>
 		<key>name</key>
 		<string>iPad Pro 11-inch (Wi-Fi + Cellular, 4th generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_11_4G_WIFI_CELLULAR</string>
 	</dict>
-	<key>iPad14,4-B</key>
-	<dict>
-		<key>name</key>
-		<string>iPad Pro 11-inch (1TB, Wi-Fi + Cellular, 4th generation)</string>
-		<key>enum</key>
-		<string>IPAD_PRO_11_4G_1TB_WIFI_CELLULAR</string>
-	</dict>
-	<key>iPad14,5-A</key>
+	<key>iPad14,5</key>
 	<dict>
 		<key>name</key>
 		<string>iPad Pro 12.9-inch (6th generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_6G_WIFI</string>
 	</dict>
-	<key>iPad14,5-B</key>
-	<dict>
-		<key>name</key>
-		<string>iPad Pro 12.9-inch (1TB, 6th generation)</string>
-		<key>enum</key>
-		<string>IPAD_PRO_6G_1TB_WIFI</string>
-	</dict>
-	<key>iPad14,6-A</key>
+	<key>iPad14,6</key>
 	<dict>
 		<key>name</key>
 		<string>iPad Pro 12.9-inch (WiFi + Cellular, 6th generation)</string>
 		<key>enum</key>
 		<string>IPAD_PRO_6G_WIFI_CELLULAR</string>
 	</dict>
-	<key>iPad14,6-B</key>
+	<key>iPad16,3</key>
 	<dict>
 		<key>name</key>
-		<string>iPad Pro 12.9-inch (1TB, WiFi + Cellular, 6th generation)</string>
+		<string>iPad Pro 11 inch M4</string>
 		<key>enum</key>
-		<string>IPAD_PRO_6G_1TB_WIFI_CELLULAR</string>
+		<string>IPAD_PRO_11_M4</string>
+	</dict>
+	<key>iPad16,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11 inch M4</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_M4_CELLULAR</string>
+	</dict>
+	<key>iPad16,5</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 13 inch M4</string>
+		<key>enum</key>
+		<string>IPAD_PRO_13_M4</string>
+	</dict>
+	<key>iPad16,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 13 inch M4</string>
+		<key>enum</key>
+		<string>IPAD_PRO_13_M4_CELLULAR</string>
 	</dict>
 	<key>AppleTV1,1</key>
 	<dict>
