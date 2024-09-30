@@ -63,6 +63,10 @@ public enum Hardware {
     case iphone_15_plus
     case iphone_15_pro
     case iphone_15_pro_max
+    case iphone_16_pro
+    case iphone_16_pro_max
+    case iphone_16
+    case iphone_16_plus
 
     case ipod_touch_1g
     case ipod_touch_2g
@@ -197,6 +201,11 @@ public enum Hardware {
     case apple_watch_series_8_41_cellular
     case apple_watch_series_8_45_cellular
     case apple_watch_ultra
+    case apple_watch_series_9_41
+    case apple_watch_series_9_45
+    case apple_watch_series_9_41_cellular
+    case apple_watch_series_9_45_cellular
+    case apple_watch_ultra_2
 
     case apple_tv_1g
     case apple_tv_2g
