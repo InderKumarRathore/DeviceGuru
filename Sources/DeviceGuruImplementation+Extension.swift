@@ -2,7 +2,7 @@
 public extension DeviceGuruImplementation {
 
     /// This should be same as cocoa pod version
-    static var libraryVersion: String { "10.0.8" }
+    static var libraryVersion: String { "10.0.9" }
 
     var hardware: Hardware {
 
@@ -52,6 +52,11 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "Watch6,7") { return .apple_watch_series_7_45 }
         if (hardwareString == "Watch6,8") { return .apple_watch_series_7_41_cellular }
         if (hardwareString == "Watch6,9") { return .apple_watch_series_7_45_cellular }
+        if (hardwareString == "Watch7,1") { return .apple_watch_series_9_41 }
+        if (hardwareString == "Watch7,2") { return .apple_watch_series_9_45 }
+        if (hardwareString == "Watch7,3") { return .apple_watch_series_9_41_cellular }
+        if (hardwareString == "Watch7,4") { return .apple_watch_series_9_45_cellular }
+        if (hardwareString == "Watch7,5") { return .apple_watch_ultra_2 }
         if (hardwareString == "arm64") { return .simulator }
         if (hardwareString == "i386") { return .simulator }
         if (hardwareString == "iPad1,1") { return .iPad }
@@ -173,6 +178,10 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPhone15,5") { return .iphone_15_plus }
         if (hardwareString == "iPhone16,1") { return .iphone_15_pro }
         if (hardwareString == "iPhone16,2") { return .iphone_15_pro_max }
+        if (hardwareString == "iPhone17,1") { return .iphone_16_pro }
+        if (hardwareString == "iPhone17,2") { return .iphone_16_pro_max }
+        if (hardwareString == "iPhone17,3") { return .iphone_16 }
+        if (hardwareString == "iPhone17,4") { return .iphone_16_plus }
         if (hardwareString == "iPhone2,1") { return .iphone_3gs }
         if (hardwareString == "iPhone3,1") { return .iphone_4 }
         if (hardwareString == "iPhone3,2") { return .iphone_4 }
