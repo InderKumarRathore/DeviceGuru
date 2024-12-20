@@ -373,6 +373,34 @@
 		<key>enum</key>
 		<string>IPHONE_15_PRO_MAX</string>
 	</dict>
+	<key>iPhone17,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 16 Pro</string>
+		<key>enum</key>
+		<string>IPHONE_16_PRO</string>
+	</dict>
+	<key>iPhone17,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone_16 Pro Max</string>
+		<key>enum</key>
+		<string>IPHONE_16_PRO_MAX</string>
+	</dict>
+	<key>iPhone17,3</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 16</string>
+		<key>enum</key>
+		<string>IPHONE_16</string>
+	</dict>
+	<key>iPhone17,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 16 Plus</string>
+		<key>enum</key>
+		<string>IPHONE_16_PLUS</string>
+	</dict>
 	<key>iPod1,1</key>
 	<dict>
 		<key>name</key>
@@ -1345,6 +1373,41 @@
 		<string>Apple Watch Ultra</string>
 		<key>enum</key>
 		<string>APPLE_WATCH_ULTRA</string>
+	</dict>
+	<key>Watch7,1</key>
+	<dict>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_9_41</string>
+		<key>name</key>
+		<string>Apple Watch Series 9 (41mm)</string>
+	</dict>
+	<key>Watch7,2</key>
+	<dict>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_9_45</string>
+		<key>name</key>
+		<string>Apple Watch Series 9 (45mm)</string>
+	</dict>
+	<key>Watch7,3</key>
+	<dict>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_9_41_CELLULAR</string>
+		<key>name</key>
+		<string>Apple Watch Series 9 (41 mm/Cellular)</string>
+	</dict>
+	<key>Watch7,4</key>
+	<dict>
+		<key>enum</key>
+		<string>APPLE_WATCH_SERIES_9_45_CELLULAR</string>
+		<key>name</key>
+		<string>Apple Watch Series 9 (45 mm/Cellular)</string>
+	</dict>
+	<key>Watch7,5</key>
+	<dict>
+		<key>enum</key>
+		<string>APPLE_WATCH_ULTRA_2</string>
+		<key>name</key>
+		<string>Apple Watch Ultra 2</string>
 	</dict>
 	<key>i386</key>
 	<dict>
