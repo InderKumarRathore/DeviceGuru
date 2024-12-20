@@ -232,6 +232,31 @@
 		<key>name</key>
 		<string>Apple Watch Series 7 (45 mm/Cellular)</string>
 	</dict>
+	<key>Watch7,1</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 9 (41mm)</string>
+	</dict>
+	<key>Watch7,2</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 9 (45mm)</string>
+	</dict>
+	<key>Watch7,3</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 9 (41 mm/Cellular)</string>
+	</dict>
+	<key>Watch7,4</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Series 9 (45 mm/Cellular)</string>
+	</dict>
+	<key>Watch7,5</key>
+	<dict>
+		<key>name</key>
+		<string>Apple Watch Ultra 2</string>
+	</dict>
 	<key>arm64</key>
 	<dict>
 		<key>name</key>
@@ -836,6 +861,26 @@
 	<dict>
 		<key>name</key>
 		<string>iPhone 15 Pro Max</string>
+	</dict>
+	<key>iPhone17,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 16 Pro</string>
+	</dict>
+	<key>iPhone17,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone_16 Pro Max</string>
+	</dict>
+	<key>iPhone17,3</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 16</string>
+	</dict>
+	<key>iPhone17,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 16 Plus</string>
 	</dict>
 	<key>iPhone2,1</key>
 	<dict>
