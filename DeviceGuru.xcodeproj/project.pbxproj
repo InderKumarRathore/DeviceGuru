@@ -23,6 +23,16 @@
 		OBJ_35 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1DA792682D15A63D00899406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "DeviceGuru::DeviceGuru";
+			remoteInfo = DeviceGuru;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1D82027E2807F3DE00CB9ECF /* DeviceGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8202802807F3DE00CB9ECF /* DeviceGuruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGuruTests.swift; sourceTree = "<group>"; };
@@ -140,6 +150,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1DA792692D15A63D00899406 /* PBXTargetDependency */,
 			);
 			name = DeviceGuruTests;
 			productName = DeviceGuruTests;
@@ -267,6 +278,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DA792692D15A63D00899406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "DeviceGuru::DeviceGuru" /* DeviceGuru */;
+			targetProxy = 1DA792682D15A63D00899406 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D8202832807F3DE00CB9ECF /* Debug */ = {
