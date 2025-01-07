@@ -383,7 +383,7 @@
 	<key>iPhone17,2</key>
 	<dict>
 		<key>name</key>
-		<string>iPhone_16 Pro Max</string>
+		<string>iPhone 16 Pro Max</string>
 		<key>enum</key>
 		<string>IPHONE_16_PRO_MAX</string>
 	</dict>
