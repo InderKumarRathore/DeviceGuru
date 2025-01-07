@@ -8,7 +8,7 @@ final class DeviceGuruTests: XCTestCase {
     private var sut: DeviceGuruImplementation!
     private var localStorageMock: LocalStorageMock!
     private var hardwareDetailProviderMock: HardwareDetailProviderMock!
-    private let currentLibraryVersion = "10.0.9"
+    private let currentLibraryVersion = "10.0.10"
 
     override func setUp() {
         super.setUp()
