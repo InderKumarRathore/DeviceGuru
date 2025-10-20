@@ -110,13 +110,14 @@ private extension DeviceGuruImplementation {
         do {
             let regex = try NSRegularExpression(pattern: regex)
             let results = regex.matches(in: text, range: NSRange(text.startIndex..., in: text))
-            return results.compactMap {
+            let strings: [String] = results.compactMap {
                 guard let range = Range($0.range, in: text) else {
                     print("Unable to create the range for: \(text)")
                     return nil
                 }
                 return String(text[range])
-            }.first
+            }
+            return strings.first
         } catch let error {
             print("invalid regex: \(error.localizedDescription)")
             return nil
