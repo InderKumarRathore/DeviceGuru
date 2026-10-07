@@ -8,7 +8,7 @@ final class DeviceGuruTests: XCTestCase {
     private var sut: DeviceGuruImplementation!
     private var localStorageMock: LocalStorageMock!
     private var hardwareDetailProviderMock: HardwareDetailProviderMock!
-    private let currentLibraryVersion = "10.0.10"
+    private let currentLibraryVersion = "10.0.12"
 
     override func setUp() {
         super.setUp()
@@ -33,11 +33,11 @@ final class DeviceGuruTests: XCTestCase {
         let result = try sut.hardwareDescription()
 
         // then
-        XCTAssertEqual(result, "iPhone SE (2nd generation)")
+        XCTAssertEqual(result, "iPhone 17 Pro Max")
         XCTAssertEqual(localStorageMock.dictionary.keys.count, 2)
 
         let hardwareDetail = localStorageMock.dictionary[Constants.hardwareDetailKey] as? [String: String]
-        XCTAssertEqual(hardwareDetail, ["name": "iPhone SE (2nd generation)"])
+        XCTAssertEqual(hardwareDetail, ["name": "iPhone 17 Pro Max"])
 
         let deviceGuruVersion = localStorageMock.dictionary[Constants.deviceGuruVersionKey] as? String
         XCTAssertEqual(deviceGuruVersion, currentLibraryVersion)
@@ -66,7 +66,7 @@ final class DeviceGuruTests: XCTestCase {
         let result = try sut.hardwareDescription()
 
         // then
-        XCTAssertEqual(result, "iPhone SE (2nd generation)")
+        XCTAssertEqual(result, "iPhone 17 Pro Max")
         XCTAssertTrue(localStorageMock.getObjectCalled > 0)
         XCTAssertTrue(localStorageMock.setValueCalled > 0)
     }

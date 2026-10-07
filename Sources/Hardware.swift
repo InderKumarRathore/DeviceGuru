@@ -39,8 +39,8 @@ public enum Hardware {
     case iphone_8_plus
     case iphone_x
     case iphone_xs
-    case iphone_xs_max
     case iphone_xs_max_cn
+    case iphone_xs_max
     case iphone_xr
     case iphone_11
     case iphone_11_pro
@@ -71,7 +71,11 @@ public enum Hardware {
     case iphone_17_pro
     case iphone_17_pro_max
     case iphone_17
-    case iphone_17_air
+    case iphone_air
+    case iphone_17_e
+    case iphone_18_pro
+    case iphone_18_pro_max_us
+    case iphone_18_pro_max
 
     case ipod_touch_1g
     case ipod_touch_2g
@@ -162,10 +166,30 @@ public enum Hardware {
     case ipad_pro_11_4g_wifi_cellular
     case ipad_pro_6g_wifi
     case ipad_pro_6g_wifi_cellular
+    case ipad_air_11_m2
+    case ipad_air_11_m2_cellular
+    case ipad_air_13_m2
+    case ipad_air_13_m2_cellular
+    case ipad_air_11_m3
+    case ipad_air_11_m3_cellular
+    case ipad_air_13_m3
+    case ipad_air_13_m3_cellular
+    case ipad_a16
+    case ipad_a16_cellular
+    case ipad_mini_a17_pro
+    case ipad_mini_a17_pro_cellular
     case ipad_pro_11_m4
     case ipad_pro_11_m4_cellular
     case ipad_pro_13_m4
     case ipad_pro_13_m4_cellular
+    case ipad_air_11_m4
+    case ipad_air_11_m4_cellular
+    case ipad_air_13_m4
+    case ipad_air_13_m4_cellular
+    case ipad_pro_11_m5
+    case ipad_pro_11_m5_cellular
+    case ipad_pro_13_m5
+    case ipad_pro_13_m5_cellular
 
     case apple_watch_38
     case apple_watch_42

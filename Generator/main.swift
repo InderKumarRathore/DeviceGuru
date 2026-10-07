@@ -43,7 +43,7 @@ func getUniqueSortedModels(havingPrefix: String, from deviceList: [String: [Stri
         guard let versionString = findMatch(for: "[\\d]*,[\\d]*", in: key),
               let version =  getVersion(from: versionString),
               let enumCase = value["enum"] as? String else {
-            print("Can't create model from this: \(value)")
+            debugPrint("Can't create model from this: \(value)")
             return nil
         }
         return Model(version: version, enumCase: enumCase)
@@ -66,12 +66,12 @@ func readPropertyList() -> [String: [String: AnyObject]]? {
                                                                options: .mutableContainersAndLeaves,
                                                                format: &propertyListFormat)
         guard let dictionary = plistData as? [String: [String: AnyObject]] else {
-            print("Unable to convert plist into dictionary.")
+            debugPrint("Unable to convert plist into dictionary.")
             return nil
         }
         return dictionary
     } catch {
-        print("Error reading plist: \(error), format: \(propertyListFormat)")
+        debugPrint("Error reading plist: \(error), format: \(propertyListFormat)")
         return nil
     }
 }
@@ -99,6 +99,11 @@ func main() {
     let unknownAppleWatchCase = "unknownAppleWatch"
     let unknownAppleTVCase = "unknownAppleTV"
 
+    guard let libraryVersion = readPodspecVersion(inDirectory: "..") else {
+        debugPrint("Unable to read version from .podspec in the parent directory.")
+        return
+    }
+    debugPrint("Library version: \(libraryVersion)")
 
     var deviceList: [String: [String: AnyObject]] = [:]
 
@@ -110,13 +115,12 @@ func main() {
     }
     let dirPath = "../Sources/"
 
-    print("Writing plist.")
+    debugPrint("Writing plist.")
     guard (deviceList as NSDictionary).write(toFile: "\(dirPath)DeviceList.plist", atomically: true) else {
-        print("Unable to write the plist.")
+        debugPrint("Unable to write the plist.")
         return
     }
-    print("Plist created.")
-
+    debugPrint("Plist created.")
 
     // Enum file generatoin
     let enumFile = "Hardware.swift"
@@ -167,13 +171,13 @@ func main() {
         enumString += "\n\(tabSpacing)case \(swiftEnumCase)"
     }
 
-    print("Creating \(enumFile)")
+    debugPrint("Creating \(enumFile)")
     do {
         let enumFileConent = enumString + "\n}\n"
         try enumFileConent.write(toFile: dirPath + enumFile, atomically: true, encoding: .utf8)
-        print("Created \(enumFile)")
+        debugPrint("Created \(enumFile)")
     } catch {
-        print("Unable to create \(enumFile)")
+        debugPrint("Unable to create \(enumFile)")
         return
     }
 
@@ -183,7 +187,7 @@ func main() {
     generatorDeviceList.keys.sorted().forEach { hardwareKey in
         let valueDict = generatorDeviceList[hardwareKey]
         guard let enumCase = valueDict?["enum"] as? String else {
-            print("case not present of key \(hardwareKey)")
+            debugPrint("case not present of key \(hardwareKey)")
             return
         }
 
@@ -191,12 +195,11 @@ func main() {
         hardwareFuncContent += "\n\(tabSpacing)\(tabSpacing)if (hardwareString == \"\(hardwareKey)\") { return .\(enumCaseString) }"
     }
 
-
-    print("Creating \(extensionFile)")
+    debugPrint("Creating \(extensionFile)")
     do {
         let extensionFileConent = "\npublic extension DeviceGuruImplementation {\n\n"
             + "\(tabSpacing)/// This should be same as cocoa pod version\n"
-            + "\(tabSpacing)static var libraryVersion: String { \"<#Major#>.<#Minor#>.<#Fixes#>\" }\n\n"
+            + "\(tabSpacing)static var libraryVersion: String { \"\(libraryVersion)\" }\n\n"
             + "\(tabSpacing)var hardware: Hardware {\n"
             + hardwareFuncContent
             + "\n\n"
@@ -211,9 +214,9 @@ func main() {
             + "\(tabSpacing)}\n"
             + "}\n"
         try extensionFileConent.write(toFile: dirPath + extensionFile, atomically: true, encoding: .utf8)
-        print("Created \(extensionFile)")
+        debugPrint("Created \(extensionFile)")
     } catch {
-        print("Unable to create \(extensionFile)")
+        debugPrint("Unable to create \(extensionFile)")
         return
     }
 
@@ -225,13 +228,13 @@ func findMatch(for regex: String, in text: String) -> String? {
         let results = regex.matches(in: text, range: NSRange(text.startIndex..., in: text))
         return results.compactMap {
             guard let range = Range($0.range, in: text) else {
-                print("Unable to create the range for: \(text)")
+                debugPrint("Unable to create the range for: \(text)")
                 return nil
             }
             return String(text[range])
         }.first
     } catch let error {
-        print("invalid regex: \(error.localizedDescription)")
+        debugPrint("invalid regex: \(error.localizedDescription)")
         return nil
     }
 }
@@ -239,17 +242,29 @@ func findMatch(for regex: String, in text: String) -> String? {
 func getVersion(from string: String) -> Version? {
     let components = string.components(separatedBy: ",")
     guard components.count == 2 else {
-        print("Can't create components of string: \(string)")
+        debugPrint("Can't create components of string: \(string)")
         return nil
     }
     let majorString = components[0].trimmingCharacters(in: .whitespacesAndNewlines)
     let minorString = components[1].trimmingCharacters(in: .whitespacesAndNewlines)
 
     guard let major = Int(majorString), let minor = Int(minorString) else {
-        print("Can't create major: \(majorString) and  minor: \(minorString)")
+        debugPrint("Can't create major: \(majorString) and  minor: \(minorString)")
         return nil
     }
     return Version(major: major, minor: minor)
+}
+
+/// Reads `spec.version = 'X.Y.Z'` from the first .podspec found in the given directory.
+func readPodspecVersion(inDirectory directory: String) -> String? {
+    guard let files = try? FileManager.default.contentsOfDirectory(atPath: directory),
+          let podspec = files.first(where: { $0.hasSuffix(".podspec") }),
+          let content = try? String(contentsOfFile: "\(directory)/\(podspec)", encoding: .utf8),
+          let line = findMatch(for: "spec\\.version\\s*=\\s*['\"][^'\"]+['\"]", in: content),
+          let version = findMatch(for: "[0-9]+(\\.[0-9]+)+", in: line) else {
+        return nil
+    }
+    return version
 }
 
 // MARK: - Calling Main

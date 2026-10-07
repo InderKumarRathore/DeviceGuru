@@ -3,5 +3,5 @@
 @testable import DeviceGuru
 
 final class HardwareDetailProviderMock: HardwareDetailProvider {
-    var hardwareString: String = "iPhone12,8"
+    var hardwareString: String = "iPhone18,2"
 }

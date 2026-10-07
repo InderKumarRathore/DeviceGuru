@@ -457,6 +457,16 @@
 		<key>name</key>
 		<string>iPad mini (6th generation)</string>
 	</dict>
+	<key>iPad14,10</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air (M2, 13-inch, WiFi)</string>
+	</dict>
+	<key>iPad14,11</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air (M2, 13-inch, Cellular)</string>
+	</dict>
 	<key>iPad14,2</key>
 	<dict>
 		<key>name</key>
@@ -482,6 +492,66 @@
 		<key>name</key>
 		<string>iPad Pro 12.9-inch (WiFi + Cellular, 6th generation)</string>
 	</dict>
+	<key>iPad14,8</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air (M2, 11-inch, WiFi)</string>
+	</dict>
+	<key>iPad14,9</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air (M2, 11-inch, Cellular)</string>
+	</dict>
+	<key>iPad15,3</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 11-inch (M3, WiFi)</string>
+	</dict>
+	<key>iPad15,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 11-inch (M3, Cellular)</string>
+	</dict>
+	<key>iPad15,5</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 13-inch (M3, WiFi)</string>
+	</dict>
+	<key>iPad15,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 13-inch (M3, Cellular)</string>
+	</dict>
+	<key>iPad15,7</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (A16, WiFi)</string>
+	</dict>
+	<key>iPad15,8</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (A16, Cellular)</string>
+	</dict>
+	<key>iPad16,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPad mini (A17 Pro, WiFi)</string>
+	</dict>
+	<key>iPad16,10</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 13-inch (M4, WiFi)</string>
+	</dict>
+	<key>iPad16,11</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 13-inch (M4, Cellular)</string>
+	</dict>
+	<key>iPad16,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPad mini (A17 Pro, Cellular)</string>
+	</dict>
 	<key>iPad16,3</key>
 	<dict>
 		<key>name</key>
@@ -501,6 +571,36 @@
 	<dict>
 		<key>name</key>
 		<string>iPad Pro 13 inch M4</string>
+	</dict>
+	<key>iPad16,8</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 11-inch (M4, WiFi)</string>
+	</dict>
+	<key>iPad16,9</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 11-inch (M4, Cellular)</string>
+	</dict>
+	<key>iPad17,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (M5, WiFi)</string>
+	</dict>
+	<key>iPad17,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (M5, Cellular)</string>
+	</dict>
+	<key>iPad17,3</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 13-inch (M5, WiFi)</string>
+	</dict>
+	<key>iPad17,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 13-inch (M5, Cellular)</string>
 	</dict>
 	<key>iPad2,1</key>
 	<dict>
@@ -810,12 +910,12 @@
 	<key>iPhone11,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPhone XS Max</string>
+		<string>iPhone XS Max (China)</string>
 	</dict>
 	<key>iPhone11,6</key>
 	<dict>
 		<key>name</key>
-		<string>iPhone XS Max (China)</string>
+		<string>iPhone XS Max</string>
 	</dict>
 	<key>iPhone11,8</key>
 	<dict>
@@ -970,7 +1070,27 @@
 	<key>iPhone18,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPhone 17 Air</string>
+		<string>iPhone Air</string>
+	</dict>
+	<key>iPhone18,5</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 17e</string>
+	</dict>
+	<key>iPhone19,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 18 Pro</string>
+	</dict>
+	<key>iPhone19,3</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 18 Pro Max (U.S.)</string>
+	</dict>
+	<key>iPhone19,7</key>
+	<dict>
+		<key>name</key>
+		<string>iPhone 18 Pro Max</string>
 	</dict>
 	<key>iPhone2,1</key>
 	<dict>

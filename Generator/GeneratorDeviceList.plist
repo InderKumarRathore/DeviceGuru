@@ -207,17 +207,17 @@
 	</dict>
 	<key>iPhone11,4</key>
 	<dict>
-		<key>name</key>
-		<string>iPhone XS Max</string>
-		<key>enum</key>
-		<string>IPHONE_XS_MAX</string>
+        <key>name</key>
+        <string>iPhone XS Max (China)</string>
+        <key>enum</key>
+        <string>IPHONE_XS_MAX_CN</string>
 	</dict>
 	<key>iPhone11,6</key>
 	<dict>
-		<key>name</key>
-		<string>iPhone XS Max (China)</string>
-		<key>enum</key>
-		<string>IPHONE_XS_MAX_CN</string>
+        <key>name</key>
+        <string>iPhone XS Max</string>
+        <key>enum</key>
+        <string>IPHONE_XS_MAX</string>
 	</dict>
 	<key>iPhone11,8</key>
 	<dict>
@@ -432,9 +432,37 @@
 	<key>iPhone18,4</key>
 	<dict>
 		<key>name</key>
-		<string>iPhone 17 Air</string>
+		<string>iPhone Air</string>
 		<key>enum</key>
-		<string>IPHONE_17_AIR</string>
+		<string>IPHONE_AIR</string>
+	</dict>
+	<key>iPhone18,5</key>
+	<dict>
+		<key>enum</key>
+		<string>IPHONE_17_E</string>
+		<key>name</key>
+		<string>iPhone 17e</string>
+	</dict>
+	<key>iPhone19,2</key>
+	<dict>
+		<key>enum</key>
+		<string>IPHONE_18_PRO</string>
+		<key>name</key>
+		<string>iPhone 18 Pro</string>
+	</dict>
+	<key>iPhone19,3</key>
+	<dict>
+		<key>enum</key>
+		<string>IPHONE_18_PRO_MAX_US</string>
+		<key>name</key>
+		<string>iPhone 18 Pro Max (U.S.)</string>
+	</dict>
+	<key>iPhone19,7</key>
+	<dict>
+		<key>enum</key>
+		<string>IPHONE_18_PRO_MAX</string>
+		<key>name</key>
+		<string>iPhone 18 Pro Max</string>
 	</dict>
 	<key>iPod1,1</key>
 	<dict>
@@ -1059,6 +1087,90 @@
 		<key>enum</key>
 		<string>IPAD_PRO_6G_WIFI_CELLULAR</string>
 	</dict>
+	<key>iPad14,8</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air (M2, 11-inch, WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_11_M2</string>
+	</dict>
+	<key>iPad14,9</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air (M2, 11-inch, Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_11_M2_CELLULAR</string>
+	</dict>
+	<key>iPad14,10</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air (M2, 13-inch, WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_13_M2</string>
+	</dict>
+	<key>iPad14,11</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air (M2, 13-inch, Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_13_M2_CELLULAR</string>
+	</dict>
+	<key>iPad15,3</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 11-inch (M3, WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_11_M3</string>
+	</dict>
+	<key>iPad15,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 11-inch (M3, Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_11_M3_CELLULAR</string>
+	</dict>
+	<key>iPad15,5</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 13-inch (M3, WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_13_M3</string>
+	</dict>
+	<key>iPad15,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 13-inch (M3, Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_13_M3_CELLULAR</string>
+	</dict>
+	<key>iPad15,7</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (A16, WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_A16</string>
+	</dict>
+	<key>iPad15,8</key>
+	<dict>
+		<key>name</key>
+		<string>iPad (A16, Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_A16_CELLULAR</string>
+	</dict>
+	<key>iPad16,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPad mini (A17 Pro, WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_A17_PRO</string>
+	</dict>
+	<key>iPad16,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPad mini (A17 Pro, Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_A17_PRO_CELLULAR</string>
+	</dict>
 	<key>iPad16,3</key>
 	<dict>
 		<key>name</key>
@@ -1086,6 +1198,62 @@
 		<string>iPad Pro 13 inch M4</string>
 		<key>enum</key>
 		<string>IPAD_PRO_13_M4_CELLULAR</string>
+	</dict>
+	<key>iPad16,8</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 11-inch (M4, WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_11_M4</string>
+	</dict>
+	<key>iPad16,9</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 11-inch (M4, Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_11_M4_CELLULAR</string>
+	</dict>
+	<key>iPad16,10</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 13-inch (M4, WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_13_M4</string>
+	</dict>
+	<key>iPad16,11</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Air 13-inch (M4, Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_AIR_13_M4_CELLULAR</string>
+	</dict>
+	<key>iPad17,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (M5, WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_M5</string>
+	</dict>
+	<key>iPad17,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 11-inch (M5, Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_11_M5_CELLULAR</string>
+	</dict>
+	<key>iPad17,3</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 13-inch (M5, WiFi)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_13_M5</string>
+	</dict>
+	<key>iPad17,4</key>
+	<dict>
+		<key>name</key>
+		<string>iPad Pro 13-inch (M5, Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_PRO_13_M5_CELLULAR</string>
 	</dict>
 	<key>AppleTV1,1</key>
 	<dict>

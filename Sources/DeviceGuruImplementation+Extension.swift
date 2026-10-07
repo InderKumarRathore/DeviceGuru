@@ -2,7 +2,7 @@
 public extension DeviceGuruImplementation {
 
     /// This should be same as cocoa pod version
-    static var libraryVersion: String { "10.0.10" }
+    static var libraryVersion: String { "10.0.12" }
 
     var hardware: Hardware {
 
@@ -97,15 +97,35 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPad13,8") { return .ipad_pro_5g_wifi }
         if (hardwareString == "iPad13,9") { return .ipad_pro_5g_1tb_wifi }
         if (hardwareString == "iPad14,1") { return .ipad_mini_6_wifi }
+        if (hardwareString == "iPad14,10") { return .ipad_air_13_m2 }
+        if (hardwareString == "iPad14,11") { return .ipad_air_13_m2_cellular }
         if (hardwareString == "iPad14,2") { return .ipad_mini_6_wifi_cellular }
         if (hardwareString == "iPad14,3") { return .ipad_pro_11_4g_wifi }
         if (hardwareString == "iPad14,4") { return .ipad_pro_11_4g_wifi_cellular }
         if (hardwareString == "iPad14,5") { return .ipad_pro_6g_wifi }
         if (hardwareString == "iPad14,6") { return .ipad_pro_6g_wifi_cellular }
+        if (hardwareString == "iPad14,8") { return .ipad_air_11_m2 }
+        if (hardwareString == "iPad14,9") { return .ipad_air_11_m2_cellular }
+        if (hardwareString == "iPad15,3") { return .ipad_air_11_m3 }
+        if (hardwareString == "iPad15,4") { return .ipad_air_11_m3_cellular }
+        if (hardwareString == "iPad15,5") { return .ipad_air_13_m3 }
+        if (hardwareString == "iPad15,6") { return .ipad_air_13_m3_cellular }
+        if (hardwareString == "iPad15,7") { return .ipad_a16 }
+        if (hardwareString == "iPad15,8") { return .ipad_a16_cellular }
+        if (hardwareString == "iPad16,1") { return .ipad_mini_a17_pro }
+        if (hardwareString == "iPad16,10") { return .ipad_air_13_m4 }
+        if (hardwareString == "iPad16,11") { return .ipad_air_13_m4_cellular }
+        if (hardwareString == "iPad16,2") { return .ipad_mini_a17_pro_cellular }
         if (hardwareString == "iPad16,3") { return .ipad_pro_11_m4 }
         if (hardwareString == "iPad16,4") { return .ipad_pro_11_m4_cellular }
         if (hardwareString == "iPad16,5") { return .ipad_pro_13_m4 }
         if (hardwareString == "iPad16,6") { return .ipad_pro_13_m4_cellular }
+        if (hardwareString == "iPad16,8") { return .ipad_air_11_m4 }
+        if (hardwareString == "iPad16,9") { return .ipad_air_11_m4_cellular }
+        if (hardwareString == "iPad17,1") { return .ipad_pro_11_m5 }
+        if (hardwareString == "iPad17,2") { return .ipad_pro_11_m5_cellular }
+        if (hardwareString == "iPad17,3") { return .ipad_pro_13_m5 }
+        if (hardwareString == "iPad17,4") { return .ipad_pro_13_m5_cellular }
         if (hardwareString == "iPad2,1") { return .ipad_2_wifi }
         if (hardwareString == "iPad2,2") { return .ipad_2 }
         if (hardwareString == "iPad2,3") { return .ipad_2_cdma }
@@ -167,8 +187,8 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPhone10,5") { return .iphone_8_plus }
         if (hardwareString == "iPhone10,6") { return .iphone_x }
         if (hardwareString == "iPhone11,2") { return .iphone_xs }
-        if (hardwareString == "iPhone11,4") { return .iphone_xs_max }
-        if (hardwareString == "iPhone11,6") { return .iphone_xs_max_cn }
+        if (hardwareString == "iPhone11,4") { return .iphone_xs_max_cn }
+        if (hardwareString == "iPhone11,6") { return .iphone_xs_max }
         if (hardwareString == "iPhone11,8") { return .iphone_xr }
         if (hardwareString == "iPhone12,1") { return .iphone_11 }
         if (hardwareString == "iPhone12,3") { return .iphone_11_pro }
@@ -199,7 +219,11 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPhone18,1") { return .iphone_17_pro }
         if (hardwareString == "iPhone18,2") { return .iphone_17_pro_max }
         if (hardwareString == "iPhone18,3") { return .iphone_17 }
-        if (hardwareString == "iPhone18,4") { return .iphone_17_air }
+        if (hardwareString == "iPhone18,4") { return .iphone_air }
+        if (hardwareString == "iPhone18,5") { return .iphone_17_e }
+        if (hardwareString == "iPhone19,2") { return .iphone_18_pro }
+        if (hardwareString == "iPhone19,3") { return .iphone_18_pro_max_us }
+        if (hardwareString == "iPhone19,7") { return .iphone_18_pro_max }
         if (hardwareString == "iPhone2,1") { return .iphone_3gs }
         if (hardwareString == "iPhone3,1") { return .iphone_4 }
         if (hardwareString == "iPhone3,2") { return .iphone_4 }
