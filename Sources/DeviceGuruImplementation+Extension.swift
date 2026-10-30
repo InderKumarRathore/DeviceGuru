@@ -2,12 +2,13 @@
 public extension DeviceGuruImplementation {
 
     /// This should be same as cocoa pod version
-    static var libraryVersion: String { "10.0.10" }
+    static var libraryVersion: String { "10.0.12" }
 
     var hardware: Hardware {
 
         if (hardwareString == "AppleTV1,1") { return .apple_tv_1g }
         if (hardwareString == "AppleTV11,1") { return .apple_tv_4k_2g }
+        if (hardwareString == "AppleTV14,1") { return .apple_tv_4k_3g }
         if (hardwareString == "AppleTV2,1") { return .apple_tv_2g }
         if (hardwareString == "AppleTV3,1") { return .apple_tv_3g }
         if (hardwareString == "AppleTV3,2") { return .apple_tv_3_2g }
@@ -70,6 +71,11 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "Watch7,5") { return .apple_watch_ultra_2 }
         if (hardwareString == "Watch7,8") { return .apple_watch_series_10_42 }
         if (hardwareString == "Watch7,9") { return .apple_watch_series_10_46 }
+        if (hardwareString == "Watch8,1") { return .apple_watch_ultra_4 }
+        if (hardwareString == "Watch8,2") { return .apple_watch_series_12_42 }
+        if (hardwareString == "Watch8,3") { return .apple_watch_series_12_46 }
+        if (hardwareString == "Watch8,4") { return .apple_watch_series_12_42_cellular }
+        if (hardwareString == "Watch8,5") { return .apple_watch_series_12_46_cellular }
         if (hardwareString == "arm64") { return .simulator }
         if (hardwareString == "i386") { return .simulator }
         if (hardwareString == "iPad1,1") { return .iPad }
@@ -84,28 +90,50 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPad12,2") { return .ipad_9g_wifi_cellular }
         if (hardwareString == "iPad13,1") { return .ipad_air_4_wifi }
         if (hardwareString == "iPad13,10") { return .ipad_pro_5g_wifi_cellular }
-        if (hardwareString == "iPad13,11") { return .ipad_pro_5g_1tb_wifi_cellular }
+        if (hardwareString == "iPad13,11") { return .ipad_pro_5g_wifi_cellular }
         if (hardwareString == "iPad13,16") { return .ipad_air_5_wifi }
         if (hardwareString == "iPad13,17") { return .ipad_air_5_wifi_cellular }
         if (hardwareString == "iPad13,18") { return .ipad_10g_wifi }
         if (hardwareString == "iPad13,19") { return .ipad_10g_wifi_cellular }
         if (hardwareString == "iPad13,2") { return .ipad_air_4_wifi_cellular }
         if (hardwareString == "iPad13,4") { return .ipad_pro_11_3g_wifi }
-        if (hardwareString == "iPad13,5") { return .ipad_pro_11_3g_1tb_wifi }
+        if (hardwareString == "iPad13,5") { return .ipad_pro_11_3g_wifi }
         if (hardwareString == "iPad13,6") { return .ipad_pro_11_3g_wifi_cellular }
-        if (hardwareString == "iPad13,7") { return .ipad_pro_11_3g_1tb_wifi_cellular }
+        if (hardwareString == "iPad13,7") { return .ipad_pro_11_3g_wifi_cellular }
         if (hardwareString == "iPad13,8") { return .ipad_pro_5g_wifi }
-        if (hardwareString == "iPad13,9") { return .ipad_pro_5g_1tb_wifi }
+        if (hardwareString == "iPad13,9") { return .ipad_pro_5g_wifi }
         if (hardwareString == "iPad14,1") { return .ipad_mini_6_wifi }
+        if (hardwareString == "iPad14,10") { return .ipad_air_13_m2_wifi }
+        if (hardwareString == "iPad14,11") { return .ipad_air_13_m2_wifi_cellular }
         if (hardwareString == "iPad14,2") { return .ipad_mini_6_wifi_cellular }
         if (hardwareString == "iPad14,3") { return .ipad_pro_11_4g_wifi }
         if (hardwareString == "iPad14,4") { return .ipad_pro_11_4g_wifi_cellular }
         if (hardwareString == "iPad14,5") { return .ipad_pro_6g_wifi }
         if (hardwareString == "iPad14,6") { return .ipad_pro_6g_wifi_cellular }
-        if (hardwareString == "iPad16,3") { return .ipad_pro_11_m4 }
-        if (hardwareString == "iPad16,4") { return .ipad_pro_11_m4_cellular }
-        if (hardwareString == "iPad16,5") { return .ipad_pro_13_m4 }
-        if (hardwareString == "iPad16,6") { return .ipad_pro_13_m4_cellular }
+        if (hardwareString == "iPad14,8") { return .ipad_air_11_m2_wifi }
+        if (hardwareString == "iPad14,9") { return .ipad_air_11_m2_wifi_cellular }
+        if (hardwareString == "iPad15,3") { return .ipad_air_11_m3_wifi }
+        if (hardwareString == "iPad15,4") { return .ipad_air_11_m3_wifi_cellular }
+        if (hardwareString == "iPad15,5") { return .ipad_air_13_m3_wifi }
+        if (hardwareString == "iPad15,6") { return .ipad_air_13_m3_wifi_cellular }
+        if (hardwareString == "iPad15,7") { return .ipad_a16_wifi }
+        if (hardwareString == "iPad15,8") { return .ipad_a16_wifi_cellular }
+        if (hardwareString == "iPad16,1") { return .ipad_mini_a17_pro_wifi }
+        if (hardwareString == "iPad16,10") { return .ipad_air_13_m4_wifi }
+        if (hardwareString == "iPad16,11") { return .ipad_air_13_m4_wifi_cellular }
+        if (hardwareString == "iPad16,2") { return .ipad_mini_a17_pro_wifi_cellular }
+        if (hardwareString == "iPad16,3") { return .ipad_pro_11_m4_wifi }
+        if (hardwareString == "iPad16,4") { return .ipad_pro_11_m4_wifi_cellular }
+        if (hardwareString == "iPad16,5") { return .ipad_pro_13_m4_wifi }
+        if (hardwareString == "iPad16,6") { return .ipad_pro_13_m4_wifi_cellular }
+        if (hardwareString == "iPad16,8") { return .ipad_air_11_m4_wifi }
+        if (hardwareString == "iPad16,9") { return .ipad_air_11_m4_wifi_cellular }
+        if (hardwareString == "iPad17,1") { return .ipad_pro_11_m5_wifi }
+        if (hardwareString == "iPad17,2") { return .ipad_pro_11_m5_wifi_cellular }
+        if (hardwareString == "iPad17,3") { return .ipad_pro_13_m5_wifi }
+        if (hardwareString == "iPad17,4") { return .ipad_pro_13_m5_wifi_cellular }
+        if (hardwareString == "iPad19,1") { return .ipad_mini_a20_pro_wifi }
+        if (hardwareString == "iPad19,2") { return .ipad_mini_a20_pro_wifi_cellular }
         if (hardwareString == "iPad2,1") { return .ipad_2_wifi }
         if (hardwareString == "iPad2,2") { return .ipad_2 }
         if (hardwareString == "iPad2,3") { return .ipad_2_cdma }
@@ -117,11 +145,11 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPad3,2") { return .ipad_3_wifi_cdma }
         if (hardwareString == "iPad3,3") { return .ipad_3 }
         if (hardwareString == "iPad3,4") { return .ipad_4_wifi }
-        if (hardwareString == "iPad3,5") { return .ipad_4 }
+        if (hardwareString == "iPad3,5") { return .ipad_4_wifi_gsm }
         if (hardwareString == "iPad3,6") { return .ipad_4_gsm_cdma }
         if (hardwareString == "iPad4,1") { return .ipad_air_wifi }
         if (hardwareString == "iPad4,2") { return .ipad_air_wifi_gsm }
-        if (hardwareString == "iPad4,3") { return .ipad_air_wifi_cdma }
+        if (hardwareString == "iPad4,3") { return .ipad_air_wifi_cellular_cn }
         if (hardwareString == "iPad4,4") { return .ipad_mini_retina_wifi }
         if (hardwareString == "iPad4,5") { return .ipad_mini_retina_wifi_cdma }
         if (hardwareString == "iPad4,6") { return .ipad_mini_retina_wifi_cellular_cn }
@@ -199,7 +227,12 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPhone18,1") { return .iphone_17_pro }
         if (hardwareString == "iPhone18,2") { return .iphone_17_pro_max }
         if (hardwareString == "iPhone18,3") { return .iphone_17 }
-        if (hardwareString == "iPhone18,4") { return .iphone_17_air }
+        if (hardwareString == "iPhone18,4") { return .iphone_air }
+        if (hardwareString == "iPhone18,5") { return .iphone_17_e }
+        if (hardwareString == "iPhone19,2") { return .iphone_18_pro }
+        if (hardwareString == "iPhone19,3") { return .iphone_18_pro_max_us }
+        if (hardwareString == "iPhone19,4") { return .iphone_duo }
+        if (hardwareString == "iPhone19,7") { return .iphone_18_pro_max }
         if (hardwareString == "iPhone2,1") { return .iphone_3gs }
         if (hardwareString == "iPhone3,1") { return .iphone_4 }
         if (hardwareString == "iPhone3,2") { return .iphone_4 }

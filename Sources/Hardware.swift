@@ -71,7 +71,12 @@ public enum Hardware {
     case iphone_17_pro
     case iphone_17_pro_max
     case iphone_17
-    case iphone_17_air
+    case iphone_air
+    case iphone_17_e
+    case iphone_18_pro
+    case iphone_18_pro_max_us
+    case iphone_duo
+    case iphone_18_pro_max
 
     case ipod_touch_1g
     case ipod_touch_2g
@@ -93,11 +98,11 @@ public enum Hardware {
     case ipad_3_wifi_cdma
     case ipad_3
     case ipad_4_wifi
-    case ipad_4
+    case ipad_4_wifi_gsm
     case ipad_4_gsm_cdma
     case ipad_air_wifi
     case ipad_air_wifi_gsm
-    case ipad_air_wifi_cdma
+    case ipad_air_wifi_cellular_cn
     case ipad_mini_retina_wifi
     case ipad_mini_retina_wifi_cdma
     case ipad_mini_retina_wifi_cellular_cn
@@ -145,13 +150,9 @@ public enum Hardware {
     case ipad_air_4_wifi
     case ipad_air_4_wifi_cellular
     case ipad_pro_11_3g_wifi
-    case ipad_pro_11_3g_1tb_wifi
     case ipad_pro_11_3g_wifi_cellular
-    case ipad_pro_11_3g_1tb_wifi_cellular
     case ipad_pro_5g_wifi
-    case ipad_pro_5g_1tb_wifi
     case ipad_pro_5g_wifi_cellular
-    case ipad_pro_5g_1tb_wifi_cellular
     case ipad_air_5_wifi
     case ipad_air_5_wifi_cellular
     case ipad_10g_wifi
@@ -162,10 +163,32 @@ public enum Hardware {
     case ipad_pro_11_4g_wifi_cellular
     case ipad_pro_6g_wifi
     case ipad_pro_6g_wifi_cellular
-    case ipad_pro_11_m4
-    case ipad_pro_11_m4_cellular
-    case ipad_pro_13_m4
-    case ipad_pro_13_m4_cellular
+    case ipad_air_11_m2_wifi
+    case ipad_air_11_m2_wifi_cellular
+    case ipad_air_13_m2_wifi
+    case ipad_air_13_m2_wifi_cellular
+    case ipad_air_11_m3_wifi
+    case ipad_air_11_m3_wifi_cellular
+    case ipad_air_13_m3_wifi
+    case ipad_air_13_m3_wifi_cellular
+    case ipad_a16_wifi
+    case ipad_a16_wifi_cellular
+    case ipad_mini_a17_pro_wifi
+    case ipad_mini_a17_pro_wifi_cellular
+    case ipad_pro_11_m4_wifi
+    case ipad_pro_11_m4_wifi_cellular
+    case ipad_pro_13_m4_wifi
+    case ipad_pro_13_m4_wifi_cellular
+    case ipad_air_11_m4_wifi
+    case ipad_air_11_m4_wifi_cellular
+    case ipad_air_13_m4_wifi
+    case ipad_air_13_m4_wifi_cellular
+    case ipad_pro_11_m5_wifi
+    case ipad_pro_11_m5_wifi_cellular
+    case ipad_pro_13_m5_wifi
+    case ipad_pro_13_m5_wifi_cellular
+    case ipad_mini_a20_pro_wifi
+    case ipad_mini_a20_pro_wifi_cellular
 
     case apple_watch_38
     case apple_watch_42
@@ -224,6 +247,11 @@ public enum Hardware {
     case apple_watch_series_11_46
     case apple_watch_series_11_42_cellular
     case apple_watch_series_11_46_cellular
+    case apple_watch_ultra_4
+    case apple_watch_series_12_42
+    case apple_watch_series_12_46
+    case apple_watch_series_12_42_cellular
+    case apple_watch_series_12_46_cellular
 
     case apple_tv_1g
     case apple_tv_2g
@@ -232,4 +260,5 @@ public enum Hardware {
     case apple_tv_4g
     case apple_tv_4k
     case apple_tv_4k_2g
+    case apple_tv_4k_3g
 }
