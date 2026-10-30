@@ -632,6 +632,16 @@
 		<key>name</key>
 		<string>iPad Pro 13-inch (M5, Wi-Fi + Cellular)</string>
 	</dict>
+	<key>iPad19,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPad mini (A20 Pro, Wi-Fi)</string>
+	</dict>
+	<key>iPad19,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPad mini (A20 Pro, Wi-Fi + Cellular)</string>
+	</dict>
 	<key>iPad2,1</key>
 	<dict>
 		<key>name</key>

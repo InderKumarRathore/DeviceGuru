@@ -1262,6 +1262,20 @@
 		<key>enum</key>
 		<string>IPAD_PRO_13_M5_WIFI_CELLULAR</string>
 	</dict>
+	<key>iPad19,1</key>
+	<dict>
+		<key>name</key>
+		<string>iPad mini (A20 Pro, Wi-Fi)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_A20_PRO_WIFI</string>
+	</dict>
+	<key>iPad19,2</key>
+	<dict>
+		<key>name</key>
+		<string>iPad mini (A20 Pro, Wi-Fi + Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_MINI_A20_PRO_WIFI_CELLULAR</string>
+	</dict>
 	<key>AppleTV1,1</key>
 	<dict>
 		<key>name</key>

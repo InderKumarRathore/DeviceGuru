@@ -132,6 +132,8 @@ public extension DeviceGuruImplementation {
         if (hardwareString == "iPad17,2") { return .ipad_pro_11_m5_wifi_cellular }
         if (hardwareString == "iPad17,3") { return .ipad_pro_13_m5_wifi }
         if (hardwareString == "iPad17,4") { return .ipad_pro_13_m5_wifi_cellular }
+        if (hardwareString == "iPad19,1") { return .ipad_mini_a20_pro_wifi }
+        if (hardwareString == "iPad19,2") { return .ipad_mini_a20_pro_wifi_cellular }
         if (hardwareString == "iPad2,1") { return .ipad_2_wifi }
         if (hardwareString == "iPad2,2") { return .ipad_2 }
         if (hardwareString == "iPad2,3") { return .ipad_2_cdma }
